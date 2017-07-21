@@ -54,9 +54,9 @@ var write = function(chapterRaw){
     });
 
     try {
-        var bookInfo = require("./" + bibleInfo.lang + "/" + bibleInfo.version + "/books/" + cursorBook.toString().lpad(2) + ".js");
+        var bookInfo = require("./bibles/" + bibleInfo.lang + "/" + bibleInfo.version + "/books/" + cursorBook.toString().lpad(2) + ".js");
         bookInfo.chapters[cursorChapter] = chapter;
-        fswf("./" + bibleInfo.lang + "/" + bibleInfo.version + "/books/" + cursorBook.toString().lpad(2) + ".js", "var book = "+JSON.stringify(bookInfo, null, '\t')+";\nmodule.exports = book;");
+        fswf("./bibles/" + bibleInfo.lang + "/" + bibleInfo.version + "/books/" + cursorBook.toString().lpad(2) + ".js", "var book = "+JSON.stringify(bookInfo, null, '\t')+";\nmodule.exports = book;");
     } catch (err){
         console.log(err)
     }
@@ -117,7 +117,7 @@ var scrapeBibleChapter = function(bookChapter, version, callback, scrapeOnly){
 var scrapeBible = function(lang, version){
     var tasks = [];
     try {
-        bibleInfo = require("./" + lang + "/" + version + "/info.js");
+        bibleInfo = require("./bibles/" + lang + "/" + version + "/info.js");
 
         for (var i = 1; i <= bibleInfo.books.length; i++){
             cursorBook = i;
@@ -126,7 +126,7 @@ var scrapeBible = function(lang, version){
                 numChapters: bibleInfo.books[i-1].numChapters,
                 chapters: {}
             };
-            fswf("./" + lang + "/" + version + "/books/" + cursorBook.toString().lpad(2) + ".js", "var book = "+JSON.stringify(bookInfo, null, '\t')+";\nmodule.exports = book;");
+            fswf("./bibles/" + lang + "/" + version + "/books/" + cursorBook.toString().lpad(2) + ".js", "var book = "+JSON.stringify(bookInfo, null, '\t')+";\nmodule.exports = book;");
 
             for (var j = 1; j <= bibleInfo.books[i-1].numChapters; j++){
                 cursorChapter = j;
@@ -180,7 +180,7 @@ var scrapeBibleInfo = function(lang, version, name){
                 info.books.push({"name": bookName, "numChapters": parseInt(numChapters), "synonyms": [bookName]});
             });
 
-            fswf("./" + lang + "/" + version + "/info.js", "var info = " + JSON.stringify(info, null, '\t') + ";\nmodule.exports = info;");
+            fswf("./bibles/" + lang + "/" + version + "/info.js", "var info = " + JSON.stringify(info, null, '\t') + ";\nmodule.exports = info;");
         }
     );
 };

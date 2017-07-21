@@ -40,7 +40,7 @@ var getBibleRegex = function(lang, version){
         };
 
     try {
-        var bibleBookInfo = require("./" + lang + "/" + version + "/info");
+        var bibleBookInfo = require("./bibles/" + lang + "/" + version + "/info");
         for (var i = 0; i < bibleBookInfo.books.length; i++){
 
             bibleBooks += bibleBookInfo.books[i].name.bibleSynonymOptimization() + "|";
@@ -52,7 +52,7 @@ var getBibleRegex = function(lang, version){
     } catch (err) {}
 
     try {
-        var literalsInfo = require("./" + lang + "/literals");
+        var literalsInfo = require("./bibles/" + lang + "/literals");
         for (var i = 0; i < literalsInfo.and.length; i++) {
             ret.literals.and.push(literalsInfo.and[i]);
             literals += "( " + literalsInfo.and[i] + " )?";
@@ -81,7 +81,7 @@ var getBibleRegex = function(lang, version){
  * @returns {{book: string, chapter: string, verse: string, results: Array}}
  */
 var fetch = function(lang, version, book, chapter, verse){
-    var bibleInfo = require("./" + lang + "/" + version + "/info"),
+    var bibleInfo = require("./bibles/" + lang + "/" + version + "/info"),
         ret = {
             book: "",
             chapter: "",
@@ -96,7 +96,7 @@ var fetch = function(lang, version, book, chapter, verse){
         }
         bookRegExp = bookRegExp.customTrim("| ");
         if (book.match(new RegExp(bookRegExp, "ig"))){
-            var bibleBook = require("./" + lang + "/" + version + "/books/" + (i+1).toString().lpad(2));
+            var bibleBook = require("./bibles/" + lang + "/" + version + "/books/" + (i+1).toString().lpad(2));
 
             chapter = chapter.toString().customTrim(" ");
             ret.book = bibleBook.name;
