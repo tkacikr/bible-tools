@@ -169,7 +169,6 @@ var search = function(lang, version, term) {
             // TODO: support more complicated intra chapter references like 1:3-2:1
             if (ranges.length === 2){
                 var verses = ranges[1].split(LITERAL_THROUGH);
-                console.log(ranges);
 
                 if (verses.length === 2){
                     var _result = {header:"", verses:""};
@@ -182,7 +181,6 @@ var search = function(lang, version, term) {
                     }
 
                     result += _result["header"] + _result["verses"];
-                    console.log(_result);
                 } else {
                     // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
                     // (ex. Gen. 1:1)
