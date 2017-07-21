@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87eb17d7-3962-49d6-9373-f425c84fd778" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/adventech-bible-tools.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bible_helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bible_scraper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bible_search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/bg/bg1940/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/de/luth1545/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/kjv/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/literals.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nasb/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/en/nkjv/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/es/rvr1960/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/fr/lsg/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ja/jlb/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/arc/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/pt/nvi-pt/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ro/rmnn/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/ru/rusv/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/02.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/03.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/04.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/05.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/06.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/07.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/08.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/09.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/11.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/12.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/13.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/14.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/15.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/18.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/19.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/20.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/21.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/22.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/24.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/25.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/26.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/27.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/28.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/29.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/31.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/32.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/33.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/34.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/36.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/37.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/38.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/39.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/40.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/42.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/43.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/44.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/45.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/46.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/48.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/50.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/51.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/52.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/53.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/54.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/55.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/56.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/57.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/58.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/59.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/60.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/61.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/63.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/65.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/books/66.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bibles/uk/ukr/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="827" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adventech-bible-tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adventech-bible-tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/opt/node@6/bin/node" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87eb17d7-3962-49d6-9373-f425c84fd778" name="Default" comment="" />
+      <created>1500665249028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1500665249028</updated>
+      <workItem from="1500665250430" duration="283000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="283000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="827" y="-1057" width="1920" height="1057" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bible_scraper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2183">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
