@@ -2,7 +2,7 @@
   "name": "adventech-bible-tools",
   "version": "1.0.0",
   "description": "",
-  "main": "bible_search.js",
+  "main": "bible_tools.js",
   "dependencies": {
     "async": "^2.1.2",
     "cheerio": "^0.22.0",
