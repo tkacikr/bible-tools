@@ -1,35 +1,26 @@
-#!/usr/bin/env node
-var argv = require("optimist")
-    .usage("Parse .md files for bible verses.\n" +
-        "Usage: $0 -p [string] -l [string]")
-    .alias({"p": "path"})
-    .describe({
-        "p": "Path to scan for .md files and parse. Not recursive",
-        "l": "Parse language"
-    })
-    .demand(["p"])
-    .default({ "l" : "en" })
-    .argv;
-
-var config = {
-  "en": [
-      "nkjv",
-      "kjv"
-  ],
-
-  "ja": [
-      "jlb"
-  ]
-};
-
-var fs            = require("fs"),
-    metaMarked    = require("meta-marked"),
-    fswf          = require("safe-write-file"),
-    yamljs        = require("yamljs");
+/*
+ * Copyright (c) 2017 Adventech <info@adventech.io>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
 
 require("./bible_helpers");
-
-var SOURCE_EXTENSION = "md";
 
 /**
  * Returns the full regex for searching Bible references for specific language and Bible version
@@ -79,6 +70,16 @@ var getBibleRegex = function(lang, version){
     return ret;
 };
 
+/**
+ * This function performs the actual fetch of the data in given language, version, book, chapter and verse.
+ * Note that verse is optional parameter, since sometimes you want to fetch the whole chapter.
+ * @param lang
+ * @param version
+ * @param book
+ * @param chapter
+ * @param verse
+ * @returns {{book: string, chapter: string, verse: string, results: Array}}
+ */
 var fetch = function(lang, version, book, chapter, verse){
     var bibleInfo = require("./" + lang + "/" + version + "/info"),
         ret = {
@@ -123,7 +124,7 @@ var fetch = function(lang, version, book, chapter, verse){
 };
 
 /**
- *
+ * Performs the search of the passage
  * @param lang
  * @param version
  * @param term
@@ -199,67 +200,19 @@ var search = function(lang, version, term) {
             }
         }
 
+        // TODO: return JSON-based result
         return result;
     } catch (err) {
         console.log(err);
     }
 };
 
-/**
- *
- * @param path
- */
-var processParsing = function(path){
-    var mds = fs.readdirSync(path);
-
-    for (var i = 0; i < mds.length; i++) {
-        var extension = mds[i].split(".").pop();
-        if (extension !== SOURCE_EXTENSION) continue;
-
-        var read = metaMarked(fs.readFileSync(path + mds[i], "utf-8")),
-            meta = read.meta;
-
-        meta.bible = [];
-
-        for (var bibleVersionIterator = 0; bibleVersionIterator < config[argv.l].length; bibleVersionIterator++){
-            var lang = argv.l,
-                bibleVersion = config[lang][bibleVersionIterator],
-                bibleRegex = this.getBibleRegex(lang, bibleVersion),
-                bibleReferenceMatches = read.markdown.match(new RegExp(bibleRegex.regex, "ig")),
-                resultRead = read.markdown,
-                resultBible = {};
-
-            resultBible["name"] = bibleVersion.toUpperCase();
-            resultBible["verses"] = {};
-
-            if (!bibleReferenceMatches) { continue; }
-
-            bibleReferenceMatches = bibleReferenceMatches.sort(function(a,b){
-                return b.length - a.length;
-            });
-
-            for (var j = 0; j < bibleReferenceMatches.length; j++){
-                var verse = bibleReferenceMatches[j];
-                resultBible["verses"][verse] = bibleSearch.search(lang, bibleVersion, verse);
-                resultRead = resultRead.replace(new RegExp('(?!<a[^>]*?>)('+bibleReferenceMatches[j]+')(?![^<]*?</a>)', "g"), '<a class="verse" verse="'+bibleReferenceMatches[j]+'">'+bibleReferenceMatches[j]+'</a>');
-            }
-
-            meta.bible.push(resultBible);
-        }
-        fswf(path + "/" + mds[i] + ".biblez", "---\n" + yamljs.stringify(meta, 4) + "\n---" + resultRead);
-    }
-};
-
-// Bible Search Module
-var bibleSearch = {
+// Bible Tools Module
+var bibleTools = {
+    // TODO:
+    // listAvailableBibles()
     search: search,
-    getBibleRegex: getBibleRegex,
-    processParsing: processParsing
+    getBibleRegex: getBibleRegex
 };
 
-// module.exports = bibleSearch;
-
-bibleSearch.processParsing(argv.p);
-
-// console.log(bibleSearch.getBibleRegex("en", "nkjv"));
-// console.log(bibleSearch.search("ja", "jlb", "使徒言行録6：9～15"));
+module.exports = bibleTools;
