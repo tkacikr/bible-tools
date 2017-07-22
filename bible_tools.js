@@ -156,8 +156,6 @@ var search = function(lang, version, term) {
             term = term.replace(new RegExp(bibleRegex.literals.through[i], "ig"), LITERAL_THROUGH);
         }
 
-        console.log(term);
-
         if (!term.match(bibleBooksRegex) || !term.match(bibleBooksRegex).length) return result;
 
         var book = term.match(bibleBooksRegex)[0];
