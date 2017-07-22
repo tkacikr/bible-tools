@@ -1,5 +1,5 @@
 var info = {
-	"lang": "in",
+	"lang": "id",
 	"version": "alkitab",
 	"books": [
 		{
@@ -7,7 +7,8 @@ var info = {
 			"numChapters": 50,
 			"synonyms": [
 				"Kejadian",
-				"Kej"
+				"Kej",
+				"Gen"
 			]
 		},
 		{
@@ -351,6 +352,7 @@ var info = {
 			"numChapters": 28,
 			"synonyms": [
 				"Kisah Rasul-rasul",
+				"Kisah Para Rasul",
 				"Kis"
 			]
 		},
@@ -359,7 +361,8 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"Roma",
-				"Rm"
+				"Rm",
+				"Rom"
 			]
 		},
 		{
@@ -391,6 +394,7 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"Efesus",
+				"Eph",
 				"Ef"
 			]
 		},
@@ -455,7 +459,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"Filemon",
-				"Flm"
+				"Flm",
+				"Phil"
 			]
 		},
 		{
