@@ -403,7 +403,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"Filipi",
-				"Flp"
+				"Flp",
+                "Phil"
 			]
 		},
 		{
@@ -459,8 +460,7 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"Filemon",
-				"Flm",
-				"Phil"
+				"Flm"
 			]
 		},
 		{
