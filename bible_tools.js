@@ -236,6 +236,4 @@ var bibleTools = {
     getBibleRegex: getBibleRegex
 };
 
-console.log(bibleTools.search("in", "alkitab", "Dan. 2"));
-
 module.exports = bibleTools;
