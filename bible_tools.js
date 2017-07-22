@@ -65,7 +65,7 @@ var getBibleRegex = function(lang, version){
 
     bibleBooks = bibleBooks.customTrim("| ");
     ret["bibleBooksRegex"] = "("+bibleBooks+")";
-    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ([0-9\\.;,：:\\ "+ret["dashes"]+"]" + literals + "(?!" + bibleBooks + "))+)";
+    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.;,：:\\ "+ret["dashes"]+"]" + literals + "(?!" + bibleBooks + "))+)";
 
     return ret;
 };
@@ -135,7 +135,7 @@ var search = function(lang, version, term) {
         LITERAL_AND = ";",
         LITERAL_AND_ENUM = ",";
 
-    var result = "";
+    var result = {"term": term};
 
     try {
         var bibleRegex = getBibleRegex(lang, version),
@@ -180,7 +180,8 @@ var search = function(lang, version, term) {
                         _result["verses"] += _t.results.join("");
                     }
 
-                    result += _result["header"] + _result["verses"];
+                    result["header"] = _result["header"];
+                    result["verses"] = _result["verses"];
                 } else {
                     // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
                     // (ex. Gen. 1:1)
@@ -188,8 +189,8 @@ var search = function(lang, version, term) {
 
                     for (var j = 0; j < versesEnum.length; j++){
                         var _t = fetch(lang, version, book, chapter, parseInt(versesEnum[j]));
-                        result += "<h3>"+_t.book +" "+ chapter.customTrim(" ") + ":" + versesEnum[j].customTrim(" ") +"</h3>";
-                        result += _t.results.join("");
+                        result["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + ":" + versesEnum[j].customTrim(" ") +"</h3>";
+                        result["verses"] = _t.results.join("");
                     }
                 }
             } else {
@@ -197,19 +198,18 @@ var search = function(lang, version, term) {
                 if (chapters.length === 2){
                     for (var j = parseInt(chapters[0].customTrim(" ")); j <= parseInt(chapters[1].customTrim(" ")); j++){
                         var _t = fetch(lang, version, book, j);
-                        result += "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
-                        result += _t.results.join("");
+                        result["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                        result["verses"] = _t.results.join("");
                     }
                 } else if (chapters.length === 1) {
                     // Bible verse matching <book> <chapter> (ex. Gen. 1)
                     var _t = fetch(lang, version, book, chapter);
-                    result += "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
-                    result += _t.results.join("");
+                    result["header"] =  "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                    result["verses"] = _t.results.join("");
                 }
             }
         }
 
-        // TODO: return JSON-based result
         return result;
     } catch (err) {
         console.log(err);
