@@ -276,5 +276,5 @@ function addSynonyms(lang, version, synonyms){
 // scrapeBible("de", "luth1545");
 // scrapeBible("zh", "cuvs");
 
-// parseOfflineBible("id", "alkitab", "/Users/vitalik/Downloads/Bibles/id_tb/");
-// addSynonyms("id", "alkitab", idSynonyms);
+// parseOfflineBible("in", "alkitab", "/Users/vitalik/Downloads/Bibles/id_tb/");
+// addSynonyms("in", "alkitab", idSynonyms);

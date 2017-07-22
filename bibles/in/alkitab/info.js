@@ -1,5 +1,5 @@
 var info = {
-	"lang": "id",
+	"lang": "in",
 	"version": "alkitab",
 	"books": [
 		{
