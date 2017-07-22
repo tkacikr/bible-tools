@@ -25,7 +25,8 @@ var async = require("async"),
     cheerio = require("cheerio"),
     request = require("request"),
     fswf = require("safe-write-file"),
-    helper = require("./bible_helpers");
+    helper = require("./bible_helpers"),
+    fs = require("fs");
 
 var cursorBook = 0,
     cursorChapter = 0,
@@ -185,6 +186,72 @@ var scrapeBibleInfo = function(lang, version, name){
     );
 };
 
+/**
+ * Creates Bible structure from offline version of Bible from wordproject
+ * @param lang
+ * @param version
+ * @param pathPrefix
+ */
+function parseOfflineBible(lang, version, pathPrefix){
+    var bibleInfo = {
+        lang: lang,
+        version: version,
+        books: []
+    };
+    for (var i = 1; i <= 66; i++){
+        var bookCursor = i.toString().lpad(2),
+            bookIndex = fs.readFileSync(pathPrefix+bookCursor+"/1.htm", "utf-8"),
+            $ = cheerio.load(bookIndex, {decodeEntities: false}),
+            bookName = $(".textHeader h2").text().customTrim("\n\r "),
+            numChapters = $("p.ym-noprint").children().length;
+
+        var bookInfo = {
+            name: bookName,
+            numChapters: numChapters,
+            chapters: {}
+        };
+
+
+        for (var j = 1; j <= numChapters; j++){
+            var chapterContent = fs.readFileSync(pathPrefix+bookCursor+"/" + j + ".htm", "utf-8"),
+                $$ = cheerio.load(chapterContent, {decodeEntities: false}),
+                chapter = {};
+
+            $$(".verse").each(function(verseIndex,verseElement){
+                if ($$(verseElement)[0]
+                    && $$(verseElement)[0].nextSibling
+                    && $$(verseElement)[0].nextSibling.nodeValue
+                ) {
+                    chapter[$$(verseElement).text().customTrim(" ")] = "<span>"+$$(verseElement).text()+"</span> " + $$(verseElement)[0].nextSibling.nodeValue.customTrim("\n\r ");
+                } else if ($$(verseElement)) {
+                    chapter[$$(verseElement).text().customTrim(" ")] = "<span>"+$$(verseElement).text()+"</span>";
+                }
+            });
+
+            bookInfo.chapters[j.toString()] = chapter;
+        }
+        fswf("./bibles/" + lang + "/" + version + "/books/" + bookCursor + ".js", "var book = "+JSON.stringify(bookInfo, null, '\t')+";\nmodule.exports = book;");
+        bibleInfo.books.push({"name": bookName, "numChapters": parseInt(numChapters), "synonyms": [bookName]});
+    }
+    fswf("./bibles/" + lang + "/" + version + "/info.js", "var info = " + JSON.stringify(bibleInfo, null, '\t') + ";\nmodule.exports = info;");
+}
+
+/**
+ * Quickly add synonyms given the array of them which is exact size as the length of books in target Bible
+ * @param lang
+ * @param version
+ * @param synonyms
+ */
+function addSynonyms(lang, version, synonyms){
+    var bibleInfo = require("./bibles/" + lang + "/" + version + "/info.js");
+    if (bibleInfo.books.length === synonyms.length){
+        for (var i = 0; i < bibleInfo.books.length; i++){
+            bibleInfo.books[i].synonyms.push(synonyms[i]);
+        }
+    }
+    fswf("./bibles/" + lang + "/" + version + "/info.js", "var info = " + JSON.stringify(bibleInfo, null, '\t') + ";\nmodule.exports = info;");
+}
+
 // scrapeBibleInfo("en", "nasb", "New-American-Standard-Bible-NASB");
 // scrapeBibleInfo("pt", "arc", "Almeida-Revista-e-Corrigida-2009-ARC");
 // scrapeBibleInfo("uk", "ukr", "Ukrainian-Bible-UKR");
@@ -208,3 +275,6 @@ var scrapeBibleInfo = function(lang, version, name){
 // scrapeBible("pt", "nvi-pt");
 // scrapeBible("de", "luth1545");
 // scrapeBible("zh", "cuvs");
+
+// parseOfflineBible("id", "alkitab", "/Users/vitalik/Downloads/Bibles/id_tb/");
+// addSynonyms("id", "alkitab", idSynonyms);
