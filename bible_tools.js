@@ -31,6 +31,7 @@ var getBibleRegex = function(lang, version){
     var bibleBooks = "",
         literals = "",
         ret = {
+            "ands": "；",
             "dashes": "\\-᠆‐‑‒–—―⁻₋−﹣－～",
             "bibleBooksRegex": "",
             "literals": {
@@ -65,7 +66,7 @@ var getBibleRegex = function(lang, version){
 
     bibleBooks = bibleBooks.customTrim("| ");
     ret["bibleBooksRegex"] = "("+bibleBooks+")";
-    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.;,：:\\ "+ret["dashes"]+"]" + literals + "(?!" + bibleBooks + "))+)";
+    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.;,：:\\ "+ret["dashes"] + ret["ands"]+"]" + literals + "(?!" + bibleBooks + "))+)";
 
     return ret;
 };
@@ -135,13 +136,14 @@ var search = function(lang, version, term) {
         LITERAL_AND = ";",
         LITERAL_AND_ENUM = ",";
 
-    var result = {"term": term};
+    var result = { "term": term, results: []};
 
     try {
         var bibleRegex = getBibleRegex(lang, version),
             bibleBooksRegex = new RegExp(bibleRegex.bibleBooksRegex, "ig");
 
         term = term.replace(new RegExp("["+bibleRegex.dashes+"]", "ig"), LITERAL_THROUGH);
+        term = term.replace(new RegExp("["+bibleRegex.ands+"]", "ig"), LITERAL_AND+" ");
         term = term.replace(new RegExp("：", "ig"), LITERAL_RANGE).customTrim(" ;,");
 
         for (var i = 0; i < bibleRegex.literals.and.length; i++){
@@ -164,6 +166,8 @@ var search = function(lang, version, term) {
                 ranges = block.split(LITERAL_RANGE),
                 chapter = ranges[0];
 
+            result.results.push({});
+
             // This is explicitly to extract single chapter range of verses
             // ex. 1:3-5
             // TODO: support more complicated intra chapter references like 1:3-2:1
@@ -180,17 +184,19 @@ var search = function(lang, version, term) {
                         _result["verses"] += _t.results.join("");
                     }
 
-                    result["header"] = _result["header"];
-                    result["verses"] = _result["verses"];
+                    result.results[i]["header"] = _result["header"];
+                    result.results[i]["verses"] = _result["verses"];
                 } else {
                     // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
                     // (ex. Gen. 1:1)
                     var versesEnum = verses[0].split(LITERAL_AND_ENUM);
 
+                    result.results[i]["verses"] = "";
+
                     for (var j = 0; j < versesEnum.length; j++){
                         var _t = fetch(lang, version, book, chapter, parseInt(versesEnum[j]));
-                        result["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + ":" + versesEnum[j].customTrim(" ") +"</h3>";
-                        result["verses"] = _t.results.join("");
+                        result.results[i]["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + ":" + verses[0].customTrim(" ") +"</h3>";
+                        result.results[i]["verses"] += _t.results.join("");
                     }
                 }
             } else {
@@ -198,14 +204,14 @@ var search = function(lang, version, term) {
                 if (chapters.length === 2){
                     for (var j = parseInt(chapters[0].customTrim(" ")); j <= parseInt(chapters[1].customTrim(" ")); j++){
                         var _t = fetch(lang, version, book, j);
-                        result["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
-                        result["verses"] = _t.results.join("");
+                        result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                        result.results[i]["verses"] = _t.results.join("");
                     }
                 } else if (chapters.length === 1) {
                     // Bible verse matching <book> <chapter> (ex. Gen. 1)
                     var _t = fetch(lang, version, book, chapter);
-                    result["header"] =  "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
-                    result["verses"] = _t.results.join("");
+                    result.results[i]["header"] =  "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                    result.results[i]["verses"] = _t.results.join("");
                 }
             }
         }
