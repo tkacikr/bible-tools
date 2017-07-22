@@ -195,6 +195,7 @@ var scrapeBibleInfo = function(lang, version, name){
 // scrapeBibleInfo("ro", "rmnn", "Cornilescu-1924-RMNN-Bible");
 // scrapeBibleInfo("pt", "nvi-pt", encodeURIComponent("Nova-Versão-Internacional-NVI-PT-Bíblia"))
 // scrapeBibleInfo("de", "luth1545", "Luther-Bibel-1545-LUTH1545")
+// scrapeBibleInfo("zh", "cuvs", "Chinese-Union-Version-Simplified-CUVS");
 
 // scrapeBible("en", "nasb");
 // scrapeBible("ja", "jlb");
@@ -204,6 +205,6 @@ var scrapeBibleInfo = function(lang, version, name){
 // scrapeBible("es", "rvr1960");
 // scrapeBible("ro", "rmnn");
 // scrapeBible("uk", "ukr");
-
 // scrapeBible("pt", "nvi-pt");
 // scrapeBible("de", "luth1545");
+// scrapeBible("zh", "cuvs");
