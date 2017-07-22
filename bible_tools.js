@@ -149,12 +149,14 @@ var search = function(lang, version, term) {
         term = term.replace(new RegExp("：", "ig"), LITERAL_RANGE).customTrim(" ;,");
 
         for (var i = 0; i < bibleRegex.literals.and.length; i++){
-            term = term.replace(new RegExp(bibleRegex.literals.and[i], "ig"), LITERAL_AND);
+            term = term.replace(new RegExp(bibleRegex.literals.and[i], "g"), LITERAL_AND);
         }
 
         for (var i = 0; i < bibleRegex.literals.through.length; i++){
             term = term.replace(new RegExp(bibleRegex.literals.through[i], "ig"), LITERAL_THROUGH);
         }
+
+        console.log(term);
 
         if (!term.match(bibleBooksRegex) || !term.match(bibleBooksRegex).length) return result;
 
@@ -234,6 +236,6 @@ var bibleTools = {
     getBibleRegex: getBibleRegex
 };
 
-console.log(bibleTools.search("in", "alkitab", "dan"));
+console.log(bibleTools.search("in", "alkitab", "Dan. 2"));
 
 module.exports = bibleTools;
