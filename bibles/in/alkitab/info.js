@@ -52,10 +52,10 @@ var info = {
 			]
 		},
 		{
-			"name": "Hakim[del]hakim",
+			"name": "Hakim del hakim",
 			"numChapters": 21,
 			"synonyms": [
-				"Hakim[del]hakim",
+				"Hakim del hakim",
 				"Hak"
 			]
 		},
