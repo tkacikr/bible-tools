@@ -206,10 +206,12 @@ var search = function(lang, version, term) {
             } else {
                 var chapters = ranges[0].split(LITERAL_THROUGH);
                 if (chapters.length === 2){
+                    result.results[i]["verses"] = "";
+
                     for (var j = parseInt(chapters[0].customTrim(" ")); j <= parseInt(chapters[1].customTrim(" ")); j++){
                         var _t = fetch(lang, version, book, j);
                         result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
-                        result.results[i]["verses"] = _t.results.join("");
+                        result.results[i]["verses"] += _t.results.join("");
                     }
                 } else if (chapters.length === 1) {
                     // Bible verse matching <book> <chapter> (ex. Gen. 1)
