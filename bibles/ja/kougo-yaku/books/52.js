@@ -1,5 +1,5 @@
 var book = {
-	"name": "テサロニケの信徒への手紙一",
+	"name": "テサロニケ人への第一の手紙",
 	"numChapters": 5,
 	"chapters": {
 		"1": {

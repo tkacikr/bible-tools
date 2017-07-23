@@ -1,5 +1,5 @@
 var book = {
-	"name": "ペトロの手紙二",
+	"name": "ペテロの第二の手紙",
 	"numChapters": 3,
 	"chapters": {
 		"1": {
