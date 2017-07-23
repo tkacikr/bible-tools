@@ -32,7 +32,7 @@ var getBibleRegex = function(lang, version){
         literals = "",
         ret = {
             "ands": "；",
-            "andenums": "，",
+            "andenums": "，、",
             "dashes": "\\-᠆‐‑‒–—―⁻₋−﹣－～",
             "bibleBooksRegex": "",
             "literals": {
@@ -67,7 +67,7 @@ var getBibleRegex = function(lang, version){
 
     bibleBooks = bibleBooks.customTrim("| ");
     ret["bibleBooksRegex"] = "("+bibleBooks+")";
-    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.;,，：:\\ "+ret["dashes"] + ret["ands"]+"]" + literals + "(?!" + bibleBooks + "))+)";
+    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.;,，、：:\\ "+ret["dashes"] + ret["ands"]+"]" + literals + "(?!" + bibleBooks + "))+)";
 
     return ret;
 };
