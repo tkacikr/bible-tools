@@ -319,6 +319,7 @@ var info = {
 			"numChapters": 28,
 			"synonyms": [
 				"マタイによる福音書",
+				"マタイ",
 				"マタ"
 			]
 		},
@@ -327,6 +328,7 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"マルコによる福音書",
+				"マルコ",
 				"マル"
 			]
 		},
@@ -335,6 +337,7 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"ルカによる福音書",
+				"ルカ",
 				"ルカ"
 			]
 		},
@@ -343,6 +346,7 @@ var info = {
 			"numChapters": 21,
 			"synonyms": [
 				"ヨハネによる福音書",
+				"ヨハネ",
 				"ヨハ"
 			]
 		},
@@ -359,6 +363,7 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"ローマの信徒への手紙",
+				"ローマ",
 				"ロマ"
 			]
 		},
@@ -367,6 +372,8 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"コリントの信徒への手紙一",
+				"Iコリント",
+				"コリントI",
 				"コリ1"
 			]
 		},
@@ -375,6 +382,8 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"コリントの信徒への手紙二",
+				"IIコリント",
+				"コリントII",
 				"コリ2"
 			]
 		},
@@ -383,6 +392,7 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"ガラテヤの信徒への手紙",
+				"ガラテヤ",
 				"ガラ"
 			]
 		},
@@ -400,6 +410,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"フィリピの信徒への手紙",
+				"ピリピ",
 				"ピリ"
 			]
 		},
@@ -408,6 +419,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"コロサイの信徒への手紙",
+				"コロサイ",
 				"コロ"
 			]
 		},
@@ -416,6 +428,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"テサロニケの信徒への手紙一",
+				"Iテサロニケ",
+				"テサロニケI",
 				"テサ1"
 			]
 		},
@@ -424,6 +438,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"テサロニケの信徒への手紙二",
+				"IIテサロニケ",
+				"テサロニケII",
 				"テサ2"
 			]
 		},
@@ -432,6 +448,8 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"テモテへの手紙一",
+				"Iテモテ",
+				"テモテI",
 				"テモ1"
 			]
 		},
@@ -448,6 +466,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"テトスへの手紙",
+				"テトス",
 				"テト"
 			]
 		},
@@ -456,6 +475,7 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"フィレモンへの手紙",
+				"ピレモン",
 				"ピレ"
 			]
 		},
@@ -464,6 +484,8 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"ヘブライ人への手紙",
+				"ヘブライ",
+				"ヘブル",
 				"ヘブ"
 			]
 		},
@@ -472,6 +494,7 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"ヤコブの手紙",
+				"ヤコブ",
 				"ヤコ"
 			]
 		},
@@ -480,6 +503,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"ペトロの手紙一",
+				"Iペテロ",
+				"ペテロI",
 				"ペテ1"
 			]
 		},
@@ -488,6 +513,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"ペトロの手紙二",
+				"IIペテロ",
+				"ペテロII",
 				"ペテ2"
 			]
 		},
@@ -496,6 +523,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"ヨハネの手紙一",
+				"Iヨハネ",
+				"ヨハネI",
 				"ヨハ1"
 			]
 		},
@@ -504,6 +533,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"ヨハネの手紙二",
+				"IIヨハネ",
+				"ヨハネII",
 				"ヨハ2"
 			]
 		},
@@ -512,6 +543,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"ヨハネの手紙三",
+				"IIIヨハネ",
+				"ヨハネIII",
 				"ヨハ3"
 			]
 		},
@@ -528,6 +561,7 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"ヨハネの黙示録",
+				"黙示録",
 				"黙"
 			]
 		}
