@@ -1,5 +1,5 @@
 var book = {
-	"name": "コヘレトの言葉",
+	"name": "伝道の書",
 	"numChapters": 12,
 	"chapters": {
 		"1": {

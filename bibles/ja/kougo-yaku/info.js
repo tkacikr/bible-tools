@@ -7,13 +7,15 @@ var info = {
 			"numChapters": 50,
 			"synonyms": [
 				"創世記"
+				"創"
 			]
 		},
 		{
-			"name": "出エジプト記",
+			"name": "エジプト記",
 			"numChapters": 40,
 			"synonyms": [
 				"出エジプト記"
+				"出"
 			]
 		},
 		{
@@ -21,6 +23,7 @@ var info = {
 			"numChapters": 27,
 			"synonyms": [
 				"レビ記"
+				"レビ"
 			]
 		},
 		{
@@ -28,6 +31,7 @@ var info = {
 			"numChapters": 36,
 			"synonyms": [
 				"民数記"
+				"民"
 			]
 		},
 		{
@@ -35,6 +39,7 @@ var info = {
 			"numChapters": 34,
 			"synonyms": [
 				"申命記"
+				"申"
 			]
 		},
 		{
@@ -42,6 +47,7 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"ヨシュア記"
+				"ヨシ"
 			]
 		},
 		{
@@ -49,6 +55,7 @@ var info = {
 			"numChapters": 21,
 			"synonyms": [
 				"士師記"
+				"士"
 			]
 		},
 		{
@@ -56,6 +63,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"ルツ記"
+				"ルツ"
 			]
 		},
 		{
@@ -63,6 +71,7 @@ var info = {
 			"numChapters": 31,
 			"synonyms": [
 				"サムエル記上"
+				"サム上"
 			]
 		},
 		{
@@ -70,34 +79,39 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"サムエル記下"
+				"サム下"
 			]
 		},
 		{
-			"name": "列王記上",
+			"name": "列王紀上",
 			"numChapters": 22,
 			"synonyms": [
 				"列王記上"
+				"王上"
 			]
 		},
 		{
-			"name": "列王記下",
+			"name": "列王紀下",
 			"numChapters": 25,
 			"synonyms": [
 				"列王記下"
+				"王下"
 			]
 		},
 		{
-			"name": "歴代誌上",
+			"name": "歴代志上",
 			"numChapters": 29,
 			"synonyms": [
 				"歴代誌上"
+				"代上"
 			]
 		},
 		{
-			"name": "歴代誌下",
+			"name": "歴代志下",
 			"numChapters": 36,
 			"synonyms": [
 				"歴代誌下"
+				"代下"
 			]
 		},
 		{
@@ -105,6 +119,7 @@ var info = {
 			"numChapters": 10,
 			"synonyms": [
 				"エズラ記"
+				"エズ"
 			]
 		},
 		{
@@ -112,6 +127,7 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"ネヘミヤ記"
+				"ネヘ"
 			]
 		},
 		{
@@ -119,6 +135,7 @@ var info = {
 			"numChapters": 10,
 			"synonyms": [
 				"エステル記"
+				"エス"
 			]
 		},
 		{
@@ -126,6 +143,7 @@ var info = {
 			"numChapters": 42,
 			"synonyms": [
 				"ヨブ記"
+				"ヨブ"
 			]
 		},
 		{
@@ -133,6 +151,7 @@ var info = {
 			"numChapters": 150,
 			"synonyms": [
 				"詩篇"
+				"詩"
 			]
 		},
 		{
@@ -140,13 +159,15 @@ var info = {
 			"numChapters": 31,
 			"synonyms": [
 				"箴言"
+				"箴"
 			]
 		},
 		{
-			"name": "コヘレトの言葉",
+			"name": "伝道の書",
 			"numChapters": 12,
 			"synonyms": [
 				"コヘレトの言葉"
+				"伝"
 			]
 		},
 		{
@@ -154,6 +175,7 @@ var info = {
 			"numChapters": 8,
 			"synonyms": [
 				"雅歌"
+				"雅"
 			]
 		},
 		{
@@ -161,6 +183,7 @@ var info = {
 			"numChapters": 66,
 			"synonyms": [
 				"イザヤ書"
+				"イザ"
 			]
 		},
 		{
@@ -168,6 +191,7 @@ var info = {
 			"numChapters": 52,
 			"synonyms": [
 				"エレミヤ書"
+				"エレ"
 			]
 		},
 		{
@@ -175,6 +199,7 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"哀歌"
+				"哀"
 			]
 		},
 		{
@@ -182,6 +207,7 @@ var info = {
 			"numChapters": 48,
 			"synonyms": [
 				"エゼキエル書"
+				"エゼ"
 			]
 		},
 		{
@@ -189,6 +215,7 @@ var info = {
 			"numChapters": 12,
 			"synonyms": [
 				"ダニエル書"
+				"ダニ"
 			]
 		},
 		{
@@ -196,6 +223,7 @@ var info = {
 			"numChapters": 14,
 			"synonyms": [
 				"ホセア書"
+				"ホセ"
 			]
 		},
 		{
@@ -203,6 +231,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"ヨエル書"
+				"ヨエ"
 			]
 		},
 		{
@@ -210,6 +239,7 @@ var info = {
 			"numChapters": 9,
 			"synonyms": [
 				"アモス書"
+				"アモ"
 			]
 		},
 		{
@@ -217,6 +247,7 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"オバデヤ書"
+				"オバ"
 			]
 		},
 		{
@@ -224,6 +255,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"ヨナ書"
+				"ヨナ"
 			]
 		},
 		{
@@ -231,6 +263,7 @@ var info = {
 			"numChapters": 7,
 			"synonyms": [
 				"ミカ書"
+				"ミカ"
 			]
 		},
 		{
@@ -238,6 +271,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"ナホム書"
+				"ナホ"
 			]
 		},
 		{
@@ -245,13 +279,15 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"ハバクク書"
+				"ハバ"
 			]
 		},
 		{
-			"name": "Zephaniah ゼファニヤ書",
+			"name": "ゼパニヤ書",
 			"numChapters": 3,
 			"synonyms": [
-				"Zephaniah ゼファニヤ書"
+				"ゼフャニヤ書"
+				"ゼパ"
 			]
 		},
 		{
@@ -259,6 +295,7 @@ var info = {
 			"numChapters": 2,
 			"synonyms": [
 				"ハガイ書"
+				"ハガ"
 			]
 		},
 		{
@@ -266,6 +303,7 @@ var info = {
 			"numChapters": 14,
 			"synonyms": [
 				"ゼカリヤ書"
+				"ゼカ"
 			]
 		},
 		{
@@ -273,6 +311,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"マラキ書"
+				"マラ"
 			]
 		},
 		{
@@ -280,6 +319,7 @@ var info = {
 			"numChapters": 28,
 			"synonyms": [
 				"マタイによる福音書"
+				"マタ"
 			]
 		},
 		{
@@ -287,6 +327,7 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"マルコによる福音書"
+				"マル"
 			]
 		},
 		{
@@ -294,6 +335,7 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"ルカによる福音書"
+				"ルカ"
 			]
 		},
 		{
@@ -301,90 +343,104 @@ var info = {
 			"numChapters": 21,
 			"synonyms": [
 				"ヨハネによる福音書"
+				"ヨハ"
 			]
 		},
 		{
-			"name": "使徒言行録",
+			"name": "使徒行伝",
 			"numChapters": 28,
 			"synonyms": [
 				"使徒言行録"
+				"行"
 			]
 		},
 		{
-			"name": "ローマの信徒への手紙",
+			"name": "ローマ人への手紙",
 			"numChapters": 16,
 			"synonyms": [
 				"ローマの信徒への手紙"
+				"ロマ"
 			]
 		},
 		{
-			"name": "コリントの信徒への手紙一",
+			"name": "コリント人への第一の手紙",
 			"numChapters": 16,
 			"synonyms": [
 				"コリントの信徒への手紙一"
+				"コリ1"
 			]
 		},
 		{
-			"name": "コリントの信徒への手紙二",
+			"name": "コリント人への第二の手紙",
 			"numChapters": 13,
 			"synonyms": [
 				"コリントの信徒への手紙二"
+				"コリ2"
 			]
 		},
 		{
-			"name": "ガラテヤの信徒への手紙",
+			"name": "ガラテヤ人への手紙",
 			"numChapters": 6,
 			"synonyms": [
 				"ガラテヤの信徒への手紙"
+				"ガラ"
 			]
 		},
 		{
-			"name": "エフィソの信徒への手紙",
+			"name": "エペソ人への手紙",
 			"numChapters": 6,
 			"synonyms": [
 				"エフィソの信徒への手紙"
+				"エペソ"
+				"エペ"
 			]
 		},
 		{
-			"name": "フィリピの信徒への手紙",
+			"name": "ピリピ人への手紙",
 			"numChapters": 4,
 			"synonyms": [
 				"フィリピの信徒への手紙"
+				"ピリ"
 			]
 		},
 		{
-			"name": "コロサイの信徒への手紙",
+			"name": "コロサイ人への手紙",
 			"numChapters": 4,
 			"synonyms": [
 				"コロサイの信徒への手紙"
+				"コロ"
 			]
 		},
 		{
-			"name": "テサロニケの信徒への手紙一",
+			"name": "テサロニケ人への第一の手紙",
 			"numChapters": 5,
 			"synonyms": [
 				"テサロニケの信徒への手紙一"
+				"テサ1"
 			]
 		},
 		{
-			"name": "テサロニケの信徒への手紙二",
+			"name": "テサロニケ人への第二の手紙",
 			"numChapters": 3,
 			"synonyms": [
 				"テサロニケの信徒への手紙二"
+				"テサ2"
 			]
 		},
 		{
-			"name": "テモテへの手紙一",
+			"name": "テモテへの第一の手紙",
 			"numChapters": 6,
 			"synonyms": [
 				"テモテへの手紙一"
+				"テモ1"
 			]
 		},
 		{
-			"name": "テモテへの手紙二",
+			"name": "テモテへの第二の手紙",
 			"numChapters": 4,
 			"synonyms": [
 				"テモテへの手紙二"
+				"テモ2"
 			]
 		},
 		{
@@ -392,20 +448,23 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"テトスへの手紙"
+				"テト"
 			]
 		},
 		{
-			"name": "フィレモンへの手紙",
+			"name": "ピレモンへの手紙",
 			"numChapters": 1,
 			"synonyms": [
 				"フィレモンへの手紙"
+				"ピレ"
 			]
 		},
 		{
-			"name": "ヘブライ人への手紙",
+			"name": "ヘブル人への手紙",
 			"numChapters": 13,
 			"synonyms": [
 				"ヘブライ人への手紙"
+				"ヘブ"
 			]
 		},
 		{
@@ -413,41 +472,47 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"ヤコブの手紙"
+				"ヤコ"
 			]
 		},
 		{
-			"name": "ペトロの手紙一",
+			"name": "ペテロの第一の手紙",
 			"numChapters": 5,
 			"synonyms": [
 				"ペトロの手紙一"
+				"ペテ1"
 			]
 		},
 		{
-			"name": "ペトロの手紙二",
+			"name": "ペテロの第二の手紙",
 			"numChapters": 3,
 			"synonyms": [
 				"ペトロの手紙二"
+				"ペテ2"
 			]
 		},
 		{
-			"name": "ヨハネの手紙一",
+			"name": "ヨハネの第一の手紙",
 			"numChapters": 5,
 			"synonyms": [
 				"ヨハネの手紙一"
+				"ヨハ1"
 			]
 		},
 		{
-			"name": "ヨハネの手紙二",
+			"name": "ヨハネの第二の手紙",
 			"numChapters": 1,
 			"synonyms": [
 				"ヨハネの手紙二"
+				"ヨハ2"
 			]
 		},
 		{
-			"name": "ヨハネの手紙三",
+			"name": "ヨハネの第三の手紙",
 			"numChapters": 1,
 			"synonyms": [
 				"ヨハネの手紙三"
+				"ヨハ3"
 			]
 		},
 		{
@@ -455,6 +520,7 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"ユダの手紙"
+				"ユダ"
 			]
 		},
 		{
@@ -462,6 +528,7 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"ヨハネの黙示録"
+				"黙"
 			]
 		}
 	]

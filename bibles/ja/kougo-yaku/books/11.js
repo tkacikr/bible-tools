@@ -1,5 +1,5 @@
 var book = {
-	"name": "列王記上",
+	"name": "列王紀上",
 	"numChapters": 22,
 	"chapters": {
 		"1": {

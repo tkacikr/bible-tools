@@ -1,5 +1,5 @@
 var book = {
-	"name": "エフィソの信徒への手紙",
+	"name": "エペソ人への手紙",
 	"numChapters": 6,
 	"chapters": {
 		"1": {
