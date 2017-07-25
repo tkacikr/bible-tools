@@ -11,7 +11,7 @@ var info = {
 			]
 		},
 		{
-			"name": "エジプト記",
+			"name": "出エジプト記",
 			"numChapters": 40,
 			"synonyms": [
 				"出エジプト記",
@@ -72,7 +72,7 @@ var info = {
 			]
 		},
 		{
-			"name": "サムエル記上",
+			"name": "サムエル記Ⅰ",
 			"numChapters": 31,
 			"synonyms": [
 				"サムエル記上",
@@ -82,7 +82,7 @@ var info = {
 			]
 		},
 		{
-			"name": "サムエル記下",
+			"name": "サムエル記Ⅱ",
 			"numChapters": 24,
 			"synonyms": [
 				"サムエル記下",
@@ -92,7 +92,7 @@ var info = {
 			]
 		},
 		{
-			"name": "列王紀上",
+			"name": "列王記Ⅰ",
 			"numChapters": 22,
 			"synonyms": [
 				"列王記上",
@@ -101,7 +101,7 @@ var info = {
 			]
 		},
 		{
-			"name": "列王紀下",
+			"name": "列王記Ⅱ",
 			"numChapters": 25,
 			"synonyms": [
 				"列王記下",
@@ -110,7 +110,7 @@ var info = {
 			]
 		},
 		{
-			"name": "歴代志上",
+			"name": "歴代誌Ⅰ",
 			"numChapters": 29,
 			"synonyms": [
 				"歴代誌上",
@@ -119,7 +119,7 @@ var info = {
 			]
 		},
 		{
-			"name": "歴代志下",
+			"name": "歴代誌Ⅱ",
 			"numChapters": 36,
 			"synonyms": [
 				"歴代誌下",
@@ -170,7 +170,7 @@ var info = {
 			]
 		},
 		{
-			"name": "箴言",
+			"name": "震源知恵の泉",
 			"numChapters": 31,
 			"synonyms": [
 				"箴言",
@@ -178,7 +178,7 @@ var info = {
 			]
 		},
 		{
-			"name": "伝道の書",
+			"name": "伝道者の書",
 			"numChapters": 12,
 			"synonyms": [
 				"コヘレトの言葉",
@@ -339,7 +339,7 @@ var info = {
 			]
 		},
 		{
-			"name": "マタイによる福音書",
+			"name": "マタイの福音書",
 			"numChapters": 28,
 			"synonyms": [
 				"マタイによる福音書",
@@ -348,7 +348,7 @@ var info = {
 			]
 		},
 		{
-			"name": "マルコによる福音書",
+			"name": "マルコの福音書",
 			"numChapters": 16,
 			"synonyms": [
 				"マルコによる福音書",
@@ -358,7 +358,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ルカによる福音書",
+			"name": "ルカの福音書",
 			"numChapters": 24,
 			"synonyms": [
 				"ルカによる福音書",
@@ -367,7 +367,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ヨハネによる福音書",
+			"name": "ヨハネの福音書",
 			"numChapters": 21,
 			"synonyms": [
 				"ヨハネによる福音書",
@@ -376,7 +376,7 @@ var info = {
 			]
 		},
 		{
-			"name": "使徒行伝",
+			"name": "使徒の動き",
 			"numChapters": 28,
 			"synonyms": [
 				"使徒言行録",
@@ -394,7 +394,7 @@ var info = {
 			]
 		},
 		{
-			"name": "コリント人への第一の手紙",
+			"name": "コリント人への手紙Ⅰ",
 			"numChapters": 16,
 			"synonyms": [
 				"コリントの信徒への手紙一",
@@ -405,7 +405,7 @@ var info = {
 			]
 		},
 		{
-			"name": "コリント人への第二の手紙",
+			"name": "コリント人への手紙Ⅱ",
 			"numChapters": 13,
 			"synonyms": [
 				"コリントの信徒への手紙二",
@@ -457,7 +457,7 @@ var info = {
 			]
 		},
 		{
-			"name": "テサロニケ人への第一の手紙",
+			"name": "テサロニケ人への手紙Ⅰ",
 			"numChapters": 5,
 			"synonyms": [
 				"テサロニケの信徒への手紙一",
@@ -467,7 +467,7 @@ var info = {
 			]
 		},
 		{
-			"name": "テサロニケ人への第二の手紙",
+			"name": "テサロニケ人への手紙Ⅱ",
 			"numChapters": 3,
 			"synonyms": [
 				"テサロニケの信徒への手紙二",
@@ -478,7 +478,7 @@ var info = {
 			]
 		},
 		{
-			"name": "テモテへの第一の手紙",
+			"name": "テモテへの手紙Ⅰ",
 			"numChapters": 6,
 			"synonyms": [
 				"テモテへの手紙一",
@@ -491,7 +491,7 @@ var info = {
 			]
 		},
 		{
-			"name": "テモテへの第二の手紙",
+			"name": "テモテへの手紙Ⅱ",
 			"numChapters": 4,
 			"synonyms": [
 				"テモテへの手紙二",
@@ -541,7 +541,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ペテロの第一の手紙",
+			"name": "ペテロの手紙Ⅰ",
 			"numChapters": 5,
 			"synonyms": [
 				"ペトロの手紙一",
@@ -553,7 +553,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ペテロの第二の手紙",
+			"name": "ペテロの手紙Ⅱ",
 			"numChapters": 3,
 			"synonyms": [
 				"ペトロの手紙二",
@@ -565,7 +565,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ヨハネの第一の手紙",
+			"name": "ヨハネの手紙Ⅰ",
 			"numChapters": 5,
 			"synonyms": [
 				"ヨハネの手紙一",
@@ -576,7 +576,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ヨハネの第二の手紙",
+			"name": "ヨハネの手紙Ⅱ",
 			"numChapters": 1,
 			"synonyms": [
 				"ヨハネの手紙二",
@@ -587,7 +587,7 @@ var info = {
 			]
 		},
 		{
-			"name": "ヨハネの第三の手紙",
+			"name": "ヨハネの手紙Ⅲ",
 			"numChapters": 1,
 			"synonyms": [
 				"ヨハネの手紙三",
