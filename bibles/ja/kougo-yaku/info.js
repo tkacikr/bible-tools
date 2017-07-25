@@ -31,6 +31,7 @@ var info = {
 			"numChapters": 36,
 			"synonyms": [
 				"民数記",
+				"民数",
 				"民"
 			]
 		},
@@ -39,6 +40,7 @@ var info = {
 			"numChapters": 34,
 			"synonyms": [
 				"申命記",
+				"申命",
 				"申"
 			]
 		},
@@ -56,6 +58,7 @@ var info = {
 			"numChapters": 21,
 			"synonyms": [
 				"士師記",
+				"士師",
 				"士"
 			]
 		},
@@ -64,6 +67,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"ルツ記",
+				"ルト",
 				"ルツ"
 			]
 		},
@@ -72,7 +76,9 @@ var info = {
 			"numChapters": 31,
 			"synonyms": [
 				"サムエル記上",
-				"サム上"
+				"サム上",
+				"Ⅰサム",
+				"Ⅰシェム"
 			]
 		},
 		{
@@ -80,7 +86,9 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"サムエル記下",
-				"サム下"
+				"サム下",
+				"Ⅱサム",
+				"Ⅱシェム"
 			]
 		},
 		{
@@ -88,6 +96,7 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"列王記上",
+				"Ⅰ列王",
 				"王上"
 			]
 		},
@@ -96,6 +105,7 @@ var info = {
 			"numChapters": 25,
 			"synonyms": [
 				"列王記下",
+				"Ⅱ列王",
 				"王下"
 			]
 		},
@@ -104,6 +114,7 @@ var info = {
 			"numChapters": 29,
 			"synonyms": [
 				"歴代誌上",
+				"Ⅰ歴代",
 				"代上"
 			]
 		},
@@ -112,6 +123,7 @@ var info = {
 			"numChapters": 36,
 			"synonyms": [
 				"歴代誌下",
+				"Ⅱ歴代",
 				"代下"
 			]
 		},
@@ -144,7 +156,8 @@ var info = {
 			"numChapters": 42,
 			"synonyms": [
 				"ヨブ記",
-				"ヨブ"
+				"ヨブ",
+				"イヨ"
 			]
 		},
 		{
@@ -186,7 +199,8 @@ var info = {
 			"numChapters": 66,
 			"synonyms": [
 				"イザヤ書",
-				"イザ"
+				"イザ",
+				"イシャ"
 			]
 		},
 		{
@@ -194,7 +208,8 @@ var info = {
 			"numChapters": 52,
 			"synonyms": [
 				"エレミヤ書",
-				"エレ"
+				"エレ",
+				"イル"
 			]
 		},
 		{
@@ -210,7 +225,8 @@ var info = {
 			"numChapters": 48,
 			"synonyms": [
 				"エゼキエル書",
-				"エゼ"
+				"エゼ",
+				"エヘ"
 			]
 		},
 		{
@@ -226,7 +242,8 @@ var info = {
 			"numChapters": 14,
 			"synonyms": [
 				"ホセア書",
-				"ホセ"
+				"ホセ",
+				"ホシェ"
 			]
 		},
 		{
@@ -274,6 +291,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"ナホム書",
+				"ナフ",
 				"ナホ"
 			]
 		},
@@ -291,7 +309,8 @@ var info = {
 			"synonyms": [
 				"ゼファニヤ書",
 				"ゼファ",
-				"ゼパ"
+				"ゼパ",
+				"ツェフ"
 			]
 		},
 		{
@@ -315,7 +334,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"マラキ書",
-				"マラ"
+				"マラ",
+				"マル"
 			]
 		},
 		{
@@ -333,7 +353,8 @@ var info = {
 			"synonyms": [
 				"マルコによる福音書",
 				"マルコ",
-				"マル"
+				"マル",
+				"マコ"
 			]
 		},
 		{
@@ -399,7 +420,9 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"ガラテヤの信徒への手紙",
+				"ガラテヤ",
 				"ガラテヤ",
+				"ガラ",
 				"ガラ"
 			]
 		},
@@ -418,6 +441,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"フィリピの信徒への手紙",
+				"フィリピ",
 				"フィリ",
 				"ピリピ",
 				"ピリ"
@@ -461,7 +485,9 @@ var info = {
 				"Ⅰテモテ",
 				"テモテⅠ",
 				"Ⅰテモ",
-				"テモⅠ"
+				"テモⅠ",
+				"Ⅰティモ",
+				"Ⅱティモ"
 			]
 		},
 		{
@@ -481,7 +507,8 @@ var info = {
 			"synonyms": [
 				"テトスへの手紙",
 				"テトス",
-				"テト"
+				"テト",
+				"ティト"
 			]
 		},
 		{
@@ -518,6 +545,7 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"ペトロの手紙一",
+				"Ⅰペト",
 				"Ⅰペテロ",
 				"ペテロⅠ",
 				"ペテI",
@@ -529,6 +557,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"ペトロの手紙二",
+				"Ⅱペト",
 				"Ⅱペテロ",
 				"ペテロⅡ",
 				"Ⅱペテ",
@@ -581,6 +610,7 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"ヨハネの黙示録",
+				"黙示",
 				"黙示録",
 				"黙"
 			]
