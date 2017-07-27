@@ -71,8 +71,7 @@ var info = {
 			"numChapters": 31,
 			"synonyms": [
 				"1 Samuel",
-				"1 Sm",
-				"1Sm"
+				"1 Sm"
 			]
 		},
 		{
@@ -80,8 +79,7 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"2 Samuel",
-				"2 Sm",
-				"2Sm"
+				"2 Sm"
 			]
 		},
 		{
@@ -89,8 +87,7 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"1 Reis",
-				"1 Rs",
-				"1Rs"
+				"1 Rs"
 			]
 		},
 		{
@@ -98,8 +95,7 @@ var info = {
 			"numChapters": 25,
 			"synonyms": [
 				"2 Reis",
-				"2 Rs",
-				"2Rs"
+				"2 Rs"
 			]
 		},
 		{
@@ -107,8 +103,7 @@ var info = {
 			"numChapters": 29,
 			"synonyms": [
 				"1 Crônicas",
-				"1 Cr",
-				"1Cr"
+				"1 Cr"
 			]
 		},
 		{
@@ -116,8 +111,7 @@ var info = {
 			"numChapters": 36,
 			"synonyms": [
 				"2 Crônicas",
-				"2 Cr",
-				"2Cr"
+				"2 Cr"
 			]
 		},
 		{
@@ -376,8 +370,7 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"1 Coríntios",
-				"1 Co",
-				"1Co"
+				"1 Co"
 			]
 		},
 		{
@@ -385,8 +378,7 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"2 Coríntios",
-				"2 Co",
-				"2Co"
+				"2 Co"
 			]
 		},
 		{
@@ -426,8 +418,7 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 Tessalonicenses",
-				"1 Ts",
-				"1Ts"
+				"1 Ts"
 			]
 		},
 		{
@@ -435,8 +426,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"2 Tessalonicenses",
-				"2 Ts",
-				"2Ts"
+				"2 Ts"
 			]
 		},
 		{
@@ -444,8 +434,7 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"1 Timóteo",
-				"1 Tm",
-				"1Tm"
+				"1 Tm"
 			]
 		},
 		{
@@ -453,8 +442,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"2 Timóteo",
-				"2 Tm",
-				"2Tm"
+				"2 Tm"
 			]
 		},
 		{
@@ -495,8 +483,7 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 Pedro",
-				"1 Pe",
-				"1Pe"
+				"1 Pe"
 			]
 		},
 		{
@@ -504,8 +491,7 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"2 Pedro",
-				"2 Pe",
-				"2Pe"
+				"2 Pe"
 			]
 		},
 		{
@@ -513,8 +499,7 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 João",
-				"1 Jo",
-				"1Jo"
+				"1 Jo"
 			]
 		},
 		{
@@ -522,8 +507,7 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"2 João",
-				"2 Jo",
-				"2Jo"
+				"2 Jo"
 			]
 		},
 		{
@@ -531,8 +515,7 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"3 João",
-				"3 Jo",
-				"3Jo"
+				"3 Jo"
 			]
 		},
 		{
