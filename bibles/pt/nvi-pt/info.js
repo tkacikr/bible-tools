@@ -376,8 +376,8 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"1 Coríntios",
-				"1Co",
-				"1 Co"
+				"1 Co",
+				"1Co"
 			]
 		},
 		{
@@ -385,8 +385,8 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"2 Coríntios",
-				"2Co",
-				"2 Co"
+				"2 Co",
+				"2Co"
 			]
 		},
 		{
@@ -426,8 +426,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 Tessalonicenses",
-				"1Ts",
-				"1 Ts"
+				"1 Ts",
+				"1Ts"
 			]
 		},
 		{
@@ -435,8 +435,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"2 Tessalonicenses",
-				"2Ts",
-				"2 Ts"
+				"2 Ts",
+				"2Ts"
 			]
 		},
 		{
@@ -444,8 +444,8 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"1 Timóteo",
-				"1Tm",
-				"1 Tm"
+				"1 Tm",
+				"1Tm"
 			]
 		},
 		{
@@ -453,8 +453,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"2 Timóteo",
-				"2Tm",
-				"2 Tm"
+				"2 Tm",
+				"2Tm"
 			]
 		},
 		{
@@ -495,8 +495,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 Pedro",
-				"1Pe",
-				"1 Pe"
+				"1 Pe",
+				"1Pe"
 			]
 		},
 		{
@@ -504,8 +504,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"2 Pedro",
-				"2Pe",
-				"2 Pe"
+				"2 Pe",
+				"2Pe"
 			]
 		},
 		{
@@ -513,8 +513,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 João",
-				"1Jo",
-				"1 Jo"
+				"1 Jo",
+				"1Jo"
 			]
 		},
 		{
@@ -522,8 +522,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"2 João",
-				"2Jo",
-				"2 Jo"
+				"2 Jo",
+				"2Jo"
 			]
 		},
 		{
@@ -531,8 +531,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"3 João",
-				"3Jo",
-				"3 Jo"
+				"3 Jo",
+				"3Jo"
 			]
 		},
 		{
