@@ -1,0 +1,66 @@
+var book = {
+	"name": "Sefanya",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<span>1</span> RAB, Yahuda Kralı Amon oğlu Yoşiya zamanında Hizkiya oğlu Amarya oğlu Gedalya oğlu Kuşi oğlu Sefanya'ya şöyle seslendi:",
+			"2": "<span>2</span> \"Yeryüzünden her şeyi silip süpüreceğim.",
+			"3": "<span>3</span> İnsanları, hayvanları, Gökteki kuşları, Denizdeki balıkları, Kötüleri ve onların günah tuzaklarını silip süpüreceğim. Yok edeceğim insanı yeryüzünden.\" İşte böyle diyor RAB.",
+			"4": "<span>4</span> \"Elimi Yahuda ve Yeruşalim'de yaşayanlara karşı uzatacağım. Baal'dan* kalan izleri, Putperest din adamlarıyla kâhinlerin* adını, Damlardan gök cisimlerine tapınanları, Hem benim adıma, hem de Molek* putu adına ant içip tapınanları, Yolumdan dönenleri, Bana yönelmeyenleri, Kılavuzluğumu istemeyenleri buradan yok edeceğim.\"",
+			"5": "<span>5</span> (SEE 1:4)",
+			"6": "<span>6</span> (SEE 1:4)",
+			"7": "<span>7</span> Susun Egemen RAB'bin önünde, Çünkü O'nun günü yaklaştı. RAB bir kurban hazırladı, Konuklarını çağırdı.",
+			"8": "<span>8</span> \"O kurban günü\" diyor RAB, \"Önderleri, kral oğullarını, Yabancıların geleneklerine uyanları Cezalandıracağım.",
+			"9": "<span>9</span> İlahların tapınaklarını zorbalık ve hileyle dolduran putperestleri O gün cezalandıracağım.",
+			"10": "<span>10</span> Diyorum ki, o gün kentin Balık Kapısı'ndan çığlıklar, İkinci Mahalle'den feryatlar Ve tepelerden büyük çatırtılar yükselecek.\" İşte böyle diyor RAB.",
+			"11": "<span>11</span> \"Kentin aşağı mahallesinde oturanlar, feryat edin. Bütün tüccarlarınız yok olacak, Gümüş ticareti yapanların hepsi mahvolacak.",
+			"12": "<span>12</span> O gün kandille arayacağım Yeruşalim'in her yanını, İçlerinden, `RAB bir şey yapmaz, Ne iyilik eder ne kötülük> Diyen o rahatına düşkün aymazları cezalandıracağım.",
+			"13": "<span>13</span> Servetleri yağmalanacak. Viraneye dönecek evleri. Yaptıkları evlerde oturamayacak, Diktikleri bağların şarabını içemeyecekler.\" Rab'bin Büyük Günü",
+			"14": "<span>14</span> RAB'bin büyük günü yaklaştı, Yaklaştı ve çabucak geliyor. Dinleyin, RAB'bin gününde En yiğit asker bile acı acı feryat edecek.",
+			"15": "<span>15</span> Öfke günü o gün! Acı ve sıkıntı, Yıkım ve felaket, Zifiri karanlık bir gün olacak, Bulutlu, koyu karanlık bir gün.",
+			"16": "<span>16</span> Surlu kentlere, köşelerdeki yüksek kulelere karşı Savaş borularının çalındığı, Savaş naralarının atıldığı gündür.",
+			"17": "<span>17</span> RAB diyor ki, \"İnsanları öyle bir felakete uğratacağım ki, Körler gibi, nereye gittiklerini göremeyecekler. Çünkü bana karşı günah işlediler. Su gibi akacak kanları, Bedenleri yerde çürüyecek.\"",
+			"18": "<span>18</span> RAB'bin öfke gününde, Altınları da gümüşleri de Onları kurtaramayacak. RAB'bin kıskançlık ateşi bütün ülkeyi yakıp yok edecek. RAB ülkede yaşayanların hepsini korkunç bir sona uğratacak."
+		},
+		"2": {
+			"1": "<span>1</span> Ey utanmaz ulus, toparlan! Hakkında ferman çıkmadan, Gün saman ufağı gibi geçip gitmeden, RAB'bin kızgın öfkesi üzerine dökülmeden, RAB'bin öfke günü gelmeden toparlan.",
+			"2": "<span>2</span> (SEE 2:1)",
+			"3": "<span>3</span> Ey RAB'bin ilkelerini yerine getirenler, Ülkedeki bütün alçakgönüllüler, RAB'be yönelin. Doğruluğu ve alçakgönüllülüğü amaç edinin. Belki RAB'bin öfke gününde kurtulabilirsiniz. Rab Ulusları Cezalandırıyor",
+			"4": "<span>4</span> Gazze bomboş kalacak, Viraneye dönecek Aşkelon, Boşaltılacak Aşdot öğle vakti, Ekron temelden yıkılacak.",
+			"5": "<span>5</span> Deniz kıyısında yaşayan Keret ulusunun vay haline! Ey Filist ülkesi Kenan, RAB'bin yargısı sana karşıdır. Hepinizi yok edecek RAB, Ülkede yaşayan kimse kalmayacak.",
+			"6": "<span>6</span> Deniz kıyısındaki ülkeniz, Çoban barınaklarıyla sürü ağıllarının bulunduğu otlaklara dönecek;",
+			"7": "<span>7</span> Yahuda oymağından sağ kalanların eline geçecek. Orada otlatacaklar sürülerini, Aşkelon'un evlerinde geceleyecekler. Çünkü Tanrıları RAB onları kayıracak. Eski gönençlerine kavuşturacak onları.",
+			"8": "<span>8</span> İsrail'in Tanrısı Her Şeye Egemen RAB şöyle diyor: \"Moavlılar'ın halkımı nasıl aşağıladığını, Ammon halkının onlara nasıl hakaret ettiğini, Onları nasıl alaya aldığını Topraklarını nasıl tehdit ettiğini duydum. Varlığım hakkı için, Moav kesinlikle Sodom gibi, Ammon da Gomora gibi olacak. Otlarla, tuz çukurlarıyla dolacak, Sonsuza dek virane kalacak. Mallarını halkımdan geride kalanlar yağmalayacak. Topraklarını ulusumdan sağ kalanlar miras alacak.\"",
+			"9": "<span>9</span> (SEE 2:8)",
+			"10": "<span>10</span> Gururlanmalarının, Her Şeye Egemen RAB'bin halkını aşağılayıp Alay etmelerinin karşılığı bu olacak.",
+			"11": "<span>11</span> Dehşete düşürecek RAB onları, Yeryüzünün bütün ilahlarını yok edecek. Kıyılardaki bütün uluslar, Bulundukları yerde O'na tapınacaklar.",
+			"12": "<span>12</span> \"Ey Kûşlular*, Siz de benim kılıcımla öleceksiniz\" diyor RAB.",
+			"13": "<span>13</span> RAB elini kuzeye doğru uzatıp Asur'u yok edecek. Ninova'yı viraneye, Çöl gibi kurak bir alana çevirecek.",
+			"14": "<span>14</span> Orası sürülerin, her türlü hayvanın yattığı yer olacak. Sütun başlıklarında ishakkuşları, kır baykuşları barınacak. Sesleri pencerelerde yankılanacak, Yıkıntılar dolduracak eşiklerin önünü, Sedir kirişler ortaya çıkacak.",
+			"15": "<span>15</span> İşte budur güvenlikte olduğunu sanan, \"Bir ben varım, benden başkası yok\" diyen eğlence düşkünü kent. Nasıl da viraneye döndü, Yabanıl hayvanlara barınak oldu! Yanından her geçen gördüğü dehşetten irkiliyor."
+		},
+		"3": {
+			"1": "<span>1</span> Başkaldıran, yozlaşan, acımasız kentin vay haline!",
+			"2": "<span>2</span> Söz dinlemedi, ders almadı, RAB'be güvenmedi, Tanrısı'na sığınmadı.",
+			"3": "<span>3</span> Yöneticileri kükreyen aslanlar, Önderleri akşam gezen aç kurtlar gibi, Sabaha bir şey bırakmazlar.",
+			"4": "<span>4</span> Peygamberleri sorumsuz ve güvenilmezdir. Kâhinleri kutsal olanı kirletip, Yasayı çarpıtırlar.",
+			"5": "<span>5</span> Ama adil RAB hâlâ o kentte; O haksızlık etmez, Aksatmadan dağıtır adaletini her yeni günün sabahında. Ne var ki, bu yetmiyor haksızları utandırmaya.",
+			"6": "<span>6</span> RAB diyor ki, \"Ulusları yok ettim, Kalelerini yıktım, sokaklarını harap ettim. O sokaklardan geçen kimse yok artık. Kentleri viraneye döndü, Eser kalmadı insandan.",
+			"7": "<span>7</span> Halkım benden korkar, Ders alır bundan dedim. O zaman konutlarına dokunmaz, Onları tasarladığım cezaya çarptırmazdım. Ama her türlü kötülüğü yapmaya istekli görünüyorlar.\"",
+			"8": "<span>8</span> Bu yüzden, \"Bekleyin de görün\" diyor RAB, \"Ulusları yargılayacağım günü bekleyin. Ulusları toplamaya, Krallıkları bir araya getirmeye, Gazabımı, kızgın öfkemi Üzerlerine dökmeye karar verdim. Çünkü kıskançlığımın ateşi bütün dünyayı yiyip bitirecek.",
+			"9": "<span>9</span> O zaman, birlikte bana yakarmaları, Omuz omuza bana hizmet etmeleri için, Halkların dudaklarını pak kılacağım.",
+			"10": "<span>10</span> Dağılmış olan, bana tapan halkım, Kûş* ırmaklarının ötesinden Bana sunular getirecek.",
+			"11": "<span>11</span> Halkım bana yaptığı bunca kötülük yüzünden utandırılmayacak o gün. Çünkü gururlu, küstah olanları uzaklaştıracağım aralarından. Kutsal dağımda bir daha böbürlenmeyecekler.",
+			"12": "<span>12</span> Orada sadece benim adıma sığınan uysal ve alçakgönüllüleri bırakacağım.",
+			"13": "<span>13</span> İsrailliler'den geride kalanlar haksızlık etmeyecek, Yalan söylemeyecek, Kimseyi aldatmayacak, Tok karna yatacaklar ve onları korkutan olmayacak.\"",
+			"14": "<span>14</span> Ey Siyon kızı*, ezgiler söyle! Ey İsrail, haykır! Yürekten sevin, sevinçle coş, Ey Yeruşalim kızı*!",
+			"15": "<span>15</span> RAB senin cezanı kaldırdı, Kovdu düşmanlarını. İsrail'in Kralı RAB seninle. Korkma artık kötülükten.",
+			"16": "<span>16</span> O gün Yeruşalim'e denecek ki, \"Korkma, ey Siyon, gevşemesin ellerin.",
+			"17": "<span>17</span> Tanrın RAB, o güçlü Kurtarıcı seninle. Alabildiğine sevinecek senin için, Sevgisiyle seni yenileyecek, ezgilerle coşacak.\"",
+			"18": "<span>18</span> RAB, \"Bayramlar için çektiğiniz özlemleri sona erdireceğim\" diyor, \"Bunlar sizin için ağırlık ve utançtır. Sizi ezenlerin tümünü cezalandıracağım o gün. Düşkünleri kurtaracak, sürgünleri toplayacağım. Utanç içinde kaldıkları bütün ülkelerde Onları yüceltip onurlandıracağım. O zaman sizi toplayıp yurdunuza geri getireceğim. Göreceksiniz, sizi yeniden bayındır kılacak, Dünyanın bütün halkları arasında yüceltip onurlandıracağım.\"",
+			"19": "<span>19</span> (SEE 3:18)",
+			"20": "<span>20</span> (SEE 3:18)"
+		}
+	}
+};
+module.exports = book;
