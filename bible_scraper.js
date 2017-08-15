@@ -202,7 +202,7 @@ function parseOfflineBible(lang, version, pathPrefix){
         var bookCursor = i.toString().lpad(2),
             bookIndex = fs.readFileSync(pathPrefix+bookCursor+"/1.htm", "utf-8"),
             $ = cheerio.load(bookIndex, {decodeEntities: false}),
-            bookName = $(".textHeader h2").text().customTrim("\n\r "),
+            bookName = $(".textHeader h2").text().customTrim("\n\r ").replace(/ 1$/, ""),
             numChapters = $("p.ym-noprint").children().length;
 
         var bookInfo = {
@@ -252,6 +252,75 @@ function addSynonyms(lang, version, synonyms){
     fswf("./bibles/" + lang + "/" + version + "/info.js", "var info = " + JSON.stringify(bibleInfo, null, '\t') + ";\nmodule.exports = info;");
 }
 
+daSynonyms = [
+    "1 Mos",
+    "2 Mos",
+    "3 Mos",
+    "4 Mos",
+    "5 Mos",
+    "Jos",
+    "Dom",
+    "Ruth",
+    "1 Sam",
+    "2 Sam",
+    "1 Kong",
+    "2 Kong",
+    "1 Krøn",
+    "2 Krøn",
+    "Ezra",
+    "Neh",
+    "Est",
+    "Job",
+    "Sl",
+    "Ordspr",
+    "Præd",
+    "Højs",
+    "Es",
+    "Jer",
+    "Klages",
+    "Ez",
+    "Dan",
+    "Hos",
+    "Joel",
+    "Am",
+    "Obad",
+    "Jon",
+    "Mika",
+    "Nah",
+    "Hab",
+    "Sef",
+    "Hagg",
+    "Zak",
+    "Mal",
+    "Matt",
+    "Mark",
+    "Luk",
+    "Joh",
+    "ApG",
+    "Rom",
+    "1 Kor",
+    "2 Kor",
+    "Gal",
+    "Ef",
+    "Fil",
+    "Kol",
+    "1 Thess",
+    "2 Thess",
+    "1 Tim",
+    "2 Tim",
+    "Tit",
+    "Filem",
+    "Hebr",
+    "Jak",
+    "1 Pet",
+    "2 Pet",
+    "1 Joh",
+    "2 Joh",
+    "3 Joh",
+    "Jud",
+    "Åb"
+]
+
 // scrapeBibleInfo("en", "nasb", "New-American-Standard-Bible-NASB");
 // scrapeBibleInfo("pt", "arc", "Almeida-Revista-e-Corrigida-2009-ARC");
 // scrapeBibleInfo("uk", "ukr", "Ukrainian-Bible-UKR");
@@ -263,6 +332,7 @@ function addSynonyms(lang, version, synonyms){
 // scrapeBibleInfo("pt", "nvi-pt", encodeURIComponent("Nova-Versão-Internacional-NVI-PT-Bíblia"))
 // scrapeBibleInfo("de", "luth1545", "Luther-Bibel-1545-LUTH1545")
 // scrapeBibleInfo("zh", "cuvs", "Chinese-Union-Version-Simplified-CUVS");
+// scrapeBibleInfo("da", "dn1933", encodeURIComponent("Dette-er-Biblen-på-dansk-1933"));
 
 // scrapeBible("en", "nasb");
 // scrapeBible("ja", "jlb");
@@ -275,6 +345,7 @@ function addSynonyms(lang, version, synonyms){
 // scrapeBible("pt", "nvi-pt");
 // scrapeBible("de", "luth1545");
 // scrapeBible("zh", "cuvs");
+// scrapeBible("da", "dn1933");
 
-// parseOfflineBible("in", "alkitab", "/Users/vitalik/Downloads/Bibles/id_tb/");
-// addSynonyms("in", "alkitab", idSynonyms);
+// parseOfflineBible("da", "bibelen", "/Users/vitalik/Downloads/Bibles/dk/");
+// addSynonyms("da", "bibelen", daSynonyms);

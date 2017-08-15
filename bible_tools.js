@@ -28,17 +28,41 @@ require("./bible_helpers");
  * @param version Version, for example 'nkjv'
  */
 var getBibleRegex = function(lang, version){
+    var literals_v2 = {
+        "through": {
+            "default": '-',
+            "list": [
+                '\\-', '᠆', '‐', '‑', '‒', '–', '—', '―', '⁻', '₋', '−', '﹣', '－', '～', '~', '〜'
+            ]
+        },
+
+        "and": {
+            "default": ';',
+            "list": [
+                ';', '；'
+            ]
+        },
+
+        "andEnum": {
+            "default": ',',
+            "list": [
+                ',', '，', '、'
+            ]
+        },
+
+        "range": {
+            "default": ':',
+            "list": [
+                ':', '：'
+            ]
+        }
+    };
+
+    var literalsShort = '';
+
     var bibleBooks = "",
-        literals = "",
         ret = {
-            "ands": "；",
-            "andenums": "，、",
-            "dashes": "\\-᠆‐‑‒–—―⁻₋−﹣－～",
-            "bibleBooksRegex": "",
-            "literals": {
-                "and": [],
-                "through": []
-            }
+            "bibleBooksRegex": ""
         };
 
     try {
@@ -53,21 +77,131 @@ var getBibleRegex = function(lang, version){
         }
     } catch (err) {}
 
+    /**
+     * Custom merge for overwrite props from specific language
+     */
     try {
+
         var literalsInfo = require("./bibles/" + lang + "/literals");
-        for (var i = 0; i < literalsInfo.and.length; i++) {
-            ret.literals.and.push(literalsInfo.and[i]);
-            literals += "( " + literalsInfo.and[i] + " )?";
+
+        if (literalsInfo["through"]) {
+            var through = literalsInfo["through"];
+            if (through["default"]) {
+                literals_v2["through"]["default"] = through["default"];
+            }
+            if (through["list"]) {
+                literals_v2["through"]["list"] = literals_v2["through"]["list"].concat(through["list"]);
+            }
+            if (through["replace"]) {
+                literals_v2["through"]["list"] = through["list"];
+            }
         }
-        for (var i = 0; i < literalsInfo.through.length; i++) {
-            ret.literals.through.push(literalsInfo.through[i]);
-            literals += "( " + literalsInfo.through[i] + " )?";
+
+        if (literalsInfo["and"]) {
+            var and = literalsInfo["and"];
+            if (and["default"]) {
+                literals_v2["and"]["default"] = and["default"];
+            }
+            if (and["list"]) {
+                literals_v2["and"]["list"] = literals_v2["and"]["list"].concat(and["list"]);
+            }
+            if (and["replace"]) {
+                literals_v2["and"]["list"] = and["list"];
+            }
         }
-    } catch (err) {}
+
+        if (literalsInfo["andEnum"]) {
+            var andEnum = literalsInfo["andEnum"];
+            if (andEnum["default"]) {
+                literals_v2["andEnum"]["default"] = andEnum["default"];
+            }
+            if (andEnum["list"]) {
+                literals_v2["andEnum"]["list"] = literals_v2["andEnum"]["list"].concat(andEnum["list"]);
+            }
+            if (andEnum["replace"]) {
+                literals_v2["andEnum"]["list"] = andEnum["list"];
+            }
+        }
+
+        if (literalsInfo["range"]) {
+            var range = literalsInfo["range"];
+            if (range["default"]) {
+                literals_v2["range"]["default"] = range["default"];
+            }
+            if (range["list"]) {
+                literals_v2["range"]["list"] = literals_v2["range"]["list"].concat(range["list"]);
+            }
+            if (range["replace"]) {
+                literals_v2["range"]["list"] = range["list"];
+            }
+        }
+    } catch (err) { console.log(err); }
+
+    /**
+     * Here we are creating handy regexps for literals
+     */
+
+    literals_v2["through"]["regexpLong"] = "";
+    literals_v2["through"]["regexpShort"] = "";
+
+    for (var i = 0; i < literals_v2["through"]["list"].length; i++){
+        var through = literals_v2["through"]["list"][i];
+        if (through.replace('\\', '').length > 1){
+            literals_v2["through"]["regexpLong"] += '( ' + through.customTrim(" ") + ' )?'
+        } else {
+            literalsShort += through;
+            literals_v2["through"]["regexpShort"] += through;
+        }
+    }
+    literals_v2["through"]["regexpShort"] = '[' + literals_v2["through"]["regexpShort"] + ']';
+
+    literals_v2["and"]["regexpLong"] = "";
+    literals_v2["and"]["regexpShort"] = "";
+
+    for (var i = 0; i < literals_v2["and"]["list"].length; i++){
+        var and = literals_v2["and"]["list"][i];
+        if (and.replace('\\', '').length > 1){
+            literals_v2["and"]["regexpLong"] += '( ' + and.customTrim(" ") + ' )?'
+        } else {
+            literalsShort += and;
+            literals_v2["and"]["regexpShort"] += and;
+        }
+    }
+    literals_v2["and"]["regexpShort"] = '[' + literals_v2["and"]["regexpShort"] + ']';
+
+    literals_v2["andEnum"]["regexpLong"] = "";
+    literals_v2["andEnum"]["regexpShort"] = "";
+
+    for (var i = 0; i < literals_v2["andEnum"]["list"].length; i++){
+        var andEnum = literals_v2["andEnum"]["list"][i];
+        if (andEnum.replace('\\', '').length > 1){
+            literals_v2["andEnum"]["regexpLong"] += '( ' + andEnum.customTrim(" ") + ' )?'
+        } else {
+            literalsShort += andEnum;
+            literals_v2["andEnum"]["regexpShort"] += andEnum;
+        }
+    }
+    literals_v2["andEnum"]["regexpShort"] = '[' + literals_v2["andEnum"]["regexpShort"] + ']';
+
+    literals_v2["range"]["regexpLong"] = "";
+    literals_v2["range"]["regexpShort"] = "";
+
+    for (var i = 0; i < literals_v2["range"]["list"].length; i++){
+        var range = literals_v2["range"]["list"][i];
+        if (range.replace('\\', '').length > 1){
+            literals_v2["range"]["regexpLong"] += '( ' + range.customTrim(" ") + ' )?'
+        } else {
+            literalsShort += range;
+            literals_v2["range"]["regexpShort"] += range;
+        }
+    }
+    literals_v2["range"]["regexpShort"] = '[' + literals_v2["range"]["regexpShort"] + ']';
+
 
     bibleBooks = bibleBooks.customTrim("| ");
+    ret["literals"] = literals_v2;
     ret["bibleBooksRegex"] = "("+bibleBooks+")";
-    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.;,，、：:\\ "+ret["dashes"] + ret["ands"]+"]" + literals + "(?!" + bibleBooks + "))+)";
+    ret["regex"] = "((" + bibleBooks + ")\\.?\\ ?([0-9\\.\\ "+literalsShort+"]" + literals_v2["through"]["regexpLong"] + literals_v2["and"]["regexpLong"] + literals_v2["andEnum"]["regexpLong"] + literals_v2["range"]["regexpLong"] + "(?!" + bibleBooks + "))+)";
 
     return ret;
 };
@@ -132,42 +266,49 @@ var fetch = function(lang, version, book, chapter, verse){
  * @param term
  */
 var search = function(lang, version, term) {
-    var LITERAL_THROUGH = "-",
-        LITERAL_RANGE = ":",
-        LITERAL_AND = ";",
-        LITERAL_AND_ENUM = ",";
-
     var result = { "term": term, results: []};
 
     try {
         var bibleRegex = getBibleRegex(lang, version),
             bibleBooksRegex = new RegExp(bibleRegex.bibleBooksRegex, "ig");
 
-        term = term.replace(new RegExp("["+bibleRegex.dashes+"]", "ig"), LITERAL_THROUGH);
-        term = term.replace(new RegExp("["+bibleRegex.ands+"]", "ig"), LITERAL_AND+" ");
-        term = term.replace(new RegExp("["+bibleRegex.andenums+"]", "ig"), LITERAL_AND_ENUM+" ");
-        term = term.replace(new RegExp("：", "ig"), LITERAL_RANGE).customTrim(" ;,");
+        term = term.customTrim(" "+bibleRegex.literals.through.list.join(""));
+        term = term.customTrim(" "+bibleRegex.literals.and.list.join(""));
+        term = term.customTrim(" "+bibleRegex.literals.andEnum.list.join(""));
+        term = term.customTrim(" "+bibleRegex.literals.range.list.join(""));
 
-        for (var i = 0; i < bibleRegex.literals.and.length; i++){
-            term = term.replace(new RegExp(bibleRegex.literals.and[i], "g"), LITERAL_AND);
+        term = term.replace(new RegExp(bibleRegex.literals.through.regexpShort, "ig"), bibleRegex.literals.through.default);
+        term = term.replace(new RegExp(bibleRegex.literals.and.regexpShort, "ig"), bibleRegex.literals.and.default);
+        term = term.replace(new RegExp(bibleRegex.literals.andEnum.regexpShort, "ig"), bibleRegex.literals.andEnum.default);
+        term = term.replace(new RegExp(bibleRegex.literals.range.regexpShort, "ig"), bibleRegex.literals.range.default);
+
+        if (bibleRegex.literals.through.regexpLong){
+            term = term.replace(new RegExp(bibleRegex.literals.through.regexpLong.replace("?", ""), "ig"), bibleRegex.literals.through.default);
         }
 
-        for (var i = 0; i < bibleRegex.literals.through.length; i++){
-            term = term.replace(new RegExp(bibleRegex.literals.through[i], "ig"), LITERAL_THROUGH);
+        if (bibleRegex.literals.and.regexpLong){
+            term = term.replace(new RegExp(bibleRegex.literals.and.regexpLong.replace("?", ""), "ig"), bibleRegex.literals.and.default);
+        }
+
+        if (bibleRegex.literals.andEnum.regexpLong){
+            term = term.replace(new RegExp(bibleRegex.literals.andEnum.regexpLong.replace("?", ""), "ig"), bibleRegex.literals.andEnum.default);
+        }
+
+        if (bibleRegex.literals.range.regexpLong){
+            term = term.replace(new RegExp(bibleRegex.literals.range.regexpLong.replace("?", ""), "ig"), bibleRegex.literals.range.default);
         }
 
         if (!term.match(bibleBooksRegex) || !term.match(bibleBooksRegex).length) return result;
 
         var book = term.match(bibleBooksRegex)[0];
 
-
         // tmp contains the part of search term without book name (ex 1:1)
         var tmp = term.replace(new RegExp(bibleRegex.bibleBooksRegex, "ig"), ""),
-            blocks = tmp.split(LITERAL_AND);
+            blocks = tmp.split(bibleRegex.literals.and.default);
 
         for (var i = 0; i < blocks.length; i++){
             var block = blocks[i],
-                ranges = block.split(LITERAL_RANGE),
+                ranges = block.split(bibleRegex.literals.range.default),
                 chapter = ranges[0];
 
             result.results.push({});
@@ -176,7 +317,7 @@ var search = function(lang, version, term) {
             // ex. 1:3-5
             // TODO: support more complicated intra chapter references like 1:3-2:1
             if (ranges.length === 2){
-                var verses = ranges[1].split(LITERAL_THROUGH);
+                var verses = ranges[1].split(bibleRegex.literals.through.default);
 
                 if (verses.length === 2){
                     var _result = {header:"", verses:""};
@@ -193,18 +334,18 @@ var search = function(lang, version, term) {
                 } else {
                     // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
                     // (ex. Gen. 1:1)
-                    var versesEnum = verses[0].split(LITERAL_AND_ENUM);
+                    var versesEnum = verses[0].split(bibleRegex.literals.andEnum.default);
 
                     result.results[i]["verses"] = "";
 
                     for (var j = 0; j < versesEnum.length; j++){
                         var _t = fetch(lang, version, book, chapter, parseInt(versesEnum[j]));
-                        result.results[i]["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + ":" + verses[0].customTrim(" ") +"</h3>";
+                        result.results[i]["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + bibleRegex.literals.range.default + verses[0].customTrim(" ") +"</h3>";
                         result.results[i]["verses"] += _t.results.join("");
                     }
                 }
             } else {
-                var chapters = ranges[0].split(LITERAL_THROUGH);
+                var chapters = ranges[0].split(bibleRegex.literals.through.default);
                 if (chapters.length === 2){
                     result.results[i]["verses"] = "";
 

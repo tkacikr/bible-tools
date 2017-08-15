@@ -1,0 +1,66 @@
+var book = {
+	"name": "Zefanias",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<span>1</span> HERRENS ord, som kom til Zefanias, en Søn af Kusji, en Søn af Gedalja, en Søn af Amarja, en Søn af Ezekias, i de Dage da Josias, Amons Søn, var Konge i Juda.",
+			"2": "<span>2</span> Jeg bortriver, bortriver alt fra Jorden, lyder det fra HERREN;",
+			"3": "<span>3</span> jeg bortriver Folk og Fæ, jeg bortriver Himlens Fugle og Havets Fisk. Gudløse bringer jeg til Fald, og Syndere rydder jeg, bort fra Jorden, lyder det fra HERREN.",
+			"4": "<span>4</span> JegudrækkerHåndenmodJuda og alle Jerusalems Borgere. Jeg fjerner den sidste Ba'al fra dette Sted og Afgudspræsternes Navn med Præsterne",
+			"5": "<span>5</span> og dem, som på Tagene tilbeder Himlens Hær, og dem, som tilbeder HERREN og sværger til bam, men også sværger ved Milkom,",
+			"6": "<span>6</span> og dem, som veg bort fra HERREN, ej søger, ej rådspørger HERREN.",
+			"7": "<span>7</span> Stille for den Herre HERREN! Thi hans Dag er nær; thi HERREN har et Offer rede, han har helliget de budne.",
+			"8": "<span>8</span> Og på HERRENs Offerdag skal det ske: Da vil jeg hjemsøge Fyrsterne og Kongens Sønner og alle dem, som er klædt i udenlandsk Dragt.",
+			"9": "<span>9</span> Den Dag hjemsøget jeg alle, som hopper over Tærsklen, som fylder deresHerresHus med Vold og Svig.",
+			"10": "<span>10</span> Den Dag skal det ske, så lyder det fra HERREN: Hør Skrig fra Fiskeporten og Jamren fra den nye Bydel. fra Højene et vældigt Brag!",
+			"11": "<span>11</span> Beboerne i Morteren jamrer, thi slettet er alt Kræmmerfolket, udryddet enhver, som vejer Sølv.",
+			"12": "<span>12</span> Til den Tid skal det ske: Jeg ransager Jerusalem med Lygter og hjemsøger Mændene der, som ligger i Ro på deres Bærme, som siger i deres Hjerte: \"HERREN gør hverken godt eller ondt.\"",
+			"13": "<span>13</span> Deres Gods skal gøres til Bytte, deres Huse skal ødelægges.",
+			"14": "<span>14</span> Nær er HERRENs Dag, den store, den er nær og kommer hastigt.",
+			"15": "<span>15</span> Den Dag er en Vredens Dag, en Trængselens og Nødens Dag, en Ødelæggelsens og Ødets Dag, en Mørkets og Mulmets Dag, en Skyernes og Tågens Dag,",
+			"16": "<span>16</span> en Hornets og Krigsskrigets Dag imod de faste Stæder og imod de knejsende Tinder.",
+			"17": "<span>17</span> Over Menneskene bringer jeg Trængsel; som blinde vanker de om, fordi de synded mod HERREN. Deres Blod øses ud som Støv, deres Livssaft ligesom Skarn.",
+			"18": "<span>18</span> Hverken deres Sølv eller Guld evner at frelse dem på HERRENs Vredes Dag, når hele Jorden fortæres af hans Nidkærheds Ild; thi Undergang, ja brat Tilintetgørelse bringer jeg over alle, som bor på Jorden."
+		},
+		"2": {
+			"1": "<span>1</span> Saml jer,saml jer, I Folk, som ej kender Skam,",
+			"2": "<span>2</span> før l endnu er blevet som flyvende Avner, før HERRENs glødende Harme kommer over eder, før HERRENs Vredes Dag kommer over eder.",
+			"3": "<span>3</span> Søg HERREN, alle l ydmyge i Landet, som holder hans Bud, søg Retfærd, søg Ydmyghed! Måske kan l skjule jer på HERRENs Vredes Dag.",
+			"4": "<span>4</span> Thi Gaza skal ligge forladt og Askalon øde, Asdod drives bort ved Middag, Ekron udryddes.",
+			"5": "<span>5</span> Ve dem, som bor ved Stranden, Kreternes Folk; HERRENs Ord over dig, Kana'an, Filisternes Land! Jeg gør dig til intet, så ingen bor der.",
+			"6": "<span>6</span> Du skal blive til Græsmark for Hyrder, til Folde for Småkvæg.",
+			"7": "<span>7</span> Og Stranden skal tilfalde Resten af Judas Hus; de skal græsse derpå. Lejr skal de slå ved Kvæld i Askalons Huse. Thi HERREN deres Gud ser til dem og vender deres Skæbne.",
+			"8": "<span>8</span> Jeg hørte Moabs Spot, Atnmoniternes hånende Ord, med hvilke de spotted mit Folk, hovmoded sig over deres Land.",
+			"9": "<span>9</span> Derfor, så sandt jeg lever, lyder det fra Hærskarers HERRE, Israels Gud: Moab skal blive som Sodoma, Ammoniterne som Gomorra, Jord for Nælder, et Salthul, Ørken til evig Tid.",
+			"10": "<span>10</span> Dette skal times dem for deres Hovmod, fordi de hånede Hærskarers HERREs Folk og gjorde sig store over for det.",
+			"11": "<span>11</span> Frygtelig er HERREN for dem; thi han udrydder alle Jordens Guder, og alle Hedningemes fjerne Strande skal tilbede ham, hver på sit Sted.",
+			"12": "<span>12</span> 0gså I Ætiopere skal falde for HERRENs Sværd,",
+			"13": "<span>13</span> og han udrækker Hånden mod Nord og tilintetgør Assur, Nineve gør han til Ødemark, tørt som en Ørk;",
+			"14": "<span>14</span> Hjorde skal lejre sig deri, hvert Slettens Dyr; på dets Søjlehoveder sover Pelikan og Rørdrum, i Vinduet skriger Uglen, Ravnen på Tærsklen.",
+			"15": "<span>15</span> Det er den jublende By, som lå så trygt, som sagde i sit Hjerte: \"Jeg og ellers ingen.\" Hvor er den dog blevet øde, et Raststed for Dyr! Enhver, som kommer forbi den håner med Fløjt og Hånd."
+		},
+		"3": {
+			"1": "<span>1</span> Ve den genstridige, urene, grumme By!",
+			"2": "<span>2</span> Den hører ej HERRENs Røst, tager ikke mod Tugt. På HERREN stoler den ej, holder sig ej til Gud.",
+			"3": "<span>3</span> Fyrsterne i dens Midte er brølende Løver, dens dommere som Ulve ved Kvæld, der ej levner til Morgen;",
+			"4": "<span>4</span> Skrydere er dens Profeter, troløse Mænd, dens Præster vanærer det hellige, øver Vold mod Loven.",
+			"5": "<span>5</span> HERREN er retfærdig i dens Midte, gør ikke Uret; hver Morgen gør han Ret, ej svigte Lyset, til Uret kender han ikke.",
+			"6": "<span>6</span> I Stridslarm udrydded jeg Folk, deres Tinder er øde, deres Gader lagde jeg øde, så ingen går der, deres Byer er hærget, mennesketomme, ingen bor der.",
+			"7": "<span>7</span> Jeg tænkte: \"Den må dog frygte mig, tage mod Tugt; intet af alt, hvad jeg bød, vil gå den ad Glemme.\" Men des tidligere var de i Gang med al deres Ondskab.",
+			"8": "<span>8</span> Bi derfor på mig, så lyder det fra HERREN, på Dagen, jeg fremstår som Vidne! Thi min Ret er at sanke Folkene, samle Rigerne og udøse over dem min Vrede, al min Harmglød; thi af min Nidkærheds Ild skal al Jorden fortæres.",
+			"9": "<span>9</span> Thi da vil jeg give Folkene rene Læber, så de alle påkalder HERREN og tjener ham endrægtigt.",
+			"10": "<span>10</span> Fra Landet hinsides Floden bringer de mig Bukke, fra Patros kommer de med Afgrødeoffer til mig.",
+			"11": "<span>11</span> Hin bag skal du ikke beskæmmes i al din tid, med hvilken du synded mod mig; thi da vil jeg fjerne fra dig de jublende stolte, du skal ikke hovmode dig mer på mit hellige Bjerg.",
+			"12": "<span>12</span> Jeg levner i din Midte et Folk, som er ydmygt og ringe, og Israels Rest skal lide på HERRENs Navn.",
+			"13": "<span>13</span> Uret øver de ikke og taler ej Løgn, der findes ej i deres Mund en svigefuld Tunge; thi de skal græsse og raste uden at skræmmes.",
+			"14": "<span>14</span> Jubl, du Zions Datter, Israel, råb højt, glæd dig og fryd dig af hele dit Hjerte, Jerusalems Datter!",
+			"15": "<span>15</span> HERREN har slettet din Dom, bortdrevet dine Fjender. I din Midte er Israels Konge, HERREN, ej mere skuer du ondt.",
+			"16": "<span>16</span> På hin Dag skal der siges til Jerusalem: Frygt ikke, Zion, lad ikke Hænderne synke!",
+			"17": "<span>17</span> I dig er HERREN din Gud, en Helt, som frelser. Han glæder sig over dig med Fryd, han tier i sin Kærlighed, han fryder sig over dig med Jubel som på Festens Dag;",
+			"18": "<span>18</span> den Tid er omme, da du bærer på Skam over ham.",
+			"19": "<span>19</span> Se, på hin Tid gør jeg Ende på alle, som kuede dig, og jeg frelser, hvad der halter, og sanker det spredte og giver dem Ære og Ry på hele Jorden.",
+			"20": "<span>20</span> På hin Tid bringer jeg eder hjem, og på hin Tid samler jeg eder; thi jeg giver eder Ry og Ære blandt alle Jordens Folkeslag, når jeg vender eders Skæbne for eders Øjne, siger HERREN."
+		}
+	}
+};
+module.exports = book;

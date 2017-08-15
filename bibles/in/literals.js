@@ -1,12 +1,16 @@
 var literals = {
-    and: [
-        "dan",
-        "&"
-    ],
+    "through": {
+        "list": [
+            "melalui"
+        ]
+    },
 
-    through: [
-        "melalui"
-    ]
+    "and": {
+        "default": ';',
+        "list": [
+            "&", "dan"
+        ]
+    }
 };
 
 module.exports = literals;

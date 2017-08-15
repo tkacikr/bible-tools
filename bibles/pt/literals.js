@@ -1,11 +1,14 @@
 var literals = {
-    and: [
-        "e"
-    ],
-
-    through: [
-        "a"
-    ]
+    "and": {
+        "list": [
+            "\ e\ "
+        ]
+    },
+    "through": {
+        "list": [
+            "\ a\ "
+        ]
+    }
 };
 
 module.exports = literals;

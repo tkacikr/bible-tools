@@ -1,12 +1,9 @@
 var literals = {
-    and: [
-        "と",
-    ],
-
-    through: [
-        "〜",
-        "~"
-    ]
+    "and": {
+        "list": [
+            "と"
+        ]
+    }
 };
 
 module.exports = literals;

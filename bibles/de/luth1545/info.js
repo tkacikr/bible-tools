@@ -6,55 +6,68 @@ var info = {
 			"name": "1 Mose",
 			"numChapters": 50,
 			"synonyms": [
-				"1 Mose"
+				"1\.? Mo(se)?",
+				"Genesis",
+                "Gen"
 			]
 		},
 		{
 			"name": "2 Mose",
 			"numChapters": 40,
 			"synonyms": [
-				"2 Mose"
+				"2\.? Mo(se)?",
+				"Exodus",
+				"Ex"
 			]
 		},
 		{
 			"name": "3 Mose",
 			"numChapters": 27,
 			"synonyms": [
-				"3 Mose"
+				"3\.? Mo(se)?",
+				"Levitikus",
+				"Lev"
 			]
 		},
 		{
 			"name": "4 Mose",
 			"numChapters": 36,
 			"synonyms": [
-				"4 Mose"
+				"4\.? Mo(se)?",
+				"Numeri",
+				"Num"
 			]
 		},
 		{
 			"name": "5 Mose",
 			"numChapters": 34,
 			"synonyms": [
-				"5 Mose"
+				"5\.? Mo(se)?",
+				"Deuteronomium",
+				"Dtn"
 			]
 		},
 		{
 			"name": "Josua",
 			"numChapters": 24,
 			"synonyms": [
-				"Josua"
+				"Josua",
+				"Jos"
 			]
 		},
 		{
 			"name": "Richter",
 			"numChapters": 21,
 			"synonyms": [
-				"Richter"
+				"Richter",
+				"Ri"
 			]
 		},
 		{
 			"name": "Rut",
 			"numChapters": 4,
 			"synonyms": [
+				"Ruth",
 				"Rut"
 			]
 		},
@@ -62,406 +75,466 @@ var info = {
 			"name": "1 Samuel",
 			"numChapters": 31,
 			"synonyms": [
-				"1 Samuel"
+				"1\.? Samu(el)?"
 			]
 		},
 		{
 			"name": "2 Samuel",
 			"numChapters": 24,
 			"synonyms": [
-				"2 Samuel"
+				"2\.? Samu(el)?"
 			]
 		},
 		{
 			"name": "1 Koenige",
 			"numChapters": 22,
 			"synonyms": [
-				"1 Koenige"
+				"1\.? Koen(ige)?",
+				"1\.? Kön(ige)?"
 			]
 		},
 		{
 			"name": "2 Koenige",
 			"numChapters": 25,
 			"synonyms": [
-				"2 Koenige"
+				"2\.? Koen(ige)?",
+                "2\.? Kön(ige)?"
 			]
 		},
 		{
 			"name": "1 Chronik",
 			"numChapters": 29,
 			"synonyms": [
-				"1 Chronik"
+				"1\.? Chr(onik)"
 			]
 		},
 		{
 			"name": "2 Chronik",
 			"numChapters": 36,
 			"synonyms": [
-				"2 Chronik"
+				"2\.? Chr(onik)"
 			]
 		},
 		{
 			"name": "Esra",
 			"numChapters": 10,
 			"synonyms": [
-				"Esra"
+				"Esra",
+				"Esr"
 			]
 		},
 		{
 			"name": "Nehemia",
 			"numChapters": 13,
 			"synonyms": [
-				"Nehemia"
+				"Nehemia",
+				"Neh"
 			]
 		},
 		{
 			"name": "Ester",
 			"numChapters": 10,
 			"synonyms": [
-				"Ester"
+				"Ester",
+				"Est"
 			]
 		},
 		{
 			"name": "Hiob",
 			"numChapters": 42,
 			"synonyms": [
-				"Hiob"
+				"Hiob",
+				"Ijob",
+				"Hi"
 			]
 		},
 		{
 			"name": "Psalm",
 			"numChapters": 150,
 			"synonyms": [
-				"Psalm"
+				"Psalmen",
+				"Psalm",
+				"Pss",
+				"Ps"
 			]
 		},
 		{
 			"name": "Sprueche",
 			"numChapters": 31,
 			"synonyms": [
-				"Sprueche"
+				"Sprüche",
+				"Sprichwoerter",
+				"Sprichwörter",
+				"Sprueche",
+				"Spr"
 			]
 		},
 		{
 			"name": "Prediger",
 			"numChapters": 12,
 			"synonyms": [
-				"Prediger"
+				"Prediger",
+				"Pred"
 			]
 		},
 		{
 			"name": "Hohelied",
 			"numChapters": 8,
 			"synonyms": [
-				"Hohelied"
+				"Kohelet",
+				"Hoheslied",
+				"Hohelied",
+				"Koh",
+				"Hld"
 			]
 		},
 		{
 			"name": "Jesaja",
 			"numChapters": 66,
 			"synonyms": [
-				"Jesaja"
+				"Jesaja",
+				"Jes"
 			]
 		},
 		{
 			"name": "Jeremia",
 			"numChapters": 52,
 			"synonyms": [
-				"Jeremia"
+				"Jeremia",
+				"Jer"
 			]
 		},
 		{
 			"name": "Klagelieder",
 			"numChapters": 5,
 			"synonyms": [
-				"Klagelieder"
+				"Klagelieder",
+				"Klgl"
 			]
 		},
 		{
 			"name": "Hesekiel",
 			"numChapters": 48,
 			"synonyms": [
-				"Hesekiel"
+				"Ezechiel",
+				"Hesekiel",
+				"Hes",
+				"Ez"
 			]
 		},
 		{
 			"name": "Daniel",
 			"numChapters": 12,
 			"synonyms": [
-				"Daniel"
+				"Daniel",
+				"Dan"
 			]
 		},
 		{
 			"name": "Hosea",
 			"numChapters": 14,
 			"synonyms": [
-				"Hosea"
+				"Hosea",
+				"Hos"
 			]
 		},
 		{
 			"name": "Joel",
 			"numChapters": 3,
 			"synonyms": [
-				"Joel"
+				"Joel",
+				"Jo"
 			]
 		},
 		{
 			"name": "Amos",
 			"numChapters": 9,
 			"synonyms": [
-				"Amos"
+				"Amos",
+				"Am"
 			]
 		},
 		{
 			"name": "Obadja",
 			"numChapters": 1,
 			"synonyms": [
-				"Obadja"
+				"Obadja",
+				"Obd"
 			]
 		},
 		{
 			"name": "Jona",
 			"numChapters": 4,
 			"synonyms": [
-				"Jona"
+				"Jona",
+				"Jon"
 			]
 		},
 		{
 			"name": "Mica",
 			"numChapters": 7,
 			"synonyms": [
-				"Mica"
+				"Micha",
+				"Mica",
+				"Mi"
 			]
 		},
 		{
 			"name": "Nahum",
 			"numChapters": 3,
 			"synonyms": [
-				"Nahum"
+				"Nahum",
+				"Nah"
 			]
 		},
 		{
 			"name": "Habakuk",
 			"numChapters": 3,
 			"synonyms": [
-				"Habakuk"
+				"Habakuk",
+				"Hab"
 			]
 		},
 		{
 			"name": "Zephanja",
 			"numChapters": 3,
 			"synonyms": [
-				"Zephanja"
+				"Zephanja",
+				"Zef"
 			]
 		},
 		{
 			"name": "Haggai",
 			"numChapters": 2,
 			"synonyms": [
-				"Haggai"
+				"Haggai",
+				"Hag"
 			]
 		},
 		{
 			"name": "Sacharja",
 			"numChapters": 14,
 			"synonyms": [
-				"Sacharja"
+				"Sacharja",
+				"Sach"
 			]
 		},
 		{
 			"name": "Maleachi",
 			"numChapters": 4,
 			"synonyms": [
-				"Maleachi"
+				"Maleachi",
+				"Mal"
 			]
 		},
 		{
 			"name": "Matthaeus",
 			"numChapters": 28,
 			"synonyms": [
-				"Matthaeus"
+				"Matthäus",
+				"Matthaeus",
+				"Mt"
 			]
 		},
 		{
 			"name": "Markus",
 			"numChapters": 16,
 			"synonyms": [
-				"Markus"
+				"Markus",
+				"Mk"
 			]
 		},
 		{
 			"name": "Lukas",
 			"numChapters": 24,
 			"synonyms": [
-				"Lukas"
+				"Lukas",
+				"Lk"
 			]
 		},
 		{
 			"name": "Johannes",
 			"numChapters": 21,
 			"synonyms": [
-				"Johannes"
+				"Johannes",
+				"Joh"
 			]
 		},
 		{
 			"name": "Apostelgeschichte",
 			"numChapters": 28,
 			"synonyms": [
-				"Apostelgeschichte"
+				"Apostelgeschichte",
+				"Apg"
 			]
 		},
 		{
 			"name": "Roemer",
 			"numChapters": 16,
 			"synonyms": [
-				"Roemer"
+				"Römer",
+				"Roemer",
+				"Roem",
+				"Röm"
 			]
 		},
 		{
 			"name": "1 Korinther",
 			"numChapters": 16,
 			"synonyms": [
-				"1 Korinther"
+				"1\.? Kor(inther)?"
 			]
 		},
 		{
 			"name": "2 Korinther",
 			"numChapters": 13,
 			"synonyms": [
-				"2 Korinther"
+				"2 Kor(inther)?"
 			]
 		},
 		{
 			"name": "Galater",
 			"numChapters": 6,
 			"synonyms": [
-				"Galater"
+				"Galater",
+				"Gal"
 			]
 		},
 		{
 			"name": "Epheser",
 			"numChapters": 6,
 			"synonyms": [
-				"Epheser"
+				"Epheser",
+				"Eph"
 			]
 		},
 		{
 			"name": "Philipper",
 			"numChapters": 4,
 			"synonyms": [
-				"Philipper"
+				"Philipper",
+				"Phil"
 			]
 		},
 		{
 			"name": "Kolosser",
 			"numChapters": 4,
 			"synonyms": [
-				"Kolosser"
+				"Kolosser",
+				"Kil"
 			]
 		},
 		{
 			"name": "1 Thessalonicher",
 			"numChapters": 5,
 			"synonyms": [
-				"1 Thessalonicher"
+				"1\.? Thess(alonicher)?"
 			]
 		},
 		{
 			"name": "2 Thessalonicher",
 			"numChapters": 3,
 			"synonyms": [
-				"2 Thessalonicher"
+				"2\.? Thess(alonicher)?"
 			]
 		},
 		{
 			"name": "1 Timotheus",
 			"numChapters": 6,
 			"synonyms": [
-				"1 Timotheus"
+				"1\.? Tim(otheus)?"
 			]
 		},
 		{
 			"name": "2 Timotheus",
 			"numChapters": 4,
 			"synonyms": [
-				"2 Timotheus"
+				"2\.? Tim(otheus)?"
 			]
 		},
 		{
 			"name": "Titus",
 			"numChapters": 3,
 			"synonyms": [
-				"Titus"
+				"Titus",
+				"Tit"
 			]
 		},
 		{
 			"name": "Philemon",
 			"numChapters": 1,
 			"synonyms": [
-				"Philemon"
+				"Philemon",
+				"Phlm"
 			]
 		},
 		{
 			"name": "Hebraeer",
 			"numChapters": 13,
 			"synonyms": [
-				"Hebraeer"
+				"Hebraeer",
+				"Hebräer",
+				"Hebr",
+				"Hbr"
 			]
 		},
 		{
 			"name": "Jakobus",
 			"numChapters": 5,
 			"synonyms": [
-				"Jakobus"
+				"Jakobus",
+				"Jak"
 			]
 		},
 		{
 			"name": "1 Petrus",
 			"numChapters": 5,
 			"synonyms": [
-				"1 Petrus"
+				"1\.? Petr(us)?"
 			]
 		},
 		{
 			"name": "2 Petrus",
 			"numChapters": 3,
 			"synonyms": [
-				"2 Petrus"
+				"2\.? Petr(us)?"
 			]
 		},
 		{
 			"name": "1 Johannes",
 			"numChapters": 5,
 			"synonyms": [
-				"1 Johannes"
+				"1\.? Joh(annes)?"
 			]
 		},
 		{
 			"name": "2 Johannes",
 			"numChapters": 1,
 			"synonyms": [
-				"2 Johannes"
+				"2\.? Joh(annes)?"
 			]
 		},
 		{
 			"name": "3 Johannes",
 			"numChapters": 1,
 			"synonyms": [
-				"3 Johannes"
+				"3\.? Joh(annes)?"
 			]
 		},
 		{
 			"name": "Judas",
 			"numChapters": 1,
 			"synonyms": [
-				"Judas"
+				"Judas",
+				"Jud"
 			]
 		},
 		{
 			"name": "Offenbarung",
 			"numChapters": 22,
 			"synonyms": [
-				"Offenbarung"
+				"Offenbarung",
+				"Offb"
 			]
 		}
 	]
