@@ -7,7 +7,7 @@ var literals = {
         ]
     },
     "andEnum": {
-        "default": ";",
+        "default": "\.",
         "replace": true,
         "list": [
             ';'

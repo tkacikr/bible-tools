@@ -320,17 +320,28 @@ var search = function(lang, version, term) {
                 var verses = ranges[1].split(bibleRegex.literals.through.default);
 
                 if (verses.length === 2){
-                    var _result = {header:"", verses:""};
+                    var references = verses[1].split(bibleRegex.literals.andEnum.default);
 
-                    // Bible verse matching <book> <chapter>:<verse start>-<verse end> (ex. Gen. 1:1-2)
-                    for (var j = parseInt(verses[0]); j <= parseInt(verses[1]); j++){
-                        var _t = fetch(lang, version, book, chapter, j);
-                        _result["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
-                        _result["verses"] += _t.results.join("");
+                    for (var reference = 0; reference < references.length; reference++){
+                        var _result = {header:"", verses:""};
+
+                        if (reference === 0){
+                            // Bible verse matching <book> <chapter>:<verse start>-<verse end> (ex. Gen. 1:1-2)
+                            for (var j = parseInt(verses[0]); j <= parseInt(references[reference]); j++){
+                                var _t = fetch(lang, version, book, chapter, j);
+
+                                _result["verses"] += _t.results.join("");
+                                result.results[i]["verses"] = _result["verses"];
+                                result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                            }
+                        } else {
+                            // And enum part of the above for ex Gen 1:1-2,3
+                            // here we fetch Gen 1:3
+                            var _t = fetch(lang, version, book, chapter, references[reference]);
+                            _result["verses"] += "<h3>"+_t.book + " " + chapter.customTrim(" ") + bibleRegex.literals.range.default + references[reference] +"</h3>" + _t.results.join("");
+                            result.results[i]["verses"] += _result["verses"];
+                        }
                     }
-
-                    result.results[i]["header"] = _result["header"];
-                    result.results[i]["verses"] = _result["verses"];
                 } else {
                     // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
                     // (ex. Gen. 1:1)
@@ -376,5 +387,9 @@ var bibleTools = {
     search: search,
     getBibleRegex: getBibleRegex
 };
+
+console.log(
+    bibleTools.search("da", "bibelen", "ApG 11, 19-21.26")
+);
 
 module.exports = bibleTools;
