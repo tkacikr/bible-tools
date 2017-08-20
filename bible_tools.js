@@ -388,8 +388,4 @@ var bibleTools = {
     getBibleRegex: getBibleRegex
 };
 
-console.log(
-    bibleTools.search("da", "bibelen", "ApG 11, 19-21.26")
-);
-
 module.exports = bibleTools;
