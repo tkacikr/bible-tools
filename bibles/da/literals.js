@@ -9,8 +9,8 @@ var literals = {
     "andEnum": {
         "default": "\.",
         "replace": true,
-        "list": [
-            ';'
+        "list":[
+            "\\."
         ]
     },
     "and": {

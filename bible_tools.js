@@ -317,44 +317,81 @@ var search = function(lang, version, term) {
             // ex. 1:3-5
             // TODO: support more complicated intra chapter references like 1:3-2:1
             if (ranges.length === 2){
-                var verses = ranges[1].split(bibleRegex.literals.through.default);
+                var references = ranges[1].split(bibleRegex.literals.andEnum.default);
 
-                if (verses.length === 2){
-                    var references = verses[1].split(bibleRegex.literals.andEnum.default);
 
-                    for (var reference = 0; reference < references.length; reference++){
-                        var _result = {header:"", verses:""};
+                result.results[i]["verses"]  = "";
 
-                        if (reference === 0){
-                            // Bible verse matching <book> <chapter>:<verse start>-<verse end> (ex. Gen. 1:1-2)
-                            for (var j = parseInt(verses[0]); j <= parseInt(references[reference]); j++){
-                                var _t = fetch(lang, version, book, chapter, j);
+                for (var reference = 0; reference < references.length; reference++) {
+                    var verses = references[reference].split(bibleRegex.literals.through.default);
 
-                                _result["verses"] += _t.results.join("");
-                                result.results[i]["verses"] = _result["verses"];
-                                result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                    if (verses.length === 1){
+                        var _t = fetch(lang, version, book, chapter, verses[0]);
+                        var _temp = _t.results.join("");
+
+                        if (reference !== 0){
+                            _temp = "<h3>"+_t.book + " " + chapter.customTrim(" ") + bibleRegex.literals.range.default + references[reference] +"</h3>" + _temp;
+                        }
+
+                        result.results[i]["verses"] += _temp;
+                        result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                    } else {
+
+                        for (var j = parseInt(verses[0]); j <= parseInt(verses[verses.length-1]); j++){
+                            var _t = fetch(lang, version, book, chapter, j);
+                            var _temp = _t.results.join("");
+
+                            if (reference !== 0 && j === parseInt(verses[0])){
+                                _temp = "<h3>"+_t.book + " " + chapter.customTrim(" ") + bibleRegex.literals.range.default + parseInt(verses[0])+bibleRegex.literals.through.default+parseInt(verses[verses.length-1])+"</h3>" + _temp;
                             }
-                        } else {
-                            // And enum part of the above for ex Gen 1:1-2,3
-                            // here we fetch Gen 1:3
-                            var _t = fetch(lang, version, book, chapter, references[reference]);
-                            _result["verses"] += "<h3>"+_t.book + " " + chapter.customTrim(" ") + bibleRegex.literals.range.default + references[reference] +"</h3>" + _t.results.join("");
-                            result.results[i]["verses"] += _result["verses"];
+
+                            result.results[i]["verses"] += _temp;
+                            result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
                         }
                     }
-                } else {
-                    // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
-                    // (ex. Gen. 1:1)
-                    var versesEnum = verses[0].split(bibleRegex.literals.andEnum.default);
-
-                    result.results[i]["verses"] = "";
-
-                    for (var j = 0; j < versesEnum.length; j++){
-                        var _t = fetch(lang, version, book, chapter, parseInt(versesEnum[j]));
-                        result.results[i]["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + bibleRegex.literals.range.default + verses[0].customTrim(" ") +"</h3>";
-                        result.results[i]["verses"] += _t.results.join("");
-                    }
                 }
+
+
+                // var verses = ranges[1].split(bibleRegex.literals.through.default);
+                //
+                //
+                // if (verses.length === 2){
+                //     var references = verses[1].split(bibleRegex.literals.andEnum.default);
+                //
+                //
+                //     for (var reference = 0; reference < references.length; reference++){
+                //         var _result = {header:"", verses:""};
+                //
+                //         if (reference === 0){
+                //             // Bible verse matching <book> <chapter>:<verse start>-<verse end> (ex. Gen. 1:1-2)
+                //             for (var j = parseInt(verses[0]); j <= parseInt(references[reference]); j++){
+                //                 var _t = fetch(lang, version, book, chapter, j);
+                //
+                //                 _result["verses"] += _t.results.join("");
+                //                 result.results[i]["verses"] = _result["verses"];
+                //                 result.results[i]["header"] = "<h3>"+_t.book +" "+ block.customTrim(" ")+"</h3>";
+                //             }
+                //         } else {
+                //             // And enum part of the above for ex Gen 1:1-2,3
+                //             // here we fetch Gen 1:3
+                //             var _t = fetch(lang, version, book, chapter, references[reference]);
+                //             _result["verses"] += "<h3>"+_t.book + " " + chapter.customTrim(" ") + bibleRegex.literals.range.default + references[reference] +"</h3>" + _t.results.join("");
+                //             result.results[i]["verses"] += _result["verses"];
+                //         }
+                //     }
+                // } else {
+                //     // Bible verse matching <book> <chapter>:<verse> or <book> <chapter>:<verse>, <verse 2>, .. , <verse N>
+                //     // (ex. Gen. 1:1)
+                //     var versesEnum = verses[0].split(bibleRegex.literals.andEnum.default);
+                //
+                //     result.results[i]["verses"] = "";
+                //
+                //     for (var j = 0; j < versesEnum.length; j++){
+                //         var _t = fetch(lang, version, book, chapter, parseInt(versesEnum[j]));
+                //         result.results[i]["header"] = "<h3>"+_t.book +" "+ chapter.customTrim(" ") + bibleRegex.literals.range.default + verses[0].customTrim(" ") +"</h3>";
+                //         result.results[i]["verses"] += _t.results.join("");
+                //     }
+                // }
             } else {
                 var chapters = ranges[0].split(bibleRegex.literals.through.default);
                 if (chapters.length === 2){
