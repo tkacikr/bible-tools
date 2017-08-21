@@ -1,0 +1,66 @@
+var book = {
+	"name": "Malakias",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<span class=\"chapternum\">1 </span>Malakias modtog følgende budskab fra Herren til Israels folk:",
+			"2": "<sup class=\"versenum\">2-3 </sup>„Jeg elsker jer, mit folk,” siger Herren.„I spørger: ‚Hvordan har du vist os din kærlighed?’Dertil svarer jeg: Er Esau ikke Jakobs bror? Og dog foretrak jeg Jakob frem for Esau. Jeg gjorde Esaus bjergland til en ødemark, et sted hvor sjakaler færdes. ",
+			"4": "<sup class=\"versenum\">4 </sup>Og hvis Esaus efterkommere, edomitterne, siger: ‚Vores land blev hærget, men vi vil genopbygge det,’ så river jeg det ned igen. Deres land er kendt som ondskabens land, og derfor er de til stadighed offer for min vrede. ",
+			"5": "<sup class=\"versenum\">5 </sup>Det skal I få at se, og da vil I udbryde: ‚Herrens magt rækker langt ud over Israels grænser.’ ",
+			"6": "<sup class=\"versenum\">6 </sup>En søn ærer sin far, og en slave respekterer sin herre. Jeg er både jeres Far og Herre, men alligevel ærer og respekterer I mig ikke! I er mine præster, men I ringeagter mig!‚Hvordan har vi ringeagtet dig?’ spørger I.",
+			"7": "<sup class=\"versenum\">7 </sup>Hver gang I bringer urene ofre til alteret!‚Hvordan er vores ofre blevet urene?’Fordi I siger: ‚Der er ingen grund til at give det bedste til Gud!’",
+			"8": "<sup class=\"versenum\">8 </sup>Er det måske ikke forkasteligt at ofre syge, lamme og blinde dyr til mig? Prøv at bringe sådanne gaver til jeres guvernør! Vil han synes om dem og gøre, hvad I beder ham om? ",
+			"9": "<sup class=\"versenum\">9 </sup>Tror I, at jeg vil hjælpe jer, når I bringer mig sådanne gaver? ",
+			"10": "<sup class=\"versenum\">10 </sup>Det ville være bedre at spærre døren til templet, så I ikke kom og ofrede den slags nytteløse gaver. Jeg kan ikke acceptere jeres handlemåde, og jeg vil ikke tage imod jeres ofre.",
+			"11": "<sup class=\"versenum\">11 </sup>Alle folkeslag fra den ene ende af jorden til den anden skal erkende min magt og storhed. Overalt vil mennesker bringe mig røgelse og egnede ofre. ",
+			"12": "<sup class=\"versenum\">12 </sup>I, derimod, vanærer mig ved at sige: ‚Det er ikke så væsentligt, om det, vi ofrer til Herren, er som foreskrevet.’",
+			"13": "<sup class=\"versenum\">13 </sup>I beklager jer oven i købet og siger: ‚Hvor er det besværligt at tjene Herren!’Hvorfor foragter I mig? I bringer stjålne, lamme og syge dyr som offergave til mig. Skulle jeg virkelig tage imod sådan noget? ",
+			"14": "<sup class=\"versenum\">14 </sup>Den bedrager, som lover at bringe en flot vædder fra sin hjord, men bringer et defekt dyr i stedet, fortjener min straf. For jeg er en mægtig Konge, og alverdens folkeslag har ærefrygt for mig! siger Herren, den Almægtige.”"
+		},
+		"2": {
+			"1": "<span class=\"chapternum\">2 </span>I præster, lyt til denne advarsel fra Herren den Almægtige:",
+			"2": "<sup class=\"versenum\">2 </sup>„Hvis I ikke adlyder mig og ændrer indstilling, hvis I ikke tager det alvorligt med at vise ærefrygt for mig, må I tage konsekvensen. I stedet for at velsigne jer vil jeg sende forbandelse over jer, og de velsignelser, I udtaler over andre, bliver til forbandelser. Ja, det er allerede sket, fordi I ikke tog mine befalinger alvorligt.",
+			"3": "<sup class=\"versenum\">3 </sup>Jeg vil vride armen om på jer, kaste affaldet fra jeres offerdyr i ansigtet på jer og smide jer på møddingen sammen med det. ",
+			"4": "<sup class=\"versenum\">4 </sup>Jeg har givet jer denne advarsel, for at I skal overholde den pagt, jeg sluttede med levitterne. ",
+			"5": "<sup class=\"versenum\">5 </sup>Min pagt med dem var, at jeg ville give dem liv og fremgang, og de skulle til gengæld vise mig ære og respekt. Og det gjorde de før i tiden. ",
+			"6": "<sup class=\"versenum\">6 </sup>De underviste folket i sandheden. De snød og bedrog mig ikke—nej, de handlede ærligt og oprigtigt, og de fik mange til at omvende sig fra deres synder.",
+			"7": "<sup class=\"versenum\">7 </sup>Enhver præst bør tale med visdom, så folk kan komme til ham og få undervisning, for en præst er et sendebud fra Gud, den Almægtige. ",
+			"8": "<sup class=\"versenum\">8 </sup>Men I har vendt mig ryggen, og med jeres lære har I fået folket til at overtræde mine befalinger. I har brudt den pagt, jeg indgik med levitterne om at de skulle være mine tjenere. ",
+			"9": "<sup class=\"versenum\">9 </sup>Derfor bliver I vanæret i folkets øjne, for I gør ikke, hvad jeg siger. I stedet udnytter I loven til egen fordel.”",
+			"10": "<sup class=\"versenum\">10 </sup>Vi er jo alle skabt af den samme Gud. Vi har den samme far. Når vi hører sammen, hvorfor svigter vi så hinanden ved at bryde den pagt, Gud indstiftede med vores forfædre? ",
+			"11": "<sup class=\"versenum\">11 </sup>Judas folk har svigtet. Der er begået en stor synd i Israel og Jerusalem. Judas folk har ødelagt deres status som Guds hellige og elskede folk ved at gifte sig med ikke-jødiske kvinder, som holder fast ved afguderne. ",
+			"12": "<sup class=\"versenum\">12 </sup>Må Herren udrydde enhver israelit, der handler sådan, uanset hvem det er, og uanset om de bringer ofre til Herren eller ej.",
+			"13": "<sup class=\"versenum\">13-14 </sup>En anden synd, I begår, er at bryde ægteskabet. Det hjælper intet, at I klager over, at Gud ikke længere tager imod jeres ofre. Det hjælper heller ikke at græde nok så mange tårer ved alteret. I spørger, hvorfor Gud har forladt jer, for han tager ikke længere imod jeres ofre. Jeg skal sige jer hvorfor. Herren var vidne til den ægteskabspagt, du indgik med din hustru i din ungdom. Men du har været utro imod hende, selvom hun er din ægtefælle, som du indgik en pagt med. ",
+			"15": "<sup class=\"versenum\">15 </sup>Ingen, som har noget tilbage af Guds Ånd i sig, vil gøre sådan. Og hvorfor ikke? Fordi han ønsker, at hans børn skal tjene Gud. Derfor bør du lytte til din ånd og ikke svigte den hustru, du fik i din ungdom.",
+			"16": "<sup class=\"versenum\">16 </sup>„Jeg hader skilsmisse!” siger Herren, Israels Gud. „Det er som at begå vold. Forstå, hvad der er Guds vilje, og svigt ikke din hustru.”",
+			"17": "<sup class=\"versenum\">17 </sup>Jeres ord gør Herren bedrøvet. „Hvad har vi da sagt?” spørger I. I hævder, at han accepterer de gudløses ondskab, da han tilsyneladende ikke straffer dem."
+		},
+		"3": {
+			"1": "<span class=\"chapternum\">3 </span>Herren, den Almægtige, siger: „Hør efter: Jeg vil sende min udsending i forvejen. Han skal berede vejen for mig. Derefter vil den Herre, I venter på, pludselig komme til sit tempel. Ja, pagtens sendebud, som vil give jer glæde, han kommer helt sikkert.”",
+			"2": "<sup class=\"versenum\">2 </sup>Når han kommer, betyder det dom over ondskaben. Han er som ilden under en smeltedigel, som et ætsende rensemiddel. ",
+			"3": "<sup class=\"versenum\">3 </sup>Ligesom sølv og guld bliver renset for urenheder i smeltediglen, vil han rense levitterne og præsterne for deres urenhed. Først derefter kan de bringe Herren de rette ofre. ",
+			"4": "<sup class=\"versenum\">4 </sup>Da kan Herren igen glæde sig over at modtage Judas og Jerusalems offergaver som før i tiden.",
+			"5": "<sup class=\"versenum\">5 </sup>Herren, den Almægtige, siger: „Når jeg kommer, vil jeg uden tøven straffe de ugudelige: dem, der øver trolddom, ægteskabsbryderne, dem, der sværger falsk, dem, der snyder arbejderne for deres løn, dem, der udnytter enkerne og de forældreløse, dem, der bedrager fremmede og udlændinge, ja, alle, der ikke har ærefrygt for mig.",
+			"6": "<sup class=\"versenum\">6 </sup>Jeg, Herren, har ikke forandret mig. Og der er stadig en rest tilbage af mit folk, Jakobs efterkommere. ",
+			"7": "<sup class=\"versenum\">7 </sup>Lige siden jeres forfædres tid har I haft problemer med at overholde mine befalinger. Vend om og kom til mig, så vil jeg komme jer i møde.I siger: ‚Vi har da aldrig vendt os bort fra dig!’",
+			"8": "<sup class=\"versenum\">8 </sup>Men jeg siger: Synes I, det er i orden, at mennesker bedrager Gud? For det er præcis, hvad I har gjort!‚Hvordan har vi bedraget dig?’ spørger I.Ved at fratage mig den tiende og de ofre, som tilkommer mig. ",
+			"9": "<sup class=\"versenum\">9 </sup>I har alle bedraget mig, og derfor rammer dommen hele folket. ",
+			"10": "<sup class=\"versenum\">10 </sup>Bring hele min tiende til forrådskammeret, så der bliver rigeligt med mad i mit hus. Sæt mig på prøve, så skal I se, at jeg åbner himlens sluser og overøser jer med velsignelser. ",
+			"11": "<sup class=\"versenum\">11 </sup>Så vil jeg holde græshopperne væk, så jeres marker igen kan give en god høst og jeres vinmarker producere mange vindruer. ",
+			"12": "<sup class=\"versenum\">12 </sup>Og alle folkeslag vil tale om, hvor velsignede I er, for jeres land bliver et dejligt sted at bo, siger Herren, den Almægtige!”",
+			"13": "<sup class=\"versenum\">13 </sup>Herren siger: „I har kritiseret mig voldsomt.‚Hvad har vi da sagt?’ spørger I.",
+			"14": "<sup class=\"versenum\">14 </sup>I har sagt: ‚Det er omsonst at tjene Gud, den Almægtige. Vi får jo ikke noget ud af at overholde hans bud. Og han lægger slet ikke mærke til, hvor meget vi faster. ",
+			"15": "<sup class=\"versenum\">15 </sup>Der er større fordel ved at være selvsikker end ydmyg. De ugudelige har jo heldet med sig. De gør oprør mod Gud og slipper godt fra det.’ ”",
+			"16": "<sup class=\"versenum\">16 </sup>De, som havde ærefrygt for Herren, talte nu sammen, og Herren hørte, hvad de sagde. Han sørgede for, at deres navne blev nedskrevet i en bog, så deres trofasthed ville blive husket.",
+			"17": "<sup class=\"versenum\">17 </sup>„Når jeg griber ind,” siger Herren, den Almægtige, „skal de være en del af mit ejendomsfolk. Jeg vil være barmhjertig mod dem, som en far er barmhjertig over for en lydig søn. ",
+			"18": "<sup class=\"versenum\">18 </sup>Til den tid skal man atter kunne se forskel på de retskafne og de gudløse, på dem, der tjener Herren, og dem, der ikke tjener ham.”",
+			"19": "<sup class=\"versenum\">19 </sup>„Når dommen kommer,” siger Herren, den Almægtige, „vil de selvsikre, ugudelige mennesker blive tilintetgjort som halm, der bliver smidt i en brændende ovn. De bliver brændt rub og stub, så intet er tilbage.",
+			"20": "<sup class=\"versenum\">20 </sup>Men over jer, som ærer mig, skal min retfærdighed stråle som solen og bringe lægedom. Og I skal danse omkring som forårskåde kalve, der lige er sluppet ud fra stalden. ",
+			"21": "<sup class=\"versenum\">21 </sup>Når jeg griber ind, skal I triumfere over de ugudelige og træde dem ned som støv under jeres fødder,” erklærer Herren, den Almægtige.",
+			"22": "<sup class=\"versenum\">22 </sup>„Husk på de love og forordninger, jeg gav til hele Israel gennem min tjener Moses på Horebs bjerg.",
+			"23": "<sup class=\"versenum\">23 </sup>Men før den store og alvorlige dom bliver udført, vil jeg sende profeten Elias til jer. ",
+			"24": "<sup class=\"versenum\">24 </sup>Han vil hjælpe forældre til at blive forsonet med deres børn og børn til at blive forsonet med deres forældre, så ikke alle skal udryddes, når dommen kommer.”"
+		}
+	}
+};
+module.exports = book;

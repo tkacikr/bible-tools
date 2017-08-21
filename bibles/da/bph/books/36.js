@@ -1,0 +1,65 @@
+var book = {
+	"name": "Zefanias",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<span class=\"chapternum\">1 </span>Zefanias var søn af Kushi, der var søn af Gedalja, der var søn af Amarja, der var søn af Hizkija. Han modtog følgende profetiske budskab fra Herren, mens Josias, Amons søn, var konge i Juda.",
+			"2": "<sup class=\"versenum\">2 </sup>„Jeg vil fjerne alt fra jordens overflade,” erklærer Herren.",
+			"3": "<sup class=\"versenum\">3 </sup><span class=\"indent-1-breaks\">&nbsp;&nbsp;&nbsp;&nbsp;</span>„Jeg vil udrydde både mennesker og dyr.Jeg vil fjerne alt, hvad der førte mennesket til fald,sammen med de mennesker, der faldt.Hele menneskeheden skal forsvinde fra jordens overflade.",
+			"4": "<sup class=\"versenum\">4 </sup>Jeg vil straffe Judas folkog ramme Jerusalems indbyggere.Jeg vil fjerne, hvad der er tilbage af afgudsdyrkelsenog udrydde alle afgudspræsterne.Jeg gør det af med mine frafaldne præster,så ingen vil huske dem mere.",
+			"5": "<sup class=\"versenum\">5 </sup>Jeg vil udrydde dem, der på husenes tagetilbeder solen, månen og stjernerne,og dem, der lover mig troskab,men samtidig tilbeder Molok.",
+			"6": "<sup class=\"versenum\">6 </sup>Jeg vil udrydde dem, som har vendt mig ryggen,så de ikke længere søger at gøre min vilje.”",
+			"7": "<sup class=\"versenum\">7 </sup>Vis ærefrygt for den almægtige Gud,for han vil snart udføre sin dom.Han har besluttet at ramme sit folkog har allerede udvalgt nogle til opgaven.",
+			"8": "<sup class=\"versenum\">8 </sup>Herren siger: „Jeg vil straffe Judas ledere og kongeslægten,ja, alle der tilbeder fremmede guder.",
+			"9": "<sup class=\"versenum\">9 </sup>Jeg vil straffe alle afgudsdyrkerne,som i deres templer planlægger vold og bedrageri.",
+			"10": "<sup class=\"versenum\">10 </sup>Når fjenden kommer, vil der lyde skrig fra Fiskeporten,høje råb fra den nye bydelog voldsomme tumulter fra de omkringliggende høje.",
+			"11": "<sup class=\"versenum\">11 </sup>I, der bor på markedspladsen i dalsænkningen,sørg og græd, for I bliver de første, der omkommer.",
+			"12": "<sup class=\"versenum\">12 </sup>Jeg vil gennemsøge Jerusalem med lys og lygte,straffe de selvsikre syndere, der tror,at Gud er ligeglad med, hvad de gør.",
+			"13": "<sup class=\"versenum\">13 </sup>Fjenden vil plyndre deres huseog stjæle deres rigdomme.De kommer aldrig til at bo i de huse,som de er i færd med at bygge.De kommer ikke til at smage vinen fra de vingårde,de har haft så travlt med at anlægge.",
+			"14": "<sup class=\"versenum\">14 </sup>Min dom vil snart ramme jer.Dagen er nær og kommer med hast.Det bliver en frygtelig dag,hvor selv de tapreste mænd vil græde,",
+			"15": "<sup class=\"versenum\">15 </sup>for jeg udøser min vrede over byen.Det bliver en dag fuld af nød og fortvivlelse,af ødelæggelse og undergang,håbløshed og mismod,dysterhed og mørke,og kulsorte skyer på himlen.",
+			"16": "<sup class=\"versenum\">16 </sup>Det bliver en dag med hornsignalerog høje krigsråb.Selv de befæstede byer bukker under,og de høje fæstningstårne falder sammen.",
+			"17": "<sup class=\"versenum\">17 </sup>Jeg vil ramme dem så hårdt,at de raver rundt som i blinde,for de har syndet imod mig.Strømme af blod vil flyde i støvet,ligene ligge og rådne på jorden.",
+			"18": "<sup class=\"versenum\">18 </sup>Deres sølv og guld kan ikke redde dem,når jeg udfører min dom over dem.Min glødende vrede vil sætte verden i brand,så hele jordens befolkning får en brat og frygtelig død.”"
+		},
+		"2": {
+			"1": "<span class=\"chapternum\">2 </span>Kom til fornuft, I frafaldne folk,",
+			"2": "<sup class=\"versenum\">2 </sup><span class=\"indent-1-breaks\">&nbsp;&nbsp;&nbsp;&nbsp;</span>før I blæses væk som avner i vinden,før I rammes af Herrens vrede,før den afsagte dom bliver udført.",
+			"3": "<sup class=\"versenum\">3 </sup>Søg Herren, alle I, som er ydmygeog oprigtigt ønsker at adlyde ham.Ydmyg jer for Herren og gør, hvad der er ret.Måske vil Herren skåne jer på dommens dag.",
+			"4": "<sup class=\"versenum\">4 </sup>Gaza bliver tømt for mennesker,og Ashkalon bliver lagt øde.Ashdods befolkning drives bort ved højlys dag,og Ekron rykkes op med rode.",
+			"5": "<sup class=\"versenum\">5 </sup>Alle I filistre, som bor langs kysten mod syd,ja, alle I, der bor i Kanaʼans land,det er ude med jer,for Herrens dom vil ramme jer.Han siger: „Jeg vil udrydde jer,og ikke en eneste skal overleve!”",
+			"6": "<sup class=\"versenum\">6 </sup>Kystlandet bliver til græsmarker,et sted, hvor hyrder og får holder til.",
+			"7": "<sup class=\"versenum\">7 </sup>Dér vil resten af Judas stamme slå sig nedog lade deres dyr græsse.De vil lægge sig til hvile i Ashkalons forladte huse,for Herren deres Gud vil tage sig af dem og velsigne dem igen.",
+			"8": "<sup class=\"versenum\">8-9 </sup>Herren, den Almægtige, Israels Gud, siger:„Jeg har hørt moabitternes hånog ammonitternes spot.De har hånet mit folkog truet med at overfalde dem.Derfor, så sandt jeg lever,skal Moab blive ødelagt som Sodoma,og Ammon skal blive som Gomorra.De skal overgros med brændenælder,fyldes med saltgruber,og ligge øde hen for evigt.De, der er tilbage af mit folk,skal plyndre og overtage deres land.”",
+			"10": "<sup class=\"versenum\">10 </sup>Det er betalingen for deres overmod,for de har hånet Herrens, den Almægtiges, folk.",
+			"11": "<sup class=\"versenum\">11 </sup>De vil komme til at frygte Herrens magt,for han vil gøre alle jordens guder til intet.Alle folkeslag skal tilbede ham,hvert folk i deres eget land.",
+			"12": "<sup class=\"versenum\">12 </sup>Kushitterne mod syd bliver også sablet ned,",
+			"13": "<sup class=\"versenum\">13 </sup><span class=\"indent-1-breaks\">&nbsp;&nbsp;&nbsp;&nbsp;</span>og det samme gælder landene mod nord.Herren vil ødelægge Assyrienog gøre Nineve til en ruinhob,ubeboelig som en ørken.",
+			"14": "<sup class=\"versenum\">14 </sup>Byen ender som græsgang for fårog tilholdssted for alle mulige dyr.Hornugler og natugler vil sidde og sove på søjlehovederne,krager vil skrige fra vinduesåbninger og dørtærskler.De fornemme cedertræspaneler udsættes for vejr og vind.",
+			"15": "<sup class=\"versenum\">15 </sup>Sådan bliver Nineves skæbne,den før så stolte og prægtige by.Den var sikker på sig selvog følte sig som verdens centrum.Men nu er den blevet en ruinhob,et tilholdssted for vilde dyr.De forbipasserende vil fnyse i foragt,ryste på hovedet med undrende afsky."
+		},
+		"3": {
+			"1": "<span class=\"chapternum\">3 </span>Ve Jerusalem, den oprørske by,fuld af synd og undertrykkelse.",
+			"2": "<sup class=\"versenum\">2 </sup>Den afviser enhver advarselog nægter at høre efter.Den har ikke sat sin lid til Herren,søger slet ikke sin Gud.",
+			"3": "<sup class=\"versenum\">3 </sup>Dens magthavere er brølende løver,dens dommere er glubske ulve.Har de først fået fat i et bytte,fortærer de det rub og stub.",
+			"4": "<sup class=\"versenum\">4 </sup>Dens profeter går rundt og praler,men er fulde af løgn og bedrag.Dens præster håner det, som er helligt,overtræder Guds love uden skrupler.",
+			"5": "<sup class=\"versenum\">5 </sup>Men Herren er dog stadig i byen,det er ikke ham, der gør uret.Hver morgen viser han sin godhed,ved hver solopgang er han til stede.Men de gudløse fortsætter deres gerninger,for de har ikke skam i livet.",
+			"6": "<sup class=\"versenum\">6 </sup>Herren siger: „Jeg har udryddet mange folkeslagog ødelagt deres befæstede byer.Jeg har lagt gaderne øde,så ingen længere går på dem.Byerne er nu folketomme,så ingen længere bor i dem.",
+			"7": "<sup class=\"versenum\">7 </sup>Jeg tænkte: ‚Jerusalem må da tage ved læreog vise ærefrygt for mig.’Havde de gjort det, havde de undgået min straf,og byen ville ikke blive ødelagt.Men de fremturede i deres synd,og det blev om muligt endnu værre.”",
+			"8": "<sup class=\"versenum\">8 </sup>Endvidere siger Herren:„Derfor må I tålmodigt vente på den dag,hvor jeg rejser mig.Da vil jeg afsige min retfærdige domog samle alle jordens folk sammen.Da vil jeg udøse min vrede over dem.I min lidenskab vil jeg brænde jorden op.",
+			"9": "<sup class=\"versenum\">9 </sup>Da vil jeg rense mit folks hjerterog ændre deres tanker og tale.Så skal de alle tilbede migog tjene mig enigt og trofast.",
+			"10": "<sup class=\"versenum\">10 </sup>Fra jordens fjerneste egne kommer mit adspredte folkog tilbeder mig med offergaver.",
+			"11": "<sup class=\"versenum\">11 </sup>Da skal I ikke længere skamme jerover al jeres ondskab og oprør mod mig.For jeg vil fjerne alle de stolte iblandt jer,ingen skal hovmode sig på mit hellige bjerg.",
+			"12": "<sup class=\"versenum\">12 </sup>De, der er tilbage, er de afmægtige og ydmyge,den rest, der søger tilflugt hos mig.",
+			"13": "<sup class=\"versenum\">13 </sup>Der bliver en rest af mit folk, Israel,som ikke begår uret eller lyver og bedrager.De skal få lov at leve i fred,og ingen vil terrorisere dem.”",
+			"14": "<sup class=\"versenum\">14 </sup>Syng af glæde, Jerusalems indbyggere.Råb af fryd, Israels folk.Ja, glæd jer af hele jeres hjerte.",
+			"15": "<sup class=\"versenum\">15 </sup>Herren har fritaget jer fra straffenog overvundet alle jeres fjender.Nu bor Herren, Israels Konge, midt iblandt jer.Aldrig mere skal I frygte noget ondt.",
+			"16": "<sup class=\"versenum\">16 </sup>Den dag vil man sige til Jerusalems indbyggere:„Frygt ikke. Opgiv ikke modet.",
+			"17": "<sup class=\"versenum\">17 </sup>Herren, jeres Gud, bor midt iblandt jer.Han er jeres mægtige Frelser.Han elsker jer og glæder sig over jer,han fornyer jer med sin kærlighed,han synger af glæde over jersom på højtidsdagene.”",
+			"18": "<sup class=\"versenum\">18 </sup>Herren siger:„I skal ikke længere sørge over,at I ikke kunne deltage i højtiderne.",
+			"19": "<sup class=\"versenum\">19 </sup>Engang vil jeg straffe jeres undertrykkere.Jeg vil helbrede de haltendeog samle dem, der blev adspredt.Jeg vil vende deres vanære til æreog gøre dem berømte over hele jorden.",
+			"20": "<sup class=\"versenum\">20 </sup>Til den tid vil jeg samle jer sammenog føre jer hjem igen.Jeg vil skabe respekt om jerog give jer et godt ry blandt jordens folk.I vil få at se, hvordan jeg genopretter jer.”"
+		}
+	}
+};
+module.exports = book;
