@@ -135,7 +135,7 @@ var getBibleRegex = function(lang, version){
                 literals_v2["range"]["list"] = range["list"];
             }
         }
-    } catch (err) { console.log(err); }
+    } catch (err) {}
 
     /**
      * Here we are creating handy regexps for literals
