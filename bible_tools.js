@@ -135,7 +135,7 @@ var getBibleRegex = function(lang, version){
                 literals_v2["range"]["list"] = range["list"];
             }
         }
-    } catch (err) { console.log(err); }
+    } catch (err) {}
 
     /**
      * Here we are creating handy regexps for literals
@@ -424,5 +424,7 @@ var bibleTools = {
     search: search,
     getBibleRegex: getBibleRegex
 };
+
+console.log(bibleTools.search("fr", "lsg", "Gal 4:21-31"));
 
 module.exports = bibleTools;
