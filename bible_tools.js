@@ -425,6 +425,4 @@ var bibleTools = {
     getBibleRegex: getBibleRegex
 };
 
-console.log(bibleTools.search("fr", "lsg", "Gal 4:21-31"));
-
 module.exports = bibleTools;
