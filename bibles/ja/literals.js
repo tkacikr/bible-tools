@@ -1,21 +1,15 @@
 var literals = {
-<<<<<<< refs/remotes/Adventech/master
+    "through": {
+        "list": [
+            "〜", "~"
+        ]
+    },
+
     "and": {
         "list": [
             "と"
         ]
     }
-=======
-    and: [
-        "と",
-    ],
-
-    through: [
-        "〜",
-        "~",
-        "~"
-    ]
->>>>>>> Added literal to ja
 };
 
 module.exports = literals;
