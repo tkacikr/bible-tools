@@ -373,6 +373,7 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"Römer",
+				"Römer",
 				"Roemer",
 				"Roem",
 				"Röm"
@@ -428,14 +429,16 @@ var info = {
 			"name": "1 Thessalonicher",
 			"numChapters": 5,
 			"synonyms": [
-				"1\.? Thess(alonicher)?"
+				"1\.? Thess(alonicher)?",
+				"1\.? Ths"
 			]
 		},
 		{
 			"name": "2 Thessalonicher",
 			"numChapters": 3,
 			"synonyms": [
-				"2\.? Thess(alonicher)?"
+				"2\.? Thess(alonicher)?",
+                "2\.? Ths"
 			]
 		},
 		{
