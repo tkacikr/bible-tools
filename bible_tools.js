@@ -71,6 +71,10 @@ var getBibleRegex = function(lang, version){
 
             bibleBooks += bibleBookInfo.books[i].name.bibleSynonymOptimization() + "|";
 
+            bibleBookInfo.books[i].synonyms = bibleBookInfo.books[i].synonyms.sort(function(a, b){
+                return b.length - a.length;
+            });
+
             for (var j = 0; j < bibleBookInfo.books[i].synonyms.length; j++){
                 bibleBooks += bibleBookInfo.books[i].synonyms[j].bibleSynonymOptimization() + "|";
             }
