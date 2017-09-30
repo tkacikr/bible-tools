@@ -307,7 +307,8 @@ var info = {
 			"name": "Faptele Apostolilor",
 			"numChapters": 28,
 			"synonyms": [
-				"Faptele Apostolilor"
+				"Faptele Apostolilor",
+				"Faptele"
 			]
 		},
 		{
