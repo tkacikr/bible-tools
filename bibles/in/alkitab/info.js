@@ -404,7 +404,8 @@ var info = {
 			"synonyms": [
 				"Filipi",
 				"Flp",
-                "Phil"
+                "Phil",
+				"Fil"
 			]
 		},
 		{
