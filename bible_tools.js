@@ -26,11 +26,13 @@ var getBookByOSIS = function(lang, version, book_osis){
     var bibleInfo = require("./bibles/" + lang + "/" + version + "/info");
 
     for (var bookIterator = 0; bookIterator < bibleInfo.books.length; bookIterator++) {
-        var bookRegExp = "^"+bibleInfo.books[bookIterator].name.bibleSynonymOptimization() + "|";
+        var bookRegExp = "^("+bibleInfo.books[bookIterator].name.bibleSynonymOptimization() + "|";
+
         for (var bookSynonymIterator = 0; bookSynonymIterator < bibleInfo.books[bookIterator].synonyms.length; bookSynonymIterator++) {
             bookRegExp += bibleInfo.books[bookIterator].synonyms[bookSynonymIterator].bibleSynonymOptimization() + "|";
         }
-        bookRegExp = bookRegExp.customTrim("| ");
+        bookRegExp = bookRegExp.customTrim("| ") + ")$";
+
         if (book_osis.match(new RegExp(bookRegExp, "g"))) {
             return require("./bibles/" + lang + "/" + version + "/books/" + (bookIterator + 1).toString().lpad(2));
         }
@@ -87,8 +89,10 @@ var search = function(lang, version, text) {
                     var _chapter = entity.start.c.toString().customTrim(" "),
                         _header = "<h2>" + bibleBook.name + " " + _chapter + "</h2>";
 
+                    match_verses += _header;
+
                     for (var key in bibleBook.chapters[_chapter]) {
-                        match_verses += _header + bibleBook.chapters[_chapter][key];
+                        match_verses += bibleBook.chapters[_chapter][key];
                     }
                     break;
 
@@ -97,10 +101,9 @@ var search = function(lang, version, text) {
                 case "integer":
                 case "bcv":
                 case "range": {
-
                     var _header = "<h2>" + bibleBook.name + " ";
 
-                    if (entity.type === "range"){
+                    if (entity.type === "range" || ((entity.start.c !== entity.end.c) || (entity.start.c === entity.end.c && entity.start.v !== entity.end.v))){
                         if (entity.start.c === entity.end.c){
                             _header += entity.start.c + cv_delimeter + entity.start.v + "-" + entity.end.v;
                         } else {
@@ -148,7 +151,5 @@ var search = function(lang, version, text) {
 var bibleTools = {
     search: search
 };
-
-console.log(JSON.stringify(bibleTools.search("en", "nkjv", "Romans 1:2222"), null, 2));
 
 module.exports = bibleTools;
