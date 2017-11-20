@@ -8,6 +8,7 @@ var info = {
 			"synonyms": [
 				"Kejadian",
 				"Kej",
+				"Gen",
 				"Gen"
 			]
 		},
@@ -16,7 +17,8 @@ var info = {
 			"numChapters": 40,
 			"synonyms": [
 				"Keluaran",
-				"Kel"
+				"Kel",
+				"Exod"
 			]
 		},
 		{
@@ -24,7 +26,8 @@ var info = {
 			"numChapters": 27,
 			"synonyms": [
 				"Imamat",
-				"Im"
+				"Im",
+				"Lev"
 			]
 		},
 		{
@@ -32,7 +35,8 @@ var info = {
 			"numChapters": 36,
 			"synonyms": [
 				"Bilangan",
-				"Bil"
+				"Bil",
+				"Num"
 			]
 		},
 		{
@@ -40,7 +44,8 @@ var info = {
 			"numChapters": 34,
 			"synonyms": [
 				"Ulangan",
-				"Ul"
+				"Ul",
+				"Deut"
 			]
 		},
 		{
@@ -48,7 +53,8 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"Yosua",
-				"Yos"
+				"Yos",
+				"Josh"
 			]
 		},
 		{
@@ -56,7 +62,8 @@ var info = {
 			"numChapters": 21,
 			"synonyms": [
 				"Hakim del hakim",
-				"Hak"
+				"Hak",
+				"Judg"
 			]
 		},
 		{
@@ -64,7 +71,7 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"Rut",
-				"Rut"
+				"Ruth"
 			]
 		},
 		{
@@ -72,7 +79,8 @@ var info = {
 			"numChapters": 31,
 			"synonyms": [
 				"1 Samuel",
-				"1 Sam"
+				"1 Sam",
+				"1Sam"
 			]
 		},
 		{
@@ -80,7 +88,8 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"2 Samuel",
-				"2 Sam"
+				"2 Sam",
+				"2Sam"
 			]
 		},
 		{
@@ -88,7 +97,8 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"1 Raja-raja",
-				"1 Raj"
+				"1 Raj",
+				"1Kgs"
 			]
 		},
 		{
@@ -96,7 +106,8 @@ var info = {
 			"numChapters": 25,
 			"synonyms": [
 				"2 Raja-raja",
-				"2 Raj"
+				"2 Raj",
+				"2Kgs"
 			]
 		},
 		{
@@ -104,7 +115,8 @@ var info = {
 			"numChapters": 29,
 			"synonyms": [
 				"1 Tawarikh",
-				"1 Taw"
+				"1 Taw",
+				"1Chr"
 			]
 		},
 		{
@@ -112,7 +124,8 @@ var info = {
 			"numChapters": 36,
 			"synonyms": [
 				"2 Tawarikh",
-				"2 Taw"
+				"2 Taw",
+				"2Chr"
 			]
 		},
 		{
@@ -136,7 +149,8 @@ var info = {
 			"numChapters": 10,
 			"synonyms": [
 				"Ester",
-				"Est"
+				"Est",
+				"Esth"
 			]
 		},
 		{
@@ -144,7 +158,8 @@ var info = {
 			"numChapters": 42,
 			"synonyms": [
 				"Ayub",
-				"Ayb"
+				"Ayb",
+				"Job"
 			]
 		},
 		{
@@ -152,7 +167,8 @@ var info = {
 			"numChapters": 150,
 			"synonyms": [
 				"Mazmur",
-				"Mzm"
+				"Mzm",
+				"Ps"
 			]
 		},
 		{
@@ -160,7 +176,8 @@ var info = {
 			"numChapters": 31,
 			"synonyms": [
 				"Amsal",
-				"Ams"
+				"Ams",
+				"Prov"
 			]
 		},
 		{
@@ -168,7 +185,8 @@ var info = {
 			"numChapters": 12,
 			"synonyms": [
 				"Pengkhutbah",
-				"Pkh"
+				"Pkh",
+				"Eccl"
 			]
 		},
 		{
@@ -176,7 +194,8 @@ var info = {
 			"numChapters": 8,
 			"synonyms": [
 				"Kidung Agung",
-				"Kid"
+				"Kid",
+				"Song"
 			]
 		},
 		{
@@ -184,7 +203,8 @@ var info = {
 			"numChapters": 66,
 			"synonyms": [
 				"Yesaya",
-				"Yes"
+				"Yes",
+				"Isa"
 			]
 		},
 		{
@@ -192,7 +212,8 @@ var info = {
 			"numChapters": 52,
 			"synonyms": [
 				"Yeremia",
-				"Yer"
+				"Yer",
+				"Jer"
 			]
 		},
 		{
@@ -200,7 +221,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"Ratapan",
-				"Rat"
+				"Rat",
+				"Lam"
 			]
 		},
 		{
@@ -208,7 +230,8 @@ var info = {
 			"numChapters": 48,
 			"synonyms": [
 				"Yehezkiel",
-				"Yeh"
+				"Yeh",
+				"Ezek"
 			]
 		},
 		{
@@ -216,6 +239,7 @@ var info = {
 			"numChapters": 12,
 			"synonyms": [
 				"Daniel",
+				"Dan",
 				"Dan"
 			]
 		},
@@ -224,6 +248,7 @@ var info = {
 			"numChapters": 14,
 			"synonyms": [
 				"Hosea",
+				"Hos",
 				"Hos"
 			]
 		},
@@ -232,7 +257,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"Yoel",
-				"Yl"
+				"Yl",
+				"Joel"
 			]
 		},
 		{
@@ -248,7 +274,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"Obaja",
-				"Ob"
+				"Ob",
+				"Obad"
 			]
 		},
 		{
@@ -256,7 +283,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"Yunus",
-				"Yun"
+				"Yun",
+				"Jonah"
 			]
 		},
 		{
@@ -264,7 +292,8 @@ var info = {
 			"numChapters": 7,
 			"synonyms": [
 				"Mikha",
-				"Mi"
+				"Mi",
+				"Mic"
 			]
 		},
 		{
@@ -288,7 +317,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"Zefanya",
-				"Zef"
+				"Zef",
+				"Zeph"
 			]
 		},
 		{
@@ -304,7 +334,8 @@ var info = {
 			"numChapters": 14,
 			"synonyms": [
 				"Zakharia",
-				"Za"
+				"Za",
+				"Zech"
 			]
 		},
 		{
@@ -320,7 +351,8 @@ var info = {
 			"numChapters": 28,
 			"synonyms": [
 				"Matius",
-				"Mat"
+				"Mat",
+				"Matt"
 			]
 		},
 		{
@@ -328,7 +360,8 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"Markus",
-				"Mrk"
+				"Mrk",
+				"Mark"
 			]
 		},
 		{
@@ -336,7 +369,8 @@ var info = {
 			"numChapters": 24,
 			"synonyms": [
 				"Lukas",
-				"Luk"
+				"Luk",
+				"Luke"
 			]
 		},
 		{
@@ -344,7 +378,8 @@ var info = {
 			"numChapters": 21,
 			"synonyms": [
 				"Yohanes",
-				"Yoh"
+				"Yoh",
+				"John"
 			]
 		},
 		{
@@ -353,7 +388,8 @@ var info = {
 			"synonyms": [
 				"Kisah Rasul-rasul",
 				"Kisah Para Rasul",
-				"Kis"
+				"Kis",
+				"Acts"
 			]
 		},
 		{
@@ -370,7 +406,8 @@ var info = {
 			"numChapters": 16,
 			"synonyms": [
 				"1 Korintus",
-				"1 Kor"
+				"1 Kor",
+				"1Cor"
 			]
 		},
 		{
@@ -378,7 +415,8 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"2 Korintus",
-				"2 Kor"
+				"2 Kor",
+				"2Cor"
 			]
 		},
 		{
@@ -404,7 +442,7 @@ var info = {
 			"synonyms": [
 				"Filipi",
 				"Flp",
-                "Phil",
+				"Phil",
 				"Fil"
 			]
 		},
@@ -413,7 +451,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"Kolose",
-				"Kol"
+				"Kol",
+				"Col"
 			]
 		},
 		{
@@ -421,7 +460,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 Tesalonika",
-				"1 Tes"
+				"1 Tes",
+				"1Thess"
 			]
 		},
 		{
@@ -429,7 +469,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"2 Tesalonika",
-				"2 Tes"
+				"2 Tes",
+				"2Thess"
 			]
 		},
 		{
@@ -437,7 +478,8 @@ var info = {
 			"numChapters": 6,
 			"synonyms": [
 				"1 Timotius",
-				"1 Tim"
+				"1 Tim",
+				"1Tim"
 			]
 		},
 		{
@@ -445,7 +487,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"2 Timotius",
-				"2 Tim"
+				"2 Tim",
+				"2Tim"
 			]
 		},
 		{
@@ -453,7 +496,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"Titus",
-				"Tit"
+				"Tit",
+				"Titus"
 			]
 		},
 		{
@@ -461,7 +505,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"Filemon",
-				"Flm"
+				"Flm",
+				"Phlm"
 			]
 		},
 		{
@@ -469,7 +514,8 @@ var info = {
 			"numChapters": 13,
 			"synonyms": [
 				"Ibrani",
-				"Ibr"
+				"Ibr",
+				"Heb"
 			]
 		},
 		{
@@ -477,7 +523,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"Yakobus",
-				"Yak"
+				"Yak",
+				"Jas"
 			]
 		},
 		{
@@ -485,7 +532,8 @@ var info = {
 			"numChapters": 5,
 			"synonyms": [
 				"1 Petrus",
-				"1 Ptr"
+				"1 Ptr",
+				"1Pet"
 			]
 		},
 		{
@@ -493,7 +541,8 @@ var info = {
 			"numChapters": 3,
 			"synonyms": [
 				"2 Petrus",
-				"2 Ptr"
+				"2 Ptr",
+				"2Pet"
 			]
 		},
 		{
@@ -501,7 +550,8 @@ var info = {
 			"numChapters": 4,
 			"synonyms": [
 				"1 Yohanes",
-				"1 Yoh"
+				"1 Yoh",
+				"1John"
 			]
 		},
 		{
@@ -509,7 +559,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"2 Yohanes",
-				"2 Yoh"
+				"2 Yoh",
+				"2John"
 			]
 		},
 		{
@@ -517,7 +568,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"3 Yohanes",
-				"3 Yoh"
+				"3 Yoh",
+				"3John"
 			]
 		},
 		{
@@ -525,7 +577,8 @@ var info = {
 			"numChapters": 1,
 			"synonyms": [
 				"Yudas",
-				"Yud"
+				"Yud",
+				"Jude"
 			]
 		},
 		{
@@ -533,7 +586,8 @@ var info = {
 			"numChapters": 22,
 			"synonyms": [
 				"Wahyu",
-				"Why"
+				"Why",
+				"Rev"
 			]
 		}
 	]
