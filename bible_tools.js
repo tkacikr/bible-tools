@@ -74,26 +74,32 @@ var search = function(lang, version, text) {
 
             switch(entity.type) {
                 case "cv": {
-                    var _verse = entity.start.v.toString().customTrim(" "),
-                        _chapter = entity.start.c.toString().customTrim(" "),
-                        _header = "<h2>" + bibleBook.name + " " + _chapter + cv_delimeter + _verse + "</h2>";
+                    for (var _verseIterator = entity.start.v; _verseIterator <= entity.end.v; _verseIterator++){
+                        var _verse = _verseIterator.toString().customTrim(" "),
+                            _chapter = entity.start.c.toString().customTrim(" "),
+                            _header = "<h2>" + bibleBook.name + " " + _chapter + cv_delimeter + _verse + "</h2>";
 
-                    if (_verse in bibleBook.chapters[_chapter]){
+                        if (_verse in bibleBook.chapters[_chapter]){
 
-                        match_verses += _header + bibleBook.chapters[_chapter][_verse];
+                            match_verses += _header + bibleBook.chapters[_chapter][_verse];
+                        }
                     }
+
                     break;
                 }
 
                 case "bc": {
-                    var _chapter = entity.start.c.toString().customTrim(" "),
-                        _header = "<h2>" + bibleBook.name + " " + _chapter + "</h2>";
+                    for (var _chapterIterator = entity.start.c; _chapterIterator <= entity.end.c; _chapterIterator++){
+                        var _chapter = _chapterIterator.toString().customTrim(" "),
+                            _header = "<h2>" + bibleBook.name + " " + _chapter + "</h2>";
 
-                    match_verses += _header;
+                        match_verses += _header;
 
-                    for (var key in bibleBook.chapters[_chapter]) {
-                        match_verses += bibleBook.chapters[_chapter][key];
+                        for (var key in bibleBook.chapters[_chapter]) {
+                            match_verses += bibleBook.chapters[_chapter][key];
+                        }
                     }
+
                     break;
 
                 }
@@ -101,6 +107,7 @@ var search = function(lang, version, text) {
                 case "integer":
                 case "bcv":
                 case "range": {
+
                     var _header = "<h2>" + bibleBook.name + " ";
 
                     if (entity.type === "range" || ((entity.start.c !== entity.end.c) || (entity.start.c === entity.end.c && entity.start.v !== entity.end.v))){
@@ -151,5 +158,7 @@ var search = function(lang, version, text) {
 var bibleTools = {
     search: search
 };
+
+// console.log(bibleTools.search("en", "nkjv", "Gen 1:1,2; 2:1,2"));
 
 module.exports = bibleTools;

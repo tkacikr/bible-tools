@@ -6,7 +6,6 @@
   "dependencies": {
     "async": "^2.1.2",
     "bible-passage-reference-parser": "^2.0.1",
-    "chai": "^4.1.2",
     "cheerio": "^0.22.0",
     "crypto": "0.0.3",
     "ent": "^2.2.0",
@@ -21,6 +20,8 @@
     "yamljs": "^0.2.7"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "expect": "^21.2.1",
     "optimist": "^0.6.1"
   },
   "scripts": {
