@@ -159,6 +159,4 @@ var bibleTools = {
     search: search
 };
 
-// console.log(bibleTools.search("en", "nkjv", "Gen 1:1,2; 2:1,2"));
-
 module.exports = bibleTools;
