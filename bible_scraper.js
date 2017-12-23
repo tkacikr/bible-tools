@@ -101,7 +101,7 @@ var scrapeBibleChapter = function(bookChapter, version, callback, scrapeOnly){
                     if (!scrapeOnly){
                         write(output);
                     }
-                    setTimeout(function(){callback(null, 'test')}, 400);
+                    setTimeout(function(){callback(null, 'test')}, 800);
 
                 }
             );
@@ -122,6 +122,7 @@ var scrapeBible = function(lang, version){
 
         for (var i = 1; i <= bibleInfo.books.length; i++){
             cursorBook = i;
+            if (i!==5)continue;
             var bookInfo = {
                 name: bibleInfo.books[i-1].name,
                 numChapters: bibleInfo.books[i-1].numChapters,
@@ -266,7 +267,7 @@ function addSynonyms(lang, version, synonyms){
 // scrapeBibleInfo("da", "dn1933", encodeURIComponent("Dette-er-Biblen-på-dansk-1933"));
 // scrapeBibleInfo("da", "bph", encodeURIComponent("Bibelen-på-hverdagsdansk-BPH"));
 
-// scrapeBible("en", "nasb");
+scrapeBible("en", "nkjv");
 // scrapeBible("ja", "jlb");
 // scrapeBible("pt", "arc");
 // scrapeBible("fr", "lsg");
