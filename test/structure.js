@@ -1,5 +1,5 @@
 var expect = require("chai").expect,
-    bibleTools = require('../bible_tools');
+    bibleTools = require('../bible_tools_bcv');
 
 var validStructCheck = function(result){
     it("Should have valid structure", function() {
