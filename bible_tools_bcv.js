@@ -45,8 +45,14 @@ var search = function(lang, version, text) {
         require("./bibles/" + lang + "/options")
     } catch (err){}
 
-    var bcv_parser = require("bible-passage-reference-parser/js/"+lang+"_bcv_parser").bcv_parser,
-        bcv = new bcv_parser;
+    try {
+        var bcv_parser = require("bible-passage-reference-parser/js/"+lang+"_bcv_parser").bcv_parser,
+            bcv = new bcv_parser;
+    } catch (err) {
+        var e = new Error();
+        e.sender = "bibleParserBCVMissingLanguage";
+        throw e;
+    }
 
     bcv.set_options(options);
 
