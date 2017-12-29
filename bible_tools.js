@@ -429,9 +429,4 @@ var bibleTools = {
     getBibleRegex: getBibleRegex
 };
 
-
-console.log(
-    bibleTools.search("en", "nkjv", "1 John 1:1")
-)
-
 module.exports = bibleTools;
