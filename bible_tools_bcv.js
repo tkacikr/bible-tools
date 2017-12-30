@@ -165,6 +165,4 @@ var bibleTools = {
     search: search
 };
 
-console.log(bibleTools.search("da", "bph",  "Luk 14,26-33"));
-
 module.exports = bibleTools;
