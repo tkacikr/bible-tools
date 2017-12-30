@@ -42,7 +42,7 @@ var getBookByOSIS = function(lang, version, book_osis){
 var search = function(lang, version, text) {
     var options = {};
     try {
-        require("./bibles/" + lang + "/options")
+        options = require("./bibles/" + lang + "/options")
     } catch (err){}
 
     try {
@@ -164,5 +164,7 @@ var search = function(lang, version, text) {
 var bibleTools = {
     search: search
 };
+
+console.log(bibleTools.search("da", "bph",  "Luk 14,26-33"));
 
 module.exports = bibleTools;
