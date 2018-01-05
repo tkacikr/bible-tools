@@ -6,203 +6,203 @@ var info = {
 			"name": "I Mojsijeva",
 			"numChapters": 50,
 			"synonyms": [
-				"1\.? Mojsijeva"
+				"Gen"
 			]
 		},
 		{
 			"name": "II Mojsijeva",
 			"numChapters": 40,
 			"synonyms": [
-				"2\.? Mojsijeva"
+				"Exod"
 			]
 		},
 		{
 			"name": "III Mojsijeva",
 			"numChapters": 27,
 			"synonyms": [
-				"3\.? Mojsijeva"
+				"Lev"
 			]
 		},
 		{
 			"name": "IV Mojsijeva",
 			"numChapters": 36,
 			"synonyms": [
-				"4\.? Mojsijeva"
+				"Num"
 			]
 		},
 		{
 			"name": "V Mojsijeva",
 			"numChapters": 34,
 			"synonyms": [
-				"5\.? Mojsijeva"
+				"Deut"
 			]
 		},
 		{
 			"name": "Isus Navin",
 			"numChapters": 24,
 			"synonyms": [
-				"Isus Navin"
+				"Josh"
 			]
 		},
 		{
 			"name": "Sudije",
 			"numChapters": 21,
 			"synonyms": [
-				"Sudije"
+				"Judg"
 			]
 		},
 		{
 			"name": "Ruta",
 			"numChapters": 4,
 			"synonyms": [
-				"Ruta"
+				"Ruth"
 			]
 		},
 		{
 			"name": "I Samuilova",
 			"numChapters": 31,
 			"synonyms": [
-				"1\.? Samuilova"
+				"1Sam"
 			]
 		},
 		{
 			"name": "II Samuilova",
 			"numChapters": 24,
 			"synonyms": [
-				"2\.? Samuilova"
+				"2Sam"
 			]
 		},
 		{
 			"name": "I O carevima",
 			"numChapters": 22,
 			"synonyms": [
-				"1\.? Carevima"
+				"1Kgs"
 			]
 		},
 		{
 			"name": "II O carevima",
 			"numChapters": 25,
 			"synonyms": [
-				"2\.? Carevima"
+				"2Kgs"
 			]
 		},
 		{
 			"name": "I Dnevnika",
 			"numChapters": 29,
 			"synonyms": [
-				"1\.? Dnevnika"
+				"1Chr"
 			]
 		},
 		{
 			"name": "II Dnevnika",
 			"numChapters": 36,
 			"synonyms": [
-				"2\.? Dnevnika"
+				"2Chr"
 			]
 		},
 		{
 			"name": "Jezdra",
 			"numChapters": 10,
 			"synonyms": [
-				"Jezdra"
+				"Ezra"
 			]
 		},
 		{
 			"name": "Nemija",
 			"numChapters": 13,
 			"synonyms": [
-				"Nemija"
+				"Neh"
 			]
 		},
 		{
 			"name": "Jestira",
 			"numChapters": 10,
 			"synonyms": [
-				"Jestira"
+				"Esth"
 			]
 		},
 		{
 			"name": "Jov",
 			"numChapters": 42,
 			"synonyms": [
-				"Jov"
+				"Job"
 			]
 		},
 		{
 			"name": "Psalmi",
 			"numChapters": 150,
 			"synonyms": [
-				"Psalmi"
+				"Ps"
 			]
 		},
 		{
 			"name": "Priče Solomunove",
 			"numChapters": 31,
 			"synonyms": [
-				"Priče Solomunove"
+				"Prov"
 			]
 		},
 		{
 			"name": "Propovjednik",
 			"numChapters": 12,
 			"synonyms": [
-				"Propovjednik"
+				"Eccl"
 			]
 		},
 		{
 			"name": "Pjesma nad pjesmama",
 			"numChapters": 8,
 			"synonyms": [
-				"Pjesma nad pjesmama"
+				"Song"
 			]
 		},
 		{
 			"name": "Isaija",
 			"numChapters": 66,
 			"synonyms": [
-				"Isaija"
+				"Isa"
 			]
 		},
 		{
 			"name": "Jeremija",
 			"numChapters": 52,
 			"synonyms": [
-				"Jeremija"
+				"Jer"
 			]
 		},
 		{
 			"name": "Plač Jeremijin",
 			"numChapters": 5,
 			"synonyms": [
-				"Plač Jeremijin"
+				"Lam"
 			]
 		},
 		{
 			"name": "Jezekilj",
 			"numChapters": 48,
 			"synonyms": [
-				"Jezekilj"
+				"Ezek"
 			]
 		},
 		{
 			"name": "Danilo",
 			"numChapters": 12,
 			"synonyms": [
-				"Danilo"
+				"Dan"
 			]
 		},
 		{
 			"name": "Osija",
 			"numChapters": 14,
 			"synonyms": [
-				"Osija"
+				"Hos"
 			]
 		},
 		{
 			"name": "Joilo",
 			"numChapters": 3,
 			"synonyms": [
-				"Joilo"
+				"Joel"
 			]
 		},
 		{
@@ -216,252 +216,252 @@ var info = {
 			"name": "Avdija",
 			"numChapters": 1,
 			"synonyms": [
-				"Avdija"
+				"Obad"
 			]
 		},
 		{
 			"name": "Jona",
 			"numChapters": 4,
 			"synonyms": [
-				"Jona"
+				"Jonah"
 			]
 		},
 		{
 			"name": "Mihej",
 			"numChapters": 7,
 			"synonyms": [
-				"Mihej"
+				"Mic"
 			]
 		},
 		{
 			"name": "Naum",
 			"numChapters": 3,
 			"synonyms": [
-				"Naum"
+				"Nah"
 			]
 		},
 		{
 			"name": "Avakum",
 			"numChapters": 3,
 			"synonyms": [
-				"Avakum"
+				"Hab"
 			]
 		},
 		{
 			"name": "Sofonija",
 			"numChapters": 3,
 			"synonyms": [
-				"Sofonija"
+				"Zeph"
 			]
 		},
 		{
 			"name": "Agej",
 			"numChapters": 2,
 			"synonyms": [
-				"Agej"
+				"Hag"
 			]
 		},
 		{
 			"name": "Zaharija",
 			"numChapters": 14,
 			"synonyms": [
-				"Zaharija"
+				"Zech"
 			]
 		},
 		{
 			"name": "Malahija",
 			"numChapters": 4,
 			"synonyms": [
-				"Malahija"
+				"Mal"
 			]
 		},
 		{
 			"name": "Matej",
 			"numChapters": 28,
 			"synonyms": [
-				"Matej"
+				"Matt"
 			]
 		},
 		{
 			"name": "Marko",
 			"numChapters": 16,
 			"synonyms": [
-				"Marko"
+				"Mark"
 			]
 		},
 		{
 			"name": "Luka",
 			"numChapters": 24,
 			"synonyms": [
-				"Luka"
+				"Luke"
 			]
 		},
 		{
 			"name": "Jovan",
 			"numChapters": 21,
 			"synonyms": [
-				"Jovan"
+				"John"
 			]
 		},
 		{
 			"name": "Djela apostolska",
 			"numChapters": 28,
 			"synonyms": [
-				"Djela apostolska"
+				"Acts"
 			]
 		},
 		{
 			"name": "Rimljanima",
 			"numChapters": 16,
 			"synonyms": [
-				"Rimljanima"
+				"Rom"
 			]
 		},
 		{
 			"name": "I Korinćanima",
 			"numChapters": 16,
 			"synonyms": [
-				"1\.? Korinćanima"
+				"1Cor"
 			]
 		},
 		{
 			"name": "II Korinćanima",
 			"numChapters": 13,
 			"synonyms": [
-				"2\.? Korinćanima"
+				"2Cor"
 			]
 		},
 		{
 			"name": "Galatima",
 			"numChapters": 6,
 			"synonyms": [
-				"Galatima"
+				"Gal"
 			]
 		},
 		{
 			"name": "Efescima",
 			"numChapters": 6,
 			"synonyms": [
-				"Efescima"
+				"Eph"
 			]
 		},
 		{
 			"name": "Filibljanima",
 			"numChapters": 4,
 			"synonyms": [
-				"Filibljanima"
+				"Phil"
 			]
 		},
 		{
 			"name": "Kološanima",
 			"numChapters": 4,
 			"synonyms": [
-				"Kološanima"
+				"Col"
 			]
 		},
 		{
 			"name": "I Solunjanima",
 			"numChapters": 5,
 			"synonyms": [
-				"1\.? Solunjanima"
+				"1Thess"
 			]
 		},
 		{
 			"name": "II Solunjanima",
 			"numChapters": 3,
 			"synonyms": [
-				"2\.? Solunjanima"
+				"2Thess"
 			]
 		},
 		{
 			"name": "I Timotiju",
 			"numChapters": 6,
 			"synonyms": [
-				"1\.? Timotiju"
+				"1Tim"
 			]
 		},
 		{
 			"name": "II Timotiju",
 			"numChapters": 4,
 			"synonyms": [
-				"2\.? Timotiju"
+				"2Tim"
 			]
 		},
 		{
 			"name": "Titu",
 			"numChapters": 3,
 			"synonyms": [
-				"Titu"
+				"Titus"
 			]
 		},
 		{
 			"name": "Filimonu",
 			"numChapters": 1,
 			"synonyms": [
-				"Filimonu"
+				"Phlm"
 			]
 		},
 		{
 			"name": "Jevrejima",
 			"numChapters": 13,
 			"synonyms": [
-				"Jevrejima"
+				"Heb"
 			]
 		},
 		{
 			"name": "Jakov",
 			"numChapters": 5,
 			"synonyms": [
-				"Jakov"
+				"Jas"
 			]
 		},
 		{
 			"name": "I Petrova",
 			"numChapters": 5,
 			"synonyms": [
-				"1\.? Petrova"
+				"1Pet"
 			]
 		},
 		{
 			"name": "II Petrova",
 			"numChapters": 3,
 			"synonyms": [
-				"2\.? Petrova"
+				"2Pet"
 			]
 		},
 		{
 			"name": "I Jovanova",
 			"numChapters": 5,
 			"synonyms": [
-				"1\.? Jovanova"
+				"1John"
 			]
 		},
 		{
 			"name": "II Jovanova",
 			"numChapters": 1,
 			"synonyms": [
-				"2\.? Jovanova"
+				"2John"
 			]
 		},
 		{
 			"name": "III Jovanova",
 			"numChapters": 1,
 			"synonyms": [
-				"3\.? Jovanova"
+				"3John"
 			]
 		},
 		{
 			"name": "Juda",
 			"numChapters": 1,
 			"synonyms": [
-				"Juda"
+				"Jude"
 			]
 		},
 		{
 			"name": "Otkrivenje",
 			"numChapters": 22,
 			"synonyms": [
-				"Otkrivenje"
+				"Rev"
 			]
 		}
 	]
