@@ -46,7 +46,7 @@ var search = function(lang, version, text) {
     } catch (err){}
 
     try {
-        var bcv_parser = require("bible-passage-reference-parser/js/"+lang+"_bcv_parser").bcv_parser,
+        var bcv_parser = require("./lib/Bible-Passage-Reference-Parser/js/"+lang+"_bcv_parser").bcv_parser,
             bcv = new bcv_parser;
     } catch (err) {
         var e = new Error();

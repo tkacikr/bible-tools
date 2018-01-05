@@ -5,7 +5,6 @@
   "main": "bible_tools.js",
   "dependencies": {
     "async": "^2.1.2",
-    "bible-passage-reference-parser": "git+https://github.com/Adventech/Bible-Passage-Reference-Parser.git",
     "cheerio": "^0.22.0",
     "crypto": "0.0.3",
     "ent": "^2.2.0",
