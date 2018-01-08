@@ -4589,6 +4589,9 @@ describe "Miscellaneous tests", ->
 		expect(p.parse("Titus 1:1 á 2").osis()).toEqual "Titus.1.1-Titus.1.2"
 		expect(p.parse("Matt 1á2").osis()).toEqual "Matt.1-Matt.2"
 		expect(p.parse("Phlm 2 Á 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
+		expect(p.parse("Titus 1:1 al 2").osis()).toEqual "Titus.1.1-Titus.1.2"
+		expect(p.parse("Matt 1al2").osis()).toEqual "Matt.1-Matt.2"
+		expect(p.parse("Phlm 2 AL 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
 	it "should handle chapters (es)", ->
 		expect(p.parse("Titus 1:1, capítulos 2").osis()).toEqual "Titus.1.1,Titus.2"
 		expect(p.parse("Matt 3:4 CAPÍTULOS 6").osis()).toEqual "Matt.3.4,Matt.6"
@@ -4678,9 +4681,13 @@ describe "Miscellaneous tests", ->
 	it "should handle book ranges (es)", ->
 		p.set_options {book_alone_strategy: "full", book_range_strategy: "include"}
 		expect(p.parse("1.º á 3.º  Jaan").osis()).toEqual "1John.1-3John.1"
+		expect(p.parse("1.º al 3.º  Jaan").osis()).toEqual "1John.1-3John.1"
 		expect(p.parse("1.º á 3.º  Jaun").osis()).toEqual "1John.1-3John.1"
+		expect(p.parse("1.º al 3.º  Jaun").osis()).toEqual "1John.1-3John.1"
 		expect(p.parse("1.º á 3.º  Juan").osis()).toEqual "1John.1-3John.1"
+		expect(p.parse("1.º al 3.º  Juan").osis()).toEqual "1John.1-3John.1"
 		expect(p.parse("1.º á 3.º  Juun").osis()).toEqual "1John.1-3John.1"
+		expect(p.parse("1.º al 3.º  Juun").osis()).toEqual "1John.1-3John.1"
 	it "should handle boundaries (es)", ->
 		p.set_options {book_alone_strategy: "full"}
 		expect(p.parse("\u2014Matt\u2014").osis()).toEqual "Matt.1-Matt.28"

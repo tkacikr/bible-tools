@@ -9,7 +9,7 @@ $COMPARE	compara el	compara los
 $FF	y siguientes	y sig
 $TITLE	subtítulo	título	tí`t
 $TRANS	DHH	LBLA	NBLH	NTV	NVI	RVR1960	RVR	TLA
-$TO	á`
+$TO	á`	al
 $VERSE	versículos	versículo	vers.	ver.	vss.	vs.	vv.	v.
 $UNICODE_BLOCK	Latin
 
