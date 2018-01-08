@@ -161,6 +161,7 @@
 1Pet	I. Pierre
 1Pet	1 Pierre
 1Pet	I Pierre
+1Pet	1 Pie
 1Pet	1 Pi
 1Pet	1Pet
 1Pet	1 P
@@ -429,6 +430,7 @@
 2Pet	2e Pierre
 2Pet	II Pierre
 2Pet	2 Pierre
+2Pet	2 Pie
 2Pet	2 Pi
 2Pet	2Pet
 2Pet	2 P
