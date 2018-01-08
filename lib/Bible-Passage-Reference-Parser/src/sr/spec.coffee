@@ -558,7 +558,12 @@ describe "Localized book 2Kgs (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Kgs (sr)", ->
 		`
+		expect(p.parse("Druga O Carevima 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("Druga Carevima 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("II. O Carevima 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("2. O Carevima 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("II O Carevima 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("2 O Carevima 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("II. Carevima 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("2. Carevima 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("II Carevima 1:1").osis()).toEqual("2Kgs.1.1")
@@ -570,7 +575,12 @@ describe "Localized book 2Kgs (sr)", ->
 		expect(p.parse("2 Car 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("2Kgs 1:1").osis()).toEqual("2Kgs.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("DRUGA O CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("DRUGA CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("II. O CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("2. O CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("II O CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("2 O CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("II. CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("2. CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("II CAREVIMA 1:1").osis()).toEqual("2Kgs.1.1")
@@ -591,7 +601,12 @@ describe "Localized book 1Kgs (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Kgs (sr)", ->
 		`
+		expect(p.parse("Prva O Carevima 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("1. O Carevima 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("I. O Carevima 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("Prva Carevima 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("1 O Carevima 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("I O Carevima 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("1. Carevima 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("I. Carevima 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("1 Carevima 1:1").osis()).toEqual("1Kgs.1.1")
@@ -603,7 +618,12 @@ describe "Localized book 1Kgs (sr)", ->
 		expect(p.parse("I Car 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("1Kgs 1:1").osis()).toEqual("1Kgs.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("PRVA O CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("1. O CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("I. O CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("PRVA CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("1 O CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("I O CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("1. CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("I. CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("1 CAREVIMA 1:1").osis()).toEqual("1Kgs.1.1")

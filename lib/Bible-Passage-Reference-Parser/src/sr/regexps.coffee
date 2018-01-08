@@ -161,12 +161,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Kgs"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:Druga[\s\xa0]*Car(?:evima)?|(?:II|2)\.[\s\xa0]*Car(?:evima)?|(?:II|2)[\s\xa0]*Car(?:evima)?|2Kgs)
+		(?:Druga[\s\xa0]*(?:O[\s\xa0]*Carevima|Car(?:evima)?)|(?:II|2)\.[\s\xa0]*(?:O[\s\xa0]*Carevima|Car(?:evima)?)|(?:II|2)[\s\xa0]*(?:O[\s\xa0]*Carevima|Car(?:evima)?)|2Kgs)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Kgs"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:Prva[\s\xa0]*Car(?:evima)?|[1I]\.[\s\xa0]*Car(?:evima)?|[1I][\s\xa0]*Car(?:evima)?|1Kgs)
+		(?:Prva[\s\xa0]*(?:O[\s\xa0]*Carevima|Car(?:evima)?)|[1I]\.[\s\xa0]*(?:O[\s\xa0]*Carevima|Car(?:evima)?)|[1I][\s\xa0]*(?:O[\s\xa0]*Carevima|Car(?:evima)?)|1Kgs)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Chr"]

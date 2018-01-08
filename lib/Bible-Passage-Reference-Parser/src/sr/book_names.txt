@@ -48,7 +48,12 @@
 1John	1 Jov
 1John	1John
 1John	I Jov
+1Kgs	Prva O Carevima
+1Kgs	1. O Carevima
+1Kgs	I. O Carevima
 1Kgs	Prva Carevima
+1Kgs	1 O Carevima
+1Kgs	I O Carevima
 1Kgs	1. Carevima
 1Kgs	I. Carevima
 1Kgs	1 Carevima
@@ -170,7 +175,12 @@
 2John	II Jov
 2John	2 Jov
 2John	2John
+2Kgs	Druga O Carevima
 2Kgs	Druga Carevima
+2Kgs	II. O Carevima
+2Kgs	2. O Carevima
+2Kgs	II O Carevima
+2Kgs	2 O Carevima
 2Kgs	II. Carevima
 2Kgs	2. Carevima
 2Kgs	II Carevima

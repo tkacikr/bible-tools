@@ -25,8 +25,8 @@ Judg	Sudije	Sud
 Ruth	Ruta	Ruta
 1Sam	$FIRST Samuilova	$FIRST Sam
 2Sam	$SECOND Samuilova	$SECOND Sam
-1Kgs	$FIRST Carevima	$FIRST Car
-2Kgs	$SECOND Carevima	$SECOND Car
+1Kgs	$FIRST Carevima	$FIRST Car	$FIRST O Carevima
+2Kgs	$SECOND Carevima	$SECOND Car	$SECOND O Carevima
 1Chr	$FIRST Dnevnika	$FIRST Dnev
 2Chr	$SECOND Dnevnika	$SECOND Dnev
 Ezra	Jezdra	Jezd
