@@ -165,6 +165,4 @@ var bibleTools = {
     search: search
 };
 
-console.log(bibleTools.search("sr", "biblija", "1. O carevima 1,1"));
-
 module.exports = bibleTools;
