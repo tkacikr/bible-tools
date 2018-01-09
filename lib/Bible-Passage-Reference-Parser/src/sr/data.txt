@@ -33,7 +33,7 @@ Ezra	Jezdra	Jezd
 Neh	Nemija	Nem
 Esth	Jestira	Jest
 Job	Jov	O Jovu
-Ps	Psalmi	Psal
+Ps	Psalmi	Psal	Psalam
 Prov	Priče Solomunove	Priče
 Eccl	Propovjednik	Prop	Knjiga propovednika	Propovednika
 Song	Pjesma nad pjesmama	Pesma

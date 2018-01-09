@@ -509,6 +509,7 @@ Prov	Priče Solomunove
 Prov	Price
 Prov	Priče
 Prov	Prov
+Ps	Psalam
 Ps	Psalmi
 Ps	Psal
 Ps	Ps

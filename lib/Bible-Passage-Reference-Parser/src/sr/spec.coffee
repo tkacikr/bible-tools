@@ -772,10 +772,12 @@ describe "Localized book Ps (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: Ps (sr)", ->
 		`
+		expect(p.parse("Psalam 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Psalmi 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Psal 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Ps 1:1").osis()).toEqual("Ps.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("PSALAM 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("PSALMI 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("PSAL 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("PS 1:1").osis()).toEqual("Ps.1.1")
