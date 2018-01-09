@@ -499,6 +499,7 @@
 1Pet	I Петра
 1Pet	1 Петр
 1Pet	1 Пет
+1Pet	1 Пт
 1Pet	1Pet
 1Sam	1-ше. книга Самуілова
 1Sam	1-ше. книга Самуїлова
@@ -1386,6 +1387,7 @@
 2Pet	2 Петра
 2Pet	2 Петр
 2Pet	2 Пет
+2Pet	2 Пт
 2Pet	2Pet
 2Sam	2-ге. книга Самуілова
 2Sam	2-ге. книга Самуїлова
@@ -1972,6 +1974,7 @@ Col	До колоссян
 Col	Колоссян
 Col	Колосяни
 Col	Колосян
+Col	Колос
 Col	Col
 Col	Кол
 Dan	Книга пророка Даниіла
@@ -1993,8 +1996,12 @@ Deut	Повторення Закону
 Deut	Второзаконня
 Deut	Повт. Закону
 Deut	Повт Закону
+Deut	П. Зак
+Deut	П Зак
+Deut	П.Зак
 Deut	Deut
 Deut	Втор
+Deut	ПЗак
 Deut	Повт
 Deut	5 М
 Eccl	Книга Екклезіястова
@@ -2023,6 +2030,7 @@ Eph	Послання до ефесян
 Eph	До ефесян
 Eph	Ефесяни
 Eph	Ефесян
+Eph	Ефес
 Eph	Eph
 Eph	Єф
 Eph	Еф
@@ -2076,6 +2084,7 @@ Ezek	Єзекіїла
 Ezek	Єзекіїль
 Ezek	Єзекіїля
 Ezek	Ezek
+Ezek	Єзек
 Ezek	Єз
 Ezra	Книга Ездри
 Ezra	Ezdra
@@ -2083,6 +2092,7 @@ Ezra	Єздри
 Ezra	Ездра
 Ezra	Ездри
 Ezra	Ezra
+Ezra	Ездр
 Ezra	Єзд
 Ezra	Езд
 Gal	Послання св. апостола Павла до галатів
@@ -2141,6 +2151,7 @@ Hag	Огіи
 Hag	Огій
 Hag	Огія
 Hag	Hag
+Hag	Аг
 Hag	Ог
 Heb	Poslannja do jevreiv
 Heb	Poslannja do jevreïv
@@ -2195,6 +2206,7 @@ Jer	Jeremija
 Jer	Єремія
 Jer	Єреміі
 Jer	Єремії
+Jer	Єрем
 Jer	Jer
 Jer	Єр
 Job	Книга Іова
@@ -2212,7 +2224,9 @@ Joel	Книга пророка Йоіла
 Joel	Книга Иоіла
 Joel	Книга Йоіла
 Joel	Иоіла
+Joel	Иоїла
 Joel	Йоіла
+Joel	Йоїла
 Joel	Joel
 Joel	Joil
 Joel	Joïl
@@ -2250,6 +2264,8 @@ Jonah	Иона
 Jonah	Иони
 Jonah	Йона
 Jonah	Йони
+Jonah	Ион
+Jonah	Йон
 Josh	Книга Ісуса Навина
 Josh	Ісуса Навина
 Josh	Книга Єгошуі
@@ -2316,6 +2332,7 @@ Lev	Levyt
 Lev	Левит
 Lev	3 М
 Lev	Lev
+Lev	Лев
 Luke	Євангелія від св. Луки
 Luke	Євангеліє від св. Луки
 Luke	Євангелія від св Луки
@@ -2366,6 +2383,7 @@ Matt	Матвія
 Matt	Матеи
 Matt	Матей
 Matt	Matt
+Matt	Матв
 Matt	Мат
 Matt	Мт
 Mic	Книга пророка Михея
@@ -2408,6 +2426,7 @@ Num	4 книга Мойсеева
 Num	Cysla
 Num	Čysla
 Num	Числа
+Num	Числ
 Num	4 М
 Num	Num
 Num	Чис
@@ -2419,6 +2438,7 @@ Obad	Овдіи
 Obad	Овдій
 Obad	Овдія
 Obad	Obad
+Obad	Авд
 Obad	Овд
 Obad	Ов
 Phil	Послання св. апостола Павла до филип'ян
@@ -2441,6 +2461,7 @@ Phil	Филип'ян
 Phil	Филипяни
 Phil	Филип’ян
 Phil	Phil
+Phil	Филп
 Phil	Фил
 Phil	Флп
 Phlm	Послання св. апостола Павла до Филимона
@@ -2476,12 +2497,14 @@ Prov	Приказок
 Prov	Притчі
 Prov	Притч
 Prov	Prov
+Prov	Прип
 Prov	Пр
 Ps	Книга Псалмів
 Ps	Псалти́р
 Ps	Псалмів
 Ps	Psalmy
 Ps	Псалми
+Ps	Псал
 Ps	Ps
 Ps	Пс
 Rev	Об'явлення св. Івана Богослова
@@ -2511,6 +2534,8 @@ Rev	Апокаліпсис
 Rev	Об'явлення
 Rev	Об’явлення
 Rev	Одкриттє
+Rev	Об'явл
+Rev	Об’явл
 Rev	Rev
 Rev	Об
 Rom	Послання св. апостола Павла до римлян
@@ -2521,6 +2546,7 @@ Rom	Послання до римлян
 Rom	До римлян
 Rom	Римляни
 Rom	Римлян
+Rom	Римл
 Rom	Rom
 Rom	Рим
 Ruth	Книга Рут
