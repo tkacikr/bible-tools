@@ -972,13 +972,25 @@ describe "Localized book 1John (ms)", ->
 		p.include_apocrypha true
 	it "should handle book: 1John (ms)", ->
 		`
+		expect(p.parse("1. Yohanes 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I. Yohanes 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1 Yohanes 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I Yohanes 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("1. Yoh 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I. Yoh 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1 Yoh 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1John 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I Yoh 1:1").osis()).toEqual("1John.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("1. YOHANES 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I. YOHANES 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1 YOHANES 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I YOHANES 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("1. YOH 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I. YOH 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1 YOH 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1JOHN 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("I YOH 1:1").osis()).toEqual("1John.1.1")
 		`
 		true
 describe "Localized book 2John (ms)", ->
@@ -1146,12 +1158,24 @@ describe "Localized book 1Cor (ms)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Cor (ms)", ->
 		`
+		expect(p.parse("1. Korintus 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I. Korintus 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1 Korintus 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I Korintus 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("1. Kor 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I. Kor 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1 Kor 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I Kor 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1Cor 1:1").osis()).toEqual("1Cor.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("1. KORINTUS 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I. KORINTUS 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1 KORINTUS 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I KORINTUS 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("1. KOR 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I. KOR 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1 KOR 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("I KOR 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1COR 1:1").osis()).toEqual("1Cor.1.1")
 		`
 		true
@@ -1256,13 +1280,25 @@ describe "Localized book 1Thess (ms)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Thess (ms)", ->
 		`
+		expect(p.parse("1. Tesalonika 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I. Tesalonika 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1 Tesalonika 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I Tesalonika 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("1. Tes 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1Thess 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I. Tes 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1 Tes 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I Tes 1:1").osis()).toEqual("1Thess.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("1. TESALONIKA 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I. TESALONIKA 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1 TESALONIKA 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I TESALONIKA 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("1. TES 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1THESS 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I. TES 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1 TES 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("I TES 1:1").osis()).toEqual("1Thess.1.1")
 		`
 		true
 describe "Localized book 2Tim (ms)", ->
@@ -1302,12 +1338,24 @@ describe "Localized book 1Tim (ms)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Tim (ms)", ->
 		`
+		expect(p.parse("1. Timotius 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I. Timotius 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1 Timotius 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I Timotius 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("1. Tim 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I. Tim 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1 Tim 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I Tim 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1Tim 1:1").osis()).toEqual("1Tim.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("1. TIMOTIUS 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I. TIMOTIUS 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1 TIMOTIUS 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I TIMOTIUS 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("1. TIM 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I. TIM 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1 TIM 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("I TIM 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1TIM 1:1").osis()).toEqual("1Tim.1.1")
 		`
 		true
@@ -1389,9 +1437,13 @@ describe "Localized book 2Pet (ms)", ->
 		expect(p.parse("2. Petrus 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("II Petrus 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 Petrus 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("II. Pet 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("II. Ptr 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("2. Pet 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2. Ptr 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("II Pet 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("II Ptr 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("2 Pet 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 Ptr 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2Pet 1:1").osis()).toEqual("2Pet.1.1")
 		p.include_apocrypha(false)
@@ -1399,9 +1451,13 @@ describe "Localized book 2Pet (ms)", ->
 		expect(p.parse("2. PETRUS 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("II PETRUS 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 PETRUS 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("II. PET 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("II. PTR 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("2. PET 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2. PTR 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("II PET 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("II PTR 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("2 PET 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 PTR 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2PET 1:1").osis()).toEqual("2Pet.1.1")
 		`
@@ -1414,12 +1470,32 @@ describe "Localized book 1Pet (ms)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Pet (ms)", ->
 		`
+		expect(p.parse("1. Petrus 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I. Petrus 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 Petrus 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I Petrus 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1. Pet 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1. Ptr 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I. Pet 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I. Ptr 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1 Pet 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 Ptr 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I Pet 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I Ptr 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1Pet 1:1").osis()).toEqual("1Pet.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("1. PETRUS 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I. PETRUS 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 PETRUS 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I PETRUS 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1. PET 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1. PTR 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I. PET 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I. PTR 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1 PET 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 PTR 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I PET 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("I PTR 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1PET 1:1").osis()).toEqual("1Pet.1.1")
 		`
 		true
@@ -1517,6 +1593,9 @@ describe "Miscellaneous tests", ->
 	it "should handle translations (ms)", ->
 		expect(p.parse("Lev 1 (ALKITAB)").osis_and_translations()).toEqual [["Lev.1", "ALKITAB"]]
 		expect(p.parse("lev 1 alkitab").osis_and_translations()).toEqual [["Lev.1", "ALKITAB"]]
+	it "should handle book ranges (ms)", ->
+		p.set_options {book_alone_strategy: "full", book_range_strategy: "include"}
+		expect(p.parse("1 melalui 3  Yoh").osis()).toEqual "1John.1-3John.1"
 	it "should handle boundaries (ms)", ->
 		p.set_options {book_alone_strategy: "full"}
 		expect(p.parse("\u2014Matt\u2014").osis()).toEqual "Matt.1-Matt.28"
