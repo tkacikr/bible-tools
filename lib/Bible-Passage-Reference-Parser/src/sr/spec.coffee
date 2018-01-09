@@ -821,10 +821,14 @@ describe "Localized book Eccl (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: Eccl (sr)", ->
 		`
+		expect(p.parse("Knjiga propovednika 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("Propovednika 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Propovjednik 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Eccl 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Prop 1:1").osis()).toEqual("Eccl.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("KNJIGA PROPOVEDNIKA 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("PROPOVEDNIKA 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("PROPOVJEDNIK 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("ECCL 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("PROP 1:1").osis()).toEqual("Eccl.1.1")
@@ -1386,9 +1390,11 @@ describe "Localized book Job (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: Job (sr)", ->
 		`
+		expect(p.parse("O Jovu 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("Job 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("Jov 1:1").osis()).toEqual("Job.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("O JOVU 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("JOB 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("JOV 1:1").osis()).toEqual("Job.1.1")
 		`

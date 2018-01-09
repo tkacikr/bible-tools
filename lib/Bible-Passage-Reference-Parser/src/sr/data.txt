@@ -32,10 +32,10 @@ Ruth	Ruta	Ruta
 Ezra	Jezdra	Jezd
 Neh	Nemija	Nem
 Esth	Jestira	Jest
-Job	Jov	Jov
+Job	Jov	O Jovu
 Ps	Psalmi	Psal
 Prov	Priče Solomunove	Priče
-Eccl	Propovjednik	Prop
+Eccl	Propovjednik	Prop	Knjiga propovednika	Propovednika
 Song	Pjesma nad pjesmama	Pesma
 Isa	Isaija	Isa
 Jer	Jeremija	Jer

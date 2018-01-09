@@ -336,6 +336,8 @@ Deut	V. Moj
 Deut	5 Moj
 Deut	V Moj
 Deut	Deut
+Eccl	Knjiga propovednika
+Eccl	Propovednika
 Eccl	Propovjednik
 Eccl	Eccl
 Eccl	Prop
@@ -411,6 +413,7 @@ Jdt	Jdt
 Jdt	Јуд
 Jer	Jeremija
 Jer	Jer
+Job	O Jovu
 Job	Job
 Job	Jov
 Joel	Joilo
