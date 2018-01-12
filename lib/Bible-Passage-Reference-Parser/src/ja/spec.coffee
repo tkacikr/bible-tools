@@ -75,6 +75,10 @@ describe "Localized book Exod (ja)", ->
 		expect(p.parse("出エシプト記 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エジフト記 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エジプト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エシフト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エシプト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エジフト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エジプト記 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エシフト 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エシプト 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エジフト 1:1").osis()).toEqual("Exod.1.1")
@@ -86,6 +90,10 @@ describe "Localized book Exod (ja)", ->
 		expect(p.parse("出エシプト記 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エジフト記 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エジプト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エシフト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エシプト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エジフト記 1:1").osis()).toEqual("Exod.1.1")
+		expect(p.parse("エジプト記 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エシフト 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エシプト 1:1").osis()).toEqual("Exod.1.1")
 		expect(p.parse("出エジフト 1:1").osis()).toEqual("Exod.1.1")
@@ -102,10 +110,7 @@ describe "Localized book Bel (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Bel (ja)", ->
 		`
-		expect(p.parse("ヘルと竜 1:1").osis()).toEqual("Bel.1.1")
-		expect(p.parse("ヘルと龍 1:1").osis()).toEqual("Bel.1.1")
 		expect(p.parse("ベルと竜 1:1").osis()).toEqual("Bel.1.1")
-		expect(p.parse("ベルと龍 1:1").osis()).toEqual("Bel.1.1")
 		expect(p.parse("Bel 1:1").osis()).toEqual("Bel.1.1")
 		`
 		true
@@ -157,13 +162,6 @@ describe "Localized book Sir (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Sir (ja)", ->
 		`
-		expect(p.parse("シラフの子イイススの知恵書 1:1").osis()).toEqual("Sir.1.1")
-		expect(p.parse("シラ書（集会の書） 1:1").osis()).toEqual("Sir.1.1")
-		expect(p.parse("ヘン・シラの智慧 1:1").osis()).toEqual("Sir.1.1")
-		expect(p.parse("ヘン・シラの知恵 1:1").osis()).toEqual("Sir.1.1")
-		expect(p.parse("ベン・シラの智慧 1:1").osis()).toEqual("Sir.1.1")
-		expect(p.parse("ベン・シラの知恵 1:1").osis()).toEqual("Sir.1.1")
-		expect(p.parse("集会の書 1:1").osis()).toEqual("Sir.1.1")
 		expect(p.parse("Sir 1:1").osis()).toEqual("Sir.1.1")
 		expect(p.parse("シラ書 1:1").osis()).toEqual("Sir.1.1")
 		expect(p.parse("シラ 1:1").osis()).toEqual("Sir.1.1")
@@ -177,12 +175,9 @@ describe "Localized book Wis (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Wis (ja)", ->
 		`
-		expect(p.parse("ソロモンの知恵書 1:1").osis()).toEqual("Wis.1.1")
-		expect(p.parse("ソロモンの智慧 1:1").osis()).toEqual("Wis.1.1")
 		expect(p.parse("知恵の書 1:1").osis()).toEqual("Wis.1.1")
 		expect(p.parse("Wis 1:1").osis()).toEqual("Wis.1.1")
 		expect(p.parse("知恵 1:1").osis()).toEqual("Wis.1.1")
-		expect(p.parse("知 1:1").osis()).toEqual("Wis.1.1")
 		`
 		true
 describe "Localized book Lam (ja)", ->
@@ -212,9 +207,7 @@ describe "Localized book EpJer (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: EpJer (ja)", ->
 		`
-		expect(p.parse("イエレミヤの達書 1:1").osis()).toEqual("EpJer.1.1")
 		expect(p.parse("エレミヤの手紙 1:1").osis()).toEqual("EpJer.1.1")
-		expect(p.parse("エレミヤの書翰 1:1").osis()).toEqual("EpJer.1.1")
 		expect(p.parse("エレミヤ・手 1:1").osis()).toEqual("EpJer.1.1")
 		expect(p.parse("EpJer 1:1").osis()).toEqual("EpJer.1.1")
 		`
@@ -231,11 +224,15 @@ describe "Localized book Rev (ja)", ->
 		expect(p.parse("ヨハネの黙示録 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("Rev 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("黙示録 1:1").osis()).toEqual("Rev.1.1")
+		expect(p.parse("黙示 1:1").osis()).toEqual("Rev.1.1")
+		expect(p.parse("黙 1:1").osis()).toEqual("Rev.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヨハネの默示録 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("ヨハネの黙示録 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("REV 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("黙示録 1:1").osis()).toEqual("Rev.1.1")
+		expect(p.parse("黙示 1:1").osis()).toEqual("Rev.1.1")
+		expect(p.parse("黙 1:1").osis()).toEqual("Rev.1.1")
 		`
 		true
 describe "Localized book PrMan (ja)", ->
@@ -246,9 +243,7 @@ describe "Localized book PrMan (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: PrMan (ja)", ->
 		`
-		expect(p.parse("マナセのいのり 1:1").osis()).toEqual("PrMan.1.1")
 		expect(p.parse("マナセの祈り 1:1").osis()).toEqual("PrMan.1.1")
-		expect(p.parse("マナセの祈禱 1:1").osis()).toEqual("PrMan.1.1")
 		expect(p.parse("PrMan 1:1").osis()).toEqual("PrMan.1.1")
 		`
 		true
@@ -282,10 +277,14 @@ describe "Localized book Josh (ja)", ->
 		expect(p.parse("ヨシュア記 1:1").osis()).toEqual("Josh.1.1")
 		expect(p.parse("Josh 1:1").osis()).toEqual("Josh.1.1")
 		expect(p.parse("ヨシュア 1:1").osis()).toEqual("Josh.1.1")
+		expect(p.parse("ヨシュ 1:1").osis()).toEqual("Josh.1.1")
+		expect(p.parse("ヨシ 1:1").osis()).toEqual("Josh.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヨシュア記 1:1").osis()).toEqual("Josh.1.1")
 		expect(p.parse("JOSH 1:1").osis()).toEqual("Josh.1.1")
 		expect(p.parse("ヨシュア 1:1").osis()).toEqual("Josh.1.1")
+		expect(p.parse("ヨシュ 1:1").osis()).toEqual("Josh.1.1")
+		expect(p.parse("ヨシ 1:1").osis()).toEqual("Josh.1.1")
 		`
 		true
 describe "Localized book Judg (ja)", ->
@@ -318,10 +317,12 @@ describe "Localized book Ruth (ja)", ->
 		expect(p.parse("Ruth 1:1").osis()).toEqual("Ruth.1.1")
 		expect(p.parse("ルツ記 1:1").osis()).toEqual("Ruth.1.1")
 		expect(p.parse("ルツ 1:1").osis()).toEqual("Ruth.1.1")
+		expect(p.parse("ルト 1:1").osis()).toEqual("Ruth.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("RUTH 1:1").osis()).toEqual("Ruth.1.1")
 		expect(p.parse("ルツ記 1:1").osis()).toEqual("Ruth.1.1")
 		expect(p.parse("ルツ 1:1").osis()).toEqual("Ruth.1.1")
+		expect(p.parse("ルト 1:1").osis()).toEqual("Ruth.1.1")
 		`
 		true
 describe "Localized book 1Esd (ja)", ->
@@ -332,12 +333,7 @@ describe "Localized book 1Esd (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Esd (ja)", ->
 		`
-		expect(p.parse("エストラ第一巻 1:1").osis()).toEqual("1Esd.1.1")
-		expect(p.parse("エスドラ第一巻 1:1").osis()).toEqual("1Esd.1.1")
-		expect(p.parse("エズトラ第一巻 1:1").osis()).toEqual("1Esd.1.1")
 		expect(p.parse("エズドラ第一巻 1:1").osis()).toEqual("1Esd.1.1")
-		expect(p.parse("エスラ第一書 1:1").osis()).toEqual("1Esd.1.1")
-		expect(p.parse("エズラ第一書 1:1").osis()).toEqual("1Esd.1.1")
 		expect(p.parse("1Esd 1:1").osis()).toEqual("1Esd.1.1")
 		`
 		true
@@ -349,12 +345,7 @@ describe "Localized book 2Esd (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Esd (ja)", ->
 		`
-		expect(p.parse("エストラ第二巻 1:1").osis()).toEqual("2Esd.1.1")
-		expect(p.parse("エスドラ第二巻 1:1").osis()).toEqual("2Esd.1.1")
-		expect(p.parse("エズトラ第二巻 1:1").osis()).toEqual("2Esd.1.1")
 		expect(p.parse("エズドラ第二巻 1:1").osis()).toEqual("2Esd.1.1")
-		expect(p.parse("エスラ第二書 1:1").osis()).toEqual("2Esd.1.1")
-		expect(p.parse("エズラ第二書 1:1").osis()).toEqual("2Esd.1.1")
 		expect(p.parse("2Esd 1:1").osis()).toEqual("2Esd.1.1")
 		`
 		true
@@ -371,12 +362,18 @@ describe "Localized book Isa (ja)", ->
 		expect(p.parse("Isa 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("イサヤ 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("イザヤ 1:1").osis()).toEqual("Isa.1.1")
+		expect(p.parse("イシャ 1:1").osis()).toEqual("Isa.1.1")
+		expect(p.parse("イサ 1:1").osis()).toEqual("Isa.1.1")
+		expect(p.parse("イザ 1:1").osis()).toEqual("Isa.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("イサヤ書 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("イザヤ書 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ISA 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("イサヤ 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("イザヤ 1:1").osis()).toEqual("Isa.1.1")
+		expect(p.parse("イシャ 1:1").osis()).toEqual("Isa.1.1")
+		expect(p.parse("イサ 1:1").osis()).toEqual("Isa.1.1")
+		expect(p.parse("イザ 1:1").osis()).toEqual("Isa.1.1")
 		`
 		true
 describe "Localized book 2Sam (ja)", ->
@@ -395,6 +392,9 @@ describe "Localized book 2Sam (ja)", ->
 		expect(p.parse("Ⅱサムエル 1:1").osis()).toEqual("2Sam.1.1")
 		expect(p.parse("サムエル下 1:1").osis()).toEqual("2Sam.1.1")
 		expect(p.parse("2Sam 1:1").osis()).toEqual("2Sam.1.1")
+		expect(p.parse("Ⅱシェム 1:1").osis()).toEqual("2Sam.1.1")
+		expect(p.parse("Ⅱサム 1:1").osis()).toEqual("2Sam.1.1")
+		expect(p.parse("サム下 1:1").osis()).toEqual("2Sam.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("サムエル 2 1:1").osis()).toEqual("2Sam.1.1")
 		expect(p.parse("サムエル後書 1:1").osis()).toEqual("2Sam.1.1")
@@ -404,6 +404,9 @@ describe "Localized book 2Sam (ja)", ->
 		expect(p.parse("Ⅱサムエル 1:1").osis()).toEqual("2Sam.1.1")
 		expect(p.parse("サムエル下 1:1").osis()).toEqual("2Sam.1.1")
 		expect(p.parse("2SAM 1:1").osis()).toEqual("2Sam.1.1")
+		expect(p.parse("Ⅱシェム 1:1").osis()).toEqual("2Sam.1.1")
+		expect(p.parse("Ⅱサム 1:1").osis()).toEqual("2Sam.1.1")
+		expect(p.parse("サム下 1:1").osis()).toEqual("2Sam.1.1")
 		`
 		true
 describe "Localized book 1Sam (ja)", ->
@@ -422,6 +425,9 @@ describe "Localized book 1Sam (ja)", ->
 		expect(p.parse("Ⅰサムエル 1:1").osis()).toEqual("1Sam.1.1")
 		expect(p.parse("サムエル上 1:1").osis()).toEqual("1Sam.1.1")
 		expect(p.parse("1Sam 1:1").osis()).toEqual("1Sam.1.1")
+		expect(p.parse("Ⅰシェム 1:1").osis()).toEqual("1Sam.1.1")
+		expect(p.parse("Ⅰサム 1:1").osis()).toEqual("1Sam.1.1")
+		expect(p.parse("サム上 1:1").osis()).toEqual("1Sam.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("サムエル 1 1:1").osis()).toEqual("1Sam.1.1")
 		expect(p.parse("サムエル前書 1:1").osis()).toEqual("1Sam.1.1")
@@ -431,6 +437,9 @@ describe "Localized book 1Sam (ja)", ->
 		expect(p.parse("Ⅰサムエル 1:1").osis()).toEqual("1Sam.1.1")
 		expect(p.parse("サムエル上 1:1").osis()).toEqual("1Sam.1.1")
 		expect(p.parse("1SAM 1:1").osis()).toEqual("1Sam.1.1")
+		expect(p.parse("Ⅰシェム 1:1").osis()).toEqual("1Sam.1.1")
+		expect(p.parse("Ⅰサム 1:1").osis()).toEqual("1Sam.1.1")
+		expect(p.parse("サム上 1:1").osis()).toEqual("1Sam.1.1")
 		`
 		true
 describe "Localized book 2Kgs (ja)", ->
@@ -450,6 +459,7 @@ describe "Localized book 2Kgs (ja)", ->
 		expect(p.parse("列王記下 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("Ⅱ列王 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("列下 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("王下 1:1").osis()).toEqual("2Kgs.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("列王記第四巻 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("列王紀略下 1:1").osis()).toEqual("2Kgs.1.1")
@@ -460,6 +470,7 @@ describe "Localized book 2Kgs (ja)", ->
 		expect(p.parse("列王記下 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("Ⅱ列王 1:1").osis()).toEqual("2Kgs.1.1")
 		expect(p.parse("列下 1:1").osis()).toEqual("2Kgs.1.1")
+		expect(p.parse("王下 1:1").osis()).toEqual("2Kgs.1.1")
 		`
 		true
 describe "Localized book 1Kgs (ja)", ->
@@ -479,6 +490,7 @@ describe "Localized book 1Kgs (ja)", ->
 		expect(p.parse("列王記上 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("Ⅰ列王 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("列上 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("王上 1:1").osis()).toEqual("1Kgs.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("列王記第三巻 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("列王紀略上 1:1").osis()).toEqual("1Kgs.1.1")
@@ -489,6 +501,7 @@ describe "Localized book 1Kgs (ja)", ->
 		expect(p.parse("列王記上 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("Ⅰ列王 1:1").osis()).toEqual("1Kgs.1.1")
 		expect(p.parse("列上 1:1").osis()).toEqual("1Kgs.1.1")
+		expect(p.parse("王上 1:1").osis()).toEqual("1Kgs.1.1")
 		`
 		true
 describe "Localized book 2Chr (ja)", ->
@@ -507,6 +520,7 @@ describe "Localized book 2Chr (ja)", ->
 		expect(p.parse("歴代誌Ⅱ 1:1").osis()).toEqual("2Chr.1.1")
 		expect(p.parse("歴代誌下 1:1").osis()).toEqual("2Chr.1.1")
 		expect(p.parse("Ⅱ歴代 1:1").osis()).toEqual("2Chr.1.1")
+		expect(p.parse("代下 1:1").osis()).toEqual("2Chr.1.1")
 		expect(p.parse("歴下 1:1").osis()).toEqual("2Chr.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("歴代志略下 1:1").osis()).toEqual("2Chr.1.1")
@@ -517,6 +531,7 @@ describe "Localized book 2Chr (ja)", ->
 		expect(p.parse("歴代誌Ⅱ 1:1").osis()).toEqual("2Chr.1.1")
 		expect(p.parse("歴代誌下 1:1").osis()).toEqual("2Chr.1.1")
 		expect(p.parse("Ⅱ歴代 1:1").osis()).toEqual("2Chr.1.1")
+		expect(p.parse("代下 1:1").osis()).toEqual("2Chr.1.1")
 		expect(p.parse("歴下 1:1").osis()).toEqual("2Chr.1.1")
 		`
 		true
@@ -536,6 +551,7 @@ describe "Localized book 1Chr (ja)", ->
 		expect(p.parse("歴代誌Ⅰ 1:1").osis()).toEqual("1Chr.1.1")
 		expect(p.parse("歴代誌上 1:1").osis()).toEqual("1Chr.1.1")
 		expect(p.parse("Ⅰ歴代 1:1").osis()).toEqual("1Chr.1.1")
+		expect(p.parse("代上 1:1").osis()).toEqual("1Chr.1.1")
 		expect(p.parse("歴上 1:1").osis()).toEqual("1Chr.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("歴代志略上 1:1").osis()).toEqual("1Chr.1.1")
@@ -546,6 +562,7 @@ describe "Localized book 1Chr (ja)", ->
 		expect(p.parse("歴代誌Ⅰ 1:1").osis()).toEqual("1Chr.1.1")
 		expect(p.parse("歴代誌上 1:1").osis()).toEqual("1Chr.1.1")
 		expect(p.parse("Ⅰ歴代 1:1").osis()).toEqual("1Chr.1.1")
+		expect(p.parse("代上 1:1").osis()).toEqual("1Chr.1.1")
 		expect(p.parse("歴上 1:1").osis()).toEqual("1Chr.1.1")
 		`
 		true
@@ -564,6 +581,8 @@ describe "Localized book Ezra (ja)", ->
 		expect(p.parse("エズラ記 1:1").osis()).toEqual("Ezra.1.1")
 		expect(p.parse("エスラ 1:1").osis()).toEqual("Ezra.1.1")
 		expect(p.parse("エズラ 1:1").osis()).toEqual("Ezra.1.1")
+		expect(p.parse("エス 1:1").osis()).toEqual("Ezra.1.1")
+		expect(p.parse("エズ 1:1").osis()).toEqual("Ezra.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("EZRA 1:1").osis()).toEqual("Ezra.1.1")
 		expect(p.parse("エスラ書 1:1").osis()).toEqual("Ezra.1.1")
@@ -572,6 +591,8 @@ describe "Localized book Ezra (ja)", ->
 		expect(p.parse("エズラ記 1:1").osis()).toEqual("Ezra.1.1")
 		expect(p.parse("エスラ 1:1").osis()).toEqual("Ezra.1.1")
 		expect(p.parse("エズラ 1:1").osis()).toEqual("Ezra.1.1")
+		expect(p.parse("エス 1:1").osis()).toEqual("Ezra.1.1")
+		expect(p.parse("エズ 1:1").osis()).toEqual("Ezra.1.1")
 		`
 		true
 describe "Localized book Neh (ja)", ->
@@ -586,11 +607,13 @@ describe "Localized book Neh (ja)", ->
 		expect(p.parse("ネヘミヤ記 1:1").osis()).toEqual("Neh.1.1")
 		expect(p.parse("ネヘミヤ 1:1").osis()).toEqual("Neh.1.1")
 		expect(p.parse("Neh 1:1").osis()).toEqual("Neh.1.1")
+		expect(p.parse("ネヘ 1:1").osis()).toEqual("Neh.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ネヘミヤ 記 1:1").osis()).toEqual("Neh.1.1")
 		expect(p.parse("ネヘミヤ記 1:1").osis()).toEqual("Neh.1.1")
 		expect(p.parse("ネヘミヤ 1:1").osis()).toEqual("Neh.1.1")
 		expect(p.parse("NEH 1:1").osis()).toEqual("Neh.1.1")
+		expect(p.parse("ネヘ 1:1").osis()).toEqual("Neh.1.1")
 		`
 		true
 describe "Localized book GkEsth (ja)", ->
@@ -601,7 +624,6 @@ describe "Localized book GkEsth (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: GkEsth (ja)", ->
 		`
-		expect(p.parse("エステル書殘篇 1:1").osis()).toEqual("GkEsth.1.1")
 		expect(p.parse("エステル記補遺 1:1").osis()).toEqual("GkEsth.1.1")
 		expect(p.parse("GkEsth 1:1").osis()).toEqual("GkEsth.1.1")
 		`
@@ -640,6 +662,7 @@ describe "Localized book Job (ja)", ->
 		expect(p.parse("Job 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨフ記 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨブ記 1:1").osis()).toEqual("Job.1.1")
+		expect(p.parse("イヨ 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨフ 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨブ 1:1").osis()).toEqual("Job.1.1")
 		p.include_apocrypha(false)
@@ -648,6 +671,7 @@ describe "Localized book Job (ja)", ->
 		expect(p.parse("JOB 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨフ記 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨブ記 1:1").osis()).toEqual("Job.1.1")
+		expect(p.parse("イヨ 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨフ 1:1").osis()).toEqual("Job.1.1")
 		expect(p.parse("ヨブ 1:1").osis()).toEqual("Job.1.1")
 		`
@@ -681,7 +705,6 @@ describe "Localized book PrAzar (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: PrAzar (ja)", ->
 		`
-		expect(p.parse("アサルヤの祈り 1:1").osis()).toEqual("PrAzar.1.1")
 		expect(p.parse("アザルヤの祈り 1:1").osis()).toEqual("PrAzar.1.1")
 		expect(p.parse("PrAzar 1:1").osis()).toEqual("PrAzar.1.1")
 		`
@@ -699,12 +722,14 @@ describe "Localized book Prov (ja)", ->
 		expect(p.parse("格言の書 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("箴言 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("格 1:1").osis()).toEqual("Prov.1.1")
+		expect(p.parse("箴 1:1").osis()).toEqual("Prov.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("箴言 知恵の泉 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("PROV 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("格言の書 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("箴言 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("格 1:1").osis()).toEqual("Prov.1.1")
+		expect(p.parse("箴 1:1").osis()).toEqual("Prov.1.1")
 		`
 		true
 describe "Localized book Eccl (ja)", ->
@@ -724,6 +749,8 @@ describe "Localized book Eccl (ja)", ->
 		expect(p.parse("伝道の書 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("伝道者の 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("傳道之書 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("コヘ 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("伝道 1:1").osis()).toEqual("Eccl.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("コヘレトのことは 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("コヘレトのことば 1:1").osis()).toEqual("Eccl.1.1")
@@ -734,6 +761,8 @@ describe "Localized book Eccl (ja)", ->
 		expect(p.parse("伝道の書 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("伝道者の 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("傳道之書 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("コヘ 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("伝道 1:1").osis()).toEqual("Eccl.1.1")
 		`
 		true
 describe "Localized book SgThree (ja)", ->
@@ -780,11 +809,15 @@ describe "Localized book Jer (ja)", ->
 		expect(p.parse("ヱレミヤ記 1:1").osis()).toEqual("Jer.1.1")
 		expect(p.parse("エレミヤ 1:1").osis()).toEqual("Jer.1.1")
 		expect(p.parse("Jer 1:1").osis()).toEqual("Jer.1.1")
+		expect(p.parse("イル 1:1").osis()).toEqual("Jer.1.1")
+		expect(p.parse("エレ 1:1").osis()).toEqual("Jer.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("エレミヤ書 1:1").osis()).toEqual("Jer.1.1")
 		expect(p.parse("ヱレミヤ記 1:1").osis()).toEqual("Jer.1.1")
 		expect(p.parse("エレミヤ 1:1").osis()).toEqual("Jer.1.1")
 		expect(p.parse("JER 1:1").osis()).toEqual("Jer.1.1")
+		expect(p.parse("イル 1:1").osis()).toEqual("Jer.1.1")
+		expect(p.parse("エレ 1:1").osis()).toEqual("Jer.1.1")
 		`
 		true
 describe "Localized book Ezek (ja)", ->
@@ -800,12 +833,16 @@ describe "Localized book Ezek (ja)", ->
 		expect(p.parse("エセキエル 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("エゼキエル 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("Ezek 1:1").osis()).toEqual("Ezek.1.1")
+		expect(p.parse("エセ 1:1").osis()).toEqual("Ezek.1.1")
+		expect(p.parse("エゼ 1:1").osis()).toEqual("Ezek.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("エセキエル書 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("エゼキエル書 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("エセキエル 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("エゼキエル 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("EZEK 1:1").osis()).toEqual("Ezek.1.1")
+		expect(p.parse("エセ 1:1").osis()).toEqual("Ezek.1.1")
+		expect(p.parse("エゼ 1:1").osis()).toEqual("Ezek.1.1")
 		`
 		true
 describe "Localized book Dan (ja)", ->
@@ -821,12 +858,16 @@ describe "Localized book Dan (ja)", ->
 		expect(p.parse("タニエル 1:1").osis()).toEqual("Dan.1.1")
 		expect(p.parse("ダニエル 1:1").osis()).toEqual("Dan.1.1")
 		expect(p.parse("Dan 1:1").osis()).toEqual("Dan.1.1")
+		expect(p.parse("タニ 1:1").osis()).toEqual("Dan.1.1")
+		expect(p.parse("ダニ 1:1").osis()).toEqual("Dan.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("タニエル書 1:1").osis()).toEqual("Dan.1.1")
 		expect(p.parse("ダニエル書 1:1").osis()).toEqual("Dan.1.1")
 		expect(p.parse("タニエル 1:1").osis()).toEqual("Dan.1.1")
 		expect(p.parse("ダニエル 1:1").osis()).toEqual("Dan.1.1")
 		expect(p.parse("DAN 1:1").osis()).toEqual("Dan.1.1")
+		expect(p.parse("タニ 1:1").osis()).toEqual("Dan.1.1")
+		expect(p.parse("ダニ 1:1").osis()).toEqual("Dan.1.1")
 		`
 		true
 describe "Localized book Hos (ja)", ->
@@ -840,12 +881,16 @@ describe "Localized book Hos (ja)", ->
 		expect(p.parse("ホセアしょ 1:1").osis()).toEqual("Hos.1.1")
 		expect(p.parse("ホセア書 1:1").osis()).toEqual("Hos.1.1")
 		expect(p.parse("Hos 1:1").osis()).toEqual("Hos.1.1")
+		expect(p.parse("ホシェ 1:1").osis()).toEqual("Hos.1.1")
 		expect(p.parse("ホセア 1:1").osis()).toEqual("Hos.1.1")
+		expect(p.parse("ホセ 1:1").osis()).toEqual("Hos.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ホセアしょ 1:1").osis()).toEqual("Hos.1.1")
 		expect(p.parse("ホセア書 1:1").osis()).toEqual("Hos.1.1")
 		expect(p.parse("HOS 1:1").osis()).toEqual("Hos.1.1")
+		expect(p.parse("ホシェ 1:1").osis()).toEqual("Hos.1.1")
 		expect(p.parse("ホセア 1:1").osis()).toEqual("Hos.1.1")
+		expect(p.parse("ホセ 1:1").osis()).toEqual("Hos.1.1")
 		`
 		true
 describe "Localized book Joel (ja)", ->
@@ -860,11 +905,13 @@ describe "Localized book Joel (ja)", ->
 		expect(p.parse("Joel 1:1").osis()).toEqual("Joel.1.1")
 		expect(p.parse("ヨエル書 1:1").osis()).toEqual("Joel.1.1")
 		expect(p.parse("ヨエル 1:1").osis()).toEqual("Joel.1.1")
+		expect(p.parse("ヨエ 1:1").osis()).toEqual("Joel.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("よえるしょ 1:1").osis()).toEqual("Joel.1.1")
 		expect(p.parse("JOEL 1:1").osis()).toEqual("Joel.1.1")
 		expect(p.parse("ヨエル書 1:1").osis()).toEqual("Joel.1.1")
 		expect(p.parse("ヨエル 1:1").osis()).toEqual("Joel.1.1")
+		expect(p.parse("ヨエ 1:1").osis()).toEqual("Joel.1.1")
 		`
 		true
 describe "Localized book Amos (ja)", ->
@@ -879,11 +926,13 @@ describe "Localized book Amos (ja)", ->
 		expect(p.parse("Amos 1:1").osis()).toEqual("Amos.1.1")
 		expect(p.parse("アモス書 1:1").osis()).toEqual("Amos.1.1")
 		expect(p.parse("アモス 1:1").osis()).toEqual("Amos.1.1")
+		expect(p.parse("アモ 1:1").osis()).toEqual("Amos.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("アモスしょ 1:1").osis()).toEqual("Amos.1.1")
 		expect(p.parse("AMOS 1:1").osis()).toEqual("Amos.1.1")
 		expect(p.parse("アモス書 1:1").osis()).toEqual("Amos.1.1")
 		expect(p.parse("アモス 1:1").osis()).toEqual("Amos.1.1")
+		expect(p.parse("アモ 1:1").osis()).toEqual("Amos.1.1")
 		`
 		true
 describe "Localized book Obad (ja)", ->
@@ -985,11 +1034,15 @@ describe "Localized book Nah (ja)", ->
 		expect(p.parse("ナホム書 1:1").osis()).toEqual("Nah.1.1")
 		expect(p.parse("Nah 1:1").osis()).toEqual("Nah.1.1")
 		expect(p.parse("ナホム 1:1").osis()).toEqual("Nah.1.1")
+		expect(p.parse("ナフ 1:1").osis()).toEqual("Nah.1.1")
+		expect(p.parse("ナホ 1:1").osis()).toEqual("Nah.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ナホムしょ 1:1").osis()).toEqual("Nah.1.1")
 		expect(p.parse("ナホム書 1:1").osis()).toEqual("Nah.1.1")
 		expect(p.parse("NAH 1:1").osis()).toEqual("Nah.1.1")
 		expect(p.parse("ナホム 1:1").osis()).toEqual("Nah.1.1")
+		expect(p.parse("ナフ 1:1").osis()).toEqual("Nah.1.1")
+		expect(p.parse("ナホ 1:1").osis()).toEqual("Nah.1.1")
 		`
 		true
 describe "Localized book Hab (ja)", ->
@@ -1007,6 +1060,8 @@ describe "Localized book Hab (ja)", ->
 		expect(p.parse("ハハクク 1:1").osis()).toEqual("Hab.1.1")
 		expect(p.parse("ハバクク 1:1").osis()).toEqual("Hab.1.1")
 		expect(p.parse("Hab 1:1").osis()).toEqual("Hab.1.1")
+		expect(p.parse("ハハ 1:1").osis()).toEqual("Hab.1.1")
+		expect(p.parse("ハバ 1:1").osis()).toEqual("Hab.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ハハククしょ 1:1").osis()).toEqual("Hab.1.1")
 		expect(p.parse("ハバククしょ 1:1").osis()).toEqual("Hab.1.1")
@@ -1015,6 +1070,8 @@ describe "Localized book Hab (ja)", ->
 		expect(p.parse("ハハクク 1:1").osis()).toEqual("Hab.1.1")
 		expect(p.parse("ハバクク 1:1").osis()).toEqual("Hab.1.1")
 		expect(p.parse("HAB 1:1").osis()).toEqual("Hab.1.1")
+		expect(p.parse("ハハ 1:1").osis()).toEqual("Hab.1.1")
+		expect(p.parse("ハバ 1:1").osis()).toEqual("Hab.1.1")
 		`
 		true
 describe "Localized book Zeph (ja)", ->
@@ -1044,6 +1101,11 @@ describe "Localized book Zeph (ja)", ->
 		expect(p.parse("ゼパニヤ 1:1").osis()).toEqual("Zeph.1.1")
 		expect(p.parse("セファ 1:1").osis()).toEqual("Zeph.1.1")
 		expect(p.parse("ゼファ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("ツェフ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("セハ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("セパ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("ゼハ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("ゼパ 1:1").osis()).toEqual("Zeph.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("セファニヤしょ 1:1").osis()).toEqual("Zeph.1.1")
 		expect(p.parse("ゼファニヤしょ 1:1").osis()).toEqual("Zeph.1.1")
@@ -1064,6 +1126,11 @@ describe "Localized book Zeph (ja)", ->
 		expect(p.parse("ゼパニヤ 1:1").osis()).toEqual("Zeph.1.1")
 		expect(p.parse("セファ 1:1").osis()).toEqual("Zeph.1.1")
 		expect(p.parse("ゼファ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("ツェフ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("セハ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("セパ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("ゼハ 1:1").osis()).toEqual("Zeph.1.1")
+		expect(p.parse("ゼパ 1:1").osis()).toEqual("Zeph.1.1")
 		`
 		true
 describe "Localized book Hag (ja)", ->
@@ -1081,6 +1148,8 @@ describe "Localized book Hag (ja)", ->
 		expect(p.parse("Hag 1:1").osis()).toEqual("Hag.1.1")
 		expect(p.parse("ハカイ 1:1").osis()).toEqual("Hag.1.1")
 		expect(p.parse("ハガイ 1:1").osis()).toEqual("Hag.1.1")
+		expect(p.parse("ハカ 1:1").osis()).toEqual("Hag.1.1")
+		expect(p.parse("ハガ 1:1").osis()).toEqual("Hag.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ハカイしょ 1:1").osis()).toEqual("Hag.1.1")
 		expect(p.parse("ハガイしょ 1:1").osis()).toEqual("Hag.1.1")
@@ -1089,6 +1158,8 @@ describe "Localized book Hag (ja)", ->
 		expect(p.parse("HAG 1:1").osis()).toEqual("Hag.1.1")
 		expect(p.parse("ハカイ 1:1").osis()).toEqual("Hag.1.1")
 		expect(p.parse("ハガイ 1:1").osis()).toEqual("Hag.1.1")
+		expect(p.parse("ハカ 1:1").osis()).toEqual("Hag.1.1")
+		expect(p.parse("ハガ 1:1").osis()).toEqual("Hag.1.1")
 		`
 		true
 describe "Localized book Zech (ja)", ->
@@ -1106,6 +1177,8 @@ describe "Localized book Zech (ja)", ->
 		expect(p.parse("Zech 1:1").osis()).toEqual("Zech.1.1")
 		expect(p.parse("セカリヤ 1:1").osis()).toEqual("Zech.1.1")
 		expect(p.parse("ゼカリヤ 1:1").osis()).toEqual("Zech.1.1")
+		expect(p.parse("セカ 1:1").osis()).toEqual("Zech.1.1")
+		expect(p.parse("ゼカ 1:1").osis()).toEqual("Zech.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("セカリヤしょ 1:1").osis()).toEqual("Zech.1.1")
 		expect(p.parse("ゼカリヤしょ 1:1").osis()).toEqual("Zech.1.1")
@@ -1114,6 +1187,8 @@ describe "Localized book Zech (ja)", ->
 		expect(p.parse("ZECH 1:1").osis()).toEqual("Zech.1.1")
 		expect(p.parse("セカリヤ 1:1").osis()).toEqual("Zech.1.1")
 		expect(p.parse("ゼカリヤ 1:1").osis()).toEqual("Zech.1.1")
+		expect(p.parse("セカ 1:1").osis()).toEqual("Zech.1.1")
+		expect(p.parse("ゼカ 1:1").osis()).toEqual("Zech.1.1")
 		`
 		true
 describe "Localized book Mal (ja)", ->
@@ -1151,6 +1226,7 @@ describe "Localized book Matt (ja)", ->
 		expect(p.parse("マタイ伝 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("マタイ書 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("マタイ 1:1").osis()).toEqual("Matt.1.1")
+		expect(p.parse("マタ 1:1").osis()).toEqual("Matt.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("マタイによる福音書 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("マタイの福音書 1:1").osis()).toEqual("Matt.1.1")
@@ -1160,6 +1236,7 @@ describe "Localized book Matt (ja)", ->
 		expect(p.parse("マタイ伝 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("マタイ書 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("マタイ 1:1").osis()).toEqual("Matt.1.1")
+		expect(p.parse("マタ 1:1").osis()).toEqual("Matt.1.1")
 		`
 		true
 describe "Localized book Mark (ja)", ->
@@ -1230,7 +1307,11 @@ describe "Localized book 1John (ja)", ->
 		expect(p.parse("ヨハネの手紙一 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1John 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("Ⅰ ヨハネ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("Ⅰヨハネ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("ヨハネⅠ 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("一ヨハネ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("Ⅰヨハ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("ヨハⅠ 1:1").osis()).toEqual("1John.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヨハネの第一の手紙 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("ヨハネの第一の書 1:1").osis()).toEqual("1John.1.1")
@@ -1238,7 +1319,11 @@ describe "Localized book 1John (ja)", ->
 		expect(p.parse("ヨハネの手紙一 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("1JOHN 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("Ⅰ ヨハネ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("Ⅰヨハネ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("ヨハネⅠ 1:1").osis()).toEqual("1John.1.1")
 		expect(p.parse("一ヨハネ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("Ⅰヨハ 1:1").osis()).toEqual("1John.1.1")
+		expect(p.parse("ヨハⅠ 1:1").osis()).toEqual("1John.1.1")
 		`
 		true
 describe "Localized book 2John (ja)", ->
@@ -1255,7 +1340,11 @@ describe "Localized book 2John (ja)", ->
 		expect(p.parse("ヨハネの手紙二 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("2John 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("Ⅱ ヨハネ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("Ⅱヨハネ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("ヨハネⅡ 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("二ヨハネ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("Ⅱヨハ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("ヨハⅡ 1:1").osis()).toEqual("2John.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヨハネの第二の手紙 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("ヨハネの第二の書 1:1").osis()).toEqual("2John.1.1")
@@ -1263,7 +1352,11 @@ describe "Localized book 2John (ja)", ->
 		expect(p.parse("ヨハネの手紙二 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("2JOHN 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("Ⅱ ヨハネ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("Ⅱヨハネ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("ヨハネⅡ 1:1").osis()).toEqual("2John.1.1")
 		expect(p.parse("二ヨハネ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("Ⅱヨハ 1:1").osis()).toEqual("2John.1.1")
+		expect(p.parse("ヨハⅡ 1:1").osis()).toEqual("2John.1.1")
 		`
 		true
 describe "Localized book 3John (ja)", ->
@@ -1280,7 +1373,11 @@ describe "Localized book 3John (ja)", ->
 		expect(p.parse("ヨハネの手紙三 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("3John 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("Ⅲ ヨハネ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("Ⅲヨハネ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("ヨハネⅢ 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("三ヨハネ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("Ⅲヨハ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("ヨハⅢ 1:1").osis()).toEqual("3John.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヨハネの第三の手紙 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("ヨハネの第三の書 1:1").osis()).toEqual("3John.1.1")
@@ -1288,7 +1385,11 @@ describe "Localized book 3John (ja)", ->
 		expect(p.parse("ヨハネの手紙三 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("3JOHN 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("Ⅲ ヨハネ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("Ⅲヨハネ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("ヨハネⅢ 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("三ヨハネ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("Ⅲヨハ 1:1").osis()).toEqual("3John.1.1")
+		expect(p.parse("ヨハⅢ 1:1").osis()).toEqual("3John.1.1")
 		`
 		true
 describe "Localized book John (ja)", ->
@@ -1306,6 +1407,7 @@ describe "Localized book John (ja)", ->
 		expect(p.parse("John 1:1").osis()).toEqual("John.1.1")
 		expect(p.parse("ヨハネ伝 1:1").osis()).toEqual("John.1.1")
 		expect(p.parse("ヨハネ 1:1").osis()).toEqual("John.1.1")
+		expect(p.parse("ヨハ 1:1").osis()).toEqual("John.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヨハネによる福音書 1:1").osis()).toEqual("John.1.1")
 		expect(p.parse("ヨハネの福音書 1:1").osis()).toEqual("John.1.1")
@@ -1314,6 +1416,7 @@ describe "Localized book John (ja)", ->
 		expect(p.parse("JOHN 1:1").osis()).toEqual("John.1.1")
 		expect(p.parse("ヨハネ伝 1:1").osis()).toEqual("John.1.1")
 		expect(p.parse("ヨハネ 1:1").osis()).toEqual("John.1.1")
+		expect(p.parse("ヨハ 1:1").osis()).toEqual("John.1.1")
 		`
 		true
 describe "Localized book Acts (ja)", ->
@@ -1332,6 +1435,7 @@ describe "Localized book Acts (ja)", ->
 		expect(p.parse("使徒行録 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("使徒書 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("使徒 1:1").osis()).toEqual("Acts.1.1")
+		expect(p.parse("行 1:1").osis()).toEqual("Acts.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("使徒の働き 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("使徒言行録 1:1").osis()).toEqual("Acts.1.1")
@@ -1341,6 +1445,7 @@ describe "Localized book Acts (ja)", ->
 		expect(p.parse("使徒行録 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("使徒書 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("使徒 1:1").osis()).toEqual("Acts.1.1")
+		expect(p.parse("行 1:1").osis()).toEqual("Acts.1.1")
 		`
 		true
 describe "Localized book Rom (ja)", ->
@@ -1358,6 +1463,7 @@ describe "Localized book Rom (ja)", ->
 		expect(p.parse("ローマ書 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("Rom 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("ローマ 1:1").osis()).toEqual("Rom.1.1")
+		expect(p.parse("ロマ 1:1").osis()).toEqual("Rom.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ローマの信徒への手紙 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("ローマ人への手紙 1:1").osis()).toEqual("Rom.1.1")
@@ -1366,6 +1472,7 @@ describe "Localized book Rom (ja)", ->
 		expect(p.parse("ローマ書 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("ROM 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("ローマ 1:1").osis()).toEqual("Rom.1.1")
+		expect(p.parse("ロマ 1:1").osis()).toEqual("Rom.1.1")
 		`
 		true
 describe "Localized book 2Cor (ja)", ->
@@ -1384,7 +1491,12 @@ describe "Localized book 2Cor (ja)", ->
 		expect(p.parse("Ⅱ コリント人へ 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("コリント 2 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("コリント後書 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("Ⅱコリント 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("コリントⅡ 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("2Cor 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("IIコリ 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("Ⅱコリ 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("コリⅡ 1:1").osis()).toEqual("2Cor.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("コリントの信徒への手紙二 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("コリント人への第二の手紙 1:1").osis()).toEqual("2Cor.1.1")
@@ -1394,7 +1506,12 @@ describe "Localized book 2Cor (ja)", ->
 		expect(p.parse("Ⅱ コリント人へ 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("コリント 2 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("コリント後書 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("Ⅱコリント 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("コリントⅡ 1:1").osis()).toEqual("2Cor.1.1")
 		expect(p.parse("2COR 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("IIコリ 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("Ⅱコリ 1:1").osis()).toEqual("2Cor.1.1")
+		expect(p.parse("コリⅡ 1:1").osis()).toEqual("2Cor.1.1")
 		`
 		true
 describe "Localized book 1Cor (ja)", ->
@@ -1413,7 +1530,12 @@ describe "Localized book 1Cor (ja)", ->
 		expect(p.parse("Ⅰ コリント人へ 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("コリント 1 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("コリント前書 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("Ⅰコリント 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("コリントⅠ 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1Cor 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("Iコリ 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("Ⅰコリ 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("コリⅠ 1:1").osis()).toEqual("1Cor.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("コリントの信徒への手紙一 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("コリント人への第一の手紙 1:1").osis()).toEqual("1Cor.1.1")
@@ -1423,7 +1545,12 @@ describe "Localized book 1Cor (ja)", ->
 		expect(p.parse("Ⅰ コリント人へ 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("コリント 1 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("コリント前書 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("Ⅰコリント 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("コリントⅠ 1:1").osis()).toEqual("1Cor.1.1")
 		expect(p.parse("1COR 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("Iコリ 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("Ⅰコリ 1:1").osis()).toEqual("1Cor.1.1")
+		expect(p.parse("コリⅠ 1:1").osis()).toEqual("1Cor.1.1")
 		`
 		true
 describe "Localized book Gal (ja)", ->
@@ -1447,6 +1574,8 @@ describe "Localized book Gal (ja)", ->
 		expect(p.parse("カラテヤ 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("ガラテヤ 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("Gal 1:1").osis()).toEqual("Gal.1.1")
+		expect(p.parse("カラ 1:1").osis()).toEqual("Gal.1.1")
+		expect(p.parse("ガラ 1:1").osis()).toEqual("Gal.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("カラテヤの信徒への手紙 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("ガラテヤの信徒への手紙 1:1").osis()).toEqual("Gal.1.1")
@@ -1461,6 +1590,8 @@ describe "Localized book Gal (ja)", ->
 		expect(p.parse("カラテヤ 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("ガラテヤ 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("GAL 1:1").osis()).toEqual("Gal.1.1")
+		expect(p.parse("カラ 1:1").osis()).toEqual("Gal.1.1")
+		expect(p.parse("ガラ 1:1").osis()).toEqual("Gal.1.1")
 		`
 		true
 describe "Localized book Eph (ja)", ->
@@ -1533,6 +1664,13 @@ describe "Localized book Phil (ja)", ->
 		expect(p.parse("ピリピ書 1:1").osis()).toEqual("Phil.1.1")
 		expect(p.parse("フィリヒ 1:1").osis()).toEqual("Phil.1.1")
 		expect(p.parse("フィリピ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ヒリヒ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ヒリピ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ピリヒ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ピリピ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("フィリ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ヒリ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ピリ 1:1").osis()).toEqual("Phil.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("フィリヒの信徒への手紙 1:1").osis()).toEqual("Phil.1.1")
 		expect(p.parse("フィリピの信徒への手紙 1:1").osis()).toEqual("Phil.1.1")
@@ -1559,6 +1697,13 @@ describe "Localized book Phil (ja)", ->
 		expect(p.parse("ピリピ書 1:1").osis()).toEqual("Phil.1.1")
 		expect(p.parse("フィリヒ 1:1").osis()).toEqual("Phil.1.1")
 		expect(p.parse("フィリピ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ヒリヒ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ヒリピ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ピリヒ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ピリピ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("フィリ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ヒリ 1:1").osis()).toEqual("Phil.1.1")
+		expect(p.parse("ピリ 1:1").osis()).toEqual("Phil.1.1")
 		`
 		true
 describe "Localized book Col (ja)", ->
@@ -1576,6 +1721,7 @@ describe "Localized book Col (ja)", ->
 		expect(p.parse("コロサイ書 1:1").osis()).toEqual("Col.1.1")
 		expect(p.parse("コロサイ 1:1").osis()).toEqual("Col.1.1")
 		expect(p.parse("Col 1:1").osis()).toEqual("Col.1.1")
+		expect(p.parse("コロ 1:1").osis()).toEqual("Col.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("コロサイの信徒への手紙 1:1").osis()).toEqual("Col.1.1")
 		expect(p.parse("コロサイ人への手紙 1:1").osis()).toEqual("Col.1.1")
@@ -1584,6 +1730,7 @@ describe "Localized book Col (ja)", ->
 		expect(p.parse("コロサイ書 1:1").osis()).toEqual("Col.1.1")
 		expect(p.parse("コロサイ 1:1").osis()).toEqual("Col.1.1")
 		expect(p.parse("COL 1:1").osis()).toEqual("Col.1.1")
+		expect(p.parse("コロ 1:1").osis()).toEqual("Col.1.1")
 		`
 		true
 describe "Localized book 2Thess (ja)", ->
@@ -1603,6 +1750,11 @@ describe "Localized book 2Thess (ja)", ->
 		expect(p.parse("テサロニケ 2 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("テサロニケ後書 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("2Thess 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("Ⅱテサロニケ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("テサロニケⅡ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("IIテサ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("Ⅱテサ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("テサⅡ 1:1").osis()).toEqual("2Thess.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("テサロニケの信徒への手紙二 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("テサロニケ人への第二の手紙 1:1").osis()).toEqual("2Thess.1.1")
@@ -1613,6 +1765,11 @@ describe "Localized book 2Thess (ja)", ->
 		expect(p.parse("テサロニケ 2 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("テサロニケ後書 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("2THESS 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("Ⅱテサロニケ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("テサロニケⅡ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("IIテサ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("Ⅱテサ 1:1").osis()).toEqual("2Thess.1.1")
+		expect(p.parse("テサⅡ 1:1").osis()).toEqual("2Thess.1.1")
 		`
 		true
 describe "Localized book 1Thess (ja)", ->
@@ -1632,6 +1789,11 @@ describe "Localized book 1Thess (ja)", ->
 		expect(p.parse("テサロニケ 1 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("テサロニケ前書 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1Thess 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("Ⅰテサロニケ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("テサロニケⅠ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("Iテサ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("Ⅰテサ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("テサⅠ 1:1").osis()).toEqual("1Thess.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("テサロニケの信徒への手紙一 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("テサロニケ人への第一の手紙 1:1").osis()).toEqual("1Thess.1.1")
@@ -1642,6 +1804,11 @@ describe "Localized book 1Thess (ja)", ->
 		expect(p.parse("テサロニケ 1 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("テサロニケ前書 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1THESS 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("Ⅰテサロニケ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("テサロニケⅠ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("Iテサ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("Ⅰテサ 1:1").osis()).toEqual("1Thess.1.1")
+		expect(p.parse("テサⅠ 1:1").osis()).toEqual("1Thess.1.1")
 		`
 		true
 describe "Localized book 2Tim (ja)", ->
@@ -1652,6 +1819,7 @@ describe "Localized book 2Tim (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Tim (ja)", ->
 		`
+		expect(p.parse("テモテへの第二の手紙 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテヘの第二の手紙 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテへの後の書 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテへの手紙Ⅱ 1:1").osis()).toEqual("2Tim.1.1")
@@ -1660,8 +1828,13 @@ describe "Localized book 2Tim (ja)", ->
 		expect(p.parse("テモテ 2 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテ後書 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("2Tim 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("Ⅱテモテ 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("テモテⅡ 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("二テモテ 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("Ⅱテモ 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("テモⅡ 1:1").osis()).toEqual("2Tim.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("テモテへの第二の手紙 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテヘの第二の手紙 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテへの後の書 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテへの手紙Ⅱ 1:1").osis()).toEqual("2Tim.1.1")
@@ -1670,7 +1843,11 @@ describe "Localized book 2Tim (ja)", ->
 		expect(p.parse("テモテ 2 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("テモテ後書 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("2TIM 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("Ⅱテモテ 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("テモテⅡ 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("二テモテ 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("Ⅱテモ 1:1").osis()).toEqual("2Tim.1.1")
+		expect(p.parse("テモⅡ 1:1").osis()).toEqual("2Tim.1.1")
 		`
 		true
 describe "Localized book 1Tim (ja)", ->
@@ -1681,6 +1858,7 @@ describe "Localized book 1Tim (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Tim (ja)", ->
 		`
+		expect(p.parse("テモテへの第一の手紙 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテヘの第一の手紙 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテへの前の書 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテへの手紙Ⅰ 1:1").osis()).toEqual("1Tim.1.1")
@@ -1689,8 +1867,16 @@ describe "Localized book 1Tim (ja)", ->
 		expect(p.parse("テモテ 1 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテ前書 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1Tim 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Iテモテ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅰティモ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅰテモテ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅱティモ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("テモテⅠ 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("一テモテ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅰテモ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("テモⅠ 1:1").osis()).toEqual("1Tim.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("テモテへの第一の手紙 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテヘの第一の手紙 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテへの前の書 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテへの手紙Ⅰ 1:1").osis()).toEqual("1Tim.1.1")
@@ -1699,7 +1885,14 @@ describe "Localized book 1Tim (ja)", ->
 		expect(p.parse("テモテ 1 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("テモテ前書 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1TIM 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Iテモテ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅰティモ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅰテモテ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅱティモ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("テモテⅠ 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("一テモテ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("Ⅰテモ 1:1").osis()).toEqual("1Tim.1.1")
+		expect(p.parse("テモⅠ 1:1").osis()).toEqual("1Tim.1.1")
 		`
 		true
 describe "Localized book Titus (ja)", ->
@@ -1719,7 +1912,9 @@ describe "Localized book Titus (ja)", ->
 		expect(p.parse("Titus 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトスへ 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトス書 1:1").osis()).toEqual("Titus.1.1")
+		expect(p.parse("ティト 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトス 1:1").osis()).toEqual("Titus.1.1")
+		expect(p.parse("テト 1:1").osis()).toEqual("Titus.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ティトに達する書 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトスへのてかみ 1:1").osis()).toEqual("Titus.1.1")
@@ -1730,7 +1925,9 @@ describe "Localized book Titus (ja)", ->
 		expect(p.parse("TITUS 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトスへ 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトス書 1:1").osis()).toEqual("Titus.1.1")
+		expect(p.parse("ティト 1:1").osis()).toEqual("Titus.1.1")
 		expect(p.parse("テトス 1:1").osis()).toEqual("Titus.1.1")
+		expect(p.parse("テト 1:1").osis()).toEqual("Titus.1.1")
 		`
 		true
 describe "Localized book Phlm (ja)", ->
@@ -1755,6 +1952,11 @@ describe "Localized book Phlm (ja)", ->
 		expect(p.parse("ピレモン書 1:1").osis()).toEqual("Phlm.1.1")
 		expect(p.parse("フィレモン 1:1").osis()).toEqual("Phlm.1.1")
 		expect(p.parse("Phlm 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ヒレモン 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ピレモン 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("フィレ 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ヒレ 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ピレ 1:1").osis()).toEqual("Phlm.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("フィレモンへの手紙 1:1").osis()).toEqual("Phlm.1.1")
 		expect(p.parse("ヒレモンへの手紙 1:1").osis()).toEqual("Phlm.1.1")
@@ -1770,6 +1972,11 @@ describe "Localized book Phlm (ja)", ->
 		expect(p.parse("ピレモン書 1:1").osis()).toEqual("Phlm.1.1")
 		expect(p.parse("フィレモン 1:1").osis()).toEqual("Phlm.1.1")
 		expect(p.parse("PHLM 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ヒレモン 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ピレモン 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("フィレ 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ヒレ 1:1").osis()).toEqual("Phlm.1.1")
+		expect(p.parse("ピレ 1:1").osis()).toEqual("Phlm.1.1")
 		`
 		true
 describe "Localized book Heb (ja)", ->
@@ -1797,6 +2004,10 @@ describe "Localized book Heb (ja)", ->
 		expect(p.parse("ヘブライ 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("ヘブル書 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("Heb 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘフル 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘブル 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘフ 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘブ 1:1").osis()).toEqual("Heb.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヘフライ人への手紙 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("ヘブライ人への手紙 1:1").osis()).toEqual("Heb.1.1")
@@ -1815,6 +2026,10 @@ describe "Localized book Heb (ja)", ->
 		expect(p.parse("ヘブライ 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("ヘブル書 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("HEB 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘフル 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘブル 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘフ 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("ヘブ 1:1").osis()).toEqual("Heb.1.1")
 		`
 		true
 describe "Localized book Jas (ja)", ->
@@ -1836,6 +2051,7 @@ describe "Localized book Jas (ja)", ->
 		expect(p.parse("Jas 1:1").osis()).toEqual("Jas.1.1")
 		expect(p.parse("ヤコフ 1:1").osis()).toEqual("Jas.1.1")
 		expect(p.parse("ヤコブ 1:1").osis()).toEqual("Jas.1.1")
+		expect(p.parse("ヤコ 1:1").osis()).toEqual("Jas.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヤコフからの手紙 1:1").osis()).toEqual("Jas.1.1")
 		expect(p.parse("ヤコブからの手紙 1:1").osis()).toEqual("Jas.1.1")
@@ -1848,6 +2064,7 @@ describe "Localized book Jas (ja)", ->
 		expect(p.parse("JAS 1:1").osis()).toEqual("Jas.1.1")
 		expect(p.parse("ヤコフ 1:1").osis()).toEqual("Jas.1.1")
 		expect(p.parse("ヤコブ 1:1").osis()).toEqual("Jas.1.1")
+		expect(p.parse("ヤコ 1:1").osis()).toEqual("Jas.1.1")
 		`
 		true
 describe "Localized book 2Pet (ja)", ->
@@ -1868,13 +2085,29 @@ describe "Localized book 2Pet (ja)", ->
 		expect(p.parse("ペテロの後の書 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ペテロの手紙Ⅱ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ペトロの手紙二 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIヘトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIペトロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("Ⅱ ヘテロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("Ⅱ ペテロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ヘトロ 2 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ペトロ 2 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2Pet 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIヘト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIペト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘテロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペテロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ヘテロⅡ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ペテロⅡ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("二ヘトロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("二ペトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘテ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペテ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ヘテⅡ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ペテⅡ 1:1").osis()).toEqual("2Pet.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヘテロの第二の手紙 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ヘトロの第二の手紙 1:1").osis()).toEqual("2Pet.1.1")
@@ -1886,13 +2119,29 @@ describe "Localized book 2Pet (ja)", ->
 		expect(p.parse("ペテロの後の書 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ペテロの手紙Ⅱ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ペトロの手紙二 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIヘトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIペトロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("Ⅱ ヘテロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("Ⅱ ペテロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ヘトロ 2 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("ペトロ 2 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2PET 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIヘト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("IIペト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘテロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペテロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ヘテロⅡ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ペテロⅡ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("二ヘトロ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("二ペトロ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘテ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱヘト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペテ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("Ⅱペト 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ヘテⅡ 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("ペテⅡ 1:1").osis()).toEqual("2Pet.1.1")
 		`
 		true
 describe "Localized book 1Pet (ja)", ->
@@ -1918,8 +2167,24 @@ describe "Localized book 1Pet (ja)", ->
 		expect(p.parse("ヘトロ 1 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("ペトロ 1 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1Pet 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iヘトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iペトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘテロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペテロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ヘテロⅠ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ペテロⅠ 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("一ヘトロ 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("一ペトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iヘト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iペト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘテ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペテ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ヘテI 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ペテI 1:1").osis()).toEqual("1Pet.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("ヘテロの第一の手紙 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("ヘトロの第一の手紙 1:1").osis()).toEqual("1Pet.1.1")
@@ -1936,8 +2201,24 @@ describe "Localized book 1Pet (ja)", ->
 		expect(p.parse("ヘトロ 1 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("ペトロ 1 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1PET 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iヘトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iペトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘテロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペテロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ヘテロⅠ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ペテロⅠ 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("一ヘトロ 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("一ペトロ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iヘト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Iペト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘテ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰヘト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペテ 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("Ⅰペト 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ヘテI 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("ペテI 1:1").osis()).toEqual("1Pet.1.1")
 		`
 		true
 describe "Localized book Jude (ja)", ->
@@ -1977,12 +2258,8 @@ describe "Localized book Tob (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Tob (ja)", ->
 		`
-		expect(p.parse("トヒト書 1:1").osis()).toEqual("Tob.1.1")
-		expect(p.parse("トヒト記 1:1").osis()).toEqual("Tob.1.1")
-		expect(p.parse("トビト書 1:1").osis()).toEqual("Tob.1.1")
 		expect(p.parse("トビト記 1:1").osis()).toEqual("Tob.1.1")
 		expect(p.parse("Tob 1:1").osis()).toEqual("Tob.1.1")
-		expect(p.parse("トヒト 1:1").osis()).toEqual("Tob.1.1")
 		expect(p.parse("トビト 1:1").osis()).toEqual("Tob.1.1")
 		`
 		true
@@ -1994,12 +2271,8 @@ describe "Localized book Jdt (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Jdt (ja)", ->
 		`
-		expect(p.parse("ユティト記 1:1").osis()).toEqual("Jdt.1.1")
 		expect(p.parse("ユディト記 1:1").osis()).toEqual("Jdt.1.1")
-		expect(p.parse("ユティト 1:1").osis()).toEqual("Jdt.1.1")
-		expect(p.parse("ユテト書 1:1").osis()).toEqual("Jdt.1.1")
 		expect(p.parse("ユディト 1:1").osis()).toEqual("Jdt.1.1")
-		expect(p.parse("ユデト書 1:1").osis()).toEqual("Jdt.1.1")
 		expect(p.parse("Jdt 1:1").osis()).toEqual("Jdt.1.1")
 		`
 		true
@@ -2011,11 +2284,8 @@ describe "Localized book Bar (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Bar (ja)", ->
 		`
-		expect(p.parse("ワルフの預言書 1:1").osis()).toEqual("Bar.1.1")
-		expect(p.parse("ハルク書 1:1").osis()).toEqual("Bar.1.1")
 		expect(p.parse("バルク書 1:1").osis()).toEqual("Bar.1.1")
 		expect(p.parse("Bar 1:1").osis()).toEqual("Bar.1.1")
-		expect(p.parse("ハルク 1:1").osis()).toEqual("Bar.1.1")
 		expect(p.parse("バルク 1:1").osis()).toEqual("Bar.1.1")
 		`
 		true
@@ -2027,9 +2297,6 @@ describe "Localized book Sus (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: Sus (ja)", ->
 		`
-		expect(p.parse("スサンナ物語 1:1").osis()).toEqual("Sus.1.1")
-		expect(p.parse("スザンナ物語 1:1").osis()).toEqual("Sus.1.1")
-		expect(p.parse("スサンナ 1:1").osis()).toEqual("Sus.1.1")
 		expect(p.parse("スザンナ 1:1").osis()).toEqual("Sus.1.1")
 		expect(p.parse("Sus 1:1").osis()).toEqual("Sus.1.1")
 		`
@@ -2042,16 +2309,8 @@ describe "Localized book 2Macc (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Macc (ja)", ->
 		`
-		expect(p.parse("マカヒー第二書 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカビー第二書 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカハイ 2 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカハイ記2 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカハイ記下 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカバイ 2 1:1").osis()).toEqual("2Macc.1.1")
 		expect(p.parse("マカバイ記2 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカバイ記下 1:1").osis()).toEqual("2Macc.1.1")
 		expect(p.parse("2Macc 1:1").osis()).toEqual("2Macc.1.1")
-		expect(p.parse("マカハイ下 1:1").osis()).toEqual("2Macc.1.1")
 		expect(p.parse("マカバイ下 1:1").osis()).toEqual("2Macc.1.1")
 		`
 		true
@@ -2063,11 +2322,6 @@ describe "Localized book 3Macc (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 3Macc (ja)", ->
 		`
-		expect(p.parse("マカヒー第三書 1:1").osis()).toEqual("3Macc.1.1")
-		expect(p.parse("マカビー第三書 1:1").osis()).toEqual("3Macc.1.1")
-		expect(p.parse("マカハイ 3 1:1").osis()).toEqual("3Macc.1.1")
-		expect(p.parse("マカハイ記3 1:1").osis()).toEqual("3Macc.1.1")
-		expect(p.parse("マカバイ 3 1:1").osis()).toEqual("3Macc.1.1")
 		expect(p.parse("マカバイ記3 1:1").osis()).toEqual("3Macc.1.1")
 		expect(p.parse("3Macc 1:1").osis()).toEqual("3Macc.1.1")
 		`
@@ -2080,11 +2334,6 @@ describe "Localized book 4Macc (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 4Macc (ja)", ->
 		`
-		expect(p.parse("マカヒー第四書 1:1").osis()).toEqual("4Macc.1.1")
-		expect(p.parse("マカビー第四書 1:1").osis()).toEqual("4Macc.1.1")
-		expect(p.parse("マカハイ 4 1:1").osis()).toEqual("4Macc.1.1")
-		expect(p.parse("マカハイ記4 1:1").osis()).toEqual("4Macc.1.1")
-		expect(p.parse("マカバイ 4 1:1").osis()).toEqual("4Macc.1.1")
 		expect(p.parse("マカバイ記4 1:1").osis()).toEqual("4Macc.1.1")
 		expect(p.parse("4Macc 1:1").osis()).toEqual("4Macc.1.1")
 		`
@@ -2097,16 +2346,8 @@ describe "Localized book 1Macc (ja)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Macc (ja)", ->
 		`
-		expect(p.parse("マカヒー第一書 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカビー第一書 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカハイ 1 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカハイ記1 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカハイ記上 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカバイ 1 1:1").osis()).toEqual("1Macc.1.1")
 		expect(p.parse("マカバイ記1 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカバイ記上 1:1").osis()).toEqual("1Macc.1.1")
 		expect(p.parse("1Macc 1:1").osis()).toEqual("1Macc.1.1")
-		expect(p.parse("マカハイ上 1:1").osis()).toEqual("1Macc.1.1")
 		expect(p.parse("マカバイ上 1:1").osis()).toEqual("1Macc.1.1")
 		`
 		true
@@ -2128,6 +2369,12 @@ describe "Miscellaneous tests", ->
 		expect(p.parse("Titus 1:1 ~ 2").osis()).toEqual "Titus.1.1-Titus.1.2"
 		expect(p.parse("Matt 1~2").osis()).toEqual "Matt.1-Matt.2"
 		expect(p.parse("Phlm 2 ~ 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
+		expect(p.parse("Titus 1:1 〜 2").osis()).toEqual "Titus.1.1-Titus.1.2"
+		expect(p.parse("Matt 1〜2").osis()).toEqual "Matt.1-Matt.2"
+		expect(p.parse("Phlm 2 〜 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
+		expect(p.parse("Titus 1:1 ∼ 2").osis()).toEqual "Titus.1.1-Titus.1.2"
+		expect(p.parse("Matt 1∼2").osis()).toEqual "Matt.1-Matt.2"
+		expect(p.parse("Phlm 2 ∼ 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
 	it "should handle chapters (ja)", ->
 		expect(p.parse("Titus 1:1, 章 2").osis()).toEqual "Titus.1.1,Titus.2"
 		expect(p.parse("Matt 3:4 章 6").osis()).toEqual "Matt.3.4,Matt.6"
@@ -2137,6 +2384,10 @@ describe "Miscellaneous tests", ->
 	it "should handle 'and' (ja)", ->
 		expect(p.parse("Exod 1:1 and 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 AND 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
+		expect(p.parse("Exod 1:1 と 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm 2 と 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
+		expect(p.parse("Exod 1:1 、 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm 2 、 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
 	it "should handle titles (ja)", ->
 		expect(p.parse("Ps 3 title, 4:2, 5:title").osis()).toEqual "Ps.3.1,Ps.4.2,Ps.5.1"
 		expect(p.parse("PS 3 TITLE, 4:2, 5:TITLE").osis()).toEqual "Ps.3.1,Ps.4.2,Ps.5.1"
