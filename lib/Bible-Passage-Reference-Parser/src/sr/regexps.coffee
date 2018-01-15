@@ -202,7 +202,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Ps"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Ps(?:al(?:mi|am)?)?)
+		(?:Ps(?:al(?:mi(?:[\s\xa0]*Davidovi)?|am)?)?)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["PrAzar"]
@@ -218,7 +218,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Eccl"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Knjiga[\s\xa0]*propovednika|Propovjednik|Propovednika|Prop|Eccl)
+		(?:Knjiga[\s\xa0]*propov(?:jednik(?:ov)?|ednik(?:ov)?)a|Propov(?:jednik|ednika)|Prop(?:ovednik)?|Eccl)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["SgThree"]
@@ -229,7 +229,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Song"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:P(?:jesma[\s\xa0]*nad[\s\xa0]*pjesma|es)ma|Song)
+		(?:P(?:jesma[\s\xa0]*nad[\s\xa0]*pjesmama|esma(?:[\s\xa0]*nad[\s\xa0]*pesmama)?)|Song)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Jer"]
@@ -373,7 +373,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Acts"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:D(?:jela[\s\xa0]*apostolsk|el)a|Acts)
+		(?:D(?:jela[\s\xa0]*apostolska|ela(?:[\s\xa0]*apostolska)?)|Acts)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Rom"]

@@ -33,10 +33,10 @@ Ezra	Jezdra	Jezd
 Neh	Nemija	Nem
 Esth	Jestira	Jest
 Job	Jov	O Jovu
-Ps	Psalmi	Psal	Psalam
+Ps	Psalmi	Psal	Psalam	Psalmi Davidovi
 Prov	Priče Solomunove	Priče
-Eccl	Propovjednik	Prop	Knjiga propovednika	Propovednika
-Song	Pjesma nad pjesmama	Pesma
+Eccl	Propovjednik	Prop	Knjiga propovednika	Propovednika	Propovednik	Knjiga propovjednikova	Knjiga propovednikova	Knjiga propovjednika
+Song	Pjesma nad pjesmama	Pesma	Pesma nad pesmama
 Isa	Isaija	Isa
 Jer	Jeremija	Jer
 Lam	Plač Jeremijin	Plač
@@ -58,7 +58,7 @@ Matt	Matej	Mat
 Mark	Marko	Mar
 Luke	Luka	Luka
 John	Jovan	Jovan
-Acts	Djela apostolska	Dela
+Acts	Djela apostolska	Dela	Dela apostolska
 Rom	Rimljanima	Rim
 1Cor	$FIRST Korinćanima	$FIRST Kor
 2Cor	$SECOND Korinćanima	$SECOND Kor

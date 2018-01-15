@@ -772,11 +772,13 @@ describe "Localized book Ps (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: Ps (sr)", ->
 		`
+		expect(p.parse("Psalmi Davidovi 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Psalam 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Psalmi 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Psal 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("Ps 1:1").osis()).toEqual("Ps.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("PSALMI DAVIDOVI 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("PSALAM 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("PSALMI 1:1").osis()).toEqual("Ps.1.1")
 		expect(p.parse("PSAL 1:1").osis()).toEqual("Ps.1.1")
@@ -823,15 +825,23 @@ describe "Localized book Eccl (sr)", ->
 		p.include_apocrypha true
 	it "should handle book: Eccl (sr)", ->
 		`
+		expect(p.parse("Knjiga propovjednikova 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("Knjiga propovednikova 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("Knjiga propovjednika 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Knjiga propovednika 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Propovednika 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Propovjednik 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("Propovednik 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Eccl 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Prop 1:1").osis()).toEqual("Eccl.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("KNJIGA PROPOVJEDNIKOVA 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("KNJIGA PROPOVEDNIKOVA 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("KNJIGA PROPOVJEDNIKA 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("KNJIGA PROPOVEDNIKA 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("PROPOVEDNIKA 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("PROPOVJEDNIK 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("PROPOVEDNIK 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("ECCL 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("PROP 1:1").osis()).toEqual("Eccl.1.1")
 		`
@@ -856,10 +866,12 @@ describe "Localized book Song (sr)", ->
 	it "should handle book: Song (sr)", ->
 		`
 		expect(p.parse("Pjesma nad pjesmama 1:1").osis()).toEqual("Song.1.1")
+		expect(p.parse("Pesma nad pesmama 1:1").osis()).toEqual("Song.1.1")
 		expect(p.parse("Pesma 1:1").osis()).toEqual("Song.1.1")
 		expect(p.parse("Song 1:1").osis()).toEqual("Song.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("PJESMA NAD PJESMAMA 1:1").osis()).toEqual("Song.1.1")
+		expect(p.parse("PESMA NAD PESMAMA 1:1").osis()).toEqual("Song.1.1")
 		expect(p.parse("PESMA 1:1").osis()).toEqual("Song.1.1")
 		expect(p.parse("SONG 1:1").osis()).toEqual("Song.1.1")
 		`
@@ -1410,10 +1422,12 @@ describe "Localized book Acts (sr)", ->
 	it "should handle book: Acts (sr)", ->
 		`
 		expect(p.parse("Djela apostolska 1:1").osis()).toEqual("Acts.1.1")
+		expect(p.parse("Dela apostolska 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("Acts 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("Dela 1:1").osis()).toEqual("Acts.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("DJELA APOSTOLSKA 1:1").osis()).toEqual("Acts.1.1")
+		expect(p.parse("DELA APOSTOLSKA 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("ACTS 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("DELA 1:1").osis()).toEqual("Acts.1.1")
 		`

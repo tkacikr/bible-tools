@@ -306,6 +306,7 @@
 4Macc	4Macc
 4Macc	4 Мк
 Acts	Djela apostolska
+Acts	Dela apostolska
 Acts	Acts
 Acts	Dela
 Amos	Amos
@@ -336,9 +337,13 @@ Deut	V. Moj
 Deut	5 Moj
 Deut	V Moj
 Deut	Deut
+Eccl	Knjiga propovjednikova
+Eccl	Knjiga propovednikova
+Eccl	Knjiga propovjednika
 Eccl	Knjiga propovednika
 Eccl	Propovednika
 Eccl	Propovjednik
+Eccl	Propovednik
 Eccl	Eccl
 Eccl	Prop
 EpJer	Посланица Јеремијина
@@ -509,6 +514,7 @@ Prov	Priče Solomunove
 Prov	Price
 Prov	Priče
 Prov	Prov
+Ps	Psalmi Davidovi
 Ps	Psalam
 Ps	Psalmi
 Ps	Psal
@@ -529,6 +535,7 @@ Sir	Sir
 Sir	ИсС
 Sir	Сир
 Song	Pjesma nad pjesmama
+Song	Pesma nad pesmama
 Song	Pesma
 Song	Song
 Sus	Sus
