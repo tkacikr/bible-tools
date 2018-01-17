@@ -1021,9 +1021,11 @@ describe "Localized book 2Tim (fa)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Tim (fa)", ->
 		`
+		expect(p.parse("دوم تیموتايوس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("دوم تیموتاؤس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("2Tim 1:1").osis()).toEqual("2Tim.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("دوم تیموتايوس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("دوم تیموتاؤس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("2TIM 1:1").osis()).toEqual("2Tim.1.1")
 		`

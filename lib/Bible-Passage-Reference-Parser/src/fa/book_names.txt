@@ -33,6 +33,7 @@
 2Sam	2Sam
 2Thess	دوم تسالونیکیان
 2Thess	2Thess
+2Tim	دوم تیموتايوس
 2Tim	دوم تیموتاؤس
 2Tim	2Tim
 3John	سوم یوحنا
