@@ -1,0 +1,154 @@
+1Chr	اول تواریخ
+1Chr	1Chr
+1Cor	اول قرنتیان
+1Cor	1Cor
+1Esd	1Esd
+1John	اول یوحنا
+1John	1John
+1Kgs	اول پادشاهان
+1Kgs	1Kgs
+1Macc	1Macc
+1Pet	اول پطرس
+1Pet	1Pet
+1Sam	اول سموئیل
+1Sam	1Sam
+1Thess	اول تسالونیکیان
+1Thess	1Thess
+1Tim	اول تیموتايوس
+1Tim	اول تیموتاؤس
+1Tim	1Tim
+2Chr	دوم تواریخ
+2Chr	2Chr
+2Cor	دوم قرنتیان
+2Cor	2Cor
+2Esd	2Esd
+2John	دوم یوحنا
+2John	2John
+2Kgs	دوم پادشاهان
+2Kgs	2Kgs
+2Macc	2Macc
+2Pet	دوم پطرس
+2Pet	2Pet
+2Sam	دوم سموئیل
+2Sam	2Sam
+2Thess	دوم تسالونیکیان
+2Thess	2Thess
+2Tim	دوم تیموتاؤس
+2Tim	2Tim
+3John	سوم یوحنا
+3John	3John
+3Macc	3Macc
+4Macc	4Macc
+Acts	کارهای رسولان
+Acts	Acts
+Amos	عاموس
+Amos	Amos
+Bar	Bar
+Bel	Bel
+Col	کولسیان
+Col	Col
+Dan	دانیال
+Dan	Dan
+Deut	تثنیه
+Deut	Deut
+Eccl	جامعه
+Eccl	Eccl
+EpJer	EpJer
+Eph	افسسیان
+Eph	Eph
+Esth	Esth
+Esth	استر
+Exod	Exod
+Exod	خروج
+Ezek	حزقیال
+Ezek	Ezek
+Ezra	Ezra
+Ezra	عزرا
+Gal	غلاطیان
+Gal	غ طیان
+Gal	Gal
+Gen	پیدایش
+Gen	Gen
+GkEsth	GkEsth
+Hab	حبقوق
+Hab	Hab
+Hag	حَجّای
+Hag	Hag
+Heb	عبرانیان
+Heb	ع انیان
+Heb	Heb
+Hos	هوشع
+Hos	Hos
+Isa	اشعیا
+Isa	Isa
+Jas	یعقوب
+Jas	Jas
+Jdt	Jdt
+Jer	ارمیا
+Jer	Jer
+Job	ایّوب
+Job	Job
+Joel	یوئیل
+Joel	Joel
+John	یوحنا
+John	John
+Jonah	Jonah
+Jonah	یونس
+Josh	Josh
+Josh	یوشع
+Jude	یهودا
+Jude	Jude
+Judg	داوران
+Judg	Judg
+Lam	سوگنامه
+Lam	Lam
+Lev	لاویان
+Lev	Lev
+Luke	Luke
+Luke	لوقا
+Mal	ملاکی
+Mal	Mal
+Mark	Mark
+Mark	مرقس
+Matt	Matt
+Matt	متّی
+Matt	متی
+Mic	میکا
+Mic	Mic
+Nah	ناحوم
+Nah	Nah
+Neh	نحمیا
+Neh	Neh
+Num	اعداد
+Num	Num
+Obad	عوبدیا
+Obad	Obad
+Phil	فیلیپیان
+Phil	Phil
+Phlm	فِلیمُون
+Phlm	Phlm
+PrAzar	PrAzar
+PrMan	PrMan
+Prov	امثال
+Prov	Prov
+Ps	مزامیر
+Ps	Ps
+Rev	مکاشفهٔ یوحنا
+Rev	Rev
+Rom	رومیان
+Rom	Rom
+Ruth	Ruth
+Ruth	روت
+SgThree	SgThree
+Sir	Sir
+Song	غزل غزلها
+Song	Song
+Sus	Sus
+Titus	Titus
+Titus	تیطُس
+Tob	Tob
+Wis	Wis
+Zech	زکریا
+Zech	Zech
+Zeph	صَفَنیا
+Zeph	Zeph
