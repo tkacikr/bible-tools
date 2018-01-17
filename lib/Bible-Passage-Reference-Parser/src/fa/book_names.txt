@@ -4,6 +4,7 @@
 1Cor	1Cor
 1Esd	1Esd
 1John	اول یوحنا
+1John	اول یحنا
 1John	1John
 1Kgs	اول پادشاهان
 1Kgs	1Kgs
@@ -11,10 +12,12 @@
 1Pet	اول پطرس
 1Pet	1Pet
 1Sam	اول سموئیل
+1Sam	اول سموییل
 1Sam	1Sam
 1Thess	اول تسالونیکیان
 1Thess	1Thess
 1Tim	اول تیموتايوس
+1Tim	اول تیموتایوس
 1Tim	اول تیموتاؤس
 1Tim	1Tim
 2Chr	دوم تواریخ
@@ -23,24 +26,29 @@
 2Cor	2Cor
 2Esd	2Esd
 2John	دوم یوحنا
+2John	دوم یحنا
 2John	2John
+2Kgs	دوم  پادشاهان
 2Kgs	دوم پادشاهان
 2Kgs	2Kgs
 2Macc	2Macc
 2Pet	دوم پطرس
 2Pet	2Pet
 2Sam	دوم سموئیل
+2Sam	دوم سموییل
 2Sam	2Sam
 2Thess	دوم تسالونیکیان
 2Thess	2Thess
 2Tim	دوم تیموتايوس
 2Tim	دوم تیموتاؤس
 2Tim	2Tim
+3John	سوم یحانا
 3John	سوم یوحنا
 3John	3John
 3Macc	3Macc
 4Macc	4Macc
 Acts	کارهای رسولان
+Acts	اعمال رسولان
 Acts	Acts
 Amos	عاموس
 Amos	Amos
@@ -51,11 +59,13 @@ Col	Col
 Dan	دانیال
 Dan	Dan
 Deut	تثنیه
+Deut	تشنیه
 Deut	Deut
 Eccl	جامعه
 Eccl	Eccl
 EpJer	EpJer
 Eph	افسسیان
+Eph	افسیان
 Eph	Eph
 Esth	Esth
 Esth	استر
@@ -65,16 +75,20 @@ Ezek	حزقیال
 Ezek	Ezek
 Ezra	Ezra
 Ezra	عزرا
+Gal	علاطیان
 Gal	غلاطیان
 Gal	غ طیان
 Gal	Gal
 Gen	پیدایش
+Gen	پدایش
 Gen	Gen
 GkEsth	GkEsth
 Hab	حبقوق
 Hab	Hab
 Hag	حَجّای
 Hag	Hag
+Hag	حجی
+Hag	حخی
 Heb	عبرانیان
 Heb	ع انیان
 Heb	Heb
@@ -88,8 +102,10 @@ Jdt	Jdt
 Jer	ارمیا
 Jer	Jer
 Job	ایّوب
+Job	ایوب
 Job	Job
 Joel	یوئیل
+Joel	یوییل
 Joel	Joel
 John	یوحنا
 John	John
@@ -101,6 +117,7 @@ Jude	یهودا
 Jude	Jude
 Judg	داوران
 Judg	Judg
+Lam	مراثی ارمیا
 Lam	سوگنامه
 Lam	Lam
 Lev	لاویان
@@ -114,6 +131,7 @@ Mark	مرقس
 Matt	Matt
 Matt	متّی
 Matt	متی
+Mic	میکاه
 Mic	میکا
 Mic	Mic
 Nah	ناحوم
@@ -125,8 +143,10 @@ Num	Num
 Obad	عوبدیا
 Obad	Obad
 Phil	فیلیپیان
+Phil	فلیپیان
 Phil	Phil
 Phlm	فِلیمُون
+Phlm	فلیمون
 Phlm	Phlm
 PrAzar	PrAzar
 PrMan	PrMan
@@ -135,6 +155,7 @@ Prov	Prov
 Ps	مزامیر
 Ps	Ps
 Rev	مکاشفهٔ یوحنا
+Rev	مکاشفه
 Rev	Rev
 Rom	رومیان
 Rom	Rom
@@ -146,10 +167,12 @@ Song	غزل غزلها
 Song	Song
 Sus	Sus
 Titus	Titus
+Titus	تیطوس
 Titus	تیطُس
 Tob	Tob
 Wis	Wis
 Zech	زکریا
 Zech	Zech
 Zeph	صَفَنیا
+Zeph	صفنیا
 Zeph	Zeph
