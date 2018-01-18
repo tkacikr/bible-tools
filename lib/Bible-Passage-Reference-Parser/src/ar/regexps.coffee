@@ -369,7 +369,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Gal"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?غلاطية|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*غلاطية|غلاطية|ﻏﻼﻃﻲ|Gal|غل)
+		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?غلاطية|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*غلاطية|غ(?:لا|[\s\xa0]*)طية|ﻏﻼﻃﻲ|Gal|غل)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Eph"]
