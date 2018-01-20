@@ -497,9 +497,13 @@ describe "Localized book Prov (fa)", ->
 		p.include_apocrypha true
 	it "should handle book: Prov (fa)", ->
 		`
+		expect(p.parse("امثال سلیمان 1:1").osis()).toEqual("Prov.1.1")
+		expect(p.parse("امثال سلی ن 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("امثال 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("Prov 1:1").osis()).toEqual("Prov.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("امثال سلیمان 1:1").osis()).toEqual("Prov.1.1")
+		expect(p.parse("امثال سلی ن 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("امثال 1:1").osis()).toEqual("Prov.1.1")
 		expect(p.parse("PROV 1:1").osis()).toEqual("Prov.1.1")
 		`

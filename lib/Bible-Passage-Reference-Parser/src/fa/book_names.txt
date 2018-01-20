@@ -150,6 +150,8 @@ Phlm	فلیمون
 Phlm	Phlm
 PrAzar	PrAzar
 PrMan	PrMan
+Prov	امثال سلیمان
+Prov	امثال سلی ن
 Prov	امثال
 Prov	Prov
 Ps	مزامیر
