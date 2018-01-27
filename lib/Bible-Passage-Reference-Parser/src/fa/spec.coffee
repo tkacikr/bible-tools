@@ -176,10 +176,12 @@ describe "Localized book Rev (fa)", ->
 	it "should handle book: Rev (fa)", ->
 		`
 		expect(p.parse("مکاشفهٔ یوحنا 1:1").osis()).toEqual("Rev.1.1")
+		expect(p.parse("مکاشفه یوحنا 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("مکاشفه 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("Rev 1:1").osis()).toEqual("Rev.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("مکاشفهٔ یوحنا 1:1").osis()).toEqual("Rev.1.1")
+		expect(p.parse("مکاشفه یوحنا 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("مکاشفه 1:1").osis()).toEqual("Rev.1.1")
 		expect(p.parse("REV 1:1").osis()).toEqual("Rev.1.1")
 		`

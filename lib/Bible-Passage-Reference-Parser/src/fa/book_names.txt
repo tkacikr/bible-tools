@@ -157,6 +157,7 @@ Prov	Prov
 Ps	مزامیر
 Ps	Ps
 Rev	مکاشفهٔ یوحنا
+Rev	مکاشفه یوحنا
 Rev	مکاشفه
 Rev	Rev
 Rom	رومیان
