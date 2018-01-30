@@ -1,5 +1,5 @@
 var book = {
-	"name": "Kološšanima",
+	"name": "Kološanima",
 	"numChapters": 4,
 	"chapters": {
 		"1": {

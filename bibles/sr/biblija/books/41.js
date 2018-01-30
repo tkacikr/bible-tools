@@ -1,5 +1,5 @@
 var book = {
-	"name": "Јеванђеље по Марку",
+	"name": "Jevanđelje po Marku",
 	"numChapters": 16,
 	"chapters": {
 		"1": {
