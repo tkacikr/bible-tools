@@ -88,6 +88,31 @@ var book = {
 			"19": "<sup class=\"versenum\">19&#xA0;</sup>whose end <i>is</i> destruction, whose god <i>is their</i> belly, and <i>whose</i> glory <i>is</i> in their shame&#x2014;who set their mind on earthly things. ",
 			"20": "<sup class=\"versenum\">20&#xA0;</sup>For our citizenship is in heaven, from which we also eagerly wait for the Savior, the Lord Jesus Christ, ",
 			"21": "<sup class=\"versenum\">21&#xA0;</sup>who will transform our lowly body that it may be conformed to His glorious body, according to the working by which He is able even to subdue all things to Himself."
+		},
+		"4": {
+            "1": "<sup class=\"versenum\">1</sup> Therefore, my beloved and longed-for brethren, my joy and crown, so stand fast in the Lord, beloved.",
+            "2": "<sup class=\"versenum\">2</sup> I implore Euodia and I implore Syntyche to be of the same mind in the Lord.",
+            "3": "<sup class=\"versenum\">3</sup> And I urge you also, true companion, help these women who labored with me in the gospel, with Clement also, and the rest of my fellow workers, whose names are in the Book of Life.",
+            "4": "<sup class=\"versenum\">4</sup> Rejoice in the Lord always. Again I will say, rejoice!",
+            "5": "<sup class=\"versenum\">5</sup> Let your gentleness be known to all men. The Lord is at hand.",
+            "6": "<sup class=\"versenum\">6</sup> Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving, let your requests be made known to God;",
+            "7": "<sup class=\"versenum\">7</sup> and the peace of God, which surpasses all understanding, will guard your hearts and minds through Christ Jesus.",
+            "8": "<sup class=\"versenum\">8</sup> Finally, brethren, whatever things are true, whatever things are noble, whatever things are just, whatever things are pure, whatever things are lovely, whatever things are of good report, if there is any virtue and if there is anything praiseworthy--meditate on these things.",
+            "9": "<sup class=\"versenum\">9</sup> The things which you learned and received and heard and saw in me, these do, and the God of peace will be with you.",
+            "10": "<sup class=\"versenum\">10</sup> But I rejoiced in the Lord greatly that now at last your care for me has flourished again; though you surely did care, but you lacked opportunity.",
+            "11": "<sup class=\"versenum\">11</sup> Not that I speak in regard to need, for I have learned in whatever state I am, to be content:",
+            "12": "<sup class=\"versenum\">12</sup> I know how to be abased, and I know how to abound. Everywhere and in all things I have learned both to be full and to be hungry, both to abound and to suffer need.",
+            "13": "<sup class=\"versenum\">13</sup> I can do all things through Christ who strengthens me.",
+            "14": "<sup class=\"versenum\">14</sup> Nevertheless you have done well that you shared in my distress.",
+            "15": "<sup class=\"versenum\">15</sup> Now you Philippians know also that in the beginning of the gospel, when I departed from Macedonia, no church shared with me concerning giving and receiving but you only.",
+            "16": "<sup class=\"versenum\">16</sup> For even in Thessalonica you sent aid once and again for my necessities.",
+            "17": "<sup class=\"versenum\">17</sup> Not that I seek the gift, but I seek the fruit that abounds to your account.",
+            "18": "<sup class=\"versenum\">18</sup> Indeed I have all and abound. I am full, having received from Epaphroditus the things sent from you, a sweet-smelling aroma, an acceptable sacrifice, well pleasing to God.",
+            "19": "<sup class=\"versenum\">19</sup> And my God shall supply all your need according to His riches in glory by Christ Jesus.",
+            "20": "<sup class=\"versenum\">20</sup> Now to our God and Father be glory forever and ever. Amen.",
+            "21": "<sup class=\"versenum\">21</sup> Greet every saint in Christ Jesus. The brethren who are with me greet you.",
+            "22": "<sup class=\"versenum\">22</sup> All the saints greet you, but especially those who are of Caesar's household.",
+            "23": "<sup class=\"versenum\">23</sup> The grace of our Lord Jesus Christ be with you all. Amen."
 		}
 	}
 };
