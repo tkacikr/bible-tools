@@ -70,7 +70,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Lev"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:سفر[\s\xa0]*اللاويين|اللاويين|الأحبار|ﺍﻟﻼﻭﻳﻲ|ويين|Lev|لا|أح)
+		(?:سفر[\s\xa0]*اللاويين|اللاويين|الأحبار|ﺍﻟﻼﻭﻳﻲ|(?:ال)?ويين|Lev|لا|أح)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Num"]
@@ -141,7 +141,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Isa"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:سفر[\s\xa0]*إشعياء|(?:إشَعْ|اشع)ياء|ﺃﺷﻌﻴﺎء|إشعيا|Isa|اش)
+		(?:سفر[\s\xa0]*إشعياء|(?:إشَعْ|اشع)ياء|إشعياء|ﺃﺷﻌﻴﺎء|إشعيا|Isa|اش)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Sam"]
@@ -166,12 +166,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Chr"]
 		regexp: ///(^|[^0-9A-Za-zؐ-ؚؠ-ٟٮ-ۓە-ۜ۟-۪ۨ-ۯۺ-ۼۿݐ-ݿࢠࢢ-ࢬࣤ-ࣾﭐ-ﮱﯓ-ﴽﵐ-ﶏﶒ-ﷇﷰ-ﷻﹰ-ﹴﹶ-ﻼ])(
-		(?:سفر[\s\xa0]*أخبار[\s\xa0]*الأيام[\s\xa0]*الثاني|أخبار[\s\xa0]*الأيام[\s\xa0]*الثاني|ﺃﺧﺒﺎﺭ[\s\xa0]*ﺍﻷﻳﺎﻡ[\s\xa0]*ﺍﻟﺜﺎﻥ|الأخبار[\s\xa0]*2|۲اخبار|2(?:اخبار|Chr|[\s\xa0]*أخ))
+		(?:سفر[\s\xa0]*أخبار[\s\xa0]*الأيام[\s\xa0]*الثاني|أخبار[\s\xa0]*الأيام[\s\xa0]*الثاني|ﺃﺧﺒﺎﺭ[\s\xa0]*ﺍﻷﻳﺎﻡ[\s\xa0]*ﺍﻟﺜﺎﻥ|الأخبار[\s\xa0]*2|۲[أا]خبار|2(?:[أا]خبار|Chr|[\s\xa0]*أخ))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Chr"]
 		regexp: ///(^|[^0-9A-Za-zؐ-ؚؠ-ٟٮ-ۓە-ۜ۟-۪ۨ-ۯۺ-ۼۿݐ-ݿࢠࢢ-ࢬࣤ-ࣾﭐ-ﮱﯓ-ﴽﵐ-ﶏﶒ-ﷇﷰ-ﷻﹰ-ﹴﹶ-ﻼ])(
-		(?:سفر[\s\xa0]*أخبار[\s\xa0]*الأيام[\s\xa0]*الأول|أخبار[\s\xa0]*الأيام[\s\xa0]*الأول|ﺃﺧﺒﺎﺭ[\s\xa0]*ﺍﻷﻳﺎﻡ[\s\xa0]*ﺍﻷ|الأخبار[\s\xa0]*1|١اخبار|1(?:اخبار|Chr|[\s\xa0]*أخ))
+		(?:سفر[\s\xa0]*أخبار[\s\xa0]*الأيام[\s\xa0]*الأول|أخبار[\s\xa0]*الأيام[\s\xa0]*الأول|ﺃﺧﺒﺎﺭ[\s\xa0]*ﺍﻷﻳﺎﻡ[\s\xa0]*ﺍﻷ|الأخبار[\s\xa0]*1|١[أا]خبار|1(?:[أا]خبار|Chr|[\s\xa0]*أخ))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Ezra"]
@@ -197,7 +197,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Job"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:سفر[\s\xa0]*أيوب|أيوب|Job|أي)
+		(?:سفر[\s\xa0]*أيوب|أيوب|ايوب|Job|أي)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Ps"]
@@ -234,7 +234,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Jer"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:سفر[\s\xa0]*إرميا|ﺃﺭﻣﻴﺎء|[أإ]رميا|Jer|ار)
+		(?:سفر[\s\xa0]*إرميا|ﺃﺭﻣﻴﺎء|ارميا|[أإ]رميا|Jer|ار)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Ezek"]
@@ -319,7 +319,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Luke"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:إنجيل[\s\xa0]*لوقا|Luke|لوقا|لو)
+		(?:إنجيل[\s\xa0]*لوقا|لوقِا|Luke|لوقا|لو)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1John"]
@@ -349,7 +349,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Acts"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:سفر[\s\xa0]*أعمال[\s\xa0]*الرسل|ﺍﻋﻤﺎﻝ[\s\xa0]*ﺍﻟﺮﺳﻞ|أعمال[\s\xa0]*الرسل|Acts|اع)
+		(?:سفر[\s\xa0]*أعمال[\s\xa0]*الرسل|أعمال[\s\xa0]*ُّالرسل|ﺍﻋﻤﺎﻝ[\s\xa0]*ﺍﻟﺮﺳﻞ|أعمال[\s\xa0]*الرسل|اعمال[\s\xa0]*الرسل|Acts|اع)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Rom"]
@@ -369,12 +369,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Gal"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?غلاطية|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*غلاطية|غ(?:لا|[\s\xa0]*)طية|ﻏﻼﻃﻲ|Gal|غل)
+		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?غلاطية|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*غلاطية|غ(?:لا|ال|[\s\xa0]*)طية|ﻏﻼﻃﻲ|Gal|غل)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Eph"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?أفسس|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*أفسس|ﺃﻓﺴﺲ|افسس|Eph|أف)
+		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?أفسس|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*أفسس|ﺃﻓﺴﺲ|أفسس|افسس|Eph|أف)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Phil"]
@@ -409,7 +409,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Titus"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:رسالة[\s\xa0]*بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*تيطس|الرسالة[\s\xa0]*إلى[\s\xa0]*تيطس|Titus|ﺗﻴﻄﺲ|طيطس|طي|تي)
+		(?:رسالة[\s\xa0]*بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*تيطس|الرسالة[\s\xa0]*إلى[\s\xa0]*تيطس|Titus|ﺗﻴﻄﺲ|[تط]يطس|[تط]ي)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Phlm"]

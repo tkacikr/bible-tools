@@ -2,7 +2,9 @@
 1Chr	أخبار الأيام الأول
 1Chr	ﺃﺧﺒﺎﺭ ﺍﻷﻳﺎﻡ ﺍﻷ
 1Chr	الأخبار 1
+1Chr	1أخبار
 1Chr	1اخبار
+1Chr	١أخبار
 1Chr	١اخبار
 1Chr	1 أخ
 1Chr	1Chr
@@ -77,7 +79,9 @@
 2Chr	أخبار الأيام الثاني
 2Chr	ﺃﺧﺒﺎﺭ ﺍﻷﻳﺎﻡ ﺍﻟﺜﺎﻥ
 2Chr	الأخبار 2
+2Chr	2أخبار
 2Chr	2اخبار
+2Chr	۲أخبار
 2Chr	۲اخبار
 2Chr	2 أخ
 2Chr	2Chr
@@ -158,7 +162,9 @@
 4Macc	المكابين الرابع
 4Macc	4Macc
 Acts	سفر أعمال الرسل
+Acts	أعمال ُّالرسل
 Acts	أعمال الرسل
+Acts	اعمال الرسل
 Acts	ﺍﻋﻤﺎﻝ ﺍﻟﺮﺳﻞ
 Acts	Acts
 Acts	اع
@@ -200,6 +206,7 @@ EpJer	EpJer
 Eph	رسالة بولس الرسول إلى أهل أفسس
 Eph	الرسالة إلى أهل أفسس
 Eph	رسالة أفسس
+Eph	أفسس
 Eph	افسس
 Eph	ﺃﻓﺴﺲ
 Eph	Eph
@@ -224,6 +231,7 @@ Ezra	عـز
 Gal	رسالة بولس الرسول إلى أهل غلاطية
 Gal	الرسالة إلى أهل غلاطية
 Gal	رسالة غلاطية
+Gal	غالطية
 Gal	غلاطية
 Gal	غ طية
 Gal	ﻏﻼﻃﻲ
@@ -257,6 +265,7 @@ Hos	Hos
 Hos	هو
 Isa	سفر إشعياء
 Isa	إشَعْياء
+Isa	إشعياء
 Isa	اشعياء
 Isa	ﺃﺷﻌﻴﺎء
 Isa	إشعيا
@@ -275,10 +284,12 @@ Jer	سفر إرميا
 Jer	ﺃﺭﻣﻴﺎء
 Jer	أرميا
 Jer	إرميا
+Jer	ارميا
 Jer	Jer
 Jer	ار
 Job	سفر أيوب
 Job	أيوب
+Job	ايوب
 Job	Job
 Job	أي
 Joel	سفر يوئيل
@@ -315,12 +326,14 @@ Lam	مرا
 Lev	سفر اللاويين
 Lev	اللاويين
 Lev	الأحبار
+Lev	الويين
 Lev	ﺍﻟﻼﻭﻳﻲ
 Lev	ويين
 Lev	Lev
 Lev	أح
 Lev	لا
 Luke	إنجيل لوقا
+Luke	لوقِا
 Luke	Luke
 Luke	لوقا
 Luke	لو
@@ -431,6 +444,7 @@ Sus	Sus
 Titus	رسالة بولس الرسول إلى تيطس
 Titus	الرسالة إلى تيطس
 Titus	Titus
+Titus	تيطس
 Titus	طيطس
 Titus	ﺗﻴﻄﺲ
 Titus	تي
