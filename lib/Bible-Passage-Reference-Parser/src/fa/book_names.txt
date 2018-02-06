@@ -16,6 +16,7 @@
 1Sam	1Sam
 1Thess	اول تسالونیکیان
 1Thess	1Thess
+1Tim	اول تیموتائوس
 1Tim	اول تیموتايوس
 1Tim	اول تیموتایوس
 1Tim	اول تیموتاؤس
@@ -39,6 +40,7 @@
 2Sam	2Sam
 2Thess	دوم تسالونیکیان
 2Thess	2Thess
+2Tim	دوم تیموتائوس
 2Tim	دوم تیموتايوس
 2Tim	دوم تیموتاؤس
 2Tim	2Tim
@@ -80,6 +82,7 @@ Gal	غلاطیان
 Gal	غ طیان
 Gal	Gal
 Gen	پیدایش
+Gen	یپدایش
 Gen	پدایش
 Gen	Gen
 GkEsth	GkEsth
@@ -90,6 +93,7 @@ Hag	Hag
 Hag	حجی
 Hag	حخی
 Heb	عبرانیان
+Heb	عربانیان
 Heb	ع انیان
 Heb	Heb
 Hos	هوشع

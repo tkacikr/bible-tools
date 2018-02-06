@@ -53,10 +53,12 @@ describe "Localized book Gen (fa)", ->
 	it "should handle book: Gen (fa)", ->
 		`
 		expect(p.parse("پیدایش 1:1").osis()).toEqual("Gen.1.1")
+		expect(p.parse("یپدایش 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("پدایش 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("Gen 1:1").osis()).toEqual("Gen.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("پیدایش 1:1").osis()).toEqual("Gen.1.1")
+		expect(p.parse("یپدایش 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("پدایش 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("GEN 1:1").osis()).toEqual("Gen.1.1")
 		`
@@ -1067,10 +1069,12 @@ describe "Localized book 2Tim (fa)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Tim (fa)", ->
 		`
+		expect(p.parse("دوم تیموتائوس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("دوم تیموتايوس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("دوم تیموتاؤس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("2Tim 1:1").osis()).toEqual("2Tim.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("دوم تیموتائوس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("دوم تیموتايوس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("دوم تیموتاؤس 1:1").osis()).toEqual("2Tim.1.1")
 		expect(p.parse("2TIM 1:1").osis()).toEqual("2Tim.1.1")
@@ -1084,11 +1088,13 @@ describe "Localized book 1Tim (fa)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Tim (fa)", ->
 		`
+		expect(p.parse("اول تیموتائوس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("اول تیموتايوس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("اول تیموتایوس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("اول تیموتاؤس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("1Tim 1:1").osis()).toEqual("1Tim.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("اول تیموتائوس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("اول تیموتايوس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("اول تیموتایوس 1:1").osis()).toEqual("1Tim.1.1")
 		expect(p.parse("اول تیموتاؤس 1:1").osis()).toEqual("1Tim.1.1")
@@ -1138,10 +1144,12 @@ describe "Localized book Heb (fa)", ->
 	it "should handle book: Heb (fa)", ->
 		`
 		expect(p.parse("عبرانیان 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("عربانیان 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("ع انیان 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("Heb 1:1").osis()).toEqual("Heb.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("عبرانیان 1:1").osis()).toEqual("Heb.1.1")
+		expect(p.parse("عربانیان 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("ع انیان 1:1").osis()).toEqual("Heb.1.1")
 		expect(p.parse("HEB 1:1").osis()).toEqual("Heb.1.1")
 		`
@@ -1327,6 +1335,8 @@ describe "Miscellaneous tests", ->
 		expect(p.parse("Phlm آیه 6").osis()).toEqual "Phlm.1.6"
 		expect(p.parse("Exod 1:1 ایـات 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm ایـات 6").osis()).toEqual "Phlm.1.6"
+		expect(p.parse("Exod 1:1 آیات 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm آیات 6").osis()).toEqual "Phlm.1.6"
 	it "should handle 'and' (fa)", ->
 		expect(p.parse("Exod 1:1 و 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 و 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
