@@ -1,6 +1,6 @@
 var info = {
-	"lang": "cz",
-	"version": "kralická-1613",
+	"lang": "cs",
+	"version": "kralicka-1613",
 	"books": [
 		{
 			"name": "1. Mojžišova",
