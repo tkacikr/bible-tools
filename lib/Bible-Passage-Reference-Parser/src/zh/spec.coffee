@@ -3827,12 +3827,17 @@ describe "Miscellaneous tests", ->
 		expect(p.parse("Titus 1:1 ~ 2").osis()).toEqual "Titus.1.1-Titus.1.2"
 		expect(p.parse("Matt 1~2").osis()).toEqual "Matt.1-Matt.2"
 		expect(p.parse("Phlm 2 ~ 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
+		expect(p.parse("Titus 1:1 － 2").osis()).toEqual "Titus.1.1-Titus.1.2"
+		expect(p.parse("Matt 1－2").osis()).toEqual "Matt.1-Matt.2"
+		expect(p.parse("Phlm 2 － 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
 	it "should handle chapters (zh)", ->
 		expect(p.parse("Titus 1:1, chapter 2").osis()).toEqual "Titus.1.1,Titus.2"
 		expect(p.parse("Matt 3:4 CHAPTER 6").osis()).toEqual "Matt.3.4,Matt.6"
 	it "should handle verses (zh)", ->
 		expect(p.parse("Exod 1:1 verse 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm VERSE 6").osis()).toEqual "Phlm.1.6"
+		expect(p.parse("Exod 1:1 ： 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm ： 6").osis()).toEqual "Phlm.1.6"
 	it "should handle 'and' (zh)", ->
 		expect(p.parse("Exod 1:1 ； 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 ； 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"

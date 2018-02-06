@@ -10,8 +10,8 @@ $CHAPTER	chapter
 $FF	ff
 $TITLE	篇
 $TRANS	CUV	CNV	CUVMP
-$TO	～	~
-$VERSE	verse
+$TO	～	~	－
+$VERSE	verse	：
 $PRE_BOOK	《?
 $POST_BOOK	》?
 $PRE_BOOK_ALLOWED_CHARACTERS	[^\x1f]
