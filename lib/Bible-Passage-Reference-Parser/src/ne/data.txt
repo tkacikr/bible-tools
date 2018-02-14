@@ -3,7 +3,7 @@ $SECOND	2
 $THIRD	3
 $FOURTH	4
 $AB	[a-e]
-$AND	and
+$AND	and	र
 $CHAPTER	chapter
 $FF	ff
 $TITLE	title

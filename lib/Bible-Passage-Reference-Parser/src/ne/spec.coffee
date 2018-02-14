@@ -3392,6 +3392,8 @@ describe "Miscellaneous tests", ->
 	it "should handle 'and' (ne)", ->
 		expect(p.parse("Exod 1:1 and 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 AND 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
+		expect(p.parse("Exod 1:1 र 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm 2 र 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
 	it "should handle titles (ne)", ->
 		expect(p.parse("Ps 3 title, 4:2, 5:title").osis()).toEqual "Ps.3.1,Ps.4.2,Ps.5.1"
 		expect(p.parse("PS 3 TITLE, 4:2, 5:TITLE").osis()).toEqual "Ps.3.1,Ps.4.2,Ps.5.1"

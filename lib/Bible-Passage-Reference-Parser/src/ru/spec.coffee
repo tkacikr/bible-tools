@@ -2542,6 +2542,7 @@ describe "Localized book 2Pet (ru)", ->
 		expect(p.parse("2е Петра 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2я Петра 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 Петра 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("2 Петр 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 Пет 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2Pet 1:1").osis()).toEqual("2Pet.1.1")
 		p.include_apocrypha(false)
@@ -2585,6 +2586,7 @@ describe "Localized book 2Pet (ru)", ->
 		expect(p.parse("2Е ПЕТРА 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2Я ПЕТРА 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 ПЕТРА 1:1").osis()).toEqual("2Pet.1.1")
+		expect(p.parse("2 ПЕТР 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2 ПЕТ 1:1").osis()).toEqual("2Pet.1.1")
 		expect(p.parse("2PET 1:1").osis()).toEqual("2Pet.1.1")
 		`
@@ -2637,6 +2639,7 @@ describe "Localized book 1Pet (ru)", ->
 		expect(p.parse("1е Петра 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1я Петра 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 Петра 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1 Петр 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 Пет 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1Pet 1:1").osis()).toEqual("1Pet.1.1")
 		p.include_apocrypha(false)
@@ -2680,6 +2683,7 @@ describe "Localized book 1Pet (ru)", ->
 		expect(p.parse("1Е ПЕТРА 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1Я ПЕТРА 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 ПЕТРА 1:1").osis()).toEqual("1Pet.1.1")
+		expect(p.parse("1 ПЕТР 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1 ПЕТ 1:1").osis()).toEqual("1Pet.1.1")
 		expect(p.parse("1PET 1:1").osis()).toEqual("1Pet.1.1")
 		`

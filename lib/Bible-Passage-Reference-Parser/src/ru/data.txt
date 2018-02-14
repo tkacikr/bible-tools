@@ -76,8 +76,8 @@ Titus	Послание к Титу	Титу	К Титу	Тит
 Phlm	Послание к Филимону	Филимону	К Филимону	Флм
 Heb	Послание к Евреям	Евреям	К Евреям	Евр
 Jas	Послание Иакова	Иакова	Иак	Якуб
-1Pet	$FIRST послание Петра	$FIRST Петра	1 Пет	$FIRST Петира	$FIRST Петруса
-2Pet	$SECOND послание Петра	$SECOND Петра	2 Пет	$SECOND Петира	$SECOND Петруса
+1Pet	$FIRST послание Петра	$FIRST Петра	1 Пет	$FIRST Петира	$FIRST Петруса	1 Петр
+2Pet	$SECOND послание Петра	$SECOND Петра	2 Пет	$SECOND Петира	$SECOND Петруса	2 Петр
 1John	$FIRST послание Иоанна	$FIRST Иоанна	1 Ин	$FIRST Иохана
 2John	$SECOND послание Иоанна	$SECOND Иоанна	2 Ин	$SECOND Иохана
 3John	$THIRD послание Иоанна	$THIRD Иоанна	3 Ин	$THIRD Иохана
