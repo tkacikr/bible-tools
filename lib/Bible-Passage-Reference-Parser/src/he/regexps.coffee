@@ -19,7 +19,7 @@ bcv_parser::regexps.escaped_passage = ///
 				    /\d+\x1f				#special Psalm chapters
 				  | [\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014]
 				  | title (?! [a-z] )		#could be followed by a number
-				  | פרקים | verse | פרק | and | ff | -
+				  | פרקים | verse | פרק | and | ואל | ff | -
 				  | [a-e] (?! \w )			#a-e allows 1:1a
 				  | $						#or the end of the string
 				 )+
@@ -36,10 +36,10 @@ bcv_parser::regexps.match_end_split = ///
 bcv_parser::regexps.control = /[\x1e\x1f]/g
 bcv_parser::regexps.pre_book = "[^A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ]"
 
-bcv_parser::regexps.first = "א[’']\\.?#{bcv_parser::regexps.space}*"
-bcv_parser::regexps.second = "ב[’']\\.?#{bcv_parser::regexps.space}*"
-bcv_parser::regexps.third = "ג[’']\\.?#{bcv_parser::regexps.space}*"
-bcv_parser::regexps.range_and = "(?:[&\u2013\u2014-]|and|-)"
+bcv_parser::regexps.first = "(?:א[’']|1)\\.?#{bcv_parser::regexps.space}*"
+bcv_parser::regexps.second = "(?:ב[’']|2)\\.?#{bcv_parser::regexps.space}*"
+bcv_parser::regexps.third = "(?:ג[’']|3)\\.?#{bcv_parser::regexps.space}*"
+bcv_parser::regexps.range_and = "(?:[&\u2013\u2014-]|(?:and|ואל)|-)"
 bcv_parser::regexps.range_only = "(?:[\u2013\u2014-]|-)"
 # Each book regexp should return two parenthesized objects: an optional preliminary character and the book itself.
 bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
@@ -54,18 +54,18 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Gen"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:בר(?:אשית|יאה)|Gen)
+		(?:ב(?:בראשית|ר(?:אשית|יאה))|Gen)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Exod"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:יציא(?:ת[\s\xa0]*מצרים|ה)|Exod|שמות)
+		(?:יציא(?:ת[\s\xa0]*מצרים|ה)|שמות|Exod)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Bel"]
 		apocrypha: true
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:התנין[\s\xa0]*בבבל|Bel|בל[\s\xa0]*והדרקון)
+		(?:התנין[\s\xa0]*בבבל|בל[\s\xa0]*והדרקון|Bel)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Lev"]
@@ -75,7 +75,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Num"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:ספירה|Num|מניין|במדבר)
+		(?:ספירה|מניין|במדבר|Num)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Sir"]
@@ -92,7 +92,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Lam"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:איכה|Lam|קינות)
+		(?:קינות|איכה|Lam)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["EpJer"]
@@ -103,7 +103,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Rev"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:הה?תגלות|Rev|חזון[\s\xa0]*יוחנן)
+		(?:חזון[\s\xa0]*יוחנן|ההתגלות|בהתגלות|התגלות|Rev)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["PrMan"]
@@ -114,12 +114,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Deut"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:דברים|Deut|משנה[\s\xa0]*תורה)
+		(?:משנה[\s\xa0]*תורה|דברים|Deut)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Josh"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:יהושע|Josh)
+		(?:יהושו?ע|Josh)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Judg"]
@@ -171,17 +171,17 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Chr"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:דברי[\s\xa0]*הימים[\s\xa0]*ב['’]?|2Chr)
+		(?:בדברי[\s\xa0]*הימים[\s\xa0]*ב['’]|דברי[\s\xa0]*הימים[\s\xa0]*ב['’]|דברי[\s\xa0]*הימים[\s\xa0]*ב|2Chr)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Chr"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:דברי[\s\xa0]*הימים[\s\xa0]*א['’]?|1Chr)
+		(?:בדברי[\s\xa0]*הימים[\s\xa0]*א['’]|דברי[\s\xa0]*הימים[\s\xa0]*א['’]|דברי[\s\xa0]*הימים[\s\xa0]*א|1Chr)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Ezra"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Ezra|עזרא)
+		(?:עזרא|Ezra)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Neh"]
@@ -207,7 +207,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Ps"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:תהילים|Ps|מזמורים)
+		(?:מזמורים|תהילים|Ps)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["PrAzar"]
@@ -218,12 +218,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Prov"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:משלים|Prov|משלי|פתגמים)
+		(?:פתגמים|משלים|משלי|Prov)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Eccl"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:המ(?:קהיל|רצה)|Eccl|קהלת)
+		(?:המ(?:קהיל|רצה)|קהלת|Eccl)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["SgThree"]
@@ -259,12 +259,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Joel"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Joel|יואל)
+		(?:יואל|Joel)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Amos"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Amos|עמוס)
+		(?:עמוס|Amos)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Obad"]
@@ -299,7 +299,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Hag"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Hag|חגי)
+		(?:חגי|Hag)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Zech"]
@@ -309,7 +309,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Mal"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:מלאכי|Mal)
+		(?:[בו]מלאכי|מלאכי|Mal)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Matt"]
@@ -324,22 +324,22 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Luke"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:הבשורה[\s\xa0]*על(?:\-?פי[\s\xa0]*לוקא?|[\s\xa0]*פי[\s\xa0]*לוק)ס|Luke|לוקס)
+		(?:הבשורה[\s\xa0]*על(?:\-?פי[\s\xa0]*לוקא?|[\s\xa0]*פי[\s\xa0]*לוק)ס|ב?לוקס|Luke)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1John"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:א(?:גרתו[\s\xa0]*הראשונה[\s\xa0]*של[\s\xa0]*יוחנן[\s\xa0]*השליח?|יגרת[\s\xa0]*יוחנן[\s\xa0]*הראשונה)|הראשונה[\s\xa0]*יוחנן|1John)
+		(?:א(?:גרתו[\s\xa0]*הראשונה[\s\xa0]*של[\s\xa0]*יוחנן[\s\xa0]*השלי(?:חים1[\s\xa0]*יוחנן)?|יגרת[\s\xa0]*יוחנן[\s\xa0]*הראשונה)|הראשונה[\s\xa0]*יוחנן|1(?:[\s\xa0]*יוחנן|John))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2John"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:א(?:גרתו[\s\xa0]*השנייה[\s\xa0]*של[\s\xa0]*יוחנן[\s\xa0]*השליח|יגרת[\s\xa0]*יוחנן[\s\xa0]*השנייה)|השנייה[\s\xa0]*יוחנן|2John)
+		(?:א(?:גרתו[\s\xa0]*השנייה[\s\xa0]*של[\s\xa0]*יוחנן[\s\xa0]*השליח|יגרת[\s\xa0]*יוחנן[\s\xa0]*השנייה)|השנייה[\s\xa0]*יוחנן|2(?:[\s\xa0]*ליוחנן|[\s\xa0]*יוחנן|John))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["3John"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:א(?:גרתו[\s\xa0]*השלישית[\s\xa0]*של[\s\xa0]*יוחנן[\s\xa0]*השליח?|יגרת[\s\xa0]*יוחנן[\s\xa0]*השלישית)|השלישית[\s\xa0]*יוחנן|3John)
+		(?:א(?:גרתו[\s\xa0]*השלישית[\s\xa0]*של[\s\xa0]*יוחנן[\s\xa0]*השליח?|יגרת[\s\xa0]*יוחנן[\s\xa0]*השלישית)|השלישית[\s\xa0]*יוחנן|3(?:[\s\xa0]*יוחנן|John))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["John"]
@@ -354,32 +354,32 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Rom"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?הרומיי|ל[\s\xa0]*הרומ(?:יי?|אי))ם|האיגרת[\s\xa0]*אל[\s\xa0]*הרומאים|Rom)
+		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?הרומיי|ל[\s\xa0]*הרומ(?:יי?|אי))ם|ה(?:איגרת[\s\xa0]*אל[\s\xa0]*הרומא|רומ)ים|Rom)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Cor"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:ה(?:איגרת[\s\xa0]*השנייה[\s\xa0]*אל[\s\xa0]*הקורי|שנייה[\s\xa0]*אל[\s\xa0]*הקורי?)נתים|2Cor|אגרת[\s\xa0]*פולוס[\s\xa0]*השנייה[\s\xa0]*אל\-?הקור(?:נתים|ינ))
+		(?:אגרת[\s\xa0]*פולוס[\s\xa0]*השנייה[\s\xa0]*אל\-?הקור(?:נתים|ינ)|(?:ה(?:איגרת[\s\xa0]*השנייה[\s\xa0]*אל[\s\xa0]*הקורי|שנייה[\s\xa0]*אל[\s\xa0]*הקורי?)|2[\s\xa0]*לקורי)נתים|2(?:[\s\xa0]*קורינ[טת]ים|Cor))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Cor"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:ה(?:איגרת[\s\xa0]*הראשונה[\s\xa0]*אל[\s\xa0]*הקורי|ראשונה[\s\xa0]*אל[\s\xa0]*הקורי?)נתים|1Cor|אגרת[\s\xa0]*פולוס[\s\xa0]*הראשונה[\s\xa0]*אל\-?הקור(?:נתים|י))
+		(?:אגרת[\s\xa0]*פולוס[\s\xa0]*הראשונה[\s\xa0]*אל\-?הקור(?:נתים|י)|(?:ה(?:איגרת[\s\xa0]*הראשונה[\s\xa0]*אל[\s\xa0]*הקורי|ראשונה[\s\xa0]*אל[\s\xa0]*הקורי?)|1[\s\xa0]*לקורי)נתים|1(?:[\s\xa0]*קורינ[טת]ים|Cor))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Gal"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?|ל[\s\xa0]*)הגלטים|האיגרת[\s\xa0]*אל[\s\xa0]*הגלטים|Gal)
+		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?|ל[\s\xa0]*)הגלטים|האיגרת[\s\xa0]*אל[\s\xa0]*הגלטים|ה?גלטים|Gal)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Eph"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל(?:[\s\xa0]*האפסי|\-?האפס)|ל[\s\xa0]*האפס)ים|האיגרת[\s\xa0]*אל[\s\xa0]*האפסים|Eph|השליח[\s\xa0]*אל[\s\xa0]*האפסיים)
+		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל(?:[\s\xa0]*האפסי|\-?האפס)|ל[\s\xa0]*האפס)ים|הא(?:יגרת[\s\xa0]*אל[\s\xa0]*הא)?פסים|השליח[\s\xa0]*אל[\s\xa0]*האפסיים|Eph)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Phil"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?הפיליפי(?:ים)?|ל[\s\xa0]*הפיליפיי?ם)|האיגרת[\s\xa0]*אל[\s\xa0]*הפיליפים|Phil)
+		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?הפיליפי(?:ים)?|ל[\s\xa0]*הפיליפיי?ם)|(?:האיגרת[\s\xa0]*אל[\s\xa0]*ה)?פיליפים|Phil)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Col"]
@@ -389,27 +389,27 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Thess"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:ה(?:איגרת[\s\xa0]*השנייה[\s\xa0]*אל[\s\xa0]*|שנייה[\s\xa0]*אל[\s\xa0\-?]*)התסלוניקים|2Thess|אגרת[\s\xa0]*פולוס[\s\xa0]*השנייה[\s\xa0]*אל\-?התסלונ(?:יקים)?)
+		(?:אגרת[\s\xa0]*פולוס[\s\xa0]*השנייה[\s\xa0]*אל\-?התסלונ(?:יקים)?|(?:ה(?:איגרת[\s\xa0]*השנייה[\s\xa0]*אל[\s\xa0]*|שנייה[\s\xa0]*אל[\s\xa0\-?]*)ה|2[\s\xa0]*)תסלוניקים|2Thess)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Thess"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:ה(?:איגרת[\s\xa0]*ה)?ראשונה[\s\xa0]*אל[\s\xa0]*התסלוניקים|1Thess|אגרת[\s\xa0]*פולוס[\s\xa0]*הראשונה[\s\xa0]*אל\-?התסלו(?:ניקים)?)
+		(?:אגרת[\s\xa0]*פולוס[\s\xa0]*הראשונה[\s\xa0]*אל\-?התסלו(?:ניקים)?|(?:ה(?:איגרת[\s\xa0]*ה)?ראשונה[\s\xa0]*אל[\s\xa0]*ה|1[\s\xa0]*)תסלוניקים|1Thess)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Tim"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:ה(?:איגרת[\s\xa0]*השנייה[\s\xa0]*אל[\s\xa0]*טימותי|שנייה[\s\xa0]*אל[\s\xa0]*טימותיא?)וס|2Tim|אגרת[\s\xa0]*פולוס[\s\xa0]*השנייה[\s\xa0]*אל\-?טימותי(?:וס)?)
+		(?:אגרת[\s\xa0]*פולוס[\s\xa0]*השנייה[\s\xa0]*אל\-?טימותי(?:וס)?|(?:ה(?:איגרת[\s\xa0]*השנייה[\s\xa0]*אל[\s\xa0]*טימותי|שנייה[\s\xa0]*אל[\s\xa0]*טימותיא?)|2[\s\xa0]*(?:תימו[טת]|טימות)יא)וס|2Tim)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Tim"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:ה(?:איגרת[\s\xa0]*הראשונה[\s\xa0]*אל[\s\xa0]*טימותי|ראשונה[\s\xa0]*אל[\s\xa0]*טימותיא)וס|הראשונה[\s\xa0]*אל[\s\xa0]*טימותיוס|1Tim|אגרת[\s\xa0]*פולוס[\s\xa0]*הראשונה[\s\xa0]*אל\-?טימות(?:יוס)?)
+		(?:א(?:ל[\s\xa0]*טימותיאוס[\s\xa0]*אגרת[\s\xa0]*פולוס[\s\xa0]*הראשונה|גרת[\s\xa0]*פולוס[\s\xa0]*הראשונה[\s\xa0]*אל\-?טימות)|ה(?:איגרת[\s\xa0]*הראשונה[\s\xa0]*אל[\s\xa0]*טימותי|ראשונה[\s\xa0]*אל[\s\xa0]*טימותיא?)וס|טימותיאוס[\s\xa0]*(?:אל|1)|1[\s\xa0]*(?:תימו[טת]|טימות)יאוס|1Tim)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Titus"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*אל\-?|ל[\s\xa0]*)טיטוס|האיגרת[\s\xa0]*אל[\s\xa0]*טיטוס|Titus)
+		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*אל\-?|ל[\s\xa0]*)טיטוס|האיגרת[\s\xa0]*אל[\s\xa0]*טיטוס|Titus|טיטוס)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Phlm"]
@@ -429,12 +429,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Pet"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:א(?:גרתו[\s\xa0]*השנייה[\s\xa0]*של[\s\xa0]*פטרוס[\s\xa0]*השליח|יגרת[\s\xa0]*פטרוס[\s\xa0]*השנייה)|השנייה[\s\xa0]*פטרוס|2Pet)
+		(?:א(?:גרתו[\s\xa0]*השנייה[\s\xa0]*של[\s\xa0]*פטרוס[\s\xa0]*השליח|יגרת[\s\xa0]*פטרוס[\s\xa0]*השנייה)|השנייה[\s\xa0]*פטרוס|2(?:[\s\xa0]*כיפא|Pet))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Pet"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:א(?:גרתו[\s\xa0]*הראשונה[\s\xa0]*של[\s\xa0]*פטרוס[\s\xa0]*השליח?|יגרת[\s\xa0]*פטרוס[\s\xa0]*הראשונה)|הראשונה[\s\xa0]*פטרוס|1Pet)
+		(?:א(?:גרתו[\s\xa0]*הראשונה[\s\xa0]*של[\s\xa0]*פטרוס[\s\xa0]*השליח?|יגרת[\s\xa0]*פטרוס[\s\xa0]*הראשונה)|הראשונה[\s\xa0]*פטרוס|1(?:[\s\xa0]*כיפא|Pet))
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Jude"]
@@ -457,7 +457,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 		osis: ["Bar"]
 		apocrypha: true
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:ברוך|Bar|ספר[\s\xa0]*ברוך)
+		(?:ספר[\s\xa0]*ברוך|ברוך|Bar)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Sus"]
@@ -469,25 +469,25 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 		osis: ["2Macc"]
 		apocrypha: true
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:חשמונאים[\s\xa0]*ב['’]|מקבים[\s\xa0]*ב|2Macc|ספר[\s\xa0]*מקבים[\s\xa0]*ב['’])
+		(?:ספר[\s\xa0]*מקבים[\s\xa0]*ב['’]|חשמונאים[\s\xa0]*ב['’]|מקבים[\s\xa0]*ב|2Macc)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["3Macc"]
 		apocrypha: true
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:חשמונאים[\s\xa0]*ג['’]|מקבים[\s\xa0]*ג|3Macc|ספר[\s\xa0]*מקבים[\s\xa0]*ג['’])
+		(?:ספר[\s\xa0]*מקבים[\s\xa0]*ג['’]|חשמונאים[\s\xa0]*ג['’]|מקבים[\s\xa0]*ג|3Macc)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["4Macc"]
 		apocrypha: true
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:חשמונאים[\s\xa0]*ד['’]|מקבים[\s\xa0]*ד|4Macc|ספר[\s\xa0]*מקבים[\s\xa0]*ד['’])
+		(?:ספר[\s\xa0]*מקבים[\s\xa0]*ד['’]|חשמונאים[\s\xa0]*ד['’]|מקבים[\s\xa0]*ד|4Macc)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Macc"]
 		apocrypha: true
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏ֑-ֽֿׁ-ׂׄ-ׇׅא-תװ-ײḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ])(
-		(?:חשמונאים[\s\xa0]*א['’]|מקבים[\s\xa0]*א|1Macc|ספר[\s\xa0]*מקבים[\s\xa0]*א['’])
+		(?:ספר[\s\xa0]*מקבים[\s\xa0]*א['’]|חשמונאים[\s\xa0]*א['’]|מקבים[\s\xa0]*א|1Macc)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	]
 	# Short-circuit the look if we know we want all the books.
