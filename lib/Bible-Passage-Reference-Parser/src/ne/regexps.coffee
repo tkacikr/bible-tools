@@ -70,7 +70,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Lev"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:lev[iī]har[uū]ko(?:[\s\xa0]*pustak)?|लेव(?:ीहरूको[\s\xa0]*पुस्तक|ि)|लेवी(?:हरूको)?|Lev)
+		(?:lev[iī]har[uū]ko(?:[\s\xa0]*pustak)?|ले(?:व(?:ीहरूको[\s\xa0]*पुस्तक|ि)|बी)|लेवी(?:हरूको)?|Lev)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Num"]
@@ -124,7 +124,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Judg"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:न्यायकर्त(?:्त)?ाहरूको[\s\xa0]*पुस्तक|ny[aā]yakartt[aā]har[uū]ko[\s\xa0]*pustak|न्यायकर्ता|Judg)|(?:न्यायकर्त्ताहरूको|ny[aā]yakartt[aā]har[uū]ko)
+		(?:न्यायकर्त(?:्त)?ाहरूको[\s\xa0]*पुस्तक|ny[aā]yakartt[aā]har[uū]ko[\s\xa0]*pustak|न्यायकर्ता|Judg)|(?:ny[aā]yakartt[aā]har[uū]ko|न्यायकर्त्ताहरूको)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Ruth"]
@@ -151,12 +151,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Sam"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏऀ-ंऄ-ऺ़-ऽु-ै्ॐ-ॣॱ-ॷॹ-ॿḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ꣠-ꣷꣻ])(
-		(?:शमूएलको[\s\xa0]*दोस्रो[\s\xa0]*पुस्तक|2(?:\.[\s\xa0]*(?:[sš]am[uū]elko|श(?:मूएलको|ामुएल))|[\s\xa0]*(?:[sš]am[uū]elko|श(?:मूएलको|ामुएल))|\.?[\s\xa0]*शमूएल|Sam))
+		(?:शमूएलको[\s\xa0]*दोस्रो[\s\xa0]*पुस्तक|2(?:\.[\s\xa0]*(?:[sš]am[uū]elko|श(?:मूएलको|ामुएल))|[\s\xa0]*[sš]am[uū]elko|[\s\xa0]*शमूएलले|[\s\xa0]*शमूएलको|[\s\xa0]*शामुएल|Sam)|२[\s\xa0]*शमूएलले|2\.?[\s\xa0]*शमूएल)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Sam"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏऀ-ंऄ-ऺ़-ऽु-ै्ॐ-ॣॱ-ॷॹ-ॿḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ꣠-ꣷꣻ])(
-		(?:शमूएलको[\s\xa0]*पहिलो[\s\xa0]*पुस्तक|[sš]am[uū]elko[\s\xa0]*pustak|1(?:\.[\s\xa0]*(?:[sš]am[uū]elko|श(?:मूएलको|ामुएल))|[\s\xa0]*(?:[sš]am[uū]elko|श(?:मूएलको|ामुएल))|Sam)|1\.?[\s\xa0]*शमूएल)
+		(?:शमूएलको[\s\xa0]*पहिलो[\s\xa0]*पुस्तक|[sš]am[uū]elko[\s\xa0]*pustak|1(?:\.[\s\xa0]*(?:[sš]am[uū]elko|श(?:मूएलको|ामुएल))|[\s\xa0]*[sš]am[uū]elko|[\s\xa0]*शमूएलले|[\s\xa0]*शमूएलको|[\s\xa0]*शामुएल|Sam)|१[\s\xa0]*शमूएलले|1\.?[\s\xa0]*शमूएल)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Kgs"]
@@ -186,7 +186,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Neh"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:नहेम्याहको[\s\xa0]*पुस्तक|nahemy[aā]hko(?:[\s\xa0]*pustak)?|नहेम्याह(?:को)?|Neh)
+		(?:न(?:हेम्याहको[\s\xa0]*पुस्तक|ेहमिया)|nahemy[aā]hko(?:[\s\xa0]*pustak)?|नहेम्याह(?:को)?|Neh)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["GkEsth"]
@@ -202,7 +202,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Job"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:अय्यूब(?:को(?:[\s\xa0]*पुस्तक)?)?|ayy[uū]bko[\s\xa0]*pustak|ayy[uū]bko|Job)
+		(?:अय(?:्यूब(?:को(?:[\s\xa0]*पुस्तक)?)?|ूब)|ayy[uū]bko[\s\xa0]*pustak|ayy[uū]bko|Job)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Ps"]
@@ -249,7 +249,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Dan"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:d[aā]niyalko(?:[\s\xa0]*pustak)?|दानियलको[\s\xa0]*पुस्तक|दानियल(?:को)?|Dan)
+		(?:d[aā]niyalko(?:[\s\xa0]*pustak)?|दानि(?:यलको[\s\xa0]*पुस्तक|एल)|दानियल(?:को)?|Dan)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Hos"]
@@ -299,7 +299,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Hag"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:हाग्गै(?:को[\s\xa0]*पुस्तक)?|h[aā]ggəi|Hag)
+		(?:ह(?:ाग्गै(?:को[\s\xa0]*पुस्तक)?|ग्गै)|h[aā]ggəi|Hag)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Zech"]
@@ -344,7 +344,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["John"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:y[uū]hann[aā]le[\s\xa0]*lekʰeko[\s\xa0]*susm[aā]c[aā]r|य(?:ूह(?:न(?:्ना(?:ले[\s\xa0]*लेखे)?को[\s\xa0]*सुसमाचार|ा)|ान्ना)|(?:ुह|हू)न्ना)|यूहन्ना|John)|(?:y[uū]hann[aā]le|यूहन्नाले)
+		(?:y[uū]hann[aā]le[\s\xa0]*lekʰeko[\s\xa0]*susm[aā]c[aā]r|य(?:ूह(?:न(?:्ना(?:ले[\s\xa0]*लेखे)?को[\s\xa0]*सुसमाचार|ा)|ान्ना)|(?:ुह|हू)न्ना)|यूहन्ना|John)|(?:यूहन्नाले|y[uū]hann[aā]le)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Acts"]
@@ -359,12 +359,12 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["2Cor"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏऀ-ंऄ-ऺ़-ऽु-ै्ॐ-ॣॱ-ॷॹ-ॿḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ꣠-ꣷꣻ])(
-		(?:कोरिन्थीहरूलाई[\s\xa0]*(?:पावलको[\s\xa0]*दोस|दोस्त)्रो[\s\xa0]*पत्र|korintʰ[iī]har[uū]l[aā][iī][\s\xa0]*dostro[\s\xa0]*patra|2(?:\.[\s\xa0]*(?:korintʰ[iī]har[uū]l[aā][iī]|कोरिन्थीहरूलाई)|[\s\xa0]*(?:korintʰ[iī]har[uū]l[aā][iī]|कोरिन्थीहरूलाई)|Cor)|2\.?[\s\xa0]*कोरिन्थी)
+		(?:कोरिन्थीहरूलाई[\s\xa0]*(?:पावलको[\s\xa0]*दोस|दोस्त)्रो[\s\xa0]*पत्र|korintʰ[iī]har[uū]l[aā][iī][\s\xa0]*dostro[\s\xa0]*patra|2(?:\.[\s\xa0]*(?:korintʰ[iī]har[uū]l[aā][iī]|कोरिन्थीहरूलाई)|[\s\xa0]*korintʰ[iī]har[uū]l[aā][iī]|[\s\xa0]*कोरिन्थीहरूलाई|[\s\xa0]*कोरन्थी|Cor)|2\.?[\s\xa0]*कोरिन्थी|२[\s\xa0]*कोरन्थी)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1Cor"]
 		regexp: ///(^|[^0-9A-Za-zªµºÀ-ÖØ-öø-ɏऀ-ंऄ-ऺ़-ऽु-ै्ॐ-ॣॱ-ॷॹ-ॿḀ-ỿⱠ-ⱿꜢ-ꞈꞋ-ꞎꞐ-ꞓꞠ-Ɦꟸ-ꟿ꣠-ꣷꣻ])(
-		(?:कोरिन्थीहरूलाई[\s\xa0]*प(?:ावलको[\s\xa0]*प)?हिलो[\s\xa0]*पत्र|korintʰ[iī]har[uū]l[aā][iī][\s\xa0]*pahilo[\s\xa0]*patra|1(?:\.[\s\xa0]*(?:korintʰ[iī]har[uū]l[aā][iī]|कोरिन्थीहरूलाई)|[\s\xa0]*(?:korintʰ[iī]har[uū]l[aā][iī]|कोरिन्थीहरूलाई)|Cor)|1\.?[\s\xa0]*कोरिन्थी)
+		(?:कोरिन्थीहरूलाई[\s\xa0]*प(?:ावलको[\s\xa0]*प)?हिलो[\s\xa0]*पत्र|korintʰ[iī]har[uū]l[aā][iī][\s\xa0]*pahilo[\s\xa0]*patra|1(?:\.[\s\xa0]*(?:korintʰ[iī]har[uū]l[aā][iī]|कोरिन्थीहरूलाई)|[\s\xa0]*korintʰ[iī]har[uū]l[aā][iī]|[\s\xa0]*कोरिन्थीहरूलाई|[\s\xa0]*कोरन्थी|Cor)|1\.?[\s\xa0]*कोरिन्थी|१[\s\xa0]*कोरन्थी)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Gal"]
@@ -409,7 +409,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Titus"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:तीतस(?:लाई[\s\xa0]*प(?:ावलको[\s\xa0]*प)?त्र)?|t[iī]tasl[aā][iī][\s\xa0]*patra|Titus)|(?:t[iī]tasl[aā][iī]|तीतसलाई)
+		(?:त(?:ीतस(?:लाई[\s\xa0]*प(?:ावलको[\s\xa0]*प)?त्र)?|ितस)|t[iī]tasl[aā][iī][\s\xa0]*patra|Titus)|(?:t[iī]tasl[aā][iī]|तीतसलाई)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Phlm"]

@@ -64,6 +64,8 @@
 1Cor	1 कोरिन्थीहरूलाई
 1Cor	1. कोरिन्थी
 1Cor	1 कोरिन्थी
+1Cor	1 कोरन्थी
+1Cor	१ कोरन्थी
 1Cor	1Cor
 1Esd	1Esd
 1John	yuhannako pahilo patra
@@ -139,7 +141,9 @@
 1Sam	1 šamūelko
 1Sam	1. शमूएलको
 1Sam	1 शमूएलको
+1Sam	1 शमूएलले
 1Sam	1. शामुएल
+1Sam	१ शमूएलले
 1Sam	1 शामुएल
 1Sam	1. शमूएल
 1Sam	1 शमूएल
@@ -294,6 +298,8 @@
 2Cor	2 कोरिन्थीहरूलाई
 2Cor	2. कोरिन्थी
 2Cor	2 कोरिन्थी
+2Cor	2 कोरन्थी
+2Cor	२ कोरन्थी
 2Cor	2Cor
 2Esd	2Esd
 2John	यूहन्नाको दोस्त्रो पत्र
@@ -359,7 +365,9 @@
 2Sam	2 šamūelko
 2Sam	2. शमूएलको
 2Sam	2 शमूएलको
+2Sam	2 शमूएलले
 2Sam	2. शामुएल
+2Sam	२ शमूएलले
 2Sam	2 शामुएल
 2Sam	2. शमूएल
 2Sam	2 शमूएल
@@ -533,6 +541,7 @@ Dan	दानियलको पुस्तक
 Dan	daniyalko
 Dan	dāniyalko
 Dan	दानियलको
+Dan	दानिएल
 Dan	दानियल
 Dan	Dan
 Deut	vyavastʰako pustak
@@ -701,6 +710,7 @@ Hag	हाग्गैको पुस्तक
 Hag	haggəi
 Hag	hāggəi
 Hag	हाग्गै
+Hag	हग्गै
 Hag	Hag
 Heb	hibruharuko nimti patra
 Heb	hibruharūko nimti patra
@@ -760,6 +770,7 @@ Job	अय्यूबको
 Job	ayyubko
 Job	ayyūbko
 Job	अय्यूब
+Job	अयूब
 Job	Job
 Joel	योएलको पुस्तक
 Joel	Joel
@@ -861,6 +872,7 @@ Lev	leviharūko
 Lev	levīharuko
 Lev	levīharūko
 Lev	लेवीहरूको
+Lev	लेबी
 Lev	लेवि
 Lev	लेवी
 Lev	Lev
@@ -953,6 +965,7 @@ Neh	nahemyahko
 Neh	nahemyāhko
 Neh	नहेम्याहको
 Neh	नहेम्याह
+Neh	नेहमिया
 Neh	Neh
 Num	gantiko pustak
 Num	gantīko pustak
@@ -1203,6 +1216,7 @@ Titus	tītaslāi
 Titus	tītaslāī
 Titus	तीतसलाई
 Titus	Titus
+Titus	तितस
 Titus	तीतस
 Tob	Tob
 Wis	Wis
