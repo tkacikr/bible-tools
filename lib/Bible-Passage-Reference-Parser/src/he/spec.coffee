@@ -228,10 +228,12 @@ describe "Localized book Deut (he)", ->
 	it "should handle book: Deut (he)", ->
 		`
 		expect(p.parse("משנה תורה 1:1").osis()).toEqual("Deut.1.1")
+		expect(p.parse("בדברים 1:1").osis()).toEqual("Deut.1.1")
 		expect(p.parse("דברים 1:1").osis()).toEqual("Deut.1.1")
 		expect(p.parse("Deut 1:1").osis()).toEqual("Deut.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("משנה תורה 1:1").osis()).toEqual("Deut.1.1")
+		expect(p.parse("בדברים 1:1").osis()).toEqual("Deut.1.1")
 		expect(p.parse("דברים 1:1").osis()).toEqual("Deut.1.1")
 		expect(p.parse("DEUT 1:1").osis()).toEqual("Deut.1.1")
 		`
@@ -906,6 +908,7 @@ describe "Localized book Luke (he)", ->
 		expect(p.parse("הבשורה על פי לוקס 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("הבשורה על-פי לוקס 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("בלוקס 1:1").osis()).toEqual("Luke.1.1")
+		expect(p.parse("מלוקס 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("Luke 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("לוקס 1:1").osis()).toEqual("Luke.1.1")
 		p.include_apocrypha(false)
@@ -913,6 +916,7 @@ describe "Localized book Luke (he)", ->
 		expect(p.parse("הבשורה על פי לוקס 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("הבשורה על-פי לוקס 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("בלוקס 1:1").osis()).toEqual("Luke.1.1")
+		expect(p.parse("מלוקס 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("LUKE 1:1").osis()).toEqual("Luke.1.1")
 		expect(p.parse("לוקס 1:1").osis()).toEqual("Luke.1.1")
 		`
@@ -1013,9 +1017,11 @@ describe "Localized book Acts (he)", ->
 		p.include_apocrypha true
 	it "should handle book: Acts (he)", ->
 		`
+		expect(p.parse("במעשי השליחים 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("מעשי השליחים 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("Acts 1:1").osis()).toEqual("Acts.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("במעשי השליחים 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("מעשי השליחים 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("ACTS 1:1").osis()).toEqual("Acts.1.1")
 		`

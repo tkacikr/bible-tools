@@ -114,7 +114,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Deut"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:משנה[\s\xa0]*תורה|דברים|Deut)
+		(?:משנה[\s\xa0]*תורה|בדברים|דברים|Deut)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Josh"]
@@ -324,7 +324,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Luke"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:הבשורה[\s\xa0]*על(?:\-?פי[\s\xa0]*לוקא?|[\s\xa0]*פי[\s\xa0]*לוק)ס|ב?לוקס|Luke)
+		(?:הבשורה[\s\xa0]*על(?:\-?פי[\s\xa0]*לוקא?|[\s\xa0]*פי[\s\xa0]*לוק)ס|[במ]?לוקס|Luke)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["1John"]
@@ -349,7 +349,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Acts"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:מעשי[\s\xa0]*השליחים|Acts)
+		(?:במעשי[\s\xa0]*השליחים|מעשי[\s\xa0]*השליחים|Acts)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Rom"]

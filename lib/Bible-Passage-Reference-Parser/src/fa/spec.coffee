@@ -781,9 +781,11 @@ describe "Localized book Mal (fa)", ->
 		p.include_apocrypha true
 	it "should handle book: Mal (fa)", ->
 		`
+		expect(p.parse("مالیک 1:1").osis()).toEqual("Mal.1.1")
 		expect(p.parse("ملاکی 1:1").osis()).toEqual("Mal.1.1")
 		expect(p.parse("Mal 1:1").osis()).toEqual("Mal.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("مالیک 1:1").osis()).toEqual("Mal.1.1")
 		expect(p.parse("ملاکی 1:1").osis()).toEqual("Mal.1.1")
 		expect(p.parse("MAL 1:1").osis()).toEqual("Mal.1.1")
 		`

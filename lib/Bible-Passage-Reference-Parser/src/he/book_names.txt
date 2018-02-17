@@ -134,6 +134,7 @@
 4Macc	חשמונאים ד’
 4Macc	מקבים ד
 4Macc	4Macc
+Acts	במעשי השליחים
 Acts	מעשי השליחים
 Acts	Acts
 Amos	Amos
@@ -152,6 +153,7 @@ Col	Col
 Dan	דניאל
 Dan	Dan
 Deut	משנה תורה
+Deut	בדברים
 Deut	דברים
 Deut	Deut
 Eccl	המקהיל
@@ -243,6 +245,7 @@ Luke	הבשורה על-פי לוקאס
 Luke	הבשורה על פי לוקס
 Luke	הבשורה על-פי לוקס
 Luke	בלוקס
+Luke	מלוקס
 Luke	Luke
 Luke	לוקס
 Mal	במלאכי
