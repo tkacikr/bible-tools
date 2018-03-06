@@ -264,7 +264,7 @@ PrMan	PrMan
 *2Pet	彼得後書	彼後
 *1John	約翰壹書	約壹
 *2John	約翰貳書	約貳
-*3John	約翰參書	約三
+*3John	約翰參書	約翰叁書 約三
 *Jude	猶大書	猶
 *Rev	啟示錄	啟
 *Tob	多俾亞傳
