@@ -2355,6 +2355,7 @@ describe "Localized book 3John (zh)", ->
 		p.include_apocrypha true
 	it "should handle book: 3John (zh)", ->
 		`
+		expect(p.parse("約翰叁書 約三 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("《伊望第三》 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("《約翰三書》 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("《約翰參書》 1:1").osis()).toEqual("3John.1.1")
@@ -2397,6 +2398,7 @@ describe "Localized book 3John (zh)", ->
 		expect(p.parse("约三 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("约叁 1:1").osis()).toEqual("3John.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("約翰叁書 約三 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("《伊望第三》 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("《約翰三書》 1:1").osis()).toEqual("3John.1.1")
 		expect(p.parse("《約翰參書》 1:1").osis()).toEqual("3John.1.1")
