@@ -809,11 +809,13 @@ describe "Localized book Eccl (ar)", ->
 		`
 		expect(p.parse("سفر الجامعة 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("الجامعة 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("جامعة 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("Eccl 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("جا 1:1").osis()).toEqual("Eccl.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("سفر الجامعة 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("الجامعة 1:1").osis()).toEqual("Eccl.1.1")
+		expect(p.parse("جامعة 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("ECCL 1:1").osis()).toEqual("Eccl.1.1")
 		expect(p.parse("جا 1:1").osis()).toEqual("Eccl.1.1")
 		`
@@ -1526,6 +1528,7 @@ describe "Localized book Gal (ar)", ->
 		expect(p.parse("رسالة بولس الرسول إلى أهل غلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("الرسالة إلى أهل غلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("رسالة غلاطية 1:1").osis()).toEqual("Gal.1.1")
+		expect(p.parse("وغلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("غالطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("غلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("غ طية 1:1").osis()).toEqual("Gal.1.1")
@@ -1536,6 +1539,7 @@ describe "Localized book Gal (ar)", ->
 		expect(p.parse("رسالة بولس الرسول إلى أهل غلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("الرسالة إلى أهل غلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("رسالة غلاطية 1:1").osis()).toEqual("Gal.1.1")
+		expect(p.parse("وغلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("غالطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("غلاطية 1:1").osis()).toEqual("Gal.1.1")
 		expect(p.parse("غ طية 1:1").osis()).toEqual("Gal.1.1")
@@ -2092,6 +2096,9 @@ describe "Miscellaneous tests", ->
 		expect(p.parse("Titus 1:1 to 2").osis()).toEqual "Titus.1.1-Titus.1.2"
 		expect(p.parse("Matt 1to2").osis()).toEqual "Matt.1-Matt.2"
 		expect(p.parse("Phlm 2 TO 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
+		expect(p.parse("Titus 1:1 ـ 2").osis()).toEqual "Titus.1.1-Titus.1.2"
+		expect(p.parse("Matt 1ـ2").osis()).toEqual "Matt.1-Matt.2"
+		expect(p.parse("Phlm 2 ـ 3").osis()).toEqual "Phlm.1.2-Phlm.1.3"
 	it "should handle chapters (ar)", ->
 		expect(p.parse("Titus 1:1, فصل 2").osis()).toEqual "Titus.1.1,Titus.2"
 		expect(p.parse("Matt 3:4 فصل 6").osis()).toEqual "Matt.3.4,Matt.6"

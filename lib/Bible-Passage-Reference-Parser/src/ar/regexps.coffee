@@ -19,7 +19,7 @@ bcv_parser::regexps.escaped_passage = ///
 				    /\d+\x1f				#special Psalm chapters
 				  | [\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014]
 				  | title (?! [a-z] )		#could be followed by a number
-				  | فصل | آية | ff | to | و | ؛ | ،
+				  | فصل | آية | ff | to | ـ | و | ؛ | ،
 				  | [a-e] (?! \w )			#a-e allows 1:1a
 				  | $						#or the end of the string
 				 )+
@@ -39,8 +39,8 @@ bcv_parser::regexps.pre_book = "[^A-Za-zؐ-ؚؠ-ٟٮ-ۓە-ۜ۟-۪ۨ-ۯۺ-ۼۿݐ-
 bcv_parser::regexps.first = "1\\.?#{bcv_parser::regexps.space}*"
 bcv_parser::regexps.second = "2\\.?#{bcv_parser::regexps.space}*"
 bcv_parser::regexps.third = "3\\.?#{bcv_parser::regexps.space}*"
-bcv_parser::regexps.range_and = "(?:[&\u2013\u2014-]|(?:و|؛|،)|to)"
-bcv_parser::regexps.range_only = "(?:[\u2013\u2014-]|to)"
+bcv_parser::regexps.range_and = "(?:[&\u2013\u2014-]|(?:و|؛|،)|(?:to|ـ))"
+bcv_parser::regexps.range_only = "(?:[\u2013\u2014-]|(?:to|ـ))"
 # Each book regexp should return two parenthesized objects: an optional preliminary character and the book itself.
 bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	books = [
@@ -218,7 +218,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Eccl"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:سفر[\s\xa0]*الجامعة|الجامعة|Eccl|جا)
+		(?:سفر[\s\xa0]*الجامعة|الجامعة|جامعة|Eccl|جا)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["SgThree"]
@@ -369,7 +369,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Gal"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?غلاطية|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*غلاطية|غ(?:لا|ال|[\s\xa0]*)طية|ﻏﻼﻃﻲ|Gal|غل)
+		(?:رسالة[\s\xa0]*(?:بولس[\s\xa0]*الرسول[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*)?غلاطية|الرسالة[\s\xa0]*إلى[\s\xa0]*أهل[\s\xa0]*غلاطية|وغلاطية|غ(?:لا|ال|[\s\xa0]*)طية|ﻏﻼﻃﻲ|Gal|غل)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Eph"]
