@@ -218,7 +218,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Prov"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:Книга[\s\xa0]*притче[ий][\s\xa0]*Соломоновых|Мудрые[\s\xa0]*изречения|Притчи|Пр(?:ит)?|Мудр|Prov)
+		(?:Книга[\s\xa0]*притче[ий][\s\xa0]*Соломоновых|Мудрые[\s\xa0]*изречения|Притчи|Пр(?:итч?)?|Мудр|Prov)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Eccl"]
