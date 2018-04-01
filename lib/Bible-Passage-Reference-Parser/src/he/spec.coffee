@@ -317,11 +317,13 @@ describe "Localized book Isa (he)", ->
 		p.include_apocrypha true
 	it "should handle book: Isa (he)", ->
 		`
+		expect(p.parse("וישעיהו 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ישעיהו 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ישעיה 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ישעה 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("Isa 1:1").osis()).toEqual("Isa.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("וישעיהו 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ישעיהו 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ישעיה 1:1").osis()).toEqual("Isa.1.1")
 		expect(p.parse("ישעה 1:1").osis()).toEqual("Isa.1.1")
@@ -867,6 +869,7 @@ describe "Localized book Matt (he)", ->
 		expect(p.parse("הבשורה על-פי מתי 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("הבשורה לפי מתי 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("Matt 1:1").osis()).toEqual("Matt.1.1")
+		expect(p.parse("ומתי 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("מתי 1:1").osis()).toEqual("Matt.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("הבשורה הקדושה על-פי מתי 1:1").osis()).toEqual("Matt.1.1")
@@ -874,6 +877,7 @@ describe "Localized book Matt (he)", ->
 		expect(p.parse("הבשורה על-פי מתי 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("הבשורה לפי מתי 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("MATT 1:1").osis()).toEqual("Matt.1.1")
+		expect(p.parse("ומתי 1:1").osis()).toEqual("Matt.1.1")
 		expect(p.parse("מתי 1:1").osis()).toEqual("Matt.1.1")
 		`
 		true
@@ -1040,6 +1044,7 @@ describe "Localized book Rom (he)", ->
 		expect(p.parse("אל הרומיים 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("אל הרומים 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("הרומים 1:1").osis()).toEqual("Rom.1.1")
+		expect(p.parse("רומים 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("Rom 1:1").osis()).toEqual("Rom.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("אגרת פולוס השליח אל-הרומיים 1:1").osis()).toEqual("Rom.1.1")
@@ -1048,6 +1053,7 @@ describe "Localized book Rom (he)", ->
 		expect(p.parse("אל הרומיים 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("אל הרומים 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("הרומים 1:1").osis()).toEqual("Rom.1.1")
+		expect(p.parse("רומים 1:1").osis()).toEqual("Rom.1.1")
 		expect(p.parse("ROM 1:1").osis()).toEqual("Rom.1.1")
 		`
 		true

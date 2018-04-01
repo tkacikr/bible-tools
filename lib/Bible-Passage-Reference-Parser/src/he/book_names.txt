@@ -203,6 +203,7 @@ Heb	אל העברים
 Heb	Heb
 Hos	הושע
 Hos	Hos
+Isa	וישעיהו
 Isa	ישעיהו
 Isa	ישעיה
 Isa	ישעה
@@ -261,6 +262,7 @@ Matt	הבשורה על פי מתי
 Matt	הבשורה על-פי מתי
 Matt	הבשורה לפי מתי
 Matt	Matt
+Matt	ומתי
 Matt	מתי
 Mic	מיכה
 Mic	Mic
@@ -309,6 +311,7 @@ Rom	אל הרומאים
 Rom	אל הרומיים
 Rom	אל הרומים
 Rom	הרומים
+Rom	רומים
 Rom	Rom
 Ruth	Ruth
 Ruth	רות

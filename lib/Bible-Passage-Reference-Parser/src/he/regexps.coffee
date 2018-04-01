@@ -146,7 +146,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Isa"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:ישע(?:יהו?|ה)|Isa)
+		(?:וישעיהו|ישע(?:יהו|ה)|ישעיה|Isa)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Sam"]
@@ -314,7 +314,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Matt"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:הבשורה[\s\xa0]*(?:הקדושה[\s\xa0]*על\-?|על[\s\xa0\-?]*|ל)פי[\s\xa0]*מתי|Matt|מתי)
+		(?:הבשורה[\s\xa0]*(?:הקדושה[\s\xa0]*על\-?|על[\s\xa0\-?]*|ל)פי[\s\xa0]*מתי|Matt|ומתי|מתי)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["Mark"]
@@ -354,7 +354,7 @@ bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->
 	,
 		osis: ["Rom"]
 		regexp: ///(^|#{bcv_parser::regexps.pre_book})(
-		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?הרומיי|ל[\s\xa0]*הרומ(?:יי?|אי))ם|ה(?:איגרת[\s\xa0]*אל[\s\xa0]*הרומא|רומ)ים|Rom)
+		(?:א(?:גרת[\s\xa0]*פולוס[\s\xa0]*השליח[\s\xa0]*אל\-?הרומיי|ל[\s\xa0]*הרומ(?:יי?|אי))ם|(?:ה(?:איגרת[\s\xa0]*אל[\s\xa0]*הרומא|רומ)|רומ)ים|Rom)
 			)(?:(?=[\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014])|$)///gi
 	,
 		osis: ["2Cor"]
