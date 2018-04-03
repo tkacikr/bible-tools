@@ -1,0 +1,221 @@
+1Chr	1 Ajaraamat
+1Chr	1Chr
+1Chr	1Aj
+1Cor	1 Korintlastele
+1Cor	1Cor
+1Cor	1Kr
+1Esd	1Esd
+1John	1 Johannese
+1John	1John
+1John	1Jh
+1Kgs	1 Kuningate
+1Kgs	1Kgs
+1Kgs	1Kn
+1Macc	1Macc
+1Pet	1 Peetruse
+1Pet	1Pet
+1Pet	1Pt
+1Sam	1 Saamueli
+1Sam	1Sam
+1Sam	1Sm
+1Thess	1 Tessalooniklastele
+1Thess	1Thess
+1Thess	1Ts
+1Tim	1 Timoteosele
+1Tim	1Tim
+1Tim	1Tm
+2Chr	2 Ajaraamat
+2Chr	2Chr
+2Chr	2Aj
+2Cor	2 Korintlastele
+2Cor	2Cor
+2Cor	2Kr
+2Esd	2Esd
+2John	2 Johannese
+2John	2John
+2John	2Jh
+2Kgs	2 Kuningate
+2Kgs	2Kgs
+2Kgs	2Kn
+2Macc	2Macc
+2Pet	2 Peetruse
+2Pet	2Pet
+2Pet	2Pt
+2Sam	2 Saamueli
+2Sam	2Sam
+2Sam	2Sm
+2Thess	2 Tessalooniklastele
+2Thess	2Thess
+2Thess	2Ts
+2Tim	2 Timoteosele
+2Tim	2Tim
+2Tim	2Tm
+3John	3 Johannese
+3John	3John
+3John	3Jh
+3Macc	3Macc
+4Macc	4Macc
+Acts	Apostlite Teod
+Acts	Acts
+Acts	Ap
+Amos	Aamos
+Amos	Amos
+Amos	Am
+Bar	Bar
+Bel	Bel
+Col	Colossians
+Col	Col
+Col	Kl
+Dan	Taaniel
+Dan	Dan
+Dan	Tn
+Deut	5 Moosese
+Deut	Deut
+Deut	5Ms
+Eccl	Koguja
+Eccl	Eccl
+Eccl	Kg
+EpJer	EpJer
+Eph	Efeslastele
+Eph	Eph
+Eph	Ef
+Esth	Ester
+Esth	Esth
+Esth	Est
+Exod	2 Moosese
+Exod	Exod
+Exod	2Ms
+Ezek	Hesekiel
+Ezek	Ezek
+Ezek	Hs
+Ezra	Esra
+Ezra	Ezra
+Ezra	Esr
+Gal	Galaatlastele
+Gal	Gal
+Gal	Gl
+Gen	1 Moosese
+Gen	1Ms
+Gen	Gen
+GkEsth	GkEsth
+Hab	Habakuk
+Hab	Hab
+Hab	Ha
+Hag	Haggai
+Hag	Hag
+Hag	Hg
+Heb	Heebrealastele
+Heb	Heb
+Heb	Hb
+Hos	Hoosea
+Hos	Hos
+Hos	Ho
+Isa	Jesaja
+Isa	Isa
+Isa	Js
+Jas	Jaakobuse
+Jas	Jas
+Jas	Jk
+Jdt	Jdt
+Jer	Jeremija
+Jer	Jer
+Jer	Jr
+Job	Iiob
+Job	Job
+Job	Ii
+Joel	Joel
+Joel	Jl
+John	Johannese
+John	John
+John	Jh
+Jonah	Jonah
+Jonah	Joona
+Jonah	Jn
+Josh	Joosua
+Josh	Josh
+Josh	Jos
+Jude	Juuda Kiri
+Jude	Jude
+Jude	Jd
+Judg	Kohtumoistjate
+Judg	Kohtumōistjate
+Judg	Judg
+Judg	Km
+Lam	Nutulaulud
+Lam	Lam
+Lam	Nl
+Lev	3 Moosese
+Lev	3Ms
+Lev	Lev
+Luke	Luuka
+Luke	Luke
+Luke	Lk
+Mal	Malakia
+Mal	Mal
+Mal	Ml
+Mark	Markuse
+Mark	Mark
+Mark	Mk
+Matt	Matteuse
+Matt	Matt
+Matt	Mt
+Mic	Miika
+Mic	Mic
+Mic	Mi
+Nah	Nahum
+Nah	Nah
+Nah	Na
+Neh	Nehemja
+Neh	Neh
+Neh	Ne
+Num	4 Moosese
+Num	4Ms
+Num	Num
+Obad	Obadja
+Obad	Obad
+Obad	Ob
+Phil	Filiplastele
+Phil	Phil
+Phil	Fl
+Phlm	Fileemonile
+Phlm	Phlm
+Phlm	Fm
+PrAzar	PrAzar
+PrMan	PrMan
+Prov	Opetussonad
+Prov	Opetussōnad
+Prov	Ōpetussonad
+Prov	Ōpetussōnad
+Prov	Prov
+Prov	Op
+Prov	Õp
+Ps	Laulud
+Ps	Ps
+Rev	Johannese Ilmutus
+Rev	Ilm
+Rev	Rev
+Rom	Roomlastele
+Rom	Rom
+Rom	Rm
+Ruth	Ruth
+Ruth	Rutt
+Ruth	Rt
+SgThree	SgThree
+Sir	Sir
+Song	Ulemlaul
+Song	Ülemlaul
+Song	Song
+Song	Ul
+Song	Ül
+Sus	Sus
+Titus	Tiitusele
+Titus	Titus
+Titus	Tt
+Tob	Tob
+Wis	Wis
+Zech	Sakarja
+Zech	Zech
+Zech	Sk
+Zeph	Sefanja
+Zeph	Zeph
+Zeph	Sf
