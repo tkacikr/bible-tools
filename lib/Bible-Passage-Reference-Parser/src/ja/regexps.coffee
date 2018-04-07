@@ -19,7 +19,7 @@ bcv_parser::regexps.escaped_passage = ///
 				    /\d+\x1f				#special Psalm chapters
 				  | [\d\s\xa0.:,;\x1e\x1f&\(\)\uff08\uff09\[\]/"'\*=~\-\u2013\u2014]
 				  | title (?! [a-z] )		#could be followed by a number
-				  | and | ff | 章 | ～ | ~ | 〜 | ∼ | と | 、 | 節
+				  | and | ff | 章、 | 章 | ～ | ~ | 〜 | ∼ | と | 、 | 節 | ：
 				  | [a-e] (?! \w )			#a-e allows 1:1a
 				  | $						#or the end of the string
 				 )+
@@ -39,7 +39,7 @@ bcv_parser::regexps.pre_book = "[^A-Za-zªµºÀ-ÖØ-öø-ɏḀ-ỿⱠ-Ɀ々-�
 bcv_parser::regexps.first = "一\\.?#{bcv_parser::regexps.space}*"
 bcv_parser::regexps.second = "二\\.?#{bcv_parser::regexps.space}*"
 bcv_parser::regexps.third = "三\\.?#{bcv_parser::regexps.space}*"
-bcv_parser::regexps.range_and = "(?:[&\u2013\u2014-]|(?:and|と|、)|(?:～|~|〜|∼))"
+bcv_parser::regexps.range_and = "(?:[&\u2013\u2014-]|(?:and|と|章、|、)|(?:～|~|〜|∼))"
 bcv_parser::regexps.range_only = "(?:[\u2013\u2014-]|(?:～|~|〜|∼))"
 # Each book regexp should return two parenthesized objects: an optional preliminary character and the book itself.
 bcv_parser::regexps.get_books = (include_apocrypha, case_sensitive) ->

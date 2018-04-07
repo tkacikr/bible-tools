@@ -2381,11 +2381,15 @@ describe "Miscellaneous tests", ->
 	it "should handle verses (ja)", ->
 		expect(p.parse("Exod 1:1 節 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 節 6").osis()).toEqual "Phlm.1.6"
+		expect(p.parse("Exod 1:1 ： 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm ： 6").osis()).toEqual "Phlm.1.6"
 	it "should handle 'and' (ja)", ->
 		expect(p.parse("Exod 1:1 and 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 AND 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
 		expect(p.parse("Exod 1:1 と 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 と 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
+		expect(p.parse("Exod 1:1 章、 3").osis()).toEqual "Exod.1.1,Exod.1.3"
+		expect(p.parse("Phlm 2 章、 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
 		expect(p.parse("Exod 1:1 、 3").osis()).toEqual "Exod.1.1,Exod.1.3"
 		expect(p.parse("Phlm 2 、 6").osis()).toEqual "Phlm.1.2,Phlm.1.6"
 	it "should handle titles (ja)", ->

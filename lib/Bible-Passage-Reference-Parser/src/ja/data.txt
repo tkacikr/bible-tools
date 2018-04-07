@@ -3,14 +3,14 @@ $SECOND	二
 $THIRD	三
 $FOURTH	四
 $AB	[a-e]
-$AND	and	と	、
+$AND	and	と	章、	、
 $CHAPTER	章
 $FF	ff
 $TITLE	title
 $TRANS	JLB
 $TO	～	~	〜	∼
 # http://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%80%E3%81%AE%E6%89%8B%E7%B4%99
-$VERSE	節
+$VERSE	節	：
 $UNICODE_BLOCK	CJK	Latin
 
 Gen	創世	創世記	創	創
