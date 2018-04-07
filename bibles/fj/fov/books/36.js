@@ -1,0 +1,66 @@
+var book = {
+	"name": "Sefanaia",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<span>1</span> Na vosa i Jiova ka yaco vei Sefanaia na luve i Kusi, na luvei Kitalaia, na luve i Amaraia, na luve i Esekaia, ena gauna i Josaia na luve i Emoni na Tui Juta.",
+			"2": "<span>2</span> \"Au na vakarusa na ka kecega e tiko ena dela ni qele,\" sa tukuna o Jiova;",
+			"3": "<span>3</span> \"Au na vakarusa na tamata kei na manumanu yava i va; Au na vakarusa na manumanu vuka, kei na ika kece ni waitui, na ka kece edau kauta mai na manumanu kei ira na i valavala ca. Au na vakarusa na tamata mai na vanua e tiko kina\", sa tukuna o Jiova.",
+			"4": "<span>4</span> \"Na ligaqu ena tarai ira na Juta kei ira na lewe i Jerusalemi. Au na musuki ira sobu na dau qaravi Peali, kei ira taucoko na kena bete ni qaravi Kalou matakau -",
+			"5": "<span>5</span> O ira na dau qarava na i vavakoso yaloca ni lomalagi ena vei tikina cecere; kei ira na dau bubului vakailasu vei Jiova, ia ka dau bubului ga vei Milikamo;",
+			"6": "<span>6</span> Kei ira na vuki tani mai vei Jiova, ka ra sega ni bau masuti Jiova se gadrevi koya.\"",
+			"7": "<span>7</span> Mo vakanomodi ena mata ni Kalou o Jiova; ni sa roro tiko mai na nona siga, ni sa vakarautaka tiko o Jiova e dua nai soro; ena ia kina o Koya na veisureti vei ira sa kila tiko o koya.",
+			"8": "<span>8</span> \"Ena siga dina ni nona vakacabora nai soro, ena cudruvi ira kina na ravouvou kei ira na luvedra lalai na Tui, kei ira kece era dau sulumaka tiko na nodra i sulu na matanitu tani eso.",
+			"9": "<span>9</span> Ena siga vata tiko o ya Au na cudruvi ira talega na dau veikalawaci ena veibeci, ka vakaikuritaka nai vakarau kaukauwa kei na veivakaisini ena nodra veivale na i liuliu ni yavusa.",
+			"10": "<span>10</span> \"Ena qai yaco ena siga o ya, \"sa tukuna o Jiova, \"ena rorogo mai ena Matamata ni Ika na veitagicaki kei na tagi qoqolou ena kena i Karua ni Gauna, kei na rorogo tatamosamosa mai na veidelana.",
+			"11": "<span>11</span> Dou tagi qoqolou na lewei Makitesa! Ni ra sa vakamatei taucoko na nomudou liga ni cakacaka; kei ira na nomudou dau ni bisinisi.",
+			"12": "<span>12</span> \"Ena yaco mai na siga o ya, me'u na tutuvaka kina e dua na cina me'u vakasaqaqara yani e Jerusalemi, me'u na cudruvi ira o ira era vakawelewele ka sega ni kauwai, ka ra tukuna tu e yalodrau 'na Kalou ena sega ni rawa ni cakava na ka vinaka, ka sega talega ni cakava e dua na ka ca.'",
+			"13": "<span>13</span> O koya oqo na nodra i yau talei era na taura na meca, era na qai vakaveitaliataka na dauvakaca na nodra veivale; ni ra sa tara tale na nodra vei vale, era na sega ni tawana; era na tea na vaini, era na sega ni gunuva ga na kena waini\".",
+			"14": "<span>14</span> Sa roro mai na siga i Jiova e levu ka rerevaki; ka sa voleka ka ena yaco vakatotolo. Na kena rorogo mada ga ni rogo mai ena veivakararawataki sara; ni ra rogoca na tamata i valu qaqa era na domobula ka tagi.",
+			"15": "<span>15</span> Na siga o ya ena siga ni cudru, ena siga ni rarawa kei na yaluma, ena siga ni veivakarusai kei na veivakalolomataki, ena siga ni buto leka, na siga ni o loaloa ka butobuto,",
+			"16": "<span>16</span> Na siga ni rogo ni davui kei na kaila, me baleta na veikoro lelevu kei na vei vale ni valu cecere.",
+			"17": "<span>17</span> \"Au a kauta mai na veivakararawataki vei ira na tamata, mera na vaka kina na mataboko, ni ra sai valavala ca vei Jiova; na nodra dra ni sa liviraki sa vaka ga na kuvu ni qele, kei na lewe ni yagodra sa vaka na dravusa.\"",
+			"18": "<span>18</span> Ena sega ni rawa me vakabulai ira na siliva se koula ena siga ni cudru i Jiova; ia ena vakarusai me vakamai vakadua na vanua taucoko ena nona vuvu, ka vakasauri me ra kidacala ena veika ena yaco na lewe ni vanua."
+		},
+		"2": {
+			"1": "<span>1</span> Dou vakasoqoni kemudou vata, io, mo dou sota vata mada, na matanitu dau veivukiyaki,",
+			"2": "<span>2</span> Ni se bera ni vakaturi e dua na lawa, me yaco vakatotolo mai kina na kena siga, ni se bera talega ni yaco kina na cudru waqawaqa i Jiova, ni se bera ni tarai kemudou kina na nona veivakararawataki o Jiova!",
+			"3": "<span>3</span> Dou vakasaqarai Jiova, oi kemudou kece sa yalomalumalumu e vuravura, ka dou maroroya na lewa dodonu. Vakasaqara na yalododonu, vakasaqara na yalomalumalumu. Me rawa ni maroroi kemudou mai na siga ni nona cudru o Jiova.",
+			"4": "<span>4</span> O Qasa kei Asikiloni e rau na vakarusai; o Asitoti ena yaco vua ena siga levu tutu, kei Ekironi ena cavuraki laivi mai na vanua e dabe tiko kina.",
+			"5": "<span>5</span> Ena ca vei ira sa tawana tiko na veibaravi, na matanitu vaka Kireci! Sa baleti kemudou tiko na vosa i Jiova, kemudou na kai Kenani kei kemudou na kai Filisitia: \"Au na vakarusai kemudou; me sega ni dua tale e vo tiko vei kemudou.\"",
+			"6": "<span>6</span> Na veibaravi era na qai buca drokadroka, me ra na vakavale kina nai vakatawa ni sipi, kei ira talega na qele ni sipi mera na dau tiko kina.",
+			"7": "<span>7</span> Na vei yasa ni vanua me ra na mai tiko kina na votu mai na mataqali i Juta; era na vakania kina nodra manumanu; me ra na dau qai la'ki dabe vata ena veiyakavi ena vei vale e Asikiloni. O Jiova na nodra Kalou ena rogoci ira mai kea, ka me vakasukai ira lesu tale mai na kau tu vakabobula.",
+			"8": "<span>8</span> \"Au sa rogoca tiko na nodra veivakasewasewani na Moapi, kei na nodra veivakacudrui na Amoni, era sa vakasewasewani ira vakaca sara na noqu tamata, ka ra veivakarerei tiko ena i yalayala ni nodrau vanua vei ira noqu tamata.",
+			"9": "<span>9</span> O koya oqo, ena noqu bula vaka i Au\", sa tukuna o Jiova ni lewe vuqa na Kalou i Isireli, \"Ena vakarusai vakaidina o Moapi me vataki Sotoma, kei ira na kai Amoni era na tautauvata kei Komora â€“ me robota tu na vanua ena i binibini masima kei na kau votovotoa, ka sega ni dua na tamata me tawana. Ena qai yaco na gauna me ra qai laki tawana na noqu tamata kei ira talega era a vo tu.\"",
+			"10": "<span>10</span> Oqo mei sau ni nodra dokadoka ka viavialevu, baleta ni ra veivakasewasewani ka veivakacudrui vei ira Nona tamata o Jiova ni lewe vuqa.",
+			"11": "<span>11</span> O Jiova era na qai rerevaki Koya, ni na vakatawayaga taka o Koya, na nodra kaukauwa na vei Kalou kece e tu e vuravura; era na qaravi Koya na tamata kece mai na veivanua lelevu kei na kena veiyanuyanu.",
+			"12": "<span>12</span> \"Oi kemudou talega na kai Iciopea, dou na vakamatei ena Noqu i seleiwau.\"",
+			"13": "<span>13</span> Ena qai dodoka na ligana vaka kina vualiku, me vakarusai kina o Asiria, me talaraka sobu kina na koro levu o Ninive, ka me sega ni dua na ka e tu kina me vaka na vanua dravuisiga.",
+			"14": "<span>14</span> Era na vukaca mai na qele ni manumanu vuka, kei ira na manumanu yavai va ni vanua. Na belo kei na manu levu e rau na mai ro tiko ena i vovo ni duru ni koro; me na qai dau rogo tiko mai na domodra ena vanua ni nodra dau cegu; ni sa vakanomodi tu na koro levu oqo, ni sa mai yali na kena rairai totoka ka a dau divi tu kina e liu.",
+			"15": "<span>15</span> Oqo na koro levu e dau kilai ena kena marau, ka rawati koya tu vakavinaka, era dau tukuna tu e yalodra, \"Oi au oqo, ka sega tale e dua e yacovi au\". E rawa vakacava tale me nodra vanua ni gadigadi na vei manumanu! Ni o ira kece era dau raica era na qoroqoro ka kureitaki liga ga."
+		},
+		"3": {
+			"1": "<span>1</span> Ena ca o koya e dau vakacaca kei koya e vakayacora tiko nai tovo lolovira kina koro levu!",
+			"2": "<span>2</span> Ka sega ni bau muria vakadua na nona vosa, se me yaco vua e dua na veivakadodonutaki; ka e sega ni bau vakabauti Jiova, ka sega ni bau toro voleka vua nona Kalou.",
+			"3": "<span>3</span> O ira nodra turaga ka tiko kei ira era vaka tu ga na laione dau tagi, kei ira nodra daunilewa era vaka tiko na olifa dau butako ka kanilaka tiko na sui me yacova yani na mataka lailai.",
+			"4": "<span>4</span> Nodra parofita era tamata vakarau kaukauwa ka vakarerevaki; o ira na bete era sa dau vakadukadukalitaka tu ga na tikina tabu, ka era sega ni doka na i vunau, era beca tu ga.",
+			"5": "<span>5</span> O Jiova sa yalododonu sara vei ira, ka sega ni bau cakava e dua na ka e tawadodonu. Sa dau vakatakila na nona yalododonu ena veimataka; o Koya e sega ni bau bera vakadua, ia o ira ga na tawadodonu era sega ni kila na madua.",
+			"6": "<span>6</span> \"Au musuki ira laivi na veimatanitu, ka vakacacani nodra bai ni valu kaukauwa; nodra gaunisala Au yanaraka laivi, me sega ni dua e lakova rawa. Sa vakarusai nodra vei koro me sega ni qai dua me tawana tale.",
+			"7": "<span>7</span> Au tukuna, 'O na qai rerevaki Au vakaidina, mo ni qai rogoca nai vunau' â€” me kakua kina ni o talaraki tani mai na nomu i tikotiko, ka ena veika ca kece Au vakayacora vei ira. Ia era sega ni bau veivutuni ka era kitaka tikoga na nodra i valavala me ca vakalevu sara.",
+			"8": "<span>8</span> \"O koya oqo mo dou waraki Au\", sa tukuna o Jiova, \"me yacova sara na siga me'u sa tucake me'u na la'ki veivueti mai; ka sa noqu sasaga me'u vakasoqoni ira vata na veimatanitu kina noqui soqosoqo tabu, me'u na vakaotia vei ira na noqu rarawa kei na noqu cudru katakata, o vuravura era na vakila na katakata ni noqu vuvu.",
+			"9": "<span>9</span> \"Ia ena yaco, Au na qai vakacuruma vei ira na tamata mera vosataka na vosa savasava, me ra na yaco taucoko me ra na qai kaciva na yaca i Jiova, ka qaravi koya ena yalo e lomavata.",
+			"10": "<span>10</span> Mai na tai kadua ni veiuciwai ni Iciopea o ira era dau qaravi Au, kei na luvedra goneyalewa na noqu tamata ka ra dui veiseyaki tu, era na kauta mai na noqu i madrali.",
+			"11": "<span>11</span> Ena siga o ya o na sega ni madua ena vuku ni nomu i valavala vakasisila o a vakayacora vei au; Au na kauti ira tani o ira ka ra dau boletaki ira tiko, ka o na sega ni na vakatautaukeni iko tale ena noqu ulunivanua tabu.",
+			"12": "<span>12</span> Au na qai solia vei iko eso na tamata yalomalua ka yalomalumalumu, ka era tamata vakabauta na yaca i Jiova.",
+			"13": "<span>13</span> O ira era vo tu e Isireli era sega ni rawa ni cakava na ka e tawadodonu ka sega ni ra dau vosalevu, ka e sega ni rawa ni veivakaisini na yamedra; ni ra vakania oti nodra qele ni sipi, era davo sobu ka sega ni rawa ni dua me na vakarerei ira.\"",
+			"14": "<span>14</span> Mo lagasere, na goneyalewa ni Saioni! Dou kaila, na Isireli! Dou reki ka marau mai na vuni yalomudou, oi kemudou na goneyalewa ni Jerusalemi!",
+			"15": "<span>15</span> O Jiova sa kauta tani na nona cudruvi kemudou, sa vakatala tani na kemudou meca. Na Tui Isireli, o Jiova sa tiko vata kei kemudou; dou na sega tale ni na raica na veika rarawa me yacovi kemudou.",
+			"16": "<span>16</span> Ena siga o ya ena cavuti vei Jerusalemi: \"Mo kua ni rere; o iko Saioni, me kua ni malumalumu tiko na ligamu.",
+			"17": "<span>17</span> O Jiova na nomu Kalou sa tiko vata kei kemudou, o Koya sa kaukauwa sara ena veivakabulai; ka ena rekitaki kemudou ena yalo e vakavinavinaka, ka ena soburi kemudou na nona loloma, ka ena marautaki kemudou ena domo ni lagalaga sere.\"",
+			"18": "<span>18</span> \"Au na vakasoqoni ira mai o ira era dau vakalolokutaka na veisoqoni tabu, ka ra tiko maliwai kemudou ka tarai ira tu vakabibi na veivakasesewani e yaco vei kemuni.",
+			"19": "<span>19</span> Raica, ena gauna o ya Au na qai sota kei ira era a vakacacani iko, Au na vakabulai ira na lokiloki, ka vakakumuni ira tale na veiseyaki tu; Au na vakayacori ira me ra vakacaucautaki ka dokai ena vei vanua kece era a vakamaduataki tu kina.",
+			"20": "<span>20</span> Au na qai kauti kemudou lesu tale mai ena gauna sa lokuci, me vaka na gauna Au sa nanuma tu; Au na vakayacori kemudou mo dou na laveti cake ka mo dou rogo mai vei ira kece na lewe i vuravura, Au na vakasukai ira lesu tale mai, o ira era a kau tu vakabobula mera lesu mai vei kemudou\" sa tukuna o Jiova."
+		}
+	}
+};
+module.exports = book;

@@ -1,0 +1,149 @@
+1Chr	1 Veigauna
+1Chr	1Chr
+1Cor	1 Koronica
+1Cor	1Cor
+1Esd	1Esd
+1John	1 Joni
+1John	1John
+1Kgs	1 Tui
+1Kgs	1Kgs
+1Macc	1Macc
+1Pet	1 Pita
+1Pet	1Pet
+1Sam	1 Samuela
+1Sam	1Sam
+1Thess	1 Cesalonaika
+1Thess	1Thess
+1Tim	1 Timoci
+1Tim	1Tim
+2Chr	2 Veigauna
+2Chr	2Chr
+2Cor	2 Koronica
+2Cor	2Cor
+2Esd	2Esd
+2John	2 Joni
+2John	2John
+2Kgs	2 Tui
+2Kgs	2Kgs
+2Macc	2Macc
+2Pet	2 Pita
+2Pet	2Pet
+2Sam	2 Samuela
+2Sam	2Sam
+2Thess	2 Cesalonaika
+2Thess	2Thess
+2Tim	2 Timoci
+2Tim	2Tim
+3John	3 Joni
+3John	3John
+3Macc	3Macc
+4Macc	4Macc
+Acts	Cakacaka
+Acts	Acts
+Amos	Emosi
+Amos	Amos
+Bar	Bar
+Bel	Bel
+Col	Kolosa
+Col	Col
+Dan	Taniela
+Dan	Dan
+Deut	Vakarua
+Deut	Deut
+Eccl	Dauvunau
+Eccl	Eccl
+EpJer	EpJer
+Eph	Efeso
+Eph	Eph
+Esth	Eseta
+Esth	Esth
+Exod	Lako Yani
+Exod	Exod
+Ezek	Isikeli
+Ezek	Ezek
+Ezra	Esera
+Ezra	Ezra
+Gal	Kalatia
+Gal	Gal
+Gen	Vakatekivu
+Gen	Gen
+GkEsth	GkEsth
+Hab	Apakuki
+Hab	Hab
+Hag	Akeai
+Hag	Hag
+Heb	Iperiu
+Heb	Heb
+Hos	Osea
+Hos	Hos
+Isa	Aisea
+Isa	Isa
+Jas	Jemesa
+Jas	Jas
+Jdt	Jdt
+Jer	Jeremaia
+Jer	Jer
+Job	Jope
+Job	Job
+Joel	Joeli
+Joel	Joel
+John	John
+John	Joni
+Jonah	Jonah
+Jonah	Jona
+Josh	Josua
+Josh	Josh
+Jude	Jude
+Jude	Juta
+Judg	Turaganilewa
+Judg	Judg
+Lam	Tagi
+Lam	Lam
+Lev	Vunau Ni Soro
+Lev	Lev
+Luke	Luke
+Mal	Malakai
+Mal	Mal
+Mark	Marika
+Mark	Mark
+Matt	Maciu
+Matt	Matt
+Mic	Maika
+Mic	Mic
+Nah	Neumi
+Nah	Nah
+Neh	Niemaia
+Neh	Neh
+Num	Na Kedra I Wiliwili
+Num	Num
+Obad	Opetaia
+Obad	Obad
+Phil	Filipai
+Phil	Phil
+Phlm	Filimone
+Phlm	Phlm
+PrAzar	PrAzar
+PrMan	PrMan
+Prov	Vakaibalebale
+Prov	Prov
+Ps	Same
+Ps	Ps
+Rev	Vakatakila
+Rev	Rev
+Rom	Roma
+Rom	Rom
+Ruth	Ruci
+Ruth	Ruth
+SgThree	SgThree
+Sir	Sir
+Song	Sere I Solomoni
+Song	Song
+Sus	Sus
+Titus	Taitusi
+Titus	Titus
+Tob	Tob
+Wis	Wis
+Zech	Sakaraia
+Zech	Zech
+Zeph	Sefanaia
+Zeph	Zeph

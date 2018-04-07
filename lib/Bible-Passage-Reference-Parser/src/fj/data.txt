@@ -1,0 +1,257 @@
+$FIRST	1
+$SECOND	2
+$THIRD	3
+$FOURTH	4
+$AB	[a-e]
+$AND	kei	qai
+$CHAPTER	wase
+$FF	ff
+$TITLE	tui
+$TRANS	FOV
+$TO	i
+$VERSE	tikina
+$UNICODE_BLOCK	Latin
+
+Gen	Vakatekivu
+Exod	Lako Yani
+Lev	Vunau Ni Soro
+Num	Na Kedra I Wiliwili
+Deut	Vakarua
+Josh	Josua
+Judg	Turaganilewa
+Ruth	Ruci
+1Sam	1 Samuela
+2Sam	2 Samuela
+1Kgs	1 Tui
+2Kgs	2 Tui
+1Chr	1 Veigauna
+2Chr	2 Veigauna
+Ezra	Esera
+Neh	Niemaia
+Esth	Eseta
+Job	Jope
+Ps	Same
+Prov	Vakaibalebale
+Eccl	Dauvunau
+Song	Sere I Solomoni
+Isa	Aisea
+Jer	Jeremaia
+Lam	Tagi
+Ezek	Isikeli
+Dan	Taniela
+Hos	Osea
+Joel	Joeli
+Amos	Emosi
+Obad	Opetaia
+Jonah	Jona
+Mic	Maika
+Nah	Neumi
+Hab	Apakuki
+Zeph	Sefanaia
+Hag	Akeai
+Zech	Sakaraia
+Mal	Malakai
+Matt	Maciu
+Mark	Marika
+Luke	Luke
+John	Joni
+Acts	Cakacaka
+Rom	Roma
+1Cor	1 Koronica
+2Cor	2 Koronica
+Gal	Kalatia
+Eph	Efeso
+Phil	Filipai
+Col	Kolosa
+1Thess	1 Cesalonaika
+2Thess	2 Cesalonaika
+1Tim	1 Timoci
+2Tim	2 Timoci
+Titus	Taitusi
+Phlm	Filimone
+Heb	Iperiu
+Jas	Jemesa
+1Pet	1 Pita
+2Pet	2 Pita
+1John	1 Joni
+2John	2 Joni
+3John	3 Joni
+Jude	Juta
+Rev	Vakatakila
+
+#Jonah,Job,Josh,Joel
+#Judg,Jude
+#Phil,Phlm
+
+# Order
+=Gen
+=Exod
+=Bel
+=Lev
+=Num
+=Sir
+=Wis
+=Lam
+=EpJer
+=Rev
+=PrMan
+=Deut
+=Josh
+=Judg
+=Ruth
+=1Esd
+=2Esd
+=Isa
+=2Sam
+=1Sam
+=2Kgs
+=1Kgs
+=2Chr
+=1Chr
+=Ezra
+=Neh
+=GkEsth
+=Esth
+=Job
+=Ps
+=PrAzar
+=Prov
+=Eccl
+=SgThree
+=Song
+=Jer
+=Ezek
+=Dan
+=Hos
+=Joel
+=Amos
+=Obad
+=Jonah
+=Mic
+=Nah
+=Hab
+=Zeph
+=Hag
+=Zech
+=Mal
+=Matt
+=Mark
+=Luke
+=1John
+=2John
+=3John
+=John
+=Acts
+=Rom
+=2Cor
+=1Cor
+=Gal
+=Eph
+=Phil
+=Col
+=2Thess
+=1Thess
+=2Tim
+=1Tim
+=Titus
+=Phlm
+=Heb
+=Jas
+=2Pet
+=1Pet
+=Jude
+=Tob
+=Jdt
+=Bar
+=Sus
+=2Macc
+=3Macc
+=4Macc
+=1Macc
+
+# Preferred names
+# OSIS	Long	Short	Shorter	Single (Ps)
+*Gen	
+*Exod	
+*Lev	
+*Num	
+*Deut	
+*Josh	
+*Judg	
+*Ruth	
+*1Sam	
+*2Sam	
+*1Kgs	
+*2Kgs	
+*1Chr	
+*2Chr	
+*Ezra	
+*Neh	
+*Esth	
+*Job	
+*Ps	
+*Prov	
+*Eccl	
+*Song	
+*Isa	
+*Jer	
+*Lam	
+*Ezek	
+*Dan	
+*Hos	
+*Joel	
+*Amos	
+*Obad	
+*Jonah	
+*Mic	
+*Nah	
+*Hab	
+*Zeph	
+*Hag	
+*Zech	
+*Mal	
+*Matt	
+*Mark	
+*Luke	
+*John	
+*Acts	
+*Rom	
+*1Cor	
+*2Cor	
+*Gal	
+*Eph	
+*Phil	
+*Col	
+*1Thess	
+*2Thess	
+*1Tim	
+*2Tim	
+*Titus	
+*Phlm	
+*Heb	
+*Jas	
+*1Pet	
+*2Pet	
+*1John	
+*2John	
+*3John	
+*Jude	
+*Rev	
+*Tob	
+*Jdt	
+*GkEsth	
+*Wis	
+*Sir	
+*Bar	
+*PrAzar	
+*Sus	
+*Bel	
+*SgThree	
+*EpJer	
+*1Macc	
+*2Macc	
+*3Macc	
+*4Macc	
+*1Esd	
+*2Esd	
+*PrMan	
