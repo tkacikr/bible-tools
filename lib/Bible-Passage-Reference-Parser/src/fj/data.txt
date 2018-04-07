@@ -63,8 +63,8 @@ Gal	Kalatia
 Eph	Efeso
 Phil	Filipai
 Col	Kolosa
-1Thess	1 Cesalonaika
-2Thess	2 Cesalonaika
+1Thess	1 Cesalonaika	1 Ceosalonaika
+2Thess	2 Cesalonaika	2 Ceosalonaika
 1Tim	1 Timoci
 2Tim	2 Timoci
 Titus	Taitusi

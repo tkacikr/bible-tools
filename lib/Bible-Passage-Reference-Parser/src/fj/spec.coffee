@@ -985,9 +985,11 @@ describe "Localized book 2Thess (fj)", ->
 		p.include_apocrypha true
 	it "should handle book: 2Thess (fj)", ->
 		`
+		expect(p.parse("2 Ceosalonaika 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("2 Cesalonaika 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("2Thess 1:1").osis()).toEqual("2Thess.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("2 CEOSALONAIKA 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("2 CESALONAIKA 1:1").osis()).toEqual("2Thess.1.1")
 		expect(p.parse("2THESS 1:1").osis()).toEqual("2Thess.1.1")
 		`
@@ -1000,9 +1002,11 @@ describe "Localized book 1Thess (fj)", ->
 		p.include_apocrypha true
 	it "should handle book: 1Thess (fj)", ->
 		`
+		expect(p.parse("1 Ceosalonaika 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1 Cesalonaika 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1Thess 1:1").osis()).toEqual("1Thess.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("1 CEOSALONAIKA 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1 CESALONAIKA 1:1").osis()).toEqual("1Thess.1.1")
 		expect(p.parse("1THESS 1:1").osis()).toEqual("1Thess.1.1")
 		`

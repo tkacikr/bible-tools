@@ -12,6 +12,7 @@
 1Pet	1Pet
 1Sam	1 Samuela
 1Sam	1Sam
+1Thess	1 Ceosalonaika
 1Thess	1 Cesalonaika
 1Thess	1Thess
 1Tim	1 Timoci
@@ -30,6 +31,7 @@
 2Pet	2Pet
 2Sam	2 Samuela
 2Sam	2Sam
+2Thess	2 Ceosalonaika
 2Thess	2 Cesalonaika
 2Thess	2Thess
 2Tim	2 Timoci
