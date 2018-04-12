@@ -1,0 +1,66 @@
+var book = {
+	"name": "Sefanja",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<sup>1</sup> Herrens ord som kom til Sefanja, sønn av Kusji, sønn av Gedalja, sønn av Amarja, sønn av Hiskia, i de dager da Josjia, sønn av Amon, var konge i Juda.",
+			"2": "<sup>2</sup> Jeg river bort,\nalt river jeg bort   fra jorden,\nsierHerren.",
+			"3": "<sup>3</sup> Jeg river bort mennesker   og dyr,\nfugleneunderhimmelen,   fiskene i havet,\njeg lar deurettferdige snuble.\nJegutrydder menneskene   fra jorden,\nsierHerren.",
+			"4": "<sup>4</sup> Jeg løfter hånden   mot Juda,\nmot alle som bor   i Jerusalem.\nJegutrydder fra dette stedet\nden siste rest av Baal,\nog avgudsprestenes navn\nsammen med prestene.",
+			"5": "<sup>5</sup> Jegutrydder dem som tilber\nhimmelhæren påtakene,\ndem som tilber   og sverger vedHerren\nog samtidig sverger   ved Milkom,",
+			"6": "<sup>6</sup> og dem som venderHerren ryggen,\nsom ikke søkerHerren\nog ikke spør ham til råds.",
+			"7": "<sup>7</sup> Vær stille for HerrenGud,\nforHerrens dag er nær!\nHerren har gjort i stand   et slaktoffer,\nhan har helliget   dem han har innbudt.",
+			"8": "<sup>8</sup> Pådagen forHerrens slaktoffer\nskal jeg straffe fyrster   og kongssønner\nog alle som kler seg   i fremmed drakt.",
+			"9": "<sup>9</sup> Jeg skal straffe\nalle som springer   over dørterskelen den dagen,\nde som fyller sin Herres hus   med vold og svik.",
+			"10": "<sup>10</sup> Den dagen,   sierHerren,\nskal det høres skrik   fra Fiskeporten,\njammer fra Nybyen\nog et høyt klagerop   fra høydene.",
+			"11": "<sup>11</sup> Hyl, dere som bor   i Nedrebyen,\nfor hele kremmerfolket   er tilintetgjort,\nutryddet er alle   som veide opp sølv.",
+			"12": "<sup>12</sup> Påden tiden\nskal jeg gjennomsøke Jerusalem   med lys\nog straffe mennene der,\nde som sitter sløve   i sin vinrus\nog sier i sitt hjerte:\n«Herren gjør verken godt   eller ondt.»",
+			"13": "<sup>13</sup> Det de eier,   skal plyndres,\nhusenebli ødelagt.\nBygger de hus,   får de ikke bo i dem,\nplanter de vinmarker,   får de ikke drikke av vinen.",
+			"14": "<sup>14</sup> Nær erHerrens store dag;\nden er nær og kommer med hast!\nHør, bitter erHerrens dag,\nda roper krigeren høyt.",
+			"15": "<sup>15</sup> En vredens dag er den dagen,\nen dag med nød og trengsel,\nen dag med tilintetgjørelse   og herjing,\nen dag med mulm og mørke,\nen dag med skyer og skodde,",
+			"16": "<sup>16</sup> en dag med hornlåt   og hærskrik\nmot festningsbyer,\nmot høye borgtårn.",
+			"17": "<sup>17</sup> Da vil jeg sende trengsel\nsåfolk går som i blinde,\nfor de har syndet   motHerren.\nBlodet deres   skal tømmes ut som slam\nog innvollene deres   som møkk.",
+			"18": "<sup>18</sup> Sølv og gull   kan ikke berge dem\npåHerrens vredesdag.\nIlden fra hans lidenskap   skal fortære hele jorden.\nFor hanutrydder,\nja, han gjør brått ende på\nalle som bor påjorden."
+		},
+		"2": {
+			"1": "<sup>1</sup> Samle dere! Kom sammen,\ndu skamløse folk,",
+			"2": "<sup>2</sup> før det som er fastsatt,   trer i kraft\nog dagen fyker bort   som agner,\nførHerrens brennende vrede   kommer over dere,\nførHerrens vredesdag   kommer over dere!",
+			"3": "<sup>3</sup> SøkHerren,\nalle ydmyke i landet,\ndere som følger hans bud!\nSøk rettferd,   vær ydmyke,\nsåfinner dere kanskje ly\npåHerrens vredesdag.",
+			"4": "<sup>4</sup> Gaza skal ligge forlatt\nog Asjkalon bli til en ødemark.\nAsjdod skal drives bort   ved høylys dag\nog Ekron rykkes opp.",
+			"5": "<sup>5</sup> Ve dere kretere   som bor ved kysten!\nDette erHerrens ord   mot dere:\n«Kanaan, du filisternes land,\njeg legger deg øde   såingen kan bo der.",
+			"6": "<sup>6</sup> Kysten skal bli til beitemark\nmed brønner for gjeterne\nog innhegninger for småfeet.»",
+			"7": "<sup>7</sup> De som er igjen av Judas hus,\nskal ha kysten som beiteland.\nOm kvelden skal de legge seg   til hvile\ni husenei Asjkalon.\nForHerren deres Gud   skal se til dem,\nhan skal vende deres skjebne.",
+			"8": "<sup>8</sup> Jeg hørte spott fra Moab\nog hån fra ammonittene\nda de spottet folket mitt\nog viste hovmod mot landet.",
+			"9": "<sup>9</sup> Derfor sierHerren   over hærskarene,   Israels Gud:\nSåsant jeg lever,\nskal det gåMoab   som Sodoma\nog ammonittene   som Gomorra;\nde skal bli et tistelkratt,\nen saltgruve,\nen ødemark for alltid.\nDe som er igjen   av mitt folk,\nskal plyndre dem,\nen rest av folket   skal ta dem i eie.",
+			"10": "<sup>10</sup> Dette får de igjen   for sitt overmot,\nfordi de spottet   og såned på\nfolket tilHerren   over hærskarene.",
+			"11": "<sup>11</sup> Herren vekker frykt   hos dem\nnår hanutrydder   alle jordens guder.\nAlle folkeslag fra fjerne kyster\nskal komme og tilbe ham,   hvert fra sitt sted.",
+			"12": "<sup>12</sup> Ogsådere, kusjitter,\nskal gjennombores   av mitt sverd.",
+			"13": "<sup>13</sup> Han løfter hånden mot nord\nog ødelegger Assur.\nHan gjør Ninive til ødemark,\ntørr som en ørken.",
+			"14": "<sup>14</sup> Midt i henne skal buskaper hvile\nog alle slags ville dyr.\nPelikan og hegre skal sove\npåsøylehodene\noguglentute fra vinduene,\npåterskelen skal ravnen sitte.\nSederpanelet rives av.",
+			"15": "<sup>15</sup> Dette er den jublende byen,\nhun som låsåtrygt   og sa i sitt hjerte:\n«Jeg –og ingen annen!»\nHvor øde hun er blitt,\nen hvileplass for ville dyr!\nAlle som drar forbi,\nplystrer hånlig til henne\nog slår ut med hendene."
+		},
+		"3": {
+			"1": "<sup>1</sup> Ve den trassige,   tilsølte byen,\nhun somundertrykker!",
+			"2": "<sup>2</sup> Hun adlyder ingen,\ntar ikke imot formaning,\nstoler ikke påHerren,\nholder seg ikke nær   til sin Gud.",
+			"3": "<sup>3</sup> Hos henne er fyrstene   som brølende løver,\ndommerne somulverom natten,\nde sparer ingenting   til det blir morgen.",
+			"4": "<sup>4</sup> Profetene er skrytende,   troløse menn,\nprestene krenker   det hellige,\nde gjør vold mot loven.",
+			"5": "<sup>5</sup> Herren rår   med rettferd der,\nhan gjør ingenurett.\nHver morgen   feller han sin dom,\nden mangler ikke   når dagen gryr.\nMen den som gjørurett,   kjenner ikke skam.",
+			"6": "<sup>6</sup> Jeg harutryddet folkeslag,\nborgtårnene deres ligger i grus.\nJeg har lagt gatene øde,\ningen ferdes pådem.\nByene deres er herjet   og folketomme,\ningen bor der lenger.",
+			"7": "<sup>7</sup> Jeg sa:   «Om du ville frykte meg\nog ta imot formaning!»\nDa ble ikke bostedeneutryddet,\nall min straff   skulle ikke ramme byen.\nMen de handlet bare ondt,   sent og tidlig,\nmed alt de gjorde.",
+			"8": "<sup>8</sup> Derfor, vent påmeg,\nsierHerren,\ntil den dagen jeg står fram   som vitne.\nFor det er min rett   åsamle folkeslag\nog føre kongeriker sammen\nfor åøse ut min harme   over dem,\nall min brennende vrede.\nFor i ilden fra min lidenskap\nskal hele jorden fortæres.",
+			"9": "<sup>9</sup> Da skal jeg igjen gi folkene   et rent tungemål\nsåde alle kan påkalleHerrens navn\nog tjene ham   skulderved skulder.",
+			"10": "<sup>10</sup> Fra landet bortenfor elvene   i Kusj\nskal min datter, mitt spredte folk   som tilber meg,\nkomme med offergaver til meg.",
+			"11": "<sup>11</sup> Den dagen   skal du ikke skamme deg\nover alleugjerningene   du gjorde mot meg.\nFor da tar jeg skrythalsene   bort fra deg.\nDu skal ikke mer være stolt\npåmitt hellige fjell.",
+			"12": "<sup>12</sup> Jeg lar det bli igjen   hos deg\net ydmykt og fattig folk.\nDe skal ta sin tilflukt   tilHerrens navn.",
+			"13": "<sup>13</sup> De som er igjen av Israel,\ngjør ingenurett\nog taler ikke løgn,\ningen svikefull tale   finnes i deres munn.\nNår de går påbeite,   kan de hvile trygt,\ningen skremmer dem.",
+			"14": "<sup>14</sup> Bryt ut i jubel, datter Sion!\nRop av fryd, Israel!\nGled deg, datter Jerusalem,\njuble av hele ditt hjerte!",
+			"15": "<sup>15</sup> Herren har fridd deg   fra dommen,\ndrevet dine fiender bort.\nHerren, Israels konge,   er hos deg,\ndu skal ikke lenger   frykte noe ondt.",
+			"16": "<sup>16</sup> Den dagen skal det sies   til Jerusalem:\nSion, vær ikke redd!\nLa ikke hendene synke!",
+			"17": "<sup>17</sup> Herren din Gud   er hos deg,\nen helt som frelser.\nHan fryder og gleder seg   over deg\nog viser deg påny   sin kjærlighet.\nHan jublerover deg   med fryd",
+			"18": "<sup>18</sup> som påen høytidsdag.\nJeg frir deg fra den dagen\ndu måtte tåle spott.",
+			"19": "<sup>19</sup> Se, påden tiden   griper jeg inn\nmot alle som plager deg,\njeg berger de haltende,\nog de bortdrevne samler jeg.\nJeg gir dem et godt navn   og rykte\ni alle land   hvor de var blitt   til skamme.",
+			"20": "<sup>20</sup> Påden tiden leder jeg dere,\nda samler jeg dere.\nFor jeg vil gi dere   et godt navn og rykte\nblant alle folk påjorden\nnår jeg for øynene pådere\nvender deres skjebne,\nsierHerren."
+		}
+	}
+};
+module.exports = book;
