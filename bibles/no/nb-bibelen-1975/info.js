@@ -1,6 +1,6 @@
 var info = {
 	"lang": "no",
-	"version": "no-bibelen-2011",
+	"version": "nb-bibelen-1975",
 	"books": [
 		{
 			"name": "1. Mosebok",
