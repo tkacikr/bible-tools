@@ -95,6 +95,7 @@
 4Macc	4Macc
 Acts	กิจการ​ของ​อัครทูต
 Acts	กิจการของอัครทูต
+Acts	กิจการฯ
 Acts	กิจการ
 Acts	Acts
 Acts	กจ
@@ -128,6 +129,7 @@ Esth	อสธ
 Exod	Exod
 Exod	อพยพ
 Exod	อพย
+Ezek	พระธรรมเอเสเคียล
 Ezek	เอเสเคียล
 Ezek	Ezek
 Ezek	อสค
@@ -137,6 +139,7 @@ Ezra	อสร
 Gal	กาลาเทีย
 Gal	Gal
 Gal	กท
+Gen	พระธรรมปฐมกาล
 Gen	ปฐมกาล
 Gen	Gen
 Gen	ปฐก

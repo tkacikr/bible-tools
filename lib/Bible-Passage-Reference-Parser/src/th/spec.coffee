@@ -52,10 +52,12 @@ describe "Localized book Gen (th)", ->
 		p.include_apocrypha true
 	it "should handle book: Gen (th)", ->
 		`
+		expect(p.parse("พระธรรมปฐมกาล 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("ปฐมกาล 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("Gen 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("ปฐก 1:1").osis()).toEqual("Gen.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("พระธรรมปฐมกาล 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("ปฐมกาล 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("GEN 1:1").osis()).toEqual("Gen.1.1")
 		expect(p.parse("ปฐก 1:1").osis()).toEqual("Gen.1.1")
@@ -638,10 +640,12 @@ describe "Localized book Ezek (th)", ->
 		p.include_apocrypha true
 	it "should handle book: Ezek (th)", ->
 		`
+		expect(p.parse("พระธรรมเอเสเคียล 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("เอเสเคียล 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("Ezek 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("อสค 1:1").osis()).toEqual("Ezek.1.1")
 		p.include_apocrypha(false)
+		expect(p.parse("พระธรรมเอเสเคียล 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("เอเสเคียล 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("EZEK 1:1").osis()).toEqual("Ezek.1.1")
 		expect(p.parse("อสค 1:1").osis()).toEqual("Ezek.1.1")
@@ -1017,12 +1021,14 @@ describe "Localized book Acts (th)", ->
 		`
 		expect(p.parse("กิจการ​ของ​อัครทูต 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("กิจการของอัครทูต 1:1").osis()).toEqual("Acts.1.1")
+		expect(p.parse("กิจการฯ 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("กิจการ 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("Acts 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("กจ 1:1").osis()).toEqual("Acts.1.1")
 		p.include_apocrypha(false)
 		expect(p.parse("กิจการ​ของ​อัครทูต 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("กิจการของอัครทูต 1:1").osis()).toEqual("Acts.1.1")
+		expect(p.parse("กิจการฯ 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("กิจการ 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("ACTS 1:1").osis()).toEqual("Acts.1.1")
 		expect(p.parse("กจ 1:1").osis()).toEqual("Acts.1.1")
