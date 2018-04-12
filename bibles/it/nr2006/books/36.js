@@ -1,0 +1,66 @@
+var book = {
+	"name": "Sofonia",
+	"numChapters": 3,
+	"chapters": {
+		"1": {
+			"1": "<sup>1</sup> Minacce contro Giuda e Gerusalemme\nParola del Signore rivolta a Sofonia, figlio di Cusi, figlio di Ghedalia, figlio di Amaria, figlio di Ezechia, al tempo di Giosia, figlio di Amon, re di Giuda.",
+			"2": "<sup>2</sup> «Io distruggerò ogni cosa dalla faccia della terra», dice il Signore.",
+			"3": "<sup>3</sup> «Distruggerò uomini e bestie; distruggerò gli uccelli del cielo e i pesci del mare, ciò che fa inciampare assieme agli empi, ed eliminerò gli uomini dalla faccia della terra», dice il Signore.",
+			"4": "<sup>4</sup> «Stenderò la mano su Giuda e su tutti gli abitanti di Gerusalemme; eliminerò da questo luogo quanto rimane di Baal, il nome dei sacerdoti idolatri assieme ai sacerdoti,",
+			"5": "<sup>5</sup> quelli che si prostrano sui tetti davanti all’esercito celeste, quelli che si prostrano e giurano per il Signore, e poi giurano anche per Malcam,",
+			"6": "<sup>6</sup> quelli che si allontanano dal Signore, e quelli che non cercano il Signore e non lo consultano.",
+			"7": "<sup>7</sup> «Tacete davanti al Signore, Dio, poiché il giorno del Signore è vicino, poiché il Signore ha preparato un sacrificio, ha consacrato i suoi invitati.",
+			"8": "<sup>8</sup> Nel giorno del sacrificio del Signore io punirò tutti i prìncipi, i figli del re e tutti quelli che si vestono di abiti stranieri.",
+			"9": "<sup>9</sup> Quel giorno punirò tutti quelli che saltano la soglia, che riempiono di violenza e di frode le case dei loro padroni.",
+			"10": "<sup>10</sup> Quel giorno», dice il Signore, «si alzerà un grido dalla Porta dei Pesci, un urlo dal quartiere nuovo e un gran fracasso dalle colline.",
+			"11": "<sup>11</sup> Urlate, abitanti del Mortaio, perché tutti i mercanti sono spazzati via, tutti quelli che erano carichi di denaro sono sterminati.",
+			"12": "<sup>12</sup> In quel tempo io frugherò Gerusalemme con le torce e punirò gli uomini che, adagiati sulle loro fecce, dicono in cuor loro: “Il Signore non fa né bene né male”.",
+			"13": "<sup>13</sup> Le loro ricchezze saranno abbandonate al saccheggio, le loro case devastate; essi costruiranno delle case, ma non le abiteranno, pianteranno delle vigne, ma non ne berranno il vino.",
+			"14": "<sup>14</sup> «Il gran giorno del Signore è vicino; è vicino e viene in gran fretta. Si sente venire il giorno del Signore, e il più valoroso grida amaramente.",
+			"15": "<sup>15</sup> Quel giorno è un giorno d’ira, un giorno di sventura e di angoscia, un giorno di rovina e di desolazione, un giorno di tenebre e di caligine, un giorno di nuvole e di fitta oscurità,",
+			"16": "<sup>16</sup> un giorno di squilli di tromba e di allarme contro le città fortificate e le alte torri.",
+			"17": "<sup>17</sup> Io metterò gli uomini nell’angoscia ed essi brancoleranno come ciechi, perché hanno peccato contro il Signore; il loro sangue sarà sparso come polvere e la loro carne come escrementi.",
+			"18": "<sup>18</sup> Né il loro argento né il loro oro potrà liberarli nel giorno dell’ira del Signore. Tutto il paese sarà divorato dal fuoco della sua gelosia, poiché egli farà una distruzione improvvisa e totale di tutti gli abitanti del paese»."
+		},
+		"2": {
+			"1": "<sup>1</sup> Raccoglietevi, rientrate in voi stessi, gente spudorata,",
+			"2": "<sup>2</sup> prima che si esegua il decreto e quel giorno passi come la pula, prima che vi piombi addosso l’ardente ira del Signore, prima che vi sorprenda il giorno dell’ira del Signore!",
+			"3": "<sup>3</sup> Cercate il Signore, voi tutti umili della terra, che mettete in pratica i suoi precetti! Cercate la giustizia, cercate l’umiltà! Forse sarete messi al sicuro nel giorno dell’ira del Signore.",
+			"4": "<sup>4</sup> Giudizio contro le nazioni\nPoiché Gaza sarà abbandonata e Ascalon ridotta a una desolazione; Asdod sarà cacciata in pieno mezzogiorno ed Ecron sarà sradicata.",
+			"5": "<sup>5</sup> Guai agli abitanti della regione costiera, alla nazione dei Cheretei! La parola del Signore è rivolta contro di te, o Canaan, paese dei Filistei: «Io ti distruggerò al punto che non avrai più abitanti».",
+			"6": "<sup>6</sup> La regione costiera non sarà altro che pascoli, rifugi per pastori e recinti per greggi.",
+			"7": "<sup>7</sup> Essa sarà un territorio per il resto della casa di Giuda; là porteranno le bestie al pascolo e la sera si coricheranno nelle case di Ascalon, perché il Signore, loro Dio, li visiterà e li farà tornare dall’esilio.",
+			"8": "<sup>8</sup> «Ho udito gli insulti di Moab e gli oltraggi dei figli di Ammon; hanno insultato il mio popolo e si sono ingranditi invadendo il suo territorio.",
+			"9": "<sup>9</sup> Perciò, com’è vero che io vivo», dice il Signore degli eserciti, Dio d’Israele, «Moab diventerà come Sodoma e Ammon come Gomorra: una selva di ortiche, una salina, un deserto per sempre. Il resto del mio popolo li saccheggerà, il residuo della mia nazione li possederà».",
+			"10": "<sup>10</sup> Questo accadrà per il loro orgoglio, perché hanno insultato e schernito il popolo del Signore degli eserciti.",
+			"11": "<sup>11</sup> Il Signore sarà terribile verso di loro, perché annienterà tutti gli dèi della terra; tutte le nazioni lo adoreranno, da tutte le loro isole.",
+			"12": "<sup>12</sup> «Anche voi, Etiopi, sarete uccisi dalla mia spada».",
+			"13": "<sup>13</sup> Egli stenderà la mano contro il settentrione e distruggerà l’Assiria; ridurrà Ninive in una desolazione, in un luogo arido come il deserto.",
+			"14": "<sup>14</sup> Nel suo interno giaceranno greggi e animali di ogni specie; anche il pellicano e il riccio abiteranno fra i suoi capitelli; si udranno canti di uccelli dalle finestre. La devastazione sarà sulle soglie, perché sarà spogliata dei suoi rivestimenti di cedro.",
+			"15": "<sup>15</sup> Tale sarà la città festante, che se ne sta sicura e dice in cuor suo: «Io, e nessun altro all’infuori di me!» Come mai è diventata un deserto, un covo per le bestie? Chiunque le passerà vicino fischierà e agiterà la mano."
+		},
+		"3": {
+			"1": "<sup>1</sup> Cause del castigo di Gerusalemme\nGuai alla città ribelle, contaminata, alla città piena di soprusi!",
+			"2": "<sup>2</sup> Essa non dà ascolto ad alcuna voce, non accetta correzione, non si confida nel Signore, non si avvicina al suo Dio.",
+			"3": "<sup>3</sup> I suoi capi, in mezzo a lei, sono leoni ruggenti; i suoi giudici sono lupi della sera, che non serbano nulla per la mattina.",
+			"4": "<sup>4</sup> I suoi profeti sono arroganti, perfidi; i suoi sacerdoti profanano le cose sante, infrangono la legge.",
+			"5": "<sup>5</sup> Il Signore è giusto in mezzo ad essa, egli non commette ingiustizie. Ogni mattina egli dispensa i suoi giudizi e non manca mai; ma il perverso non conosce vergogna.",
+			"6": "<sup>6</sup> «Io ho sterminato delle nazioni, le loro torri sono distrutte; ho rovinato le loro strade, al punto che non vi passa più nessuno; le loro città sono distrutte, al punto che non c’è più nessuno, nessun abitante.",
+			"7": "<sup>7</sup> Io dicevo: “Se almeno tu volessi temermi, accettare la correzione! La tua dimora non sarebbe distrutta, nonostante tutto ciò che ho riservato per te”. Ma essi si sono affrettati a pervertire tutte le loro azioni.",
+			"8": "<sup>8</sup> Perciò, aspettami», dice il Signore, «per il giorno che mi alzerò per il bottino; perché ho decretato di radunare le nazioni, di riunire i regni, per versare su di loro la mia indignazione, tutto l’ardore della mia ira. Poiché tutta la terra sarà divorata dal fuoco della mia gelosia.",
+			"9": "<sup>9</sup> Benedizioni future\n«Allora io trasformerò le labbra dei popoli in labbra pure, affinché tutti invochino il nome del Signore, per servirlo di comune accordo.",
+			"10": "<sup>10</sup> Di là dai fiumi d’Etiopia i miei supplicanti, i miei figli dispersi, mi porteranno le loro offerte.",
+			"11": "<sup>11</sup> Quel giorno tu non avrai da vergognarti per tutte le azioni con le quali hai peccato contro di me; perché, allora, io toglierò di mezzo a te quelli che trionfano con superbia, e tu smetterai di inorgoglirti sul mio monte santo.",
+			"12": "<sup>12</sup> Lascerò in mezzo a te un popolo umile e povero, che confiderà nel nome del Signore.",
+			"13": "<sup>13</sup> Il resto d’Israele non commetterà azioni malvagie, non dirà menzogne e non si troverà più un linguaggio ingannatore sulle sue labbra; perché essi pascoleranno, si coricheranno e non vi sarà più nessuno che li spaventi».",
+			"14": "<sup>14</sup> Prorompi in grida di gioia, o figlia di Sion! Alza grida di esultanza, o Israele! Rallègrati ed esulta con tutto il cuore, o figlia di Gerusalemme!",
+			"15": "<sup>15</sup> Il Signore ha revocato le sue condanne contro di te, ha scacciato il tuo nemico. Il Re d’Israele, il Signore, è in mezzo a te, non dovrai più temere alcun male.",
+			"16": "<sup>16</sup> Quel giorno si dirà a Gerusalemme: «Non temere, o Sion, le tue mani non si indeboliscano!",
+			"17": "<sup>17</sup> Il Signore, il tuo Dio, è in mezzo a te, come un potente che salva. Egli si rallegrerà con gran gioia per causa tua; si acqueterà nel suo amore, esulterà per causa tua con grida di gioia».",
+			"18": "<sup>18</sup> «Io raccoglierò quelli che sono nel dolore, lontano dalle feste solenni; sono tuoi, su di loro pesa la vergogna!",
+			"19": "<sup>19</sup> In quel tempo io agirò contro tutti quelli che ti opprimono; salverò la pecora che zoppica, raccoglierò quella che è stata cacciata via, e li renderò gloriosi e famosi in tutti i paesi dove sono stati nella vergogna.",
+			"20": "<sup>20</sup> In quel tempo io vi ricondurrò, in quel tempo vi raccoglierò; perché vi renderò famosi e gloriosi fra tutti i popoli della terra, quando farò tornare, sotto i vostri occhi, quelli che sono in esilio», dice il Signore."
+		}
+	}
+};
+module.exports = book;
